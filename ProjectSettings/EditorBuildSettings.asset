@@ -4,4 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main Scene.unity
+  - enabled: 1
+    path: Assets/Scenes/Level Map Scene.unity
+  - enabled: 1
+    path: Assets/Scenes/Setting Scene.unity
+  - enabled: 1
+    path: Assets/Scenes/Shop Scene.unity
