@@ -1,0 +1,627 @@
+fileFormatVersion: 2
+guid: 6f8e56cf0eeac40bbb01435c335d3477
+timeCreated: 1446054826
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cZeus_ingame_atlas_0
+    21300002: cZeus_ingame_atlas_1
+    21300004: cZeus_ingame_atlas_2
+    21300006: cZeus_ingame_atlas_3
+    21300008: cZeus_ingame_atlas_4
+    21300010: cZeus_ingame_atlas_5
+    21300012: cZeus_ingame_atlas_6
+    21300014: cZeus_ingame_atlas_7
+    21300016: cZeus_ingame_atlas_8
+    21300018: cZeus_ingame_atlas_9
+    21300020: cZeus_ingame_atlas_10
+    21300022: cZeus_ingame_atlas_11
+    21300024: cZeus_ingame_atlas_12
+    21300026: cZeus_ingame_atlas_13
+    21300028: cZeus_ingame_atlas_14
+    21300030: cZeus_ingame_atlas_15
+    21300032: cZeus_ingame_atlas_16
+    21300034: cZeus_ingame_atlas_17
+    21300036: cZeus_ingame_atlas_18
+    21300038: cZeus_ingame_atlas_19
+    21300040: cZeus_ingame_atlas_20
+    21300042: cZeus_ingame_atlas_21
+    21300044: cZeus_ingame_atlas_22
+    21300046: cZeus_ingame_atlas_23
+    21300048: cZeus_ingame_atlas_24
+    21300050: cZeus_ingame_atlas_25
+    21300052: cZeus_ingame_atlas_26
+    21300054: cZeus_ingame_atlas_27
+    21300056: cZeus_ingame_atlas_28
+    21300058: cZeus_ingame_atlas_29
+    21300060: cZeus_ingame_atlas_30
+    21300062: cZeus_ingame_atlas_31
+    21300064: cZeus_ingame_atlas_32
+    21300066: cZeus_ingame_atlas_33
+    21300068: cZeus_ingame_atlas_34
+    21300070: cZeus_ingame_atlas_35
+    21300072: cZeus_ingame_atlas_36
+    21300074: cZeus_ingame_atlas_37
+    21300076: cZeus_ingame_atlas_38
+    21300078: cZeus_ingame_atlas_39
+    21300080: cZeus_ingame_atlas_40
+    21300082: cZeus_ingame_atlas_41
+    21300084: cZeus_ingame_atlas_42
+    21300086: cZeus_ingame_atlas_43
+    21300088: cZeus_ingame_atlas_44
+    21300090: cZeus_ingame_atlas_45
+    21300092: cZeus_ingame_atlas_46
+    21300094: cZeus_ingame_atlas_47
+    21300096: cZeus_ingame_atlas_48
+    21300098: cZeus_ingame_atlas_49
+    21300100: cZeus_ingame_atlas_50
+    21300102: cZeus_ingame_atlas_51
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: cZeus_ingame_atlas_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1979
+        width: 136
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_1
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1950
+        width: 433
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_2
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1967
+        width: 155
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_3
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 2013
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_4
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1480
+        width: 1244
+        height: 566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1578
+        width: 136
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_6
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1863
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_7
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 1863
+        width: 92
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_8
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1843
+        width: 99
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_9
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 1934
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_10
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 1807
+        width: 476
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_11
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1683
+        width: 88
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_12
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1683
+        width: 88
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_13
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1675
+        width: 91
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_14
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1526
+        width: 751
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_15
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1580
+        width: 89
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_16
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1580
+        width: 89
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_17
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1580
+        width: 91
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1458
+        width: 25
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_19
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1458
+        width: 143
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_20
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1494
+        width: 102
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_21
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1478
+        width: 24
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_22
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1478
+        width: 26
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_23
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1478
+        width: 24
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_24
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 1480
+        width: 49
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_25
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1499
+        width: 327
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_26
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1461
+        width: 327
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_27
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1346
+        width: 116
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_28
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1296
+        width: 102
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_29
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1348
+        width: 152
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_30
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1390
+        width: 102
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_31
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 1395
+        width: 60
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_32
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1370
+        width: 61
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_33
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1235
+        width: 116
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_34
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 1263
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_35
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 1243
+        width: 153
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_36
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 1262
+        width: 87
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_37
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 1262
+        width: 88
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_38
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1083
+        width: 149
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_39
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 1114
+        width: 207
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_40
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 932
+        width: 150
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_41
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1023
+        width: 77
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_42
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 746
+        width: 177
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_43
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 615
+        width: 134
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_44
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 403
+        width: 142
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_45
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 216
+        width: 895
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_46
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 242
+        width: 193
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_47
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 203
+        width: 610
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_48
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 0
+        width: 243
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_49
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 31
+        width: 513
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_50
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 3
+        width: 423
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cZeus_ingame_atlas_51
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 31
+        width: 509
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
