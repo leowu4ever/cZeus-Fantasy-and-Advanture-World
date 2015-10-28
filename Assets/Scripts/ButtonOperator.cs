@@ -11,7 +11,7 @@ public class ButtonOperator : MonoBehaviour
     {
         Application.LoadLevel(2);
     }
-    public void LoadShopScene ()
+    public void LoadTutorialScene ()
 	{
 		Application.LoadLevel (3);
 	}
@@ -25,13 +25,21 @@ public class ButtonOperator : MonoBehaviour
     {
         Application.LoadLevel(0);
     }
-    public void ShopSceneBackToMainScene()
+    public void ShopSceneBackToLvMapScene()
     {
-        Application.LoadLevel(0);
+        Application.LoadLevel(1);
     }
     public void InGameSceneBackToLvMapScene()
     {
         Application.LoadLevel(1);
+    }
+    public void TutorialSceneBackToMainScene()
+    {
+        Application.LoadLevel(0);
+    }
+    public void LvMapSceneToShopScene()
+    {
+        Application.LoadLevel(5);
     }
 
 }
