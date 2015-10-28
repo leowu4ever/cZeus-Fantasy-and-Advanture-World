@@ -29,5 +29,9 @@ public class ButtonOperator : MonoBehaviour
     {
         Application.LoadLevel(0);
     }
+    public void InGameSceneBackToLvMapScene()
+    {
+        Application.LoadLevel(1);
+    }
 
 }
