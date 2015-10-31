@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 23214bb92522542ad8f246ccf931f18e
-timeCreated: 1446332166
+timeCreated: 1446226080
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -17,14 +17,6 @@ TextureImporter:
     21300020: Square_Clue_Board_Pressed
     21300022: Button
     21300024: Button_Pressed
-    21300026: InGame_ToolBar_Bg_Side
-    21300028: InGame_ToolBar_Bg_Middle
-    21300030: InGame_Back_Button
-    21300032: Time_Limit
-    21300034: Mini_Shop
-    21300036: Score_Bird
-    21300038: Error_Number
-    21300040: Number_Bg
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -58,7 +50,6 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -198,86 +189,6 @@ TextureImporter:
         y: 1950
         width: 222
         height: 97
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: InGame_ToolBar_Bg_Side
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1457
-        width: 27
-        height: 120
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: InGame_Back_Button
-      rect:
-        serializedVersion: 2
-        x: 393
-        y: 1259
-        width: 92
-        height: 104
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Time_Limit
-      rect:
-        serializedVersion: 2
-        x: 372
-        y: 1483
-        width: 46
-        height: 76
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Mini_Shop
-      rect:
-        serializedVersion: 2
-        x: 173
-        y: 1492
-        width: 106
-        height: 84
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: InGame_ToolBar_Bg_Middle
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 1457
-        width: 142
-        height: 120
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Score_Bird
-      rect:
-        serializedVersion: 2
-        x: 557
-        y: 1368
-        width: 65
-        height: 92
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Error_Number
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 614
-        width: 135
-        height: 112
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Number_Bg
-      rect:
-        serializedVersion: 2
-        x: 331
-        y: 1673
-        width: 92
-        height: 89
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
