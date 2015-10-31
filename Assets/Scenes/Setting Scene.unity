@@ -133,7 +133,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back
+  m_Text: 
 --- !u!222 &278520234
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -459,7 +459,7 @@ GameObject:
   - 114: {fileID: 2096532092}
   - 114: {fileID: 2096532091}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Back Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -478,10 +478,10 @@ RectTransform:
   - {fileID: 278520235}
   m_Father: {fileID: 1100517723}
   m_RootOrder: 1
-  m_AnchorMin: {x: .0520000011, y: .922638774}
-  m_AnchorMax: {x: .271000028, y: .972361267}
-  m_AnchoredPosition: {x: .5, y: 1}
-  m_SizeDelta: {x: -7, y: -3}
+  m_AnchorMin: {x: .0400000028, y: .927672327}
+  m_AnchorMax: {x: .145000011, y: .989000022}
+  m_AnchoredPosition: {x: 3.7252903e-09, y: -.550000012}
+  m_SizeDelta: {x: .200000003, y: -.899999976}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &2096532091
 MonoBehaviour:
@@ -554,8 +554,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300002, guid: 23214bb92522542ad8f246ccf931f18e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
