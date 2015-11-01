@@ -39,7 +39,7 @@ public class ButtonOperator : MonoBehaviour
     }
     public void LvMapSceneToShopScene()
     {
-        Application.LoadLevel(5);
+        Application.LoadLevel(4);
     }
 
 }
