@@ -9,9 +9,8 @@ public class GameManager : MonoBehaviour
 	{
 		GameObject[] boardArray = GameObject.FindGameObjectsWithTag ("Board");					// find gameobject by tag 
 		int boardArraySize = boardArray.Length;
-		if (GameObject.FindGameObjectsWithTag ("Board") != null) {
-			Debug.Log ("There are " + boardArraySize + " in the scene");
-		}
+		Debug.Log ("There are " + boardArraySize + " boards in the scene");
+
 
 		int tempCount = 0;
 		for (int i = 0; i < boardArraySize; i++) {
@@ -22,10 +21,17 @@ public class GameManager : MonoBehaviour
 		if (tempCount == boardArraySize) {
 			Debug.Log ("Correct!!!");
 		}
-	
+
+		// Generate a random gameboard
+		GameObject[] boardContentArray = GameObject.FindGameObjectsWithTag ("Board Content");
+		int boardContentArraySize = boardContentArray.Length;
+		Debug.Log ("There are " + boardContentArraySize + " texts in the scene");
+		for (int i = 0; i < boardContentArraySize; i++) {
+			Debug.Log (boardContentArray [i].name);													// access gameobject name
+			tempCount++;
+		}
 	}
 	
-	// Update is called once per frame
 	void Update ()
 	{
 	
