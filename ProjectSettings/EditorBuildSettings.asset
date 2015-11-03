@@ -16,6 +16,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Shop Scene.unity
   - enabled: 1
-    path: Assets/Scenes/InGame Scene 4By4.unity
-  - enabled: 1
     path: Assets/Scenes/InGame Scene (3x3).unity
