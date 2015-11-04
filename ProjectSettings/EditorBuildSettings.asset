@@ -12,8 +12,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Setting Scene.unity
   - enabled: 1
-    path: Assets/Scenes/Tutorial Scene.unity
-  - enabled: 1
     path: Assets/Scenes/Shop Scene.unity
   - enabled: 1
+    path: Assets/Scenes/Tutorial Scene.unity
+  - enabled: 1
+    path: Assets/Scenes/InGame Scene (2x2).unity
+  - enabled: 1
+    path: Assets/Scenes/InGame Scene (2x3).unity
+  - enabled: 1
     path: Assets/Scenes/InGame Scene (3x3).unity
+  - enabled: 1
+    path: Assets/Scenes/InGame Scene Level 1.unity
+  - enabled: 1
+    path: Assets/Scenes/InGame Scene Level 2.unity
+  - enabled: 1
+    path: Assets/Scenes/InGame Scene Level 3.unity
+  - enabled: 1
+    path: Assets/Scenes/InGame Scene Level 4.unity
+  - enabled: 1
+    path: Assets/Scenes/InGame Scene Level 5.unity
