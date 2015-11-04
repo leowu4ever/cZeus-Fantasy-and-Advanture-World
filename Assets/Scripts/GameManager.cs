@@ -3,6 +3,7 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
+	public GameObject[] contentSpriteArray;
 	private int boardCount;
 	// Use this for initialization
 	void Start ()
