@@ -9,8 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 426174}
   - 212: {fileID: 21289004}
+  - 114: {fileID: 11486602}
   m_Layer: 0
-  m_Name: Content Sprite(1,1)
+  m_Name: Content Sprite (1,1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,8 +26,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 483240}
   - 212: {fileID: 21263686}
+  - 114: {fileID: 11492642}
   m_Layer: 0
-  m_Name: 'Content Sprite(2,2) '
+  m_Name: 'Content Sprite (2,1) '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,6 +104,34 @@ MonoBehaviour:
   productContent: 
   isAnsweredAddition: 0
   isAnsweredProduct: 0
+--- !u!114 &11486602
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d00a9921b18a1487bb1d3dab5372d30f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contentSprites: []
+  content: 0
+  isAnswered: 0
+--- !u!114 &11492642
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d00a9921b18a1487bb1d3dab5372d30f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contentSprites: []
+  content: 0
+  isAnswered: 1
 --- !u!212 &21262718
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -26,6 +26,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 473366}
   - 212: {fileID: 21242624}
+  - 114: {fileID: 11453320}
   m_Layer: 0
   m_Name: Content Sprite (0,1)
   m_TagString: Untagged
@@ -42,6 +43,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 474030}
   - 212: {fileID: 21296860}
+  - 114: {fileID: 11416784}
   m_Layer: 0
   m_Name: Content Sprite (0,2)
   m_TagString: Untagged
@@ -102,6 +104,34 @@ MonoBehaviour:
   productContent: 
   isAnsweredAddition: 0
   isAnsweredProduct: 0
+--- !u!114 &11416784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d00a9921b18a1487bb1d3dab5372d30f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contentSprites: []
+  content: 0
+  isAnswered: 0
+--- !u!114 &11453320
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d00a9921b18a1487bb1d3dab5372d30f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contentSprites: []
+  content: 0
+  isAnswered: 0
 --- !u!212 &21242624
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -8,17 +8,13 @@ public class GameManager : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		contentSpriteArray [0].GetComponent<ContentScript> ().content = "4";
-			
+		// assign board content according to CSV input 
+		for (int a = 0; a < contentSpriteArray.Length; a++) {
+			contentSpriteArray [a].GetComponent<ContentScript> ().content = Random.Range (0, 9).ToString ();
+		}
 	}
-	
 	void Update ()
 	{
 	
-	}
-	void InitGameboard ()
-	{
-		
-
 	}
 }
