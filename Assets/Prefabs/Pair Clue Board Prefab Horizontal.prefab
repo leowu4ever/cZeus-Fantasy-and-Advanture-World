@@ -115,7 +115,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d00a9921b18a1487bb1d3dab5372d30f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contentSprites: []
+  contentSprites:
+  - {fileID: 21300000, guid: 9daab7b3da98d4f6b80a8d667f78f097, type: 3}
+  - {fileID: 21300002, guid: 9daab7b3da98d4f6b80a8d667f78f097, type: 3}
+  - {fileID: 21300004, guid: 9daab7b3da98d4f6b80a8d667f78f097, type: 3}
+  - {fileID: 21300006, guid: 9daab7b3da98d4f6b80a8d667f78f097, type: 3}
+  - {fileID: 21300008, guid: 9daab7b3da98d4f6b80a8d667f78f097, type: 3}
+  - {fileID: 21300010, guid: 9daab7b3da98d4f6b80a8d667f78f097, type: 3}
+  - {fileID: 21300012, guid: 9daab7b3da98d4f6b80a8d667f78f097, type: 3}
+  - {fileID: 21300014, guid: 9daab7b3da98d4f6b80a8d667f78f097, type: 3}
+  - {fileID: 21300016, guid: 9daab7b3da98d4f6b80a8d667f78f097, type: 3}
+  - {fileID: 21300018, guid: 9daab7b3da98d4f6b80a8d667f78f097, type: 3}
   content: 0
   isAnswered: 0
 --- !u!114 &11453320
@@ -129,7 +139,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d00a9921b18a1487bb1d3dab5372d30f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contentSprites: []
+  contentSprites:
+  - {fileID: 21300000, guid: 9daab7b3da98d4f6b80a8d667f78f097, type: 3}
+  - {fileID: 21300002, guid: 9daab7b3da98d4f6b80a8d667f78f097, type: 3}
+  - {fileID: 21300004, guid: 9daab7b3da98d4f6b80a8d667f78f097, type: 3}
+  - {fileID: 21300006, guid: 9daab7b3da98d4f6b80a8d667f78f097, type: 3}
+  - {fileID: 21300008, guid: 9daab7b3da98d4f6b80a8d667f78f097, type: 3}
+  - {fileID: 21300010, guid: 9daab7b3da98d4f6b80a8d667f78f097, type: 3}
+  - {fileID: 21300012, guid: 9daab7b3da98d4f6b80a8d667f78f097, type: 3}
+  - {fileID: 21300014, guid: 9daab7b3da98d4f6b80a8d667f78f097, type: 3}
+  - {fileID: 21300016, guid: 9daab7b3da98d4f6b80a8d667f78f097, type: 3}
+  - {fileID: 21300018, guid: 9daab7b3da98d4f6b80a8d667f78f097, type: 3}
   content: 0
   isAnswered: 0
 --- !u!212 &21242624
@@ -218,6 +238,10 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: contentSprites.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
@@ -225,6 +249,56 @@ Prefab:
       propertyPath: m_TagString
       value: Board Content
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: contentSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 9daab7b3da98d4f6b80a8d667f78f097,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: contentSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300002, guid: 9daab7b3da98d4f6b80a8d667f78f097,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: contentSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300004, guid: 9daab7b3da98d4f6b80a8d667f78f097,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: contentSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300006, guid: 9daab7b3da98d4f6b80a8d667f78f097,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: contentSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300008, guid: 9daab7b3da98d4f6b80a8d667f78f097,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: contentSprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300010, guid: 9daab7b3da98d4f6b80a8d667f78f097,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: contentSprites.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300012, guid: 9daab7b3da98d4f6b80a8d667f78f097,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: contentSprites.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300014, guid: 9daab7b3da98d4f6b80a8d667f78f097,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: contentSprites.Array.data[8]
+      value: 
+      objectReference: {fileID: 21300016, guid: 9daab7b3da98d4f6b80a8d667f78f097,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: contentSprites.Array.data[9]
+      value: 
+      objectReference: {fileID: 21300018, guid: 9daab7b3da98d4f6b80a8d667f78f097,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 106930}

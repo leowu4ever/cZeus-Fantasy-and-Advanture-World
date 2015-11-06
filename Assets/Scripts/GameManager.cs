@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
 			contentSpriteArray [a].GetComponent<ContentScript> ().content = Random.Range (0, 9).ToString ();
 		}
 	}
+
+
 	void Update ()
 	{
 	
