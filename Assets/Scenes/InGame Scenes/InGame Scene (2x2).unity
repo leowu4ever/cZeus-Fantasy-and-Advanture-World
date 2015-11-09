@@ -559,7 +559,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 126826, guid: 86ebc90c4599c43069c36da020715122, type: 2}
       propertyPath: m_Name
-      value: B05
+      value: Board (2,1)
       objectReference: {fileID: 0}
     - target: {fileID: 477068, guid: 86ebc90c4599c43069c36da020715122, type: 2}
       propertyPath: m_LocalScale.x
@@ -988,7 +988,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 126826, guid: 86ebc90c4599c43069c36da020715122, type: 2}
       propertyPath: m_Name
-      value: B03
+      value: Board (0,1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 86ebc90c4599c43069c36da020715122, type: 2}
@@ -1308,7 +1308,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 195248, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_Name
-      value: B06
+      value: Board (0,2)
       objectReference: {fileID: 0}
     - target: {fileID: 21292870, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_Sprite
@@ -1371,7 +1371,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 195248, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_Name
-      value: B00
+      value: Board (0,0)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
@@ -1425,7 +1425,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 195248, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_Name
-      value: B08
+      value: Board (2,2)
       objectReference: {fileID: 0}
     - target: {fileID: 21292870, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_Sprite
@@ -1741,7 +1741,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 106930, guid: 3a3eb5615d30147c6a53d09ea565d337, type: 2}
       propertyPath: m_Name
-      value: B01
+      value: Board (1,0)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3a3eb5615d30147c6a53d09ea565d337, type: 2}
@@ -2630,7 +2630,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 159504, guid: 23f54ae6d1b394159bb9f3286a8b6d57, type: 2}
       propertyPath: m_Name
-      value: B04
+      value: Board (1,1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23f54ae6d1b394159bb9f3286a8b6d57, type: 2}
@@ -3338,7 +3338,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 106930, guid: 3a3eb5615d30147c6a53d09ea565d337, type: 2}
       propertyPath: m_Name
-      value: B07
+      value: Board (1,2)
       objectReference: {fileID: 0}
     - target: {fileID: 21291396, guid: 3a3eb5615d30147c6a53d09ea565d337, type: 2}
       propertyPath: m_Sprite
@@ -3413,15 +3413,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 195248, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_Name
-      value: B02
-      objectReference: {fileID: 0}
-    - target: {fileID: 116298, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 116298, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
-      propertyPath: m_Name
-      value: Content Sprite (0,3)
+      value: Board (2,0)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}

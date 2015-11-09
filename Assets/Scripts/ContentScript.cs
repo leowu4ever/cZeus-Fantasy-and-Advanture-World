@@ -5,24 +5,29 @@ using System.Collections;
 
 public class ContentScript : MonoBehaviour
 {
-	public Sprite[] contentSprites;
 	public string content = "0";
 	public bool isAnswered = false;
-	
+	public GameObject numberPrefab;
+
 	void Start ()
-	{
-		InitContentSprite ();
-	}
+	{	
+		char[] contentCharArray = content.ToCharArray ();
 
-	void InitContentSprite ()
-	{		
-		SetContentSpriteTo (int.Parse (content));
-	}
-
-	void SetContentSpriteTo (int num)
-	{
-		if (num < 10) {
-			gameObject.GetComponent<SpriteRenderer> ().sprite = contentSprites [num];
+		if (contentCharArray.Length == 1) {
+			GameObject contentSprite = Instantiate (numberPrefab, gameObject.transform.position, Quaternion.identity) as GameObject;
+			contentSprite.transform.parent = gameObject.transform;
+			contentSprite.GetComponent<NumberSpriteScript> ().SetSpriteTo (int.Parse (contentCharArray [0].ToString ()));
 		}
+
+		if (contentCharArray.Length > 1) {
+			for (int a = 0; a < contentCharArray.Length; a++) {
+				GameObject contentSprite = Instantiate (numberPrefab, new Vector3 (transform.position.x + a * 0.15f, transform.position.y, transform.position.z), Quaternion.identity) as GameObject;
+				contentSprite.transform.parent = gameObject.transform;
+				contentSprite.GetComponent<NumberSpriteScript> ().SetSpriteTo (int.Parse (contentCharArray [a].ToString ()));
+			}
+		}
+
+
 	}
+
 }
