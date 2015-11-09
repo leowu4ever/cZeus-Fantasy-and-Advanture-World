@@ -234,7 +234,7 @@ RectTransform:
   - {fileID: 457405563}
   - {fileID: 1136910762}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -454,10 +454,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 932264345}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1407918373}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!1 &979618377
 GameObject:
@@ -486,7 +486,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!114 &979618379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -952,6 +952,7 @@ GameObject:
   - 92: {fileID: 1407918371}
   - 124: {fileID: 1407918370}
   - 81: {fileID: 1407918369}
+  - 114: {fileID: 1407918374}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1000,7 +1001,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.01000023
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1023,10 +1024,24 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 932264347}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
+--- !u!114 &1407918374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1407918368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80628bbe88a261d45916a83f4edb9346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1407918372}
+  Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 6, y: 5.5, z: 0}
 --- !u!1001 &1492259054
 Prefab:
   m_ObjectHideFlags: 0
@@ -1534,7 +1549,7 @@ Transform:
   - {fileID: 1653613392}
   - {fileID: 25087694}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!114 &2122816169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1555,7 +1570,7 @@ MonoBehaviour:
   TranslationType: 0
   StarsEnabled: 0
   StarsType: 0
-  ScrollingEnabled: 0
-  MapCamera: {fileID: 0}
+  ScrollingEnabled: 1
+  MapCamera: {fileID: 1407918374}
   IsClickEnabled: 1
-  IsConfirmationEnabled: 0
+  IsConfirmationEnabled: 1
