@@ -2054,13 +2054,13 @@ Transform:
 --- !u!1 &794283346
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 126730, guid: 9173984e2ea894fa3bc1572a19fd5168, type: 2}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 794283348}
   - 114: {fileID: 794283347}
-  - 114: {fileID: 794283349}
+  - 114: {fileID: 794283350}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -2071,7 +2071,8 @@ GameObject:
 --- !u!114 &794283347
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 11482428, guid: 9173984e2ea894fa3bc1572a19fd5168,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 794283346}
   m_Enabled: 1
@@ -2097,7 +2098,7 @@ MonoBehaviour:
 --- !u!4 &794283348
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 487086, guid: 9173984e2ea894fa3bc1572a19fd5168, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 794283346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -2106,15 +2107,16 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
---- !u!114 &794283349
+--- !u!114 &794283350
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 11463196, guid: 9173984e2ea894fa3bc1572a19fd5168,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 794283346}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88c9dacd41ff74e379cd37433b194903, type: 3}
+  m_Script: {fileID: 11500000, guid: c82f656bfd10742bab5499217679c7fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &799477846

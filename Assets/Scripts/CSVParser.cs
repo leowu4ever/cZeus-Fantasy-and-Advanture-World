@@ -1,248 +1,211 @@
 ﻿using UnityEngine;
-//using System;
 using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
-
 public class CSVParser : MonoBehaviour
 {
-	
-	ArrayList Initialdata;
-	Data GetData = new Data ();
-	public class Data
-	{
-		public ArrayList DisplayData;
-		public ArrayList DisplayDataX;
-		public ArrayList DisplayDataY;
-		public ArrayList Answer;
-		public ArrayList AnswerX;
-		public ArrayList AnswerY;
-		
-		public Data ()
-		{
-			DisplayData = new ArrayList ();
-			DisplayDataX = new ArrayList ();
-			DisplayDataY = new ArrayList ();
-			Answer = new ArrayList ();
-			AnswerX = new ArrayList ();
-			AnswerY = new ArrayList ();
-		}
-		
-		public int DimensionX;
-		public int DimensionY;
-		
-		public void Copy (Data TempData)
-		{
-			DisplayData = TempData.DisplayData;
-			DisplayDataX = TempData.DisplayDataX;
-			DisplayDataY = TempData.DisplayDataY;
-			Answer = TempData.Answer;
-			AnswerX = TempData.AnswerX;
-			AnswerY = TempData.AnswerY;
-			DimensionX = TempData.DimensionX;
-			DimensionY = TempData.DimensionY;
-		}
-		
-	}
 	// Use this for initialization
 	void Start ()
-	{
-		string filepath = "Assets/CSV/level8.csv";
-		System.IO.StreamReader reader = new System.IO.StreamReader (filepath);
-		string dataline;
-		int row = 0;//Row of CSV
-		while ((dataline = reader.ReadLine()) != null) {//calculate number of rows
-			row++;
+	{	
+		Packet rawData = ParseCSV.generateData ("6");		// That is how you call a static method
+		List<string> displayContent = rawData.DisplayData;		// extract the display data from raw data
+
+		// -------------------------------- How you access info --------------------------------
+		Debug.Log (rawData.rowSize + "x" + rawData.columnSize + " Puzzle: " + rawData.index + " size of " + displayContent.Count);
+		string displayContentInARow = "";
+		for (int a = 0; a < displayContent.Count; a++) {
+			displayContentInARow = displayContent [a] + " " + displayContentInARow;
 		}
-		//generate random number
-		int i = Random.Range (1, row);
-		//load data from csv
-		reader.Close ();
-		reader = new System.IO.StreamReader (filepath);
-		for (int j = 1; j < i; j++) {
-			dataline = reader.ReadLine ();
-		}
-		dataline = reader.ReadLine ();
-		//Debug.Log (dataline);
-		//calculate number of colum
-		Initialdata = new ArrayList (dataline.Split (','));
-		
-		//Test data format
-		//Debug.Log (row);
-		GenerateData (8);
-		//Debug.Log(test);
-		/*for (int m = 0; m<GetData.Answer.Count; m++) {
-			for (int n = 0; n<(6/GetData.Answer.Count); n++)
-			{
-				Debug.Log(GetData.Answer[m][n])
-			}
-		}
-		for (int m = 0; m<GetData.DisplayData; m++) {
-			for (int n = 0; n<6; n++)
-			{
-				Debug.Log(GetData.DisplayData[m][n])
-			}
-		}*/
-		
+		Debug.Log (displayContentInARow);
 	}
-	//Return data according to the position
-	void GenerateData (int Level)
+	
+	public struct Packet
 	{
-		Data TempData = new Data ();
-		if (Level == 1) {
-			Initialdata.RemoveAt (0);
-			TempData.Answer.Add (Initialdata [0]);
-			TempData.Answer.Add (Initialdata [3]);
-			/*for (int m = 0; m<2; m++) {
-				Debug.Log(TempData.Answer[m]);
-			}*/
-			Initialdata [0] = 0;
-			Initialdata [3] = 0;
-			TempData.DisplayData = Initialdata;
-			/*for (int m = 0; m<8; m++) {
-				Debug.Log(TempData.DisplayData[m]);
-			}*/
-			TempData.DimensionX = 1;
-			TempData.DimensionY = 1;
-			GetData.Copy (TempData);
-		} else if (Level == 2) {
-			Initialdata.RemoveAt (0);
-			TempData.Answer.Add (Initialdata [0]);
-			TempData.Answer.Add (Initialdata [3]);
-			/*for (int m = 0; m<2; m++) {
-				Debug.Log(TempData.Answer[m]);
-			}*/
-			Initialdata [0] = 0;
-			Initialdata [3] = 0;
-			TempData.DisplayData = Initialdata;
-			
-			TempData.DimensionX = 1;
-			TempData.DimensionY = 1;
-			GetData.Copy (TempData);
-		} else if (Level == 3) {
-			Initialdata.RemoveAt (0);
-			TempData.Answer.Add (Initialdata [0]);
-			TempData.Answer.Add (Initialdata [3]);
-			TempData.Answer.Add (Initialdata [6]);
-			/*for (int m = 0; m<2; m++) {
-				Debug.Log(TempData.Answer[m]);
-			}*/
-			Initialdata [0] = 0;
-			Initialdata [3] = 0;
-			Initialdata [6] = 0;
-			TempData.DisplayData = Initialdata;
-			/*for (int m = 0; m<8; m++) {
-				Debug.Log(TempData.DisplayData[m]);
-			}*/
-			TempData.DimensionX = 1;
-			TempData.DimensionY = 1;
-			GetData.Copy (TempData);
-		} else if (Level == 4) {
-			Initialdata.RemoveAt (0);
-			TempData.Answer.Add (Initialdata [0]);
-			TempData.Answer.Add (Initialdata [3]);
-			TempData.Answer.Add (Initialdata [6]);
-			TempData.Answer.Add (Initialdata [9]);
-			/*for (int m = 0; m<2; m++) {
-				Debug.Log(TempData.Answer[m]);
-			}*/
-			Initialdata [0] = 0;
-			Initialdata [3] = 0;
-			Initialdata [6] = 0;
-			Initialdata [9] = 0;
-			TempData.DisplayData = Initialdata;
-			/*for (int m = 0; m<8; m++) {
-				Debug.Log(TempData.Dis/layData[m]);
-			}*/
-			TempData.DimensionX = 1;
-			TempData.DimensionY = 1;
-			GetData.Copy (TempData);
-		} else if (Level == 5) {
-			
-		} else {
-			TempData.DimensionX = int.Parse (Initialdata [1].ToString ());
-			//Debug.Log(TempData.DimensionX);
-			//String test =Initialdata[2];
-			TempData.DimensionY = int.Parse (Initialdata [2].ToString ());
-			
-			
-			
-			//Debug.Log(TempData.DimensionY);
-			int R = TempData.DimensionX;
-			int C = TempData.DimensionY;
-			
-			int RowDisplayDataSize = (R * C) + (2 * R * (C - 1)) + (2 * (R - 1) * C) + 2 * (R - 1) * (C - 1);
-			int RowAnswerDataSize = R * C;
-			int m = 0, n = 0, IndexR = 0, IndexC = 0;
-			
-			for (int i = 0; i < RowDisplayDataSize; i++) {
-				TempData.DisplayData.Add (Initialdata [i + 7]);
-				TempData.DisplayDataX.Add (m);
-				TempData.DisplayDataY.Add (n);
-				//Debug.Log(m+","+n+" " +Initialdata[i+7]);
-				n++;
-				if (m == 0) {
-					if (n > 3 * (C - 1)) {
-						m++;
-						n = 0;
-					}
-				}
-				if (m == 1 || ((IndexR) > 0 && m == 3 * IndexR + 1)) {
-					if (n > 2 * (C - 1)) {
-						m++;
-						n = 0;
-					}
-				}
-				if (m == 2 || (IndexR) > 0 && m == 3 * IndexR + 2) {
-					if (n > 2 * (C - 1)) {
-						m++;
-						n = 0;
-					}
-				}
-				if (m == 3 || (IndexR) > 0 && m == 3 * IndexR + 3) {
-					if (n > 3 * (C - 1)) {
-						m++;
-						n = 0;
-						IndexR++;
-					}
-				}
-			}
-			m = 0;
-			n = 0;
-			/*Debug.Log("------------------------------------------");
-			for(int i = 0; i < RowDisplayDataSize; i++)
-			{
-				Debug.Log(TempData.DisplayDataX[i]+","+TempData.DisplayDataY[i]+" "+TempData.DisplayData[i]);
-			}*/
-			for (int i = 0; i < RowAnswerDataSize; i++) {
-				TempData.Answer.Add (Initialdata [i + RowDisplayDataSize + 7]);
-				TempData.AnswerX.Add (m);
-				TempData.AnswerY.Add (n);
-				//Debug.Log (m + "," + n + " " + Initialdata [i + RowDisplayDataSize + 7]);
-				n++;
-				if (n >= C) {
-					m++;
-					n = 0;
-				}
-			}
-			/*Debug.Log("------------------------------------------");
-			for(int i = 0; i < RowAnswerDataSize; i++)
-			{
-				Debug.Log(TempData.AnswerX[i]+","+TempData.AnswerY[i]+" "+TempData.Answer[i]);
-			}*/
-			GetData.Copy (TempData);
-			Debug.Log ("------------------------------------------");
-			for (int i = 0; i < RowDisplayDataSize; i++) {
-				//Debug.Log (GetData.DisplayDataX [i] + "," + GetData.DisplayDataY [i] + " " + GetData.DisplayData [i]);
-				Debug.Log (GetData.DisplayData [i]);
-			}
-			/*
-			Debug.Log("------------------------------------------");
-			for(int i = 0; i < RowAnswerDataSize; i++)
-			{
-				Debug.Log(GetData.AnswerX[i]+","+GetData.AnswerY[i]+" "+GetData.Answer[i]);
-			}*/
-		}
+		//public double x, y, z;
+		public List<string> DisplayData; //= new List<List<string>>();
+		public List<string> AnswerData; //= new List<List<string>>();
+		public int rowSize;
+		public int columnSize;
+		public string index;
+		public bool LShape;
 	}
 
+	public class ParseCSV
+	{
+		public static Packet generateData (string level)
+		{	
+			string filepath = "Assets/CSV/level" + level + ".csv";
+			System.IO.StreamReader data = new System.IO.StreamReader (filepath);
+			string dataline;
+			string[] rawData;
+			Packet packet = new Packet ();
+			string readDataLine;
+			int row = 0;//Row of CSV
+			while (true) {//calculate number of rows
+				readDataLine = data.ReadLine ();
+				if (readDataLine == null)
+					break;
+				if (readDataLine.Substring (0, 1).Equals (",")
+					|| readDataLine.Substring (0, 1).Equals (""))
+					break;
+				row++;
+			}
+			//generate random number
+			int Number = Random.Range (1, row);
+			data.Close ();
+			data = new System.IO.StreamReader (filepath);
+			
+			for (int j = 1; j < Number; j++) {
+				dataline = data.ReadLine ();
+			}
+			dataline = data.ReadLine ();
+			dataline = dataline.Replace (" ", "");
+			rawData = dataline.Split (',');
+			
+			packet.DisplayData = new List<string> ();
+			packet.AnswerData = new List<string> ();
+			packet.index = rawData [0];
+			List<string> tempData = new List<string> ();
+			packet.DisplayData.Clear ();
+			packet.AnswerData.Clear ();
+			packet.LShape = false;
+			if (level.Equals ("1")) {
+				for (int i = 1; i < rawData.Count(); i++) {
+					if (rawData [i].Equals (""))
+						break;
+					if (i == 1 || i == 4) {
+						packet.DisplayData.Add ("0");
+						packet.AnswerData.Add (rawData [i]);
+					} else {
+						packet.DisplayData.Add (rawData [i]);
+						packet.AnswerData.Add ("0");
+					}
+				}
+				packet.rowSize = 1;
+				packet.columnSize = 1;
+				
+			} else if (level.Equals ("2")) {
+				
+				for (int i = 1; i < rawData.Count(); i++) {
+					if (rawData [i].Equals (""))
+						break;
+					if (i == 1 || i == 4) {
+						packet.DisplayData.Add ("0");
+						packet.AnswerData.Add (rawData [i]);
+					} else {
+						packet.DisplayData.Add (rawData [i]);
+						packet.AnswerData.Add ("0");
+					}
+				}
+				packet.rowSize = 1;
+				packet.columnSize = 1;
+
+			} else if (level.Equals ("3")) {
+				
+				for (int i = 1; i < rawData.Count(); i++) {
+					if (rawData [i].Equals (""))
+						break;
+					if (i == 1 || i == 4 || i == 7) {
+						packet.DisplayData.Add ("0");
+						packet.AnswerData.Add (rawData [i]);
+					} else {
+						packet.DisplayData.Add (rawData [i]);
+						packet.AnswerData.Add ("0");
+					}
+					
+				}
+				packet.rowSize = 1;
+				packet.columnSize = 1;
+			} else if (level.Equals ("4")) {
+				for (int i = 1; i < rawData.Count(); i++) {
+					if (rawData [i].Equals (""))
+						break;
+					if (i == 1 || i == 4 || i == 7 || i == 10) {
+						packet.DisplayData.Add ("0");
+						packet.AnswerData.Add (rawData [i]);
+					} else {
+						packet.DisplayData.Add (rawData [i]);
+						packet.AnswerData.Add ("0");
+					}
+				}
+				packet.rowSize = 1;
+				packet.columnSize = 1;
+			} else {
+				packet.rowSize = int.Parse (rawData [1].ToString ());
+				packet.columnSize = int.Parse (rawData [2].ToString ());
+				
+				int R = packet.rowSize;
+				int C = packet.columnSize;
+				
+				int RawDisplayDataSize = (R * C) + (2 * R * (C - 1)) + (2 * (R - 1) * C) + 2 * (R - 1) * (C - 1);
+				int RawAnswerDataSize = R * C;
+				int m = 0, n = 0, IndexR = 0, answerIndex = 0;
+
+				bool isAddAnswer = false;
+				bool isNegativeData = false;
+				
+				for (int i = 0; i < RawDisplayDataSize; i++) {
+					
+					if (rawData [i + 7].Equals ("-1") || rawData [answerIndex + RawDisplayDataSize + 7].Equals ("-1")) {
+						packet.LShape = true;
+						isNegativeData = true;
+					} else {
+						packet.DisplayData.Add (rawData [i + 7]);
+					}
+					n++;
+					if (m == 0) {
+						if ((n - 1) % 3 == 0)
+							isAddAnswer = true;
+						
+						if (n > 3 * (C - 1)) {
+							m++;
+							n = 0;
+						}
+					}
+					if (m == 3 * IndexR + 1) {
+						
+						if (n > 2 * (C - 1)) {
+							m++;
+							n = 0;
+						}
+					}
+					if (m == 3 * IndexR + 2) {
+						
+						if (n > 2 * (C - 1)) {
+							m++;
+							n = 0;
+						}
+					}
+					if (m == 3 * IndexR + 3) {
+						if ((n - 1) % 3 == 0)
+							isAddAnswer = true;
+						
+						if (n > 3 * (C - 1)) {
+							m++;
+							n = 0;
+							IndexR++;
+						}
+					}
+					if (!isNegativeData) {
+						if (isAddAnswer) {
+							if (!rawData [answerIndex + RawDisplayDataSize + 7].Equals ("-1"))
+								packet.AnswerData.Add (rawData [answerIndex + RawDisplayDataSize + 7]);
+							answerIndex++;
+							isAddAnswer = false;
+						} else
+							packet.AnswerData.Add ("0");
+					} else
+						isNegativeData = false;
+				}
+				if (level.Equals ("5"))
+					for (int i = 0; i < RawAnswerDataSize; i++) {
+						packet.DisplayData.Add (rawData [i + RawDisplayDataSize + 7]);
+						packet.DisplayData.Add (rawData [i + RawDisplayDataSize + 11]);
+						packet.AnswerData.Add ("0");
+						packet.AnswerData.Add ("0");
+					}
+			}
+			return packet;
+		}
+	}
 }

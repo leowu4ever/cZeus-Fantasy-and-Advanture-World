@@ -12,7 +12,7 @@ GameObject:
   - 114: {fileID: 11444120}
   m_Layer: 0
   m_Name: Content Sprite (2,0)
-  m_TagString: Untagged
+  m_TagString: Board Content
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ GameObject:
   - 114: {fileID: 11494884}
   m_Layer: 0
   m_Name: Content Sprite (1,0)
-  m_TagString: Untagged
+  m_TagString: Board Content
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

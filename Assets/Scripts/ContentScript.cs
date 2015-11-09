@@ -21,6 +21,8 @@ public class ContentScript : MonoBehaviour
 
 	void SetContentSpriteTo (int num)
 	{
-		gameObject.GetComponent<SpriteRenderer> ().sprite = contentSprites [num];
+		if (num < 10) {
+			gameObject.GetComponent<SpriteRenderer> ().sprite = contentSprites [num];
+		}
 	}
 }
