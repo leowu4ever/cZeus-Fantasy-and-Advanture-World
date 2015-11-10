@@ -41,5 +41,9 @@ public class ButtonOperator : MonoBehaviour
 	{
 		Application.LoadLevel (4);
 	}
+	public void ChapterMapSceneBackToWorldMapScene ()
+	{
+		Application.LoadLevel (1);
+	}
 
 }
