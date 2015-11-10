@@ -343,7 +343,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1501886914}
-        m_MethodName: InGameSceneBackToLvMapScene
+        m_MethodName: InGameSceneBackToChapterScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1891,6 +1891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 662ef70f7104c4b4d859eb1adf58b9c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  contentSpriteArray: []
 --- !u!4 &794283348
 Transform:
   m_ObjectHideFlags: 0
