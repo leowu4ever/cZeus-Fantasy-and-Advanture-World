@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 426174}
   - 114: {fileID: 11486602}
+  - 61: {fileID: 6173986}
   m_Layer: 0
   m_Name: Addition Content
   m_TagString: Board Content
@@ -25,6 +26,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 483240}
   - 114: {fileID: 11492642}
+  - 61: {fileID: 6127864}
   m_Layer: 0
   m_Name: Product Content
   m_TagString: Board Content
@@ -145,6 +147,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 440602}
   m_RootOrder: 1
+--- !u!61 &6127864
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142948}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: .00743612647, y: .00221517682}
+  serializedVersion: 2
+  m_Size: {x: .323561192, y: .344141543}
+--- !u!61 &6173986
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132988}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.0172280967, y: .0268616378}
+  serializedVersion: 2
+  m_Size: {x: .32084766, y: .306954384}
 --- !u!114 &11404224
 MonoBehaviour:
   m_ObjectHideFlags: 1

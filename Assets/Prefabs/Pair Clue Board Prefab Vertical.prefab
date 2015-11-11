@@ -9,8 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 416354}
   - 114: {fileID: 11444120}
+  - 61: {fileID: 6143586}
   m_Layer: 0
-  m_Name: ProductContent
+  m_Name: Product Content
   m_TagString: Board Content
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,6 +26,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 477408}
   - 114: {fileID: 11494884}
+  - 61: {fileID: 6181846}
   m_Layer: 0
   m_Name: Addition Content
   m_TagString: Board Content
@@ -112,7 +114,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 126826}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .542999983, y: -1.05700004, z: 0}
+  m_LocalPosition: {x: 1.54299998, y: -1.05700004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 477408}
@@ -145,6 +147,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 477068}
   m_RootOrder: 2
+--- !u!61 &6143586
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103152}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.000685036182, y: -.000435084105}
+  serializedVersion: 2
+  m_Size: {x: .335012347, y: .361538917}
+--- !u!61 &6181846
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119458}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -.00113880634, y: .0300284922}
+  serializedVersion: 2
+  m_Size: {x: .335352808, y: .29614827}
 --- !u!114 &11404348
 MonoBehaviour:
   m_ObjectHideFlags: 1
