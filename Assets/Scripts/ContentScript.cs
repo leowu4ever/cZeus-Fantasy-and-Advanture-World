@@ -11,10 +11,11 @@ public class ContentScript : MonoBehaviour
 
 	void Start ()
 	{	
+
 		char[] contentCharArray = content.ToCharArray ();
 
 		if (contentCharArray [0] != '0') {		// hide content 
-			
+			isAnswered = true;
 			if (contentCharArray.Length == 1) {
 				GameObject contentSprite = Instantiate (numberPrefab, gameObject.transform.position, Quaternion.identity) as GameObject;
 				contentSprite.transform.parent = gameObject.transform;
