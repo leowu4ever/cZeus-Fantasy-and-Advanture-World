@@ -25,7 +25,6 @@ public class GameManager : MonoBehaviour
 
 		if (displayContentList.Count == contentSpriteArray.Length) {	// size check
 			for (int a = 0; a < contentSpriteArray.Length; a++) {
-				//Debug.Log ("assign" + displayContent [a]);
 				contentSpriteArray [a].GetComponent<ContentScript> ().content = displayContentList [a];		// assign content
 			}
 		}
