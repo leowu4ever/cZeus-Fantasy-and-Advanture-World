@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 406514}
   - 212: {fileID: 21291396}
-  - 114: {fileID: 11405336}
+  - 114: {fileID: 11434326}
   m_Layer: 0
   m_Name: Pair Clue Board Prefab Horizontal
   m_TagString: Board
@@ -173,21 +173,6 @@ BoxCollider2D:
   m_Offset: {x: -.0223091375, y: .000527042022}
   serializedVersion: 2
   m_Size: {x: .312790126, y: .334129184}
---- !u!114 &11405336
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 106930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b68f536f93dbb4b8db4c690897687894, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  additionContent: 
-  productContent: 
-  isAnsweredAddition: 0
-  isAnsweredProduct: 0
 --- !u!114 &11416784
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -202,6 +187,21 @@ MonoBehaviour:
   content: 0
   isAnswered: 0
   numberPrefab: {fileID: 197100, guid: e5f3d8f79956540dba56cb88a045dd3b, type: 2}
+--- !u!114 &11434326
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b555415d8392f4ec9823a8cb823144e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalAndPressedBoardSprites:
+  - {fileID: 21300014, guid: 23214bb92522542ad8f246ccf931f18e, type: 3}
+  - {fileID: 21300016, guid: 23214bb92522542ad8f246ccf931f18e, type: 3}
+  isPressed: 0
 --- !u!114 &11453320
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -306,6 +306,10 @@ Prefab:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: normalAndPressedBoardSprites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
@@ -371,6 +375,16 @@ Prefab:
       propertyPath: m_Name
       value: Addition Content
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: normalAndPressedBoardSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300014, guid: 23214bb92522542ad8f246ccf931f18e,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: normalAndPressedBoardSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300016, guid: 23214bb92522542ad8f246ccf931f18e,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 106930}

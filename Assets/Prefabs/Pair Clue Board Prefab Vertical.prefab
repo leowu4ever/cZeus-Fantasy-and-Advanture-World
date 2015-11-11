@@ -59,7 +59,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 477068}
   - 212: {fileID: 21256704}
-  - 114: {fileID: 11404348}
+  - 114: {fileID: 11442392}
   m_Layer: 0
   m_Name: Pair Clue Board Prefab Vertical
   m_TagString: Board
@@ -173,7 +173,7 @@ BoxCollider2D:
   m_Offset: {x: -.00113880634, y: .0300284922}
   serializedVersion: 2
   m_Size: {x: .335352808, y: .29614827}
---- !u!114 &11404348
+--- !u!114 &11442392
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -181,13 +181,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 126826}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b68f536f93dbb4b8db4c690897687894, type: 3}
+  m_Script: {fileID: 11500000, guid: b555415d8392f4ec9823a8cb823144e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  additionContent: 
-  productContent: 
-  isAnsweredAddition: 0
-  isAnsweredProduct: 0
+  normalAndPressedBoardSprites:
+  - {fileID: 21300014, guid: 23214bb92522542ad8f246ccf931f18e, type: 3}
+  - {fileID: 21300016, guid: 23214bb92522542ad8f246ccf931f18e, type: 3}
+  isPressed: 0
 --- !u!114 &11444120
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -306,6 +306,10 @@ Prefab:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: normalAndPressedBoardSprites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_TagString
       value: Board Content
       objectReference: {fileID: 0}
@@ -367,6 +371,16 @@ Prefab:
       propertyPath: m_Name
       value: Addition Content
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: normalAndPressedBoardSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300014, guid: 23214bb92522542ad8f246ccf931f18e,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: normalAndPressedBoardSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300016, guid: 23214bb92522542ad8f246ccf931f18e,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 126826}

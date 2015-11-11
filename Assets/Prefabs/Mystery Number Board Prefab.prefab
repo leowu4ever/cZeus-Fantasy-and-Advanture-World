@@ -26,7 +26,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 429268}
   - 212: {fileID: 21292870}
-  - 114: {fileID: 11431816}
+  - 114: {fileID: 11457488}
   m_Layer: 0
   m_Name: Mystery Number Board Prefab
   m_TagString: Board
@@ -86,7 +86,7 @@ MonoBehaviour:
   content: 0
   isAnswered: 0
   numberPrefab: {fileID: 197100, guid: e5f3d8f79956540dba56cb88a045dd3b, type: 2}
---- !u!114 &11431816
+--- !u!114 &11457488
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -94,11 +94,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 195248}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9513c8f0e48ad4dba89b9d9b43590521, type: 3}
+  m_Script: {fileID: 11500000, guid: b555415d8392f4ec9823a8cb823144e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberContent: 
-  isAnsweredNumber: 0
+  normalAndPressedBoardSprites:
+  - {fileID: 21300010, guid: 23214bb92522542ad8f246ccf931f18e, type: 3}
+  - {fileID: 21300012, guid: 23214bb92522542ad8f246ccf931f18e, type: 3}
+  isPressed: 0
 --- !u!212 &21292870
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -133,6 +135,10 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: normalAndPressedBoardSprites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
@@ -148,6 +154,16 @@ Prefab:
       propertyPath: m_Name
       value: Mystery Number Content
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: normalAndPressedBoardSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300010, guid: 23214bb92522542ad8f246ccf931f18e,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: normalAndPressedBoardSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300012, guid: 23214bb92522542ad8f246ccf931f18e,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 195248}
