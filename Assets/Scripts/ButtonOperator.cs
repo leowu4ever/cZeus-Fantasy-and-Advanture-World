@@ -3,21 +3,24 @@ using System.Collections;
 
 public class ButtonOperator : MonoBehaviour
 {
-	public void LoadLvMapScene ()
+    public void LoadMainScene()
+    {
+        Application.LoadLevel(0);
+    }
+    public void LoadSettingScene ()
 	{
 		Application.LoadLevel (1);
 	}
-	public void LoadSettingScene ()
+	public void LoadTutorialScene ()
 	{
 		Application.LoadLevel (2);
 	}
-	public void LoadTutorialScene ()
-	{
-		Application.LoadLevel (3);
-	}
+    public void LoadWorldMapScene()
+    {
+        Application.LoadLevel(4);
+    }
 
-	
-	public void LvMapSceneBackToMainScene ()
+    public void WorldMapMapSceneBackToMainScene()
 	{
 		Application.LoadLevel (0);
 	}
@@ -25,25 +28,21 @@ public class ButtonOperator : MonoBehaviour
 	{
 		Application.LoadLevel (0);
 	}
-	public void ShopSceneBackToLvMapScene ()
-	{
-		Application.LoadLevel (1);
-	}
-	public void InGameSceneBackToChapterScene ()
-	{
-		Application.LoadLevel (14);
-	}
-	public void TutorialSceneBackToMainScene ()
-	{
-		Application.LoadLevel (0);
-	}
-	public void LvMapSceneToShopScene ()
+    public void TutorialSceneBackToMainScene()
+    {
+        Application.LoadLevel(0);
+    }
+    public void ShopSceneBackToWorldMapMapScene()
 	{
 		Application.LoadLevel (4);
 	}
 	public void ChapterMapSceneBackToWorldMapScene ()
 	{
-		Application.LoadLevel (1);
+		Application.LoadLevel (4);
 	}
+    public void InGameSceneBackToChapterScene()
+    {
+        Application.LoadLevel(5);
+    }
 
 }
