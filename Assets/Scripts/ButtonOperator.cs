@@ -15,32 +15,15 @@ public class ButtonOperator : MonoBehaviour
 	{
 		Application.LoadLevel (2);
 	}
+    public void LoadShopScene()
+    {
+        Application.LoadLevel(3);
+    }
     public void LoadWorldMapScene()
     {
         Application.LoadLevel(4);
     }
-
-    public void WorldMapMapSceneBackToMainScene()
-	{
-		Application.LoadLevel (0);
-	}
-	public void SettingSceneBackToMainScene ()
-	{
-		Application.LoadLevel (0);
-	}
-    public void TutorialSceneBackToMainScene()
-    {
-        Application.LoadLevel(0);
-    }
-    public void ShopSceneBackToWorldMapMapScene()
-	{
-		Application.LoadLevel (4);
-	}
-	public void ChapterMapSceneBackToWorldMapScene ()
-	{
-		Application.LoadLevel (4);
-	}
-    public void InGameSceneBackToChapterScene()
+    public void LoadChapterOneScene()
     {
         Application.LoadLevel(5);
     }
