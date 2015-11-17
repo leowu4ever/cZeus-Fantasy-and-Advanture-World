@@ -17,12 +17,17 @@ public class BoardPressedHandler : MonoBehaviour
 
 			RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (Input.mousePosition), Vector2.zero);
 			if (hit.collider != null) {
-				Debug.Log (hit.transform.name + " : " + hit.transform.gameObject.GetComponent<ContentScript> ().content);
+				GameObject pressedContent = hit.transform.gameObject;
+				ContentScript pressedContentScript = pressedContent.GetComponent<ContentScript> ();
+				GameObject pressedBoard = hit.transform.parent.gameObject;
+				BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript> ();
+
+				Debug.Log (hit.transform.name + " : " + pressedContentScript.content + " Answer : " + pressedContentScript.answer);
 				Debug.Log (hit.transform.parent.name);
-				if (!hit.transform.parent.gameObject.GetComponent<BoardScript> ().isPressed) {
-					hit.transform.parent.gameObject.GetComponent<BoardScript> ().switchToPressedBoardBg ();
+				if (!pressedBoardScript.isPressed) {
+					pressedBoardScript.switchToPressedBoardBg ();
 				} else {
-					hit.transform.parent.gameObject.GetComponent<BoardScript> ().switchToNormalBoardBg ();
+					pressedBoardScript.switchToNormalBoardBg ();
 				}
 			} 
 		}
