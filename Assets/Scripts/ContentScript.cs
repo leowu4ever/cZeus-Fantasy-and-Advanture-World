@@ -6,6 +6,7 @@ using System.Collections;
 public class ContentScript : MonoBehaviour
 {
 	public string content = "0";
+	public string answer = "0";
 	public bool isAnswered = false;
 	public GameObject numberPrefab;
 
