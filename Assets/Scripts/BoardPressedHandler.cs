@@ -29,24 +29,54 @@ public class BoardPressedHandler : MonoBehaviour
 			
 
 				GameObject pressedBoard = hit.transform.parent.gameObject;
-				if (currentPressedBoard == null) {
-					currentPressedBoard = pressedBoard;
-				}
+                // initial press 
+                // new press or quit press
+                // switch press
+                if (currentPressedBoard == null)
+                {
+                    currentPressedBoard = pressedBoard;
+                    BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript>();
+                    if (!pressedBoardScript.isPressed)
+                    {
+                        pressedBoardScript.switchToPressedBoardBg();
+                    }
+                    else
+                    {
+                        pressedBoardScript.switchToNormalBoardBg();
+                    }
+                }
 
-				// TO-DO 
-				if (pressedBoard == currentPressedBoard) {
-					BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript> ();
-					if (!pressedBoardScript.isPressed) {
-						pressedBoardScript.switchToPressedBoardBg ();
-					} else {
-						pressedBoardScript.switchToNormalBoardBg ();
-					}
-				} else {
-					currentPressedBoard = pressedBoard;
-				}
+                else if (currentPressedBoard == pressedBoard)
+                {
+                    BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript>();
+                    if (!pressedBoardScript.isPressed)
+                    {
+                        pressedBoardScript.switchToPressedBoardBg();
+                    }
+                    else
+                    {
+                        pressedBoardScript.switchToNormalBoardBg();
+                    }
+                }
 
+                else if (currentPressedBoard != pressedBoard)
+                {
+                    BoardScript currentPressedBoardScript = currentPressedBoard.GetComponent<BoardScript>();
+                    currentPressedBoardScript.switchToNormalBoardBg();
 
-			} 
+                    BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript>();
+                    if (!pressedBoardScript.isPressed)
+                    {
+                        pressedBoardScript.switchToPressedBoardBg();
+                    }
+                    else
+                    {
+                        pressedBoardScript.switchToNormalBoardBg();
+                    }
+
+                    currentPressedBoard = pressedBoard;
+                }
+            } 
 		}
 	}
 }
