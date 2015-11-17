@@ -3,6 +3,14 @@ using System.Collections;
 
 public class BoardPressedHandler : MonoBehaviour
 {
+	/*
+	 * It shoots a laser and determine which board is selected
+	 * 
+	 * Can only one board gets selected each time 
+	 * 
+	 * Also need to store the reference of selected board
+	 */
+
 	void Update ()
 	{ 	
 		if (Input.GetMouseButtonDown (0)) {
