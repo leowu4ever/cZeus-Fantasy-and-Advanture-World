@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ButtonOperator : MonoBehaviour
+public class ButtonHandler : MonoBehaviour
 {
     public void LoadMainScene()
     {
@@ -27,5 +27,4 @@ public class ButtonOperator : MonoBehaviour
     {
         Application.LoadLevel(5);
     }
-
 }
