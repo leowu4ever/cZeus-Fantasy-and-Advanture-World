@@ -5,6 +5,7 @@ public class BoardPressedHandler : MonoBehaviour
 {
 
 	private GameObject currentPressedBoard;
+    public static GameObject currentPressedContent;
 
 	/*
 	 * It shoots a laser and determine which board is selected
@@ -23,6 +24,7 @@ public class BoardPressedHandler : MonoBehaviour
 
 				// -------------------- Test board press --------------------
 				GameObject pressedContent = hit.transform.gameObject;
+                currentPressedContent = pressedContent;
 				ContentScript pressedContentScript = pressedContent.GetComponent<ContentScript> ();
 				Debug.Log (hit.transform.name + " : " + pressedContentScript.content + " Answer : " + pressedContentScript.answer);
 				Debug.Log (hit.transform.parent.name);
@@ -35,6 +37,7 @@ public class BoardPressedHandler : MonoBehaviour
                 if (currentPressedBoard == null)
                 {
                     currentPressedBoard = pressedBoard;
+                    
                     ToggleBoardBg(pressedBoard);
                 }
 
@@ -43,6 +46,9 @@ public class BoardPressedHandler : MonoBehaviour
                     if (!pressedContent.transform.parent == currentPressedBoard)
                     {
                         ToggleBoardBg(pressedBoard);
+                    } else
+                    {
+                         
                     }
                 }
 

@@ -6,8 +6,11 @@ public class InputNumberHandler : MonoBehaviour {
     {
         if (GameManager.isInputing)
         {
-            GameManager.inputString = GameManager.inputString + buttonLabel;
-            Debug.Log(GameManager.inputString);
+
+            if (BoardPressedHandler.currentPressedContent.tag == "Mystery Number Content")
+            {
+                BoardPressedHandler.currentPressedContent.GetComponent<ContentScript>().content = buttonLabel;
+            }
         }
 
     }

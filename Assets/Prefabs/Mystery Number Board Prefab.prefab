@@ -12,7 +12,7 @@ GameObject:
   - 61: {fileID: 6170976}
   m_Layer: 0
   m_Name: Mystery Number Content
-  m_TagString: Board Content
+  m_TagString: Mystery Number Content
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,6 +84,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   content: 0
+  answer: -1
   isAnswered: 0
   numberPrefab: {fileID: 197100, guid: e5f3d8f79956540dba56cb88a045dd3b, type: 2}
 --- !u!114 &11457488
@@ -144,7 +145,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_TagString
-      value: Board Content
+      value: Mystery Number Content
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: numberPrefab

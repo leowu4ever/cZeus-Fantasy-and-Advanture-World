@@ -6,7 +6,6 @@ public class GameManager : MonoBehaviour
 {
 	public GameObject[] contentSpriteArray;
     public static bool isInputing;
-    public static string inputString;
     private bool isGameover;
 
     void Start ()
@@ -16,6 +15,7 @@ public class GameManager : MonoBehaviour
 
     void Update ()
     {
+
     }
 
     void InitGameboard ()
