@@ -35,27 +35,14 @@ public class BoardPressedHandler : MonoBehaviour
                 if (currentPressedBoard == null)
                 {
                     currentPressedBoard = pressedBoard;
-                    BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript>();
-                    if (!pressedBoardScript.isPressed)
-                    {
-                        pressedBoardScript.switchToPressedBoardBg();
-                    }
-                    else
-                    {
-                        pressedBoardScript.switchToNormalBoardBg();
-                    }
+                    ToggleBoardBg(pressedBoard);
                 }
 
                 else if (currentPressedBoard == pressedBoard)
                 {
-                    BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript>();
-                    if (!pressedBoardScript.isPressed)
+                    if (!pressedContent.transform.parent == currentPressedBoard)
                     {
-                        pressedBoardScript.switchToPressedBoardBg();
-                    }
-                    else
-                    {
-                        pressedBoardScript.switchToNormalBoardBg();
+                        ToggleBoardBg(pressedBoard);
                     }
                 }
 
@@ -63,20 +50,35 @@ public class BoardPressedHandler : MonoBehaviour
                 {
                     BoardScript currentPressedBoardScript = currentPressedBoard.GetComponent<BoardScript>();
                     currentPressedBoardScript.switchToNormalBoardBg();
-
-                    BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript>();
-                    if (!pressedBoardScript.isPressed)
-                    {
-                        pressedBoardScript.switchToPressedBoardBg();
-                    }
-                    else
-                    {
-                        pressedBoardScript.switchToNormalBoardBg();
-                    }
-
+                    ToggleBoardBg(pressedBoard);
                     currentPressedBoard = pressedBoard;
                 }
             } 
 		}
 	}
+
+    void ToggleBoardBg (GameObject pressedBoard)
+    {
+        BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript>();
+        if (!pressedBoardScript.isPressed)
+        {
+            TurnOnInputMode();
+            pressedBoardScript.switchToPressedBoardBg();
+        }
+        else
+        {
+            TurnOffInputMode();
+            pressedBoardScript.switchToNormalBoardBg();
+        }
+    }
+
+    void TurnOnInputMode ()
+    {
+        GameManager.isInputing = true;
+    }
+
+    void TurnOffInputMode()
+    {
+        GameManager.isInputing = false;
+    }
 }
