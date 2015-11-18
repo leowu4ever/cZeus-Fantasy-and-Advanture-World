@@ -80,12 +80,14 @@ public class BoardPressedHandler : MonoBehaviour
 
     void SwitchToPressedBoardBg (GameObject pressedBoard)
     {
+        TurnOnInputMode();
         BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript>();
         pressedBoardScript.switchToPressedBoardBg();
     }
 
     void SwitchToNormalBoardBg(GameObject pressedBoard)
     {
+        TurnOffInputMode();
         BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript>();
         pressedBoardScript.switchToNormalBoardBg();
     }
