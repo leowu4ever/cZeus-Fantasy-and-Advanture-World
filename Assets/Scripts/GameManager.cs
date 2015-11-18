@@ -24,6 +24,12 @@ public class GameManager : MonoBehaviour
 
     void Update ()
     {
+        if (errorCount > maxError)
+        {
+            isGameover = true;
+            Debug.Log("Game Over");
+        }
+            
     }
 
     void InitGameboard ()

@@ -25,6 +25,7 @@ public class ContentScript : MonoBehaviour
 				GameObject contentSprite = Instantiate (numberPrefab, gameObject.transform.position, Quaternion.identity) as GameObject;
 				contentSprite.transform.parent = gameObject.transform;
 				contentSprite.GetComponent<NumberSpriteScript> ().SetSpriteTo (int.Parse (contentCharArray [0].ToString ()));
+       
 			}
 			
 			if (contentCharArray.Length > 1) {
