@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
-{
+{   
 	public GameObject[] contentSpriteArray;
     public static bool isInputing;
     private bool isGameover;
@@ -12,14 +12,17 @@ public class GameManager : MonoBehaviour
     public const int gameDuration = 120;
     public static int remainingTime = gameDuration;
 
+    public GameObject inputNumberHanlder;
+
     void Awake ()
     {
 
     }
 
-    void Start ()
-	{
+    void Start()
+    {
         InitGameboard();
+        
     }
 
     void Update ()
@@ -29,7 +32,13 @@ public class GameManager : MonoBehaviour
             isGameover = true;
             Debug.Log("Game Over");
         }
-            
+        if (isInputing) { 
+            Debug.Log("isInputing true ");
+        } else
+        {
+            Debug.Log("isInputing false ");
+
+        }
     }
 
     void InitGameboard ()

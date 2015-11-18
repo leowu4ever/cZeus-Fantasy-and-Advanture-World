@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class InputNumberHandler : MonoBehaviour {
+public class InputNumberBarHandler : MonoBehaviour {
 
     public GameObject numberPrefab;
 

@@ -1769,7 +1769,7 @@ GameObject:
   - 222: {fileID: 753257430}
   - 114: {fileID: 753257429}
   m_Layer: 5
-  m_Name: Number Bar
+  m_Name: Input Number Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1990,6 +1990,7 @@ MonoBehaviour:
   - {fileID: 74391493}
   - {fileID: 527787113}
   - {fileID: 1619683958}
+  inputNumberHanlder: {fileID: 1501886913}
 --- !u!4 &794283348
 Transform:
   m_ObjectHideFlags: 0
@@ -2721,6 +2722,7 @@ GameObject:
   - 4: {fileID: 1501886915}
   - 114: {fileID: 1501886914}
   - 114: {fileID: 1501886916}
+  - 114: {fileID: 1501886917}
   m_Layer: 0
   m_Name: UI Handler
   m_TagString: Untagged
@@ -2763,6 +2765,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberPrefab: {fileID: 197100, guid: e5f3d8f79956540dba56cb88a045dd3b, type: 2}
+--- !u!114 &1501886917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1501886913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b984f32c8cd1324d814c94a2de8873e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InputNumberBar: {fileID: 753257427}
 --- !u!4 &1517217177 stripped
 Transform:
   m_PrefabParentObject: {fileID: 429268, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
