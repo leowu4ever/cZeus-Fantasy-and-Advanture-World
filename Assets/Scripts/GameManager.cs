@@ -10,23 +10,26 @@ public class GameManager : MonoBehaviour
     public static int errorCount;
     public const int maxError = 5;
     public const int gameDuration = 120;
-    public static int remainingTime = gameDuration;
+    public static int remainingTime;
 
     public GameObject inputNumberHanlder;
 
     void Awake ()
     {
-
+        remainingTime = gameDuration;
     }
 
     void Start()
     {
         InitGameboard();
-        
+        InGameTimer.initTimer(gameDuration);
+        InGameTimer.StartTimer();
     }
 
     void Update ()
     {
+        remainingTime = InGameTimer.countTime;
+
         if (errorCount > maxError)
         {
             isGameover = true;
@@ -77,5 +80,6 @@ public class GameManager : MonoBehaviour
     public static void IncreaseErrorCount ()
     {
         errorCount++;
+
     }
 }
