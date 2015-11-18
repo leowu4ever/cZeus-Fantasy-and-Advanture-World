@@ -3,17 +3,8 @@ using System.Collections;
 
 public class BoardPressedHandler : MonoBehaviour
 {
-
 	private GameObject currentPressedBoard;
     public static GameObject currentPressedContent;
-
-	/*
-	 * It shoots a laser and determine which board is selected
-	 * 
-	 * Can only one board gets selected each time 
-	 * 
-	 * Also need to store the reference of selected board
-	 */
 
 	void Update ()
 	{ 	
@@ -22,42 +13,51 @@ public class BoardPressedHandler : MonoBehaviour
 			RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (Input.mousePosition), Vector2.zero);
 			if (hit.collider != null) {
 
-				// -------------------- Test board press --------------------
-				GameObject pressedContent = hit.transform.gameObject;
-                currentPressedContent = pressedContent;
-				ContentScript pressedContentScript = pressedContent.GetComponent<ContentScript> ();
-				Debug.Log (hit.transform.name + " : " + pressedContentScript.content + " Answer : " + pressedContentScript.answer);
-				Debug.Log (hit.transform.parent.name);
-			
+                // -------------------- Test board press --------------------
+                GameObject pressedBoard = hit.transform.parent.gameObject;
+                GameObject pressedContent = hit.transform.gameObject;
 
-				GameObject pressedBoard = hit.transform.parent.gameObject;
-                // initial press 
-                // new press or quit press
-                // switch press
+				ContentScript pressedContentScript = pressedContent.GetComponent<ContentScript> ();
+                //Debug.Log (hit.transform.name + " : " + pressedContentScript.content + " Answer : " + pressedContentScript.answer);
+                //Debug.Log (hit.transform.parent.name);
+
                 if (currentPressedBoard == null)
                 {
+                    Debug.Log("Init Cur");
                     currentPressedBoard = pressedBoard;
-                    
-                    ToggleBoardBg(pressedBoard);
+                    currentPressedContent = pressedContent;
+                    SwitchToPressedBoardBg(pressedBoard);
                 }
 
                 else if (currentPressedBoard == pressedBoard)
                 {
-                    if (!pressedContent.transform.parent == currentPressedBoard)
+                    if (pressedBoard.GetComponent<BoardScript>().isPressed)
                     {
-                        ToggleBoardBg(pressedBoard);
+                        if (currentPressedContent.tag != pressedContent.tag)
+                            {
+                                Debug.Log("Same Board, diff content");
+                                currentPressedContent = pressedContent;
+                            }
+                            else
+                            {
+                                // pressed bg
+                                Debug.Log("Same Board, same content");
+                                ToggleBoardBg(pressedBoard);
+                            }
                     } else
                     {
-                         
+                        ToggleBoardBg(pressedBoard);
                     }
                 }
 
                 else if (currentPressedBoard != pressedBoard)
                 {
+                    Debug.Log("Diff board");
                     BoardScript currentPressedBoardScript = currentPressedBoard.GetComponent<BoardScript>();
                     currentPressedBoardScript.switchToNormalBoardBg();
                     ToggleBoardBg(pressedBoard);
                     currentPressedBoard = pressedBoard;
+                    currentPressedContent = pressedContent;
                 }
             } 
 		}
@@ -76,6 +76,18 @@ public class BoardPressedHandler : MonoBehaviour
             TurnOffInputMode();
             pressedBoardScript.switchToNormalBoardBg();
         }
+    }
+
+    void SwitchToPressedBoardBg (GameObject pressedBoard)
+    {
+        BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript>();
+        pressedBoardScript.switchToPressedBoardBg();
+    }
+
+    void SwitchToNormalBoardBg(GameObject pressedBoard)
+    {
+        BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript>();
+        pressedBoardScript.switchToNormalBoardBg();
     }
 
     void TurnOnInputMode ()

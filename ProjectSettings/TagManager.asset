@@ -7,6 +7,9 @@ TagManager:
   - Board
   - Mystery Number Content
   - Text
+  - Addition Content
+  - Product Content
+  - Board Content
   layers:
   - Default
   - TransparentFX

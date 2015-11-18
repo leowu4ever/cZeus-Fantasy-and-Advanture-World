@@ -12,7 +12,7 @@ GameObject:
   - 61: {fileID: 6173986}
   m_Layer: 0
   m_Name: Addition Content
-  m_TagString: Board Content
+  m_TagString: Addition Content
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ GameObject:
   - 61: {fileID: 6127864}
   m_Layer: 0
   m_Name: Product Content
-  m_TagString: Board Content
+  m_TagString: Product Content
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,9 +157,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: .00743612647, y: .00221517682}
+  m_Offset: {x: .00743612647, y: .00840035081}
   serializedVersion: 2
-  m_Size: {x: .323561192, y: .344141543}
+  m_Size: {x: .323561221, y: .342928737}
 --- !u!61 &6173986
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -170,9 +170,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -.0172280967, y: .0268616378}
+  m_Offset: {x: -.0172280967, y: .0317934453}
   serializedVersion: 2
-  m_Size: {x: .32084766, y: .306954384}
+  m_Size: {x: .32084772, y: .297086}
 --- !u!114 &11486602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -185,6 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   content: 0
+  answer: -1
   isAnswered: 0
   numberPrefab: {fileID: 197100, guid: e5f3d8f79956540dba56cb88a045dd3b, type: 2}
 --- !u!114 &11492642
@@ -199,6 +200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   content: 0
+  answer: -1
   isAnswered: 0
   numberPrefab: {fileID: 197100, guid: e5f3d8f79956540dba56cb88a045dd3b, type: 2}
 --- !u!114 &11493064
@@ -311,7 +313,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_TagString
-      value: Board Content
+      value: Product Content
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: contentSprites.Array.data[0]

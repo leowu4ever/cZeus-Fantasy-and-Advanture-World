@@ -12,7 +12,7 @@ GameObject:
   - 61: {fileID: 6143586}
   m_Layer: 0
   m_Name: Product Content
-  m_TagString: Board Content
+  m_TagString: Product Content
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ GameObject:
   - 61: {fileID: 6181846}
   m_Layer: 0
   m_Name: Addition Content
-  m_TagString: Board Content
+  m_TagString: Addition Content
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,7 +114,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 126826}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.54299998, y: -1.05700004, z: 0}
+  m_LocalPosition: {x: .542999983, y: -1.05700004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 477408}
@@ -200,6 +200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   content: 0
+  answer: -1
   isAnswered: 0
   numberPrefab: {fileID: 197100, guid: e5f3d8f79956540dba56cb88a045dd3b, type: 2}
 --- !u!114 &11494884
@@ -214,6 +215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   content: 0
+  answer: -1
   isAnswered: 0
   numberPrefab: {fileID: 197100, guid: e5f3d8f79956540dba56cb88a045dd3b, type: 2}
 --- !u!212 &21256704
@@ -311,7 +313,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_TagString
-      value: Board Content
+      value: Product Content
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: contentSprites.Array.data[0]
