@@ -17,9 +17,8 @@ public class ContentScript : MonoBehaviour
 
 	void InitContent ()
 	{
-	
 		char[] contentCharArray = content.ToCharArray ();
-		
+
 		if (contentCharArray [0] != '0') {		// hide content 
 			isAnswered = true;
 			if (contentCharArray.Length == 1) {

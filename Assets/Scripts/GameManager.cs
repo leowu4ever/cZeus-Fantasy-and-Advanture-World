@@ -7,6 +7,15 @@ public class GameManager : MonoBehaviour
 	public GameObject[] contentSpriteArray;
     public static bool isInputing;
     private bool isGameover;
+    public static int errorCount;
+    public const int maxError = 5;
+    public const int gameDuration = 120;
+    public static int remainingTime = gameDuration;
+
+    void Awake ()
+    {
+
+    }
 
     void Start ()
 	{
@@ -15,7 +24,6 @@ public class GameManager : MonoBehaviour
 
     void Update ()
     {
-
     }
 
     void InitGameboard ()
@@ -49,5 +57,10 @@ public class GameManager : MonoBehaviour
                 contentSpriteArray[a].GetComponent<ContentScript>().answer = answerList[a];     // assign answer
             }
         }
+    }
+
+    public static void IncreaseErrorCount ()
+    {
+        errorCount++;
     }
 }
