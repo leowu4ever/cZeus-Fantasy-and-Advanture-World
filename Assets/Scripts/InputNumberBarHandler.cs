@@ -8,7 +8,7 @@ public class InputNumberBarHandler : MonoBehaviour {
     public void SendInputNumber(string buttonLabel)
     {
 
-        if (GameManager.errorCount <= GameManager.maxError)
+        if (GameManager.errorCount <= GameManager.MAX_ERROR_NUMBER)
         {
             if (GameManager.isInputing)
             {
@@ -19,6 +19,7 @@ public class InputNumberBarHandler : MonoBehaviour {
                 {
                     if (buttonLabel == currentPressedContentScript.answer)
                     {
+                        GameManager.answeredCount++;
                         // assign new content to mystery number 
                         currentPressedContentScript.isAnswered = true;
                         currentPressedContentScript.content = buttonLabel;

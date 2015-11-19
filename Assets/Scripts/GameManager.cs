@@ -6,25 +6,24 @@ public class GameManager : MonoBehaviour
 {   
 	public GameObject[] contentSpriteArray;
     public static bool isInputing;
-    private bool isGameover;
+    public static bool isGameover;
     public static int errorCount;
-    public const int maxError = 5;
-    public const int gameDuration = 120;
+    public const int MAX_ERROR_NUMBER = 5;
+    public const int GAME_DURATION = 100;
     public static int remainingTime;
-    public static int answerCount;
-
+    public static int answeredCount;
+    public static int totalAnswerNumber;
     public GameObject inputNumberHanlder;
 
     void Awake ()
     {
-        remainingTime = gameDuration;
-        answerCount = 0;
+        remainingTime = GAME_DURATION;
     }
 
     void Start()
     {
         InitGameboard();
-        InGameTimer.initTimer(gameDuration);
+        InGameTimer.initTimer(GAME_DURATION);
         InGameTimer.StartTimer();
     }
 
@@ -32,18 +31,38 @@ public class GameManager : MonoBehaviour
     {
         remainingTime = InGameTimer.countTime;
 
-        if (errorCount > maxError)
+        if (!isGameover)
         {
-            isGameover = true;
-            Debug.Log("Game Over");
-        }
-        if (isInputing) { 
-            Debug.Log("isInputing true ");
-        } else
-        {
-            Debug.Log("isInputing false ");
+            if (errorCount > MAX_ERROR_NUMBER)
+            {
+                isGameover = true;
+                // ask they want to continue or quit 
+                Debug.Log("Game Over");
+            }
 
+            if (answeredCount == totalAnswerNumber)
+            {
+                isGameover = true;
+                Debug.Log("win");
+                // display score window
+            }
+
+            if (InGameTimer.isTimerFinish)
+            {
+                isGameover = true;
+                Debug.Log("time up");
+            }
+
+            if (isInputing)
+            {
+                Debug.Log("isInputing true ");
+            }
+            else
+            {
+                Debug.Log("isInputing false ");
+            }
         }
+
     }
 
     void InitGameboard ()
@@ -51,7 +70,7 @@ public class GameManager : MonoBehaviour
         CSVParser.Packet rawData = CSVParser.ParseCSV.generateData("6");    // How to pass a parameter 
         List<string> contentList = rawData.displayData;
         List<string> answerList = rawData.answerData;
-
+        totalAnswerNumber = rawData.columnSize * rawData.rowSize;
         // ---------------------- Test ------------------------
         string completeDisplayContentTestString = "";
         for (int a = 0; a < contentList.Count; a++)
@@ -82,10 +101,5 @@ public class GameManager : MonoBehaviour
     public static void IncreaseErrorCount ()
     {
         errorCount++;
-
     }
-    //bool IsWin()
-    //{
-    //    if(answerCount == )
-    //}
 }
