@@ -15,12 +15,6 @@ public class GameManager : MonoBehaviour
 	public static int totalAnswerNumber;
 	public GameObject inputNumberHanlder;
 
-	void OnGUI ()
-	{
-		CSVParser.Packet rawData = CSVParser.ParseCSV.generateData ("6");    // How to pass a parameter 
-		GUI.Label (new Rect (10, 10, 100, 100), rawData.displayData [0]);
-	}
-
 	void Awake ()
 	{
 		remainingTime = GAME_DURATION;
