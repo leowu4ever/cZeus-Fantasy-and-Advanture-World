@@ -11,6 +11,7 @@ public class InGameTimer : MonoBehaviour {
     // Use this for initialization
     public static void initTimer (int initTimerValue) {
         countTime = initTimerValue;
+        ClearTimer();
         isTimerFinish = false;
         timer = new Timer(1000);
         timer.Elapsed += new ElapsedEventHandler(TimerTick);
@@ -30,7 +31,8 @@ public class InGameTimer : MonoBehaviour {
     }
     public static void ClearTimer()
     {
-        timer.Close();
+        if(timer!=null)
+            timer.Close();
         isTimerFinish = false;
     }
 

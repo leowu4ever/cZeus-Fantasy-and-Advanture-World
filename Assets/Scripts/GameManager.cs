@@ -11,12 +11,14 @@ public class GameManager : MonoBehaviour
     public const int maxError = 5;
     public const int gameDuration = 120;
     public static int remainingTime;
+    public static int answerCount;
 
     public GameObject inputNumberHanlder;
 
     void Awake ()
     {
         remainingTime = gameDuration;
+        answerCount = 0;
     }
 
     void Start()
@@ -82,4 +84,8 @@ public class GameManager : MonoBehaviour
         errorCount++;
 
     }
+    //bool IsWin()
+    //{
+    //    if(answerCount == )
+    //}
 }
