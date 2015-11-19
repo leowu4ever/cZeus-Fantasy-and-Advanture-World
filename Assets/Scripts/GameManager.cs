@@ -92,8 +92,15 @@ public class GameManager : MonoBehaviour
         {   // size check
             for (int a = 0; a < contentSpriteArray.Length; a++)
             {
-                contentSpriteArray[a].GetComponent<ContentScript>().content = contentList[a];       // assign content
-                contentSpriteArray[a].GetComponent<ContentScript>().answer = answerList[a];     // assign answer
+                if (contentList[a] != "0")
+                {
+                    contentSpriteArray[a].GetComponent<ContentScript>().content = contentList[a];       // assign content
+                    contentSpriteArray[a].GetComponent<ContentScript>().answer = answerList[a];     // assign answer
+                }
+                else
+                {
+                    contentSpriteArray[a].GetComponent<ContentScript>().content = "";
+                }
             }
         }
     }

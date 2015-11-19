@@ -1555,10 +1555,6 @@ Prefab:
       propertyPath: m_Name
       value: Board (0,1)
       objectReference: {fileID: 0}
-    - target: {fileID: 111490, guid: 3a3eb5615d30147c6a53d09ea565d337, type: 2}
-      propertyPath: m_TagString
-      value: Addition Content
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3a3eb5615d30147c6a53d09ea565d337, type: 2}
   m_IsPrefabParent: 0
