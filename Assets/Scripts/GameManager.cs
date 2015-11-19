@@ -87,11 +87,14 @@ public class GameManager : MonoBehaviour
 		// ---------------------- Assign ------------------------
 		if (contentList.Count == contentSpriteArray.Length) {   // size check
 			for (int a = 0; a < contentSpriteArray.Length; a++) {
-				if (contentList [a] != "0") {
+				if (contentList [a] == "0" && answerList [a] != "0") {
 					contentSpriteArray [a].GetComponent<ContentScript> ().content = contentList [a];       // assign content
 					contentSpriteArray [a].GetComponent<ContentScript> ().answer = answerList [a];     // assign answer
-				} else {
+				} else if (contentList [a] == "0" && answerList [a] == "0") {
 					contentSpriteArray [a].GetComponent<ContentScript> ().content = "";
+				} else if (contentList [a] != "0" && answerList [a] == "0") {
+					contentSpriteArray [a].GetComponent<ContentScript> ().content = contentList [a];       // assign content
+					contentSpriteArray [a].GetComponent<ContentScript> ().answer = answerList [a];     // assign answer
 				}
 			}
 		}
