@@ -56,9 +56,9 @@ public class GameManager : MonoBehaviour
 			}
 
 			if (isInputing) {
-				Debug.Log ("isInputing true ");
+				//Debug.Log ("isInputing true ");
 			} else {
-				Debug.Log ("isInputing false ");
+				//Debug.Log ("isInputing false ");
 			}
 		}
 
