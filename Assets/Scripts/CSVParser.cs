@@ -20,6 +20,7 @@ public class CSVParser : MonoBehaviour
 	{
 		public static Packet generateData (string level)
 		{	
+			//http://docs.unity3d.com/Manual/LoadingResourcesatRuntime.html
 			string filepath = "Assets/CSV/level" + level + ".csv";
 			System.IO.StreamReader data = new System.IO.StreamReader (filepath);
 			string dataline;

@@ -30,8 +30,6 @@ public class InputNumberBarHandler : MonoBehaviour
 				if (currentPressedContent.tag == "Pair Clue Content") {
 
 					RemoveContentSpriiteOn (currentPressedContent);
-
-
 					if (currentPressedContentScript.content.Length < 2) {
 						currentPressedContentScript.content = currentPressedContentScript.content + buttonLabel;
 						CreateContentSpriteOn (currentPressedContent);
