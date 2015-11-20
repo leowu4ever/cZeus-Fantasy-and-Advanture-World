@@ -25,6 +25,30 @@ public class ButtonHandler : MonoBehaviour
     }
     public void LoadChapterOneScene()
     {
-        Application.LoadLevel(5);
-    }
+		Application.LoadLevel (5);
+	}
+	public void LoadTutorialPage1Scene()
+	{
+		Application.LoadLevel (14);
+	}
+	public void LoadTutorialPage2Scene()
+	{
+		Application.LoadLevel (15);
+	}
+	public void LoadTutorialPage3Scene()
+	{
+		Application.LoadLevel (16);
+	}
+	public void LoadTutorialPage4Scene()
+	{
+		Application.LoadLevel (17);
+	}
+	public void LoadTutorialPage5Scene()
+	{
+		Application.LoadLevel (18);
+	}
+	public void LoadTutorialPage6Scene()
+	{
+		Application.LoadLevel (19);
+	}
 }
