@@ -44,7 +44,7 @@ public class BoardPressedHandler : MonoBehaviour
 						} else if (currentPressedBoard != pressedBoard) {
 							Debug.Log ("Diff board");
 							BoardScript currentPressedBoardScript = currentPressedBoard.GetComponent<BoardScript> ();
-							currentPressedBoardScript.switchToNormalBoardBg ();
+							currentPressedBoardScript.SwitchToNormalBoardBg ();
 							ToggleBoardBg (pressedBoard);
 							currentPressedBoard = pressedBoard;
 							currentPressedContent = pressedContent;
@@ -60,10 +60,10 @@ public class BoardPressedHandler : MonoBehaviour
 		BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript> ();
 		if (!pressedBoardScript.isPressed) {
 			TurnOnInputMode ();
-			pressedBoardScript.switchToPressedBoardBg ();
+			pressedBoardScript.SwitchToPressedBoardBg ();
 		} else {
 			TurnOffInputMode ();
-			pressedBoardScript.switchToNormalBoardBg ();
+			pressedBoardScript.SwitchToNormalBoardBg ();
 		}
 	}
 
@@ -71,14 +71,14 @@ public class BoardPressedHandler : MonoBehaviour
 	{
 		TurnOnInputMode ();
 		BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript> ();
-		pressedBoardScript.switchToPressedBoardBg ();
+		pressedBoardScript.SwitchToPressedBoardBg ();
 	}
 
 	void SwitchToNormalBoardBg (GameObject pressedBoard)
 	{
 		TurnOffInputMode ();
 		BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript> ();
-		pressedBoardScript.switchToNormalBoardBg ();
+		pressedBoardScript.SwitchToNormalBoardBg ();
 	}
 
 	void TurnOnInputMode ()

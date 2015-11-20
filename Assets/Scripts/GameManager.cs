@@ -9,11 +9,13 @@ public class GameManager : MonoBehaviour
 	public static bool isGameover;
 	public static int errorCount;
 	public const int MAX_ERROR_NUMBER = 5;
-	public const int GAME_DURATION = 100;
+	public const int GAME_DURATION = 113;
 	public static int remainingTime;
 	public static int answeredCount;
 	public static int totalAnswerNumber;
 	public GameObject inputNumberHanlder;
+
+    public GameObject scoreWindow;
 
 	void Awake ()
 	{
@@ -31,29 +33,13 @@ public class GameManager : MonoBehaviour
 	{
 		remainingTime = InGameTimer.countTime;
 
-		if (!isGameover) {
-			if (errorCount > MAX_ERROR_NUMBER) {
-				isGameover = true;
-				// ask they want to continue or quit 
-				Debug.Log ("Game Over");
-			}
-
-			if (answeredCount == totalAnswerNumber) {
-				isGameover = true;
-				Debug.Log ("win");
-				// display score window
-			}
-
-			if (InGameTimer.isTimerFinish) {
-				isGameover = true;
-				Debug.Log ("time up");
-			}
-
-			if (isInputing) {
-				//Debug.Log ("isInputing true ");
-			} else {
-				//Debug.Log ("isInputing false ");
-			}
+		if (!isGameover ) {
+            if (errorCount > MAX_ERROR_NUMBER || answeredCount == totalAnswerNumber || InGameTimer.isTimerFinish)
+            {
+                InGameTimer.StopTimer();
+                isGameover = true;
+                scoreWindow.SetActive(true);
+            }
 		}
 
 	}
@@ -98,4 +84,9 @@ public class GameManager : MonoBehaviour
 	{
 		errorCount++;
 	}
+
+   public static void IncreAnsweredCountByOne()
+    {
+        answeredCount++;
+    }
 }

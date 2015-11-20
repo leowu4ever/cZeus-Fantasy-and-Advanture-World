@@ -3,8 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class ToolbarHandler : MonoBehaviour
-{
-
+{ 
 	public GameObject errorLabel;
 	public GameObject timerLabel;
 	void Update ()

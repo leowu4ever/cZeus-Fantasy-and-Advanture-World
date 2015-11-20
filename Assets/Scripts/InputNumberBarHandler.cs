@@ -4,47 +4,53 @@ using System.Collections.Generic;
 
 public class InputNumberBarHandler : MonoBehaviour
 {
-
 	public GameObject numberPrefab;
+    public const string MYSTERY_NUMBER_CONTENT_TAG = "Mystery Number Content";
+    public const string PAIR_CLUE_CONTENT_TAG = "Pair Clue Content";
+    public const string SQUARE_CLUE_CONTENT_TAG = "Square Clue Content";
 
 	public void SendInputNumber (string buttonLabel)
 	{
-
-		if (GameManager.errorCount <= GameManager.MAX_ERROR_NUMBER) {
+		if (!GameManager.isGameover) {
 			if (GameManager.isInputing) {
 				GameObject currentPressedContent = BoardPressedHandler.currentPressedContent;
 				ContentScript currentPressedContentScript = currentPressedContent.GetComponent<ContentScript> ();
                 
-				if (currentPressedContent.tag == "Mystery Number Content" && !currentPressedContentScript.isAnswered) {
+                // Needs to check which type of content has been selected 
+               
+				if (currentPressedContent.tag == MYSTERY_NUMBER_CONTENT_TAG && !currentPressedContentScript.isAnswered) {
 					if (buttonLabel == currentPressedContentScript.answer) {
-						GameManager.answeredCount++;
-						// assign new content to mystery number 
-						currentPressedContentScript.isAnswered = true;
-						currentPressedContentScript.content = buttonLabel;
+                        UpdateACorrectAnswerTo(currentPressedContent, buttonLabel);
 						CreateContentSpriteOn (currentPressedContent);
 					} else {
 						GameManager.IncreaseErrorCount ();
 					}
 				}
 
-				if (currentPressedContent.tag == "Pair Clue Content") {
+				if (currentPressedContent.tag == PAIR_CLUE_CONTENT_TAG) {
 
+                    // Always remove the sprite for previous input, and ready for new input
 					RemoveContentSpriiteOn (currentPressedContent);
-                    if(!(currentPressedContentScript.content==""&& buttonLabel=="0"))
-                    {
+
+                    // We dont want to the first digit of input is 0
+                    if(!(currentPressedContentScript.content == "" && buttonLabel == "0"))
+                    {   
+                        // Only allow to display an input with two digits
 					    if (currentPressedContentScript.content.Length < 2) {
-						    currentPressedContentScript.content = currentPressedContentScript.content + buttonLabel;
+						    currentPressedContentScript.content = currentPressedContentScript.content + buttonLabel;    // update content 
 						    CreateContentSpriteOn (currentPressedContent);
 					    } else {
+                            // It removes the previous input when you try to input a new non-zero number
                             if(buttonLabel != "0")
                             {
-                                currentPressedContentScript.content = buttonLabel;
+                                currentPressedContentScript.content = buttonLabel;      
                                 CreateContentSpriteOn(currentPressedContent);
                             }
 					    }
                     }
                 }
-				if (currentPressedContent.tag == "Square Clue Content") {
+
+				if (currentPressedContent.tag == SQUARE_CLUE_CONTENT_TAG) {
 
 					RemoveContentSpriiteOn (currentPressedContent);
                     if (!(currentPressedContentScript.content == "" && buttonLabel == "0"))
@@ -88,12 +94,19 @@ public class InputNumberBarHandler : MonoBehaviour
 		}
 	}
 
-	void RemoveContentSpriiteOn (GameObject root)
+	void RemoveContentSpriiteOn (GameObject parent)
 	{
-		int childCount = root.transform.childCount;
+		int childCount = parent.transform.childCount;
 		for (int i=0; i<childCount; i++) {
-			GameObject.Destroy (root.transform.GetChild (i).gameObject);
+			GameObject.Destroy (parent.transform.GetChild (i).gameObject);
 		}
 	}
-	
+
+    void UpdateACorrectAnswerTo (GameObject correctContent, string answer) 
+    {
+        ContentScript correctContentScript = correctContent.GetComponent<ContentScript>();
+        GameManager.IncreAnsweredCountByOne();
+        correctContentScript.isAnswered = true;
+        correctContentScript.content = answer;
+    }
 }   
