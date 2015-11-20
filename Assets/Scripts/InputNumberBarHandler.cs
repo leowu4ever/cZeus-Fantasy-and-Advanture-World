@@ -30,25 +30,39 @@ public class InputNumberBarHandler : MonoBehaviour
 				if (currentPressedContent.tag == "Pair Clue Content") {
 
 					RemoveContentSpriiteOn (currentPressedContent);
-					if (currentPressedContentScript.content.Length < 2) {
-						currentPressedContentScript.content = currentPressedContentScript.content + buttonLabel;
-						CreateContentSpriteOn (currentPressedContent);
-					} else {
-						currentPressedContentScript.content = buttonLabel;
-						CreateContentSpriteOn (currentPressedContent);
-					}
-				}
+                    if(!(currentPressedContentScript.content==""&& buttonLabel=="0"))
+                    {
+					    if (currentPressedContentScript.content.Length < 2) {
+						    currentPressedContentScript.content = currentPressedContentScript.content + buttonLabel;
+						    CreateContentSpriteOn (currentPressedContent);
+					    } else {
+                            if(buttonLabel != "0")
+                            {
+                                currentPressedContentScript.content = buttonLabel;
+                                CreateContentSpriteOn(currentPressedContent);
+                            }
+					    }
+                    }
+                }
 				if (currentPressedContent.tag == "Square Clue Content") {
 
 					RemoveContentSpriiteOn (currentPressedContent);
-
-					if (currentPressedContentScript.content.Length < 4) {
-						currentPressedContentScript.content = currentPressedContentScript.content + buttonLabel;
-						CreateContentSpriteOn (currentPressedContent);
-					} else {
-						currentPressedContentScript.content = buttonLabel;
-						CreateContentSpriteOn (currentPressedContent);
-					}
+                    if (!(currentPressedContentScript.content == "" && buttonLabel == "0"))
+                    {
+                        if (currentPressedContentScript.content.Length < 4)
+                        {
+                            currentPressedContentScript.content = currentPressedContentScript.content + buttonLabel;
+                            CreateContentSpriteOn(currentPressedContent);
+                        }
+                        else
+                        {
+                            if (buttonLabel != "0")
+                            {
+                                currentPressedContentScript.content = buttonLabel;
+                                CreateContentSpriteOn(currentPressedContent);
+                            }
+                        }
+                    }      
 				}
 
 			}
