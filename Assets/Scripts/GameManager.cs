@@ -13,9 +13,8 @@ public class GameManager : MonoBehaviour
 	public static int remainingTime;
 	public static int answeredCount;
 	public static int totalAnswerNumber;
-	public GameObject inputNumberHanlder;
 
-    public GameObject scoreWindow;
+	public GameObject scoreWindow;
 
 	void Awake ()
 	{
@@ -33,13 +32,12 @@ public class GameManager : MonoBehaviour
 	{
 		remainingTime = InGameTimer.countTime;
 
-		if (!isGameover ) {
-            if (errorCount > MAX_ERROR_NUMBER || answeredCount == totalAnswerNumber || InGameTimer.isTimerFinish)
-            {
-                InGameTimer.StopTimer();
-                isGameover = true;
-                scoreWindow.SetActive(true);
-            }
+		if (!isGameover) {
+			if (errorCount > MAX_ERROR_NUMBER || answeredCount == totalAnswerNumber || InGameTimer.isTimerFinish) {
+				InGameTimer.StopTimer ();
+				isGameover = true;
+				scoreWindow.SetActive (true);
+			}
 		}
 
 	}
@@ -85,8 +83,8 @@ public class GameManager : MonoBehaviour
 		errorCount++;
 	}
 
-   public static void IncreAnsweredCountByOne()
-    {
-        answeredCount++;
-    }
+	public static void IncreAnsweredCountByOne ()
+	{
+		answeredCount++;
+	}
 }

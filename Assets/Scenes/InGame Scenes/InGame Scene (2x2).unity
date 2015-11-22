@@ -1697,6 +1697,7 @@ GameObject:
   - 224: {fileID: 753257428}
   - 222: {fileID: 753257430}
   - 114: {fileID: 753257429}
+  - 114: {fileID: 753257431}
   m_Layer: 5
   m_Name: Input Number Bar
   m_TagString: Untagged
@@ -1764,6 +1765,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 753257427}
+--- !u!114 &753257431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 753257427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d530bd4b99f4a4ef288e292bf7205605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &777237117
 GameObject:
   m_ObjectHideFlags: 0
@@ -1919,7 +1931,6 @@ MonoBehaviour:
   - {fileID: 74391493}
   - {fileID: 527787113}
   - {fileID: 1619683958}
-  inputNumberHanlder: {fileID: 1501886913}
   scoreWindow: {fileID: 1652286955}
 --- !u!4 &794283348
 Transform:
