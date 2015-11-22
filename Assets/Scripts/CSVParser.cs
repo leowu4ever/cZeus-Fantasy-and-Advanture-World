@@ -20,7 +20,10 @@ public class CSVParser : MonoBehaviour
 	{
 		public static Packet generateData (string level)
 		{	
+			//https://www.google.co.uk/search?client=safari&rls=en&q=unity+resource+csv+iphone&oq=unity+resource+csv+iphone&gs_l=serp.12...0.0.0.263760.0.0.0.0.0.0.0.0..0.0....0...1c..64.serp..0.0.0.V6kbAgaRCsM
 			//http://docs.unity3d.com/Manual/LoadingResourcesatRuntime.html
+			//http://answers.unity3d.com/questions/963335/reading-from-csv-work-on-editor-and-no-data-on-dev.html
+			//http://answers.unity3d.com/questions/854658/android-persistent-data-loading-fails.html
 			string filepath = "Assets/CSV/level" + level + ".csv";
 			System.IO.StreamReader data = new System.IO.StreamReader (filepath);
 			string dataline;
