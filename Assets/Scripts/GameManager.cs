@@ -13,7 +13,6 @@ public class GameManager : MonoBehaviour
 	public static int remainingTime;
 	public static int answeredCount;
 	public static int totalAnswerNumber;
-
 	public GameObject scoreWindow;
 
 	void Awake ()
