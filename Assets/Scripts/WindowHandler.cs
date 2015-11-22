@@ -1,34 +1,35 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WindowHandler : MonoBehaviour {
+public class WindowHandler : MonoBehaviour
+{
 
-    public GameObject InputNumberBar;
+	public GameObject inputNumberBar;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
 	
 	}
 	
 	// Update is called once per frame
-	void Update () {
-        if (GameManager.isInputing)
-        {
-            ActivateInputNumberBar();
-        }
-        else
-        {
-            DeactivateInputNumberBar();
-        }
-    }
+	void Update ()
+	{
+		if (GameManager.isInputing) {
+			ActivateInputNumberBar ();
+		} else {
+			DeactivateInputNumberBar ();
+		}
+	}
 
 
-   void ActivateInputNumberBar ()
-   {
-        InputNumberBar.SetActive(true);
-   }
-   void DeactivateInputNumberBar ()
-   {
-        InputNumberBar.SetActive(false);
-   }
+	void ActivateInputNumberBar ()
+	{
+		inputNumberBar.SetActive (true);
+
+	}
+	void DeactivateInputNumberBar ()
+	{
+		inputNumberBar.SetActive (false);
+	}
 }
