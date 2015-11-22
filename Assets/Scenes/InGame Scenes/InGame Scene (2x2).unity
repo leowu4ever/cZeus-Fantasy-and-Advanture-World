@@ -1992,6 +1992,7 @@ MonoBehaviour:
   - {fileID: 527787113}
   - {fileID: 1619683958}
   scoreWindow: {fileID: 1652286955}
+  puzzleLevel: 6
 --- !u!4 &794283348
 Transform:
   m_ObjectHideFlags: 0

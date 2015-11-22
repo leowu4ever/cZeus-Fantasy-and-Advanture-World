@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
 	public static int answeredCount;
 	public static int totalAnswerNumber;
 	public GameObject scoreWindow;
+	public string puzzleLevel;
 
 	void Awake ()
 	{
@@ -43,7 +44,7 @@ public class GameManager : MonoBehaviour
 
 	void InitGameboard ()
 	{
-		CSVParser.Packet rawData = CSVParser.ParseCSV.generateData ("6");    // How to pass a parameter 
+		CSVParser.Packet rawData = CSVParser.ParseCSV.generateData (puzzleLevel);    // How to pass a parameter 
 		List<string> contentList = rawData.displayData;
 		List<string> answerList = rawData.answerData;
 		totalAnswerNumber = rawData.columnSize * rawData.rowSize;
