@@ -11,8 +11,11 @@ public class WindowHandler : MonoBehaviour
 	{
 		if (GameManager.isInputing) {
 			ActivateInputNumberBar ();
+			Debug.Log ("isInputing");
 		} else {
 			DeactivateInputNumberBar ();
+			Debug.Log (" not isInputing");
+
 		}
 	}
 

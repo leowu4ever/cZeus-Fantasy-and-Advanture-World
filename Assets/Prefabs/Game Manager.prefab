@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 416878}
   - 114: {fileID: 11456374}
-  - 114: {fileID: 11409788}
   - 114: {fileID: 11497116}
   m_Layer: 0
   m_Name: Game Manager
@@ -30,17 +29,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11409788
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 163382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82f656bfd10742bab5499217679c7fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11456374
 MonoBehaviour:
   m_ObjectHideFlags: 1
