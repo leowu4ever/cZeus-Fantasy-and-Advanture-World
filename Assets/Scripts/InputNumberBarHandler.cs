@@ -5,22 +5,26 @@ using System.Collections.Generic;
 public class InputNumberBarHandler : MonoBehaviour
 {
 	public GameObject numberPrefab;
-    public const string MYSTERY_NUMBER_CONTENT_TAG = "Mystery Number Content";
-    public const string PAIR_CLUE_CONTENT_TAG = "Pair Clue Content";
-    public const string SQUARE_CLUE_CONTENT_TAG = "Square Clue Content";
+	public const string MYSTERY_NUMBER_CONTENT_TAG = "Mystery Number Content";
+	public const string PAIR_CLUE_CONTENT_TAG = "Pair Clue Content";
+	public const string SQUARE_CLUE_CONTENT_TAG = "Square Clue Content";
 
-	public void SendInputNumber (string buttonLabel)
+	public void SendInputNumberWith (string buttonLabel)
 	{
 		if (!GameManager.isGameover) {
 			if (GameManager.isInputing) {
 				GameObject currentPressedContent = BoardPressedHandler.currentPressedContent;
 				ContentScript currentPressedContentScript = currentPressedContent.GetComponent<ContentScript> ();
                 
-                // Needs to check which type of content has been selected 
-               
+				/*
+                 * Needs to check which type of content has been selected 
+                 * If enter in mystery number then check if it is correct 
+                 * Increase error count if it is wrong
+                 */ 
+
 				if (currentPressedContent.tag == MYSTERY_NUMBER_CONTENT_TAG && !currentPressedContentScript.isAnswered) {
 					if (buttonLabel == currentPressedContentScript.answer) {
-                        UpdateACorrectAnswerTo(currentPressedContent, buttonLabel);
+						UpdateACorrectAnswerTo (currentPressedContent, buttonLabel);
 						CreateContentSpriteOn (currentPressedContent);
 					} else {
 						GameManager.IncreaseErrorCount ();
@@ -28,49 +32,35 @@ public class InputNumberBarHandler : MonoBehaviour
 				}
 
 				if (currentPressedContent.tag == PAIR_CLUE_CONTENT_TAG) {
-
-                    // Always remove the sprite for previous input, and ready for new input
-					RemoveContentSpriiteOn (currentPressedContent);
-
-                    // We dont want to the first digit of input is 0
-                    if(!(currentPressedContentScript.content == "" && buttonLabel == "0"))
-                    {   
-                        // Only allow to display an input with two digits
-					    if (currentPressedContentScript.content.Length < 2) {
-						    currentPressedContentScript.content = currentPressedContentScript.content + buttonLabel;    // update content 
-						    CreateContentSpriteOn (currentPressedContent);
-					    } else {
-                            // It removes the previous input when you try to input a new non-zero number
-                            if(buttonLabel != "0")
-                            {
-                                currentPressedContentScript.content = buttonLabel;      
-                                CreateContentSpriteOn(currentPressedContent);
-                            }
-					    }
-                    }
-                }
-
-				if (currentPressedContent.tag == SQUARE_CLUE_CONTENT_TAG) {
-
-					RemoveContentSpriiteOn (currentPressedContent);
-                    if (!(currentPressedContentScript.content == "" && buttonLabel == "0"))
-                    {
-                        if (currentPressedContentScript.content.Length < 4)
-                        {
-                            currentPressedContentScript.content = currentPressedContentScript.content + buttonLabel;
-                            CreateContentSpriteOn(currentPressedContent);
-                        }
-                        else
-                        {
-                            if (buttonLabel != "0")
-                            {
-                                currentPressedContentScript.content = buttonLabel;
-                                CreateContentSpriteOn(currentPressedContent);
-                            }
-                        }
-                    }      
+					TryInputNumberIn (currentPressedContent, buttonLabel, 2);
 				}
 
+				if (currentPressedContent.tag == SQUARE_CLUE_CONTENT_TAG) {
+					TryInputNumberIn (currentPressedContent, buttonLabel, 4);
+				}
+
+			}
+		}
+	}
+
+	void TryInputNumberIn (GameObject targetContent, string newInput, int maxInputLength)
+	{
+		// Always remove the sprite for previous input, and ready for new input
+		RemoveContentSpriiteOn (targetContent);
+		ContentScript targetContentScript = targetContent.GetComponent<ContentScript> ();
+
+		// We dont want to the first digit of input is 0
+		if (!(targetContentScript.content == "" && newInput == "0")) {   
+			// Only allow to display an input with two digits
+			if (targetContentScript.content.Length < maxInputLength) {
+				targetContentScript.content += newInput;    // update content 
+				CreateContentSpriteOn (targetContent);
+			} else {
+				// It removes the previous input when you try to input a new non-zero number
+				if (newInput != "0") {
+					targetContentScript.content = newInput;      
+					CreateContentSpriteOn (targetContent);
+				}
 			}
 		}
 	}
@@ -102,11 +92,11 @@ public class InputNumberBarHandler : MonoBehaviour
 		}
 	}
 
-    void UpdateACorrectAnswerTo (GameObject correctContent, string answer) 
-    {
-        ContentScript correctContentScript = correctContent.GetComponent<ContentScript>();
-        GameManager.IncreAnsweredCountByOne();
-        correctContentScript.isAnswered = true;
-        correctContentScript.content = answer;
-    }
+	void UpdateACorrectAnswerTo (GameObject correctContent, string answer)
+	{
+		ContentScript correctContentScript = correctContent.GetComponent<ContentScript> ();
+		GameManager.IncreAnsweredCountByOne ();
+		correctContentScript.isAnswered = true;
+		correctContentScript.content = answer;
+	}
 }   
