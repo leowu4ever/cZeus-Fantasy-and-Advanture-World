@@ -703,7 +703,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 406514, guid: 3a3eb5615d30147c6a53d09ea565d337, type: 2}
       propertyPath: m_RootOrder
-      value: 22
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 106930, guid: 3a3eb5615d30147c6a53d09ea565d337, type: 2}
       propertyPath: m_Name
@@ -1321,8 +1321,8 @@ Transform:
   - {fileID: 2090063931}
   - {fileID: 1630599496}
   - {fileID: 601784224}
-  - {fileID: 451532533}
   - {fileID: 2105259504}
+  - {fileID: 451532533}
   - {fileID: 9979534}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1396,7 +1396,7 @@ MonoBehaviour:
   - {fileID: 451532535}
   - {fileID: 9979535}
   scoreWindow: {fileID: 45330817}
-  puzzleLevel: 
+  puzzleLevel: 13
 --- !u!4 &794283348
 Transform:
   m_ObjectHideFlags: 0
@@ -2569,7 +2569,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 429268, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 195248, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_Name
