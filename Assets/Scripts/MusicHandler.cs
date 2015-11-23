@@ -7,6 +7,8 @@ public class MusicHandler : MonoBehaviour {
 	public GameObject SettingButtonMusic;
 	public GameObject TutorialButtonMusic;
 	public GameObject BackButtonMusic;
+	public GameObject BgMusic;
+
 
 
 	public void PlayButtonPressed(){

@@ -1835,6 +1835,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1431124966}
   - 114: {fileID: 1431124965}
+  - 114: {fileID: 1431124967}
   m_Layer: 0
   m_Name: UI Operator
   m_TagString: Untagged
@@ -1865,6 +1866,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &1431124967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1431124964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8111ea638a7c40499ed352490f84b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayButtonMusic: {fileID: 0}
+  SettingButtonMusic: {fileID: 0}
+  TutorialButtonMusic: {fileID: 0}
+  BackButtonMusic: {fileID: 0}
 --- !u!1 &1504835626
 GameObject:
   m_ObjectHideFlags: 0
