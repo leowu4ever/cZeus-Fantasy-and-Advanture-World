@@ -8,6 +8,7 @@ public class MusicHandler : MonoBehaviour {
 	public void PlayButtonPressed(){
 
 		PlayButtonMusic.GetComponent<AudioSource> ().Play ();
+		Debug.Log(PlayButtonMusic.GetComponent<AudioSource> ().isPlaying);
 	}
 
 }
