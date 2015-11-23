@@ -6,6 +6,8 @@ public class MusicHandler : MonoBehaviour {
 	public GameObject PlayButtonMusic;
 	public GameObject SettingButtonMusic;
 	public GameObject TutorialButtonMusic;
+	public GameObject BackButtonMusic;
+
 
 	public void PlayButtonPressed(){
 
@@ -20,6 +22,11 @@ public class MusicHandler : MonoBehaviour {
 	public void TutorialButtonPressed(){
 		
 		TutorialButtonMusic.GetComponent<AudioSource> ().Play ();
+		Debug.Log(TutorialButtonMusic.GetComponent<AudioSource> ().isPlaying);
+	}
+	public void BackButtonPressed(){
+		
+		BackButtonMusic.GetComponent<AudioSource> ().Play ();
 		Debug.Log(TutorialButtonMusic.GetComponent<AudioSource> ().isPlaying);
 	}
 

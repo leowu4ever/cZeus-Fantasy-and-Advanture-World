@@ -760,7 +760,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a99a6d0ba951b436f88863b820b0de7c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .745999992
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1002,7 +1002,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a99a6d0ba951b436f88863b820b0de7c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .697000027
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1115,6 +1115,7 @@ MonoBehaviour:
   PlayButtonMusic: {fileID: 436812037}
   SettingButtonMusic: {fileID: 1805380068}
   TutorialButtonMusic: {fileID: 953532236}
+  BackButtonMusic: {fileID: 0}
 --- !u!1 &1896819203
 GameObject:
   m_ObjectHideFlags: 0
