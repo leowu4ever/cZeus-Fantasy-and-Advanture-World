@@ -527,7 +527,7 @@ GameObject:
   - 222: {fileID: 585828832}
   - 114: {fileID: 585828831}
   m_Layer: 5
-  m_Name: Text1
+  m_Name: IniInstruction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -885,7 +885,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 727353868}
-        m_MethodName: LoadMainScene
+        m_MethodName: LoadTutorialPage1Scene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1009,7 +1009,7 @@ GameObject:
   - 222: {fileID: 1539848017}
   - 114: {fileID: 1539848016}
   m_Layer: 5
-  m_Name: Text2
+  m_Name: SkipHint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

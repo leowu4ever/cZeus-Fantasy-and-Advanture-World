@@ -1945,7 +1945,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 481071088}
-        m_MethodName: LoadTutorialPage2Scene
+        m_MethodName: LoadTutorialPage3Scene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
