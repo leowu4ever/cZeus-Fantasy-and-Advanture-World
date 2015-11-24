@@ -350,7 +350,7 @@ GameObject:
   - 222: {fileID: 855622985}
   - 114: {fileID: 855622984}
   m_Layer: 5
-  m_Name: somerules
+  m_Name: Somerules
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -597,7 +597,7 @@ GameObject:
   - 222: {fileID: 1596308905}
   - 114: {fileID: 1596308904}
   m_Layer: 5
-  m_Name: rule1
+  m_Name: Rule1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -741,7 +741,7 @@ GameObject:
   - 222: {fileID: 1624474382}
   - 114: {fileID: 1624474381}
   m_Layer: 5
-  m_Name: content
+  m_Name: Rule1Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

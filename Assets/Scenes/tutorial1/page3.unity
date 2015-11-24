@@ -385,7 +385,7 @@ GameObject:
   - 4: {fileID: 393320346}
   - 212: {fileID: 393320345}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_0
+  m_Name: number0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -439,7 +439,7 @@ GameObject:
   - 4: {fileID: 405695494}
   - 212: {fileID: 405695495}
   m_Layer: 0
-  m_Name: Times_Sign (2)
+  m_Name: Times_Sign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -779,7 +779,7 @@ GameObject:
   - 4: {fileID: 536915877}
   - 212: {fileID: 536915878}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_4
+  m_Name: number4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -872,7 +872,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 195248, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_Name
-      value: block3
+      value: Mystery Block2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
@@ -891,7 +891,7 @@ GameObject:
   - 4: {fileID: 586986608}
   - 212: {fileID: 586986609}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_1
+  m_Name: number1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1093,7 +1093,7 @@ GameObject:
   - 4: {fileID: 748224811}
   - 212: {fileID: 748224812}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_4
+  m_Name: number4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1147,7 +1147,7 @@ GameObject:
   - 4: {fileID: 786166738}
   - 212: {fileID: 786166739}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_2
+  m_Name: number2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1201,7 +1201,7 @@ GameObject:
   - 4: {fileID: 792409878}
   - 212: {fileID: 792409879}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_2
+  m_Name: number2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1255,7 +1255,7 @@ GameObject:
   - 4: {fileID: 841665575}
   - 212: {fileID: 841665576}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_4
+  m_Name: number4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1664,7 +1664,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 195248, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_Name
-      value: block1
+      value: Mystery Block3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
@@ -1754,7 +1754,7 @@ GameObject:
   - 212: {fileID: 1181655711}
   - 95: {fileID: 1181655712}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_3
+  m_Name: number3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1807,7 +1807,7 @@ Animator:
   m_GameObject: {fileID: 1181655709}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 264172b3f65ada04699f7af70394ea49, type: 2}
+  m_Controller: {fileID: 9100000, guid: f730d3c127153834388376cd55473e54, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1825,7 +1825,7 @@ GameObject:
   - 4: {fileID: 1183350214}
   - 212: {fileID: 1183350215}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_4 (1)
+  m_Name: number4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2187,7 +2187,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 195248, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_Name
-      value: block4
+      value: Mystery Block1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
@@ -2206,7 +2206,7 @@ GameObject:
   - 4: {fileID: 1482042563}
   - 212: {fileID: 1482042564}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_2
+  m_Name: number2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2260,7 +2260,7 @@ GameObject:
   - 4: {fileID: 1520292824}
   - 212: {fileID: 1520292825}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_1
+  m_Name: number1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2315,7 +2315,7 @@ GameObject:
   - 222: {fileID: 1527795749}
   - 114: {fileID: 1527795748}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Input Hint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2386,7 +2386,7 @@ GameObject:
   - 4: {fileID: 1586632045}
   - 212: {fileID: 1586632046}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_1
+  m_Name: number1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2494,7 +2494,7 @@ GameObject:
   - 4: {fileID: 1663373398}
   - 212: {fileID: 1663373397}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_4
+  m_Name: number4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2548,7 +2548,7 @@ GameObject:
   - 4: {fileID: 1679760915}
   - 212: {fileID: 1679760914}
   m_Layer: 0
-  m_Name: Times_Sign (3)
+  m_Name: Times_Sign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2674,7 +2674,7 @@ GameObject:
   - 4: {fileID: 1732123762}
   - 212: {fileID: 1732123763}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_1
+  m_Name: number1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2924,7 +2924,7 @@ GameObject:
   - 212: {fileID: 1752636069}
   - 95: {fileID: 1752636070}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_3
+  m_Name: number3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2977,7 +2977,7 @@ Animator:
   m_GameObject: {fileID: 1752636067}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 94c05940e872a174292717030bb83a77, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4e6681ab1197bcf4f8641fb5454258db, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2995,7 +2995,7 @@ GameObject:
   - 4: {fileID: 1764041642}
   - 212: {fileID: 1764041643}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_2 (1)
+  m_Name: number2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3049,7 +3049,7 @@ GameObject:
   - 4: {fileID: 1775505161}
   - 212: {fileID: 1775505162}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_0
+  m_Name: number0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3260,7 +3260,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 195248, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_Name
-      value: block2
+      value: Mystery Block4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
@@ -3278,7 +3278,7 @@ Animator:
   m_GameObject: {fileID: 1950642671}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3ce48d27196ede44ca0c2bb3ae7a54bd, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1fa923403a688464e84c55cfedfe9b68, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3296,7 +3296,7 @@ GameObject:
   - 4: {fileID: 2015116900}
   - 212: {fileID: 2015116901}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_2
+  m_Name: number2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3483,7 +3483,7 @@ GameObject:
   - 4: {fileID: 2135529566}
   - 212: {fileID: 2135529567}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_1 (1)
+  m_Name: number1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

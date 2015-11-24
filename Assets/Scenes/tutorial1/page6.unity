@@ -96,7 +96,7 @@ GameObject:
   - 222: {fileID: 154893257}
   - 114: {fileID: 154893256}
   m_Layer: 5
-  m_Name: rule4
+  m_Name: Rule4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -497,7 +497,7 @@ GameObject:
   - 222: {fileID: 923651731}
   - 114: {fileID: 923651730}
   m_Layer: 5
-  m_Name: ruleover
+  m_Name: RuleOver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

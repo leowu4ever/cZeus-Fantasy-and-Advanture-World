@@ -95,7 +95,7 @@ GameObject:
   - 4: {fileID: 26807030}
   - 212: {fileID: 26807031}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_3
+  m_Name: number3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -304,6 +304,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 195248, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
+      propertyPath: m_Name
+      value: Mystery Block1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
   m_IsPrefabParent: 0
@@ -381,7 +385,7 @@ GameObject:
   - 212: {fileID: 321497536}
   - 114: {fileID: 321497535}
   m_Layer: 0
-  m_Name: mystery pair3
+  m_Name: Mystery pair3
   m_TagString: Board
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -495,6 +499,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 195248, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
+      propertyPath: m_Name
+      value: Mystery Block1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
   m_IsPrefabParent: 0
@@ -543,7 +551,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 195248, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_Name
-      value: Mystery Number Board Prefab (1)
+      value: Mystery Block2
       objectReference: {fileID: 0}
     - target: {fileID: 429268, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_LocalScale.x
@@ -570,7 +578,7 @@ GameObject:
   - 4: {fileID: 640087147}
   - 212: {fileID: 640087148}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_2
+  m_Name: number2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -624,7 +632,7 @@ GameObject:
   - 4: {fileID: 699566989}
   - 212: {fileID: 699566988}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_3
+  m_Name: number3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -679,7 +687,7 @@ GameObject:
   - 212: {fileID: 702790352}
   - 114: {fileID: 702790351}
   m_Layer: 0
-  m_Name: mystery pair4
+  m_Name: Mystery pair4
   m_TagString: Board
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -968,7 +976,7 @@ GameObject:
   - 4: {fileID: 1011492767}
   - 212: {fileID: 1011492768}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_3
+  m_Name: number3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1213,7 +1221,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 195248, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_Name
-      value: Mystery Number Board Prefab (1)
+      value: Mystery Block2
       objectReference: {fileID: 0}
     - target: {fileID: 429268, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_LocalScale.x
@@ -1467,6 +1475,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 195248, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
+      propertyPath: m_Name
+      value: Mystery Block1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
   m_IsPrefabParent: 0
@@ -1520,6 +1532,10 @@ Prefab:
     - target: {fileID: 429268, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 195248, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
+      propertyPath: m_Name
+      value: Mystery Block1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
@@ -1671,7 +1687,7 @@ GameObject:
   - 4: {fileID: 1521409728}
   - 212: {fileID: 1521409729}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_2
+  m_Name: number2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1815,7 +1831,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 195248, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_Name
-      value: Mystery Number Board Prefab (1)
+      value: Mystery Block2
       objectReference: {fileID: 0}
     - target: {fileID: 429268, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_LocalScale.x
@@ -1842,7 +1858,7 @@ GameObject:
   - 4: {fileID: 1599201255}
   - 212: {fileID: 1599201256}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_3
+  m_Name: number3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1896,7 +1912,7 @@ GameObject:
   - 4: {fileID: 1696445738}
   - 212: {fileID: 1696445739}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_2
+  m_Name: number2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1951,7 +1967,7 @@ GameObject:
   - 212: {fileID: 1803371234}
   - 114: {fileID: 1803371233}
   m_Layer: 0
-  m_Name: mystery pair2
+  m_Name: Mystery pair2
   m_TagString: Board
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2059,7 +2075,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 195248, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_Name
-      value: Mystery Number Board Prefab (1)
+      value: Mystery Block2
       objectReference: {fileID: 0}
     - target: {fileID: 429268, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
       propertyPath: m_LocalScale.x
@@ -2087,7 +2103,7 @@ GameObject:
   - 222: {fileID: 1868764625}
   - 114: {fileID: 1868764624}
   m_Layer: 5
-  m_Name: content
+  m_Name: Rule2 Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2284,7 +2300,7 @@ GameObject:
   - 114: {fileID: 1940306957}
   - 95: {fileID: 1940306959}
   m_Layer: 0
-  m_Name: mystery pair1
+  m_Name: Four Mystery Pairs
   m_TagString: Board
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2363,7 +2379,7 @@ Animator:
   m_GameObject: {fileID: 1940306955}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 66f01e965a9c3dd409993c86331bbd55, type: 2}
+  m_Controller: {fileID: 9100000, guid: a7e28ba5711bdfe4285e2cedf1772439, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2381,7 +2397,7 @@ GameObject:
   - 4: {fileID: 2023550713}
   - 212: {fileID: 2023550714}
   m_Layer: 0
-  m_Name: clipart-numbers-numbers_set_2
+  m_Name: number2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2436,7 +2452,7 @@ GameObject:
   - 222: {fileID: 2053733471}
   - 114: {fileID: 2053733470}
   m_Layer: 5
-  m_Name: rule2
+  m_Name: Rule2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
