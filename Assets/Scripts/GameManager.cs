@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
 		CSVParser.Packet rawData = CSVParser.ParseCSV.generateData (puzzleLevel);    // How to pass a parameter 
 		List<string> contentList = rawData.displayData;
 		List<string> answerList = rawData.answerData;
-		totalAnswerNumber = rawData.columnSize * rawData.rowSize;
+        SetTotalAnswerNumberFor(puzzleLevel, rawData.rowSize, rawData.columnSize);            
 		// ---------------------- Test ------------------------
 		string completeDisplayContentTestString = "";
 		for (int a = 0; a < contentList.Count; a++) {
@@ -84,8 +84,23 @@ public class GameManager : MonoBehaviour
 			}
 		}
 	}
-
-	public static void IncreaseErrorCount ()
+    void SetTotalAnswerNumberFor(string puzzleLevel,int rowSize,int columnSize)
+    {
+        totalAnswerNumber = columnSize * rowSize;
+        if (puzzleLevel == "1" || puzzleLevel == "2")
+        {
+            totalAnswerNumber = 2;
+        }
+        else if (puzzleLevel == "3")
+        {
+            totalAnswerNumber = 3;
+        }
+        else if (puzzleLevel == "4"|| puzzleLevel == "5")
+        {
+            totalAnswerNumber = 4;
+        }
+    }
+    public static void IncreaseErrorCount ()
 	{
 		errorCount++;
 	}
