@@ -68,7 +68,14 @@ public class GameManager : MonoBehaviour
 				if (contentList [a] == "0" && answerList [a] != "0") {
 					contentSpriteArray [a].GetComponent<ContentScript> ().content = contentList [a];       // assign content
 					contentSpriteArray [a].GetComponent<ContentScript> ().answer = answerList [a];     // assign answer
-				} else if (contentList [a] == "0" && answerList [a] == "0") {
+				}else if(contentList[a] != "0" && answerList[a] != "0")
+                {
+                    contentSpriteArray[a].GetComponent<ContentScript>().content = contentList[a];       // assign content
+                    contentSpriteArray[a].GetComponent<ContentScript>().answer = answerList[a];         // assign answer
+                    contentSpriteArray[a].GetComponent<ContentScript>().isAnswered = true;
+                    IncreAnsweredCountByOne();
+                }
+                else if (contentList [a] == "0" && answerList [a] == "0") {
 					contentSpriteArray [a].GetComponent<ContentScript> ().content = "";
 				} else if (contentList [a] != "0" && answerList [a] == "0") {
 					contentSpriteArray [a].GetComponent<ContentScript> ().content = contentList [a];       // assign content
