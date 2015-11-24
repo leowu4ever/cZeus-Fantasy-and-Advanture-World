@@ -759,7 +759,7 @@ GameObject:
   - 82: {fileID: 1384437040}
   - 114: {fileID: 1384437041}
   m_Layer: 0
-  m_Name: Bg Music
+  m_Name: BgMusic
   m_TagString: sound
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
