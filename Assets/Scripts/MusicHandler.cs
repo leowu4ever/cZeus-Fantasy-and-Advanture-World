@@ -10,7 +10,10 @@ public class MusicHandler : MonoBehaviour {
 	public GameObject BgMusic;
 
 
-
+	public void stop()
+	{
+		BgMusic.GetComponent<AudioSource> ().Stop ();
+	}
 	public void PlayButtonPressed(){
 
 		PlayButtonMusic.GetComponent<AudioSource> ().Play ();
