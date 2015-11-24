@@ -1273,6 +1273,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   contentSpriteArray: []
+  scoreWindow: {fileID: 0}
+  puzzleLevel: 
 --- !u!4 &794283348
 Transform:
   m_ObjectHideFlags: 0
