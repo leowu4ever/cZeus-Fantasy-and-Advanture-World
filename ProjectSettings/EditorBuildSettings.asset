@@ -18,6 +18,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chapter Scene 1.unity
   - enabled: 1
+    path: Assets/Scenes/Chapter Scene 2.unity
+  - enabled: 1
     path: Assets/Scenes/Tutorial Scenes/page1.unity
   - enabled: 1
     path: Assets/Scenes/Tutorial Scenes/page2.unity
