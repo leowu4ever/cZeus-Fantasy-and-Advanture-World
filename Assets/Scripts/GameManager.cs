@@ -26,7 +26,12 @@ public class GameManager : MonoBehaviour
 		InitGameboard ();
 		InGameTimer.initTimer (GAME_DURATION);
 		InGameTimer.StartTimer ();
-	}
+        // Do this everytime to reset the game
+        isGameover = false;
+        errorCount = 0;
+        answeredCount = 0;
+        isInputing = false;
+    }
 
 	void Update ()
 	{
