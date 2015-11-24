@@ -1144,6 +1144,7 @@ MonoBehaviour:
   SettingButtonMusic: {fileID: 1805380068}
   TutorialButtonMusic: {fileID: 953532236}
   BackButtonMusic: {fileID: 0}
+  BgMusic: {fileID: 0}
 --- !u!1 &1896819203
 GameObject:
   m_ObjectHideFlags: 0

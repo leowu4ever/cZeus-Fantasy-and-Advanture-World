@@ -1501,6 +1501,10 @@ Prefab:
       propertyPath: WaypointsMover
       value: 
       objectReference: {fileID: 372346969}
+    - target: {fileID: 11400000, guid: acb13cf7f83bfd34ab58c92ae4926c80, type: 2}
+      propertyPath: IsClickEnabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: acb13cf7f83bfd34ab58c92ae4926c80, type: 2}
   m_IsPrefabParent: 0

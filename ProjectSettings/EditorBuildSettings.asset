@@ -8,14 +8,40 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Scene.unity
   - enabled: 1
-    path: Assets/Scenes/Setting Scene.unity
-  - enabled: 1
     path: Assets/Scenes/Shop Scene.unity
   - enabled: 1
-    path: Assets/Scenes/Tutorial Scene.unity
+    path: Assets/Scenes/Tutorial Scenes/Tutorial Scene.unity
+  - enabled: 1
+    path: Assets/Scenes/Setting Scene.unity
   - enabled: 1
     path: Assets/Scenes/World Map Scene.unity
   - enabled: 1
     path: Assets/Scenes/Chapter Scene 1.unity
   - enabled: 1
+    path: Assets/Scenes/Tutorial Scenes/page1.unity
+  - enabled: 1
+    path: Assets/Scenes/Tutorial Scenes/page2.unity
+  - enabled: 1
+    path: Assets/Scenes/Tutorial Scenes/page3.unity
+  - enabled: 1
+    path: Assets/Scenes/Tutorial Scenes/page4.unity
+  - enabled: 1
+    path: Assets/Scenes/Tutorial Scenes/page5.unity
+  - enabled: 1
+    path: Assets/Scenes/Tutorial Scenes/page6.unity
+  - enabled: 1
     path: Assets/Scenes/In-game Scenes/InGame Scene (2x2).unity
+  - enabled: 1
+    path: Assets/Scenes/In-game Scenes/InGame Scene (2x3).unity
+  - enabled: 1
+    path: Assets/Scenes/In-game Scenes/InGame Scene (3x3).unity
+  - enabled: 1
+    path: Assets/Scenes/In-game Scenes/InGame Scene Level 1.unity
+  - enabled: 1
+    path: Assets/Scenes/In-game Scenes/InGame Scene Level 2.unity
+  - enabled: 1
+    path: Assets/Scenes/In-game Scenes/InGame Scene Level 3.unity
+  - enabled: 1
+    path: Assets/Scenes/In-game Scenes/InGame Scene Level 4.unity
+  - enabled: 1
+    path: Assets/Scenes/In-game Scenes/InGame Scene Level 5.unity
