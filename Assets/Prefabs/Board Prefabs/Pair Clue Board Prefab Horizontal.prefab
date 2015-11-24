@@ -29,7 +29,11 @@ GameObject:
   - 61: {fileID: 6155586}
   m_Layer: 0
   m_Name: Addition Content
+<<<<<<< HEAD:Assets/Prefabs/Pair Clue Board Prefab Horizontal.prefab
+  m_TagString: Board Content
+=======
   m_TagString: Pair Clue Content
+>>>>>>> master:Assets/Prefabs/Board Prefabs/Pair Clue Board Prefab Horizontal.prefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,7 +66,11 @@ GameObject:
   - 61: {fileID: 6113086}
   m_Layer: 0
   m_Name: Product Content
+<<<<<<< HEAD:Assets/Prefabs/Pair Clue Board Prefab Horizontal.prefab
+  m_TagString: Board Content
+=======
   m_TagString: Pair Clue Content
+>>>>>>> master:Assets/Prefabs/Board Prefabs/Pair Clue Board Prefab Horizontal.prefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -185,7 +193,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   content: 0
-  answer: -1
   isAnswered: 0
   numberPrefab: {fileID: 197100, guid: e5f3d8f79956540dba56cb88a045dd3b, type: 2}
 --- !u!114 &11434326
@@ -215,7 +222,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   content: 0
-  answer: -1
   isAnswered: 0
   numberPrefab: {fileID: 197100, guid: e5f3d8f79956540dba56cb88a045dd3b, type: 2}
 --- !u!212 &21210558
@@ -317,7 +323,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_TagString
+<<<<<<< HEAD:Assets/Prefabs/Pair Clue Board Prefab Horizontal.prefab
+      value: Board Content
+=======
       value: Pair Clue Content
+>>>>>>> master:Assets/Prefabs/Board Prefabs/Pair Clue Board Prefab Horizontal.prefab
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: contentSprites.Array.data[0]
