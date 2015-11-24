@@ -39,10 +39,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ec10b987e2cff409cea5ddd4fb50da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  YesButton: {fileID: 0}
-  NoButton: {fileID: 0}
-  ConfirmationView: {fileID: 0}
-  SelectedLevelNumber: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
