@@ -539,6 +539,15 @@ Prefab:
       propertyPath: m_Name
       value: Level01
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
+      propertyPath: LevelScene
+      value: 
+      objectReference: {fileID: 102900000, guid: 8387b6bfd092045f49eede0828016464,
+        type: 3}
+    - target: {fileID: 11400000, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
+      propertyPath: SceneName
+      value: Chapter Scene 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
   m_IsPrefabParent: 0
@@ -652,6 +661,7 @@ MonoBehaviour:
   SettingButtonMusic: {fileID: 0}
   TutorialButtonMusic: {fileID: 0}
   BackButtonMusic: {fileID: 733206600}
+  BgMusic: {fileID: 0}
 --- !u!1 &1074921962
 GameObject:
   m_ObjectHideFlags: 0
@@ -1302,6 +1312,18 @@ Prefab:
       propertyPath: WaypointsMover
       value: 
       objectReference: {fileID: 100859504}
+    - target: {fileID: 11400000, guid: acb13cf7f83bfd34ab58c92ae4926c80, type: 2}
+      propertyPath: IsClickEnabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acb13cf7f83bfd34ab58c92ae4926c80, type: 2}
+      propertyPath: ScrollingEnabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acb13cf7f83bfd34ab58c92ae4926c80, type: 2}
+      propertyPath: MapCamera
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: acb13cf7f83bfd34ab58c92ae4926c80, type: 2}
   m_IsPrefabParent: 0
