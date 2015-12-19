@@ -1,20 +1,20 @@
 fileFormatVersion: 2
 guid: a5c49a39e77e84762aefb049115bae4c
-timeCreated: 1450565083
+timeCreated: 1450567570
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Mystery_Number_Board
     21300002: Pair_Clue_Board_Horizontal
-    21300004: newgameuiatlas_2
+    21300004: Back_Button
     21300006: newgameuiatlas_3
-    21300008: newgameuiatlas_4
-    21300010: newgameuiatlas_5
+    21300008: Setting_Button
+    21300010: Time_Icon
     21300012: newgameuiatlas_6
     21300014: newgameuiatlas_7
     21300016: Square_Clue_Board
     21300018: Pair_Clue_Board_Vertical
-    21300020: newgameuiatlas_10
+    21300020: Tool_Bar_Bg
     21300022: newgameuiatlas_11
   serializedVersion: 2
   mipmaps:
@@ -75,14 +75,14 @@ TextureImporter:
     - name: Pair_Clue_Board_Horizontal
       rect:
         serializedVersion: 2
-        x: 192
+        x: 193
         y: 1867
-        width: 353
+        width: 352
         height: 177
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newgameuiatlas_2
+    - name: Back_Button
       rect:
         serializedVersion: 2
         x: 553
@@ -102,7 +102,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newgameuiatlas_4
+    - name: Setting_Button
       rect:
         serializedVersion: 2
         x: 699
@@ -112,7 +112,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newgameuiatlas_5
+    - name: Time_Icon
       rect:
         serializedVersion: 2
         x: 843
@@ -125,30 +125,30 @@ TextureImporter:
     - name: Square_Clue_Board
       rect:
         serializedVersion: 2
-        x: 7
+        x: 5
         y: 1506
-        width: 353
-        height: 353
+        width: 352
+        height: 352
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Pair_Clue_Board_Vertical
       rect:
         serializedVersion: 2
-        x: 372
+        x: 369
         y: 1506
         width: 177
         height: 353
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newgameuiatlas_10
+    - name: Tool_Bar_Bg
       rect:
         serializedVersion: 2
         x: 558
-        y: 1694
-        width: 1244
-        height: 215
+        y: 1699
+        width: 1242
+        height: 210
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
