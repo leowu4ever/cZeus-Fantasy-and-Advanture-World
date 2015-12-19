@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: {fileID: 504700129}
-  Speed: 4
+  Speed: 5
 --- !u!1 &242445813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1334,6 +1334,10 @@ Prefab:
       propertyPath: MapCamera
       value: 
       objectReference: {fileID: 1407918374}
+    - target: {fileID: 11400000, guid: acb13cf7f83bfd34ab58c92ae4926c80, type: 2}
+      propertyPath: TranslationType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: acb13cf7f83bfd34ab58c92ae4926c80, type: 2}
   m_IsPrefabParent: 0
