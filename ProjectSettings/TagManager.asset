@@ -9,6 +9,8 @@ TagManager:
   - Text
   - Pair Clue Content
   - Square Clue Content
+  - Board Content
+  - sound
   layers:
   - Default
   - TransparentFX

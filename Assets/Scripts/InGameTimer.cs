@@ -9,7 +9,7 @@ public class InGameTimer : MonoBehaviour {
     private static Timer timer;
 
     // Use this for initialization
-    public static void initTimer (int initTimerValue) {
+     public static void initTimer (int initTimerValue) {
         countTime = initTimerValue;
         ClearTimer();
         isTimerFinish = false;

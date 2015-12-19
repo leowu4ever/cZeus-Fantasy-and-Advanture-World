@@ -25,8 +25,10 @@ public class CSVParser : MonoBehaviour
 			//http://answers.unity3d.com/questions/963335/reading-from-csv-work-on-editor-and-no-data-on-dev.html
 			//http://answers.unity3d.com/questions/854658/android-persistent-data-loading-fails.html
 			string filepath = "Assets/CSV/level" + level + ".csv";
-			System.IO.StreamReader data = new System.IO.StreamReader (filepath);
-			string dataline;
+            //System.IO.StreamReader data = new System.IO.StreamReader (filepath);
+            System.IO.StreamReader data = new System.IO.StreamReader(new System.IO.MemoryStream((Resources.Load("level" + level) as TextAsset).bytes));
+
+            string dataline;
 			string[] rawData;
 			Packet packet = new Packet ();
 			string readDataLine;
@@ -43,9 +45,10 @@ public class CSVParser : MonoBehaviour
 			//generate random number
 			int Number = Random.Range (1, row);
 			data.Close ();
-			data = new System.IO.StreamReader (filepath);
-			
-			for (int j = 1; j < Number; j++) {
+            //data = new System.IO.StreamReader (filepath);
+            data = new System.IO.StreamReader(new System.IO.MemoryStream((Resources.Load("level" + level) as TextAsset).bytes));
+
+            for (int j = 1; j < Number; j++) {
 				dataline = data.ReadLine ();
 			}
 			dataline = data.ReadLine ();

@@ -26,7 +26,12 @@ public class GameManager : MonoBehaviour
 		InitGameboard ();
 		InGameTimer.initTimer (GAME_DURATION);
 		InGameTimer.StartTimer ();
-	}
+        // Do this everytime to reset the game
+        isGameover = false;
+        errorCount = 0;
+        answeredCount = 0;
+        isInputing = false;
+    }
 
 	void Update ()
 	{
@@ -47,7 +52,7 @@ public class GameManager : MonoBehaviour
 		CSVParser.Packet rawData = CSVParser.ParseCSV.generateData (puzzleLevel);    // How to pass a parameter 
 		List<string> contentList = rawData.displayData;
 		List<string> answerList = rawData.answerData;
-		totalAnswerNumber = rawData.columnSize * rawData.rowSize;
+        SetTotalAnswerNumberFor(puzzleLevel, rawData.rowSize, rawData.columnSize);            
 		// ---------------------- Test ------------------------
 		string completeDisplayContentTestString = "";
 		for (int a = 0; a < contentList.Count; a++) {
@@ -68,7 +73,14 @@ public class GameManager : MonoBehaviour
 				if (contentList [a] == "0" && answerList [a] != "0") {
 					contentSpriteArray [a].GetComponent<ContentScript> ().content = contentList [a];       // assign content
 					contentSpriteArray [a].GetComponent<ContentScript> ().answer = answerList [a];     // assign answer
-				} else if (contentList [a] == "0" && answerList [a] == "0") {
+				}else if(contentList[a] != "0" && answerList[a] != "0")
+                {
+                    contentSpriteArray[a].GetComponent<ContentScript>().content = contentList[a];       // assign content
+                    contentSpriteArray[a].GetComponent<ContentScript>().answer = answerList[a];         // assign answer
+                    contentSpriteArray[a].GetComponent<ContentScript>().isAnswered = true;
+                    IncreAnsweredCountByOne();
+                }
+                else if (contentList [a] == "0" && answerList [a] == "0") {
 					contentSpriteArray [a].GetComponent<ContentScript> ().content = "";
 				} else if (contentList [a] != "0" && answerList [a] == "0") {
 					contentSpriteArray [a].GetComponent<ContentScript> ().content = contentList [a];       // assign content
@@ -77,8 +89,23 @@ public class GameManager : MonoBehaviour
 			}
 		}
 	}
-
-	public static void IncreaseErrorCount ()
+    void SetTotalAnswerNumberFor(string puzzleLevel,int rowSize,int columnSize)
+    {
+        totalAnswerNumber = columnSize * rowSize;
+        if (puzzleLevel == "1" || puzzleLevel == "2")
+        {
+            totalAnswerNumber = 2;
+        }
+        else if (puzzleLevel == "3")
+        {
+            totalAnswerNumber = 3;
+        }
+        else if (puzzleLevel == "4"|| puzzleLevel == "5")
+        {
+            totalAnswerNumber = 4;
+        }
+    }
+    public static void IncreaseErrorCount ()
 	{
 		errorCount++;
 	}

@@ -10,12 +10,16 @@ public class MusicHandler : MonoBehaviour {
 	public GameObject BgMusic;
 
 
+	public void stop()
+	{
+		BgMusic = GameObject.Find("BgMusic");
+		if(BgMusic.GetComponent<AudioSource>().isPlaying)
+		    BgMusic.GetComponent<AudioSource>().Stop();
+		else
+			BgMusic.GetComponent<AudioSource>().Play();
 
-	public void PlayButtonPressed(){
-
-		PlayButtonMusic.GetComponent<AudioSource> ().Play ();
-		Debug.Log(PlayButtonMusic.GetComponent<AudioSource> ().isPlaying);
 	}
+
 	public void SettingButtonPressed(){
 		
 		SettingButtonMusic.GetComponent<AudioSource> ().Play ();
