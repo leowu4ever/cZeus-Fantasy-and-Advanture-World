@@ -529,7 +529,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1381171676}
-  m_RootOrder: 3
+  m_RootOrder: 0
 --- !u!1 &792394505
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,10 +596,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 777237121}
   - {fileID: 1695764997}
   - {fileID: 660567349}
   - {fileID: 1840458792}
-  - {fileID: 777237121}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_AnchorMin: {x: 0, y: 0}
