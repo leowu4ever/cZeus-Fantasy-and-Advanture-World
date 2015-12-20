@@ -44,7 +44,7 @@ GameObject:
   - 4: {fileID: 409354}
   - 212: {fileID: 21270076}
   m_Layer: 0
-  m_Name: Plus Sign
+  m_Name: Plus Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ GameObject:
   - 4: {fileID: 449812}
   - 212: {fileID: 21296924}
   m_Layer: 0
-  m_Name: Times Sign
+  m_Name: Multiply Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,6 +218,10 @@ MonoBehaviour:
   - {fileID: 21300016, guid: a5c49a39e77e84762aefb049115bae4c, type: 3}
   - {fileID: 21300020, guid: 23214bb92522542ad8f246ccf931f18e, type: 3}
   isPressed: 0
+  plusIcon: {fileID: 154772}
+  multiplyIcon: {fileID: 183018}
+  additionContent: {fileID: 132988}
+  productContent: {fileID: 142948}
 --- !u!212 &21262718
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -375,7 +379,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Name
-      value: Content
+      value: Multiply Icon
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: normalAndPressedBoardSprites.Array.data[0]
@@ -392,6 +396,38 @@ Prefab:
       value: 
       objectReference: {fileID: 21300016, guid: a5c49a39e77e84762aefb049115bae4c,
         type: 3}
+    - target: {fileID: 0}
+      propertyPath: PlusIcon
+      value: 
+      objectReference: {fileID: 154772}
+    - target: {fileID: 0}
+      propertyPath: MultiplyIcon
+      value: 
+      objectReference: {fileID: 183018}
+    - target: {fileID: 0}
+      propertyPath: AdditionContent
+      value: 
+      objectReference: {fileID: 132988}
+    - target: {fileID: 0}
+      propertyPath: ProductContent
+      value: 
+      objectReference: {fileID: 142948}
+    - target: {fileID: 0}
+      propertyPath: additionContent
+      value: 
+      objectReference: {fileID: 132988}
+    - target: {fileID: 0}
+      propertyPath: productContent
+      value: 
+      objectReference: {fileID: 142948}
+    - target: {fileID: 0}
+      propertyPath: plusIcon
+      value: 
+      objectReference: {fileID: 154772}
+    - target: {fileID: 0}
+      propertyPath: multiplyIcon
+      value: 
+      objectReference: {fileID: 183018}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 159504}
