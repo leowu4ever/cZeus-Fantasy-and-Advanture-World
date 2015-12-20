@@ -1,13 +1,25 @@
 fileFormatVersion: 2
 guid: a5c49a39e77e84762aefb049115bae4c
-timeCreated: 1450479219
+timeCreated: 1450573017
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Mystery_Number_Board
+    21300002: Pair_Clue_Board_Horizontal
+    21300004: Back_Button
+    21300006: newgameuiatlas_3
+    21300008: Setting_Button
+    21300010: Time_Icon
+    21300012: newgameuiatlas_6
+    21300014: newgameuiatlas_7
+    21300016: Square_Clue_Board
+    21300018: Pair_Clue_Board_Vertical
+    21300020: Tool_Bar_Bg
+    21300022: newgameuiatlas_11
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -30,7 +42,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +50,118 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 520
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Mystery_Number_Board
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1867
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Pair_Clue_Board_Horizontal
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1867
+        width: 352
+        height: 177
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Back_Button
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 1926
+        width: 63
+        height: 116
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas_3
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 1926
+        width: 63
+        height: 116
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Setting_Button
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1939
+        width: 119
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Time_Icon
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 1924
+        width: 83
+        height: 114
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Square_Clue_Board
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1506
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Pair_Clue_Board_Vertical
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 1506
+        width: 177
+        height: 353
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tool_Bar_Bg
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1699
+        width: 1241
+        height: 209
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 514
+        height: 257
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
