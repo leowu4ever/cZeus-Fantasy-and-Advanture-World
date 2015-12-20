@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalAndPressedBoardSprites:
-  - {fileID: 21300014, guid: 23214bb92522542ad8f246ccf931f18e, type: 3}
+  - {fileID: 21300018, guid: a5c49a39e77e84762aefb049115bae4c, type: 3}
   - {fileID: 21300016, guid: 23214bb92522542ad8f246ccf931f18e, type: 3}
   isPressed: 0
 --- !u!114 &11444120
@@ -376,7 +376,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: normalAndPressedBoardSprites.Array.data[0]
       value: 
-      objectReference: {fileID: 21300014, guid: 23214bb92522542ad8f246ccf931f18e,
+      objectReference: {fileID: 21300018, guid: a5c49a39e77e84762aefb049115bae4c,
         type: 3}
     - target: {fileID: 0}
       propertyPath: normalAndPressedBoardSprites.Array.data[1]
