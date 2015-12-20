@@ -100,7 +100,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Next
 --- !u!114 &11419514
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -188,7 +188,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300028, guid: 23214bb92522542ad8f246ccf931f18e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -227,7 +227,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Score text
+  m_Text: Score:???
 --- !u!222 &22247960
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -266,7 +266,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 2.38418579e-07}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22447408
@@ -301,8 +301,8 @@ RectTransform:
   - {fileID: 22409126}
   m_Father: {fileID: 22447408}
   m_RootOrder: 1
-  m_AnchorMin: {x: .299000025, y: .0928545073}
-  m_AnchorMax: {x: .704827368, y: .202860698}
+  m_AnchorMin: {x: .295563698, y: .256023914}
+  m_AnchorMax: {x: .708263755, y: .352710158}
   m_AnchoredPosition: {x: .499996185, y: -.5}
   m_SizeDelta: {x: -1, y: -1}
   m_Pivot: {x: .5, y: .5}
