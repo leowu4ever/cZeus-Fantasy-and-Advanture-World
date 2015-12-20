@@ -6,7 +6,6 @@ public class WindowHandler : MonoBehaviour
 
 	public GameObject inputNumberBar;
 
-	// Update is called once per frame
 	void Update ()
 	{
 		if (GameManager.isInputing) {
@@ -15,7 +14,6 @@ public class WindowHandler : MonoBehaviour
 		} else {
 			DeactivateInputNumberBar ();
 			Debug.Log (" not isInputing");
-
 		}
 	}
 
