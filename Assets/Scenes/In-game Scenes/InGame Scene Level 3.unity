@@ -556,7 +556,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1381171676}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1 &788664839 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 127216, guid: 3a3eb5615d30147c6a53d09ea565d337, type: 2}
@@ -599,64 +599,6 @@ Transform:
   - {fileID: 151278835}
   m_Father: {fileID: 0}
   m_RootOrder: 2
---- !u!1001 &793948261
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1381171676}
-    m_Modifications:
-    - target: {fileID: 438112, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 85.5288086
-      objectReference: {fileID: 0}
-    - target: {fileID: 438112, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 103.26535
-      objectReference: {fileID: 0}
-    - target: {fileID: 438112, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 438112, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 438112, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 438112, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 438112, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 438112, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11433384, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
-      propertyPath: errorLabel
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11433384, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
-      propertyPath: timerLabel
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11493742, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
-      propertyPath: inputNumberBar
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &793948262 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 438112, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
-  m_PrefabInternal: {fileID: 793948261}
 --- !u!1001 &806551400
 Prefab:
   m_ObjectHideFlags: 0
@@ -1028,7 +970,6 @@ RectTransform:
   m_Children:
   - {fileID: 1217266135}
   - {fileID: 422589893}
-  - {fileID: 793948262}
   - {fileID: 777237121}
   m_Father: {fileID: 0}
   m_RootOrder: 3
