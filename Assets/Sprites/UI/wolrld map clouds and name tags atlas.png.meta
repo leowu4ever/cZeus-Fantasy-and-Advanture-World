@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8592a8105cdc24ca6816deed9e7a3d5e
-timeCreated: 1450715101
+timeCreated: 1450716310
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -20,10 +20,10 @@ TextureImporter:
     21300026: Hades
     21300028: Athens
     21300030: wolrld map clouds and name tags atlas_13
-    21300032: wolrld map clouds and name tags atlas_14
-    21300034: wolrld map clouds and name tags atlas_15
-    21300036: wolrld map clouds and name tags atlas_16
-    21300038: wolrld map clouds and name tags atlas_17
+    21300032: Cloud_Mid_Left
+    21300034: Cloud_Upper_Left
+    21300036: Cloud_Lower_Right
+    21300038: Cloud_Lower_Left
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -230,7 +230,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: wolrld map clouds and name tags atlas_14
+    - name: Cloud_Mid_Left
       rect:
         serializedVersion: 2
         x: 12
@@ -240,7 +240,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: wolrld map clouds and name tags atlas_15
+    - name: Cloud_Upper_Left
       rect:
         serializedVersion: 2
         x: 0
@@ -250,7 +250,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: wolrld map clouds and name tags atlas_16
+    - name: Cloud_Lower_Right
       rect:
         serializedVersion: 2
         x: 847
@@ -260,10 +260,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: wolrld map clouds and name tags atlas_17
+    - name: Cloud_Lower_Left
       rect:
         serializedVersion: 2
-        x: 890
+        x: 896
         y: 397
         width: 732
         height: 1629
