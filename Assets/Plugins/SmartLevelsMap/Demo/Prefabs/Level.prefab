@@ -404,8 +404,8 @@ MonoBehaviour:
   IsLocked: 0
   Lock: {fileID: 400012}
   PathPivot: {fileID: 400000}
-  IsClickEnabled: 1
   LevelScene: {fileID: 0}
+  SceneName: 
   StarsCount: 0
   StarsHoster: {fileID: 400010}
   Star1: {fileID: 400018}
@@ -656,7 +656,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100002}
