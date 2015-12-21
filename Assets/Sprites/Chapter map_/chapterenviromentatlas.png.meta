@@ -1,9 +1,14 @@
 fileFormatVersion: 2
 guid: d70c4e1c4211d48289a6cb9165364e82
-timeCreated: 1450479283
+timeCreated: 1450717174
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: chapterenviromentatlas_0
+    21300002: Level_Base
+    21300004: chapterenviromentatlas_2
+    21300006: chapterenviromentatlas_3
+    21300008: chapterenviromentatlas_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +35,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +43,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +54,57 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: chapterenviromentatlas_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1731
+        width: 241
+        height: 314
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Level_Base
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 1863
+        width: 93
+        height: 183
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chapterenviromentatlas_2
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 1720
+        width: 407
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chapterenviromentatlas_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1597
+        width: 45
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chapterenviromentatlas_4
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1642
+        width: 51
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

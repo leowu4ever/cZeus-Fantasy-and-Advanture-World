@@ -16,7 +16,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/World Map Scene.unity
   - enabled: 1
-    path: Assets/Scenes/Chapter Scene 1.unity
+    path: Assets/Scenes/Chapter_1 Scene.unity
   - enabled: 1
     path: Assets/Scenes/Chapter Scene 2.unity
   - enabled: 1
