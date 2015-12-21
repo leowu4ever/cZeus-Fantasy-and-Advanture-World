@@ -1,9 +1,29 @@
 fileFormatVersion: 2
 guid: 8592a8105cdc24ca6816deed9e7a3d5e
-timeCreated: 1450479179
+timeCreated: 1450715101
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Charpter_Node_Left
+    21300002: Charpter_Node_Right
+    21300004: Node_Base_Mid
+    21300006: Node_Base_Short
+    21300008: Node_Base_Long
+    21300010: Olimpus
+    21300012: Olimapia
+    21300014: Halkarnassus
+    21300016: Sparta
+    21300018: Ephesus
+    21300020: Rhodes
+    21300022: Knososs
+    21300024: Troy
+    21300026: Hades
+    21300028: Athens
+    21300030: wolrld map clouds and name tags atlas_13
+    21300032: wolrld map clouds and name tags atlas_14
+    21300034: wolrld map clouds and name tags atlas_15
+    21300036: wolrld map clouds and name tags atlas_16
+    21300038: wolrld map clouds and name tags atlas_17
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -38,18 +58,218 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 500
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Charpter_Node_Left
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1748
+        width: 67
+        height: 298
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Charpter_Node_Right
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1749
+        width: 65
+        height: 298
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Node_Base_Mid
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1589
+        width: 461
+        height: 153
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Node_Base_Short
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1597
+        width: 376
+        height: 154
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Node_Base_Long
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1419
+        width: 823
+        height: 161
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Olimpus
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1313
+        width: 319
+        height: 79
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Olimapia
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1314
+        width: 301
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Halkarnassus
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1220
+        width: 619
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sparta
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1123
+        width: 277
+        height: 79
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ephesus
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1124
+        width: 320
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rhodes
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1025
+        width: 278
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Knososs
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1018
+        width: 326
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Troy
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 922
+        width: 191
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hades
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 924
+        width: 243
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Athens
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 925
+        width: 247
+        height: 79
+      alignment: 9
+      pivot: {x: .484424025, y: .475946754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_13
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 676
+        width: 714
+        height: 248
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_14
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 429
+        width: 284
+        height: 241
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 759
+        height: 394
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_16
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 10
+        width: 1174
+        height: 301
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_17
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 397
+        width: 732
+        height: 1629
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

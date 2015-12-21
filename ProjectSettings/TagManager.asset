@@ -48,3 +48,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Node Base
+    uniqueID: 1792052469
+    locked: 0
+  - name: Node Things
+    uniqueID: 2439145179
+    locked: 0
