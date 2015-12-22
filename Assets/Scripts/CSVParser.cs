@@ -71,8 +71,19 @@ public class CSVParser : MonoBehaviour
 						packet.answerData.Add (rawData [i]);
 					} else {
 						packet.displayData.Add (rawData [i]);
-						packet.answerData.Add ("0");
-					}
+                        if ((i == 5 || i == 6) && rawData[i].Equals(rawData[1]))
+                        {
+                            packet.answerData.Add(rawData[1]);
+                        }
+                        else if ((i == 7 || i == 8) && rawData[i].Equals(rawData[4]))
+                        {
+                            packet.answerData.Add(rawData[4]);
+                        }
+                        else
+                        {
+                            packet.answerData.Add("0");
+                        }
+                    }
 				}
 				packet.rowSize = 1;
 				packet.columnSize = 1;
@@ -87,10 +98,22 @@ public class CSVParser : MonoBehaviour
 						packet.answerData.Add (rawData [i]);
 					} else {
 						packet.displayData.Add (rawData [i]);
-						packet.answerData.Add ("0");
+                        if ((i == 5 || i == 6 || i==7 || i==8) && rawData[i].Equals(rawData[1]))
+                        {
+                            packet.answerData.Add(rawData[1]);
+                        }
+                        else if ((i == 9 || i == 10 || i == 11 || i == 12) && rawData[i].Equals(rawData[4]))
+                        {
+                            packet.answerData.Add(rawData[4]);
+                        }
+                        else
+                        {
+                            packet.answerData.Add("0");
+                        }
+                            
 					}
-				}
-				packet.rowSize = 1;
+				}                  
+                packet.rowSize = 1;
 				packet.columnSize = 1;
 
 			} else if (level.Equals ("3")) {
@@ -103,8 +126,23 @@ public class CSVParser : MonoBehaviour
 						packet.answerData.Add (rawData [i]);
 					} else {
 						packet.displayData.Add (rawData [i]);
-						packet.answerData.Add ("0");
-					}
+                        if ((i == 8 || i == 9) && rawData[i].Equals(rawData[1]))
+                        {
+                            packet.answerData.Add(rawData[1]);
+                        }
+                        else if ((i == 10 || i == 11) && rawData[i].Equals(rawData[4]))
+                        {
+                            packet.answerData.Add(rawData[4]);
+                        }
+                        else if ((i == 12 || i == 13) && rawData[i].Equals(rawData[7]))
+                        {
+                            packet.answerData.Add(rawData[7]);
+                        }
+                        else
+                        {
+                            packet.answerData.Add("0");
+                        }
+                    }
 					
 				}
 				packet.rowSize = 1;
@@ -118,8 +156,27 @@ public class CSVParser : MonoBehaviour
 						packet.answerData.Add (rawData [i]);
 					} else {
 						packet.displayData.Add (rawData [i]);
-						packet.answerData.Add ("0");
-					}
+                        if ((i == 11 || i == 12) && rawData[i].Equals(rawData[1]))
+                        {
+                            packet.answerData.Add(rawData[1]);
+                        }
+                        else if ((i == 13 || i == 14) && rawData[i].Equals(rawData[4]))
+                        {
+                            packet.answerData.Add(rawData[4]);
+                        }
+                        else if ((i == 15 || i == 16) && rawData[i].Equals(rawData[7]))
+                        {
+                            packet.answerData.Add(rawData[7]);
+                        }
+                        else if ((i == 17 || i == 18) && rawData[i].Equals(rawData[10]))
+                        {
+                            packet.answerData.Add(rawData[10]);
+                        }
+                        else
+                        {
+                            packet.answerData.Add("0");
+                        }
+                    }
 				}
 				packet.rowSize = 1;
 				packet.columnSize = 1;
@@ -192,10 +249,24 @@ public class CSVParser : MonoBehaviour
 				}
 				if (level.Equals ("5"))
 					for (int i = 0; i < RawAnswerDataSize; i++) {
-						packet.displayData.Add (rawData [i + RawDisplayDataSize + 7]);
-						packet.displayData.Add (rawData [i + RawDisplayDataSize + 11]);
-						packet.answerData.Add ("0");
-						packet.answerData.Add ("0");
+                        int randomNum = Random.Range(0, 1);
+                        if(randomNum==0)
+                        {
+                            packet.displayData.Add(rawData[i + RawDisplayDataSize + 7]);
+                            packet.answerData.Add(rawData[i + RawDisplayDataSize + 7]);
+
+                            packet.displayData.Add(rawData[i + RawDisplayDataSize + 11]);
+                            packet.answerData.Add("0");
+                        }
+                        else
+                        {
+                            packet.displayData.Add(rawData[i + RawDisplayDataSize + 11]);
+                            packet.answerData.Add("0");
+
+                            packet.displayData.Add(rawData[i + RawDisplayDataSize + 7]);
+                            packet.answerData.Add(rawData[i + RawDisplayDataSize + 7]);
+                        }
+                        
 					}
 			}
 			return packet;
