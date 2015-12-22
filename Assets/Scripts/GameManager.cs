@@ -86,6 +86,7 @@ public class GameManager : MonoBehaviour
 			}
 		}
 	}
+
 	void SetTotalAnswerNumberFor (string puzzleLevel, int rowSize, int columnSize)
 	{
 		totalAnswerNumber = columnSize * rowSize;
@@ -97,6 +98,7 @@ public class GameManager : MonoBehaviour
 			totalAnswerNumber = 4;
 		}
 	}
+
 	public static void IncreaseErrorCount ()
 	{
 		errorCount++;
