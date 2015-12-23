@@ -328,11 +328,19 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: -2.44799995
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_LocalPosition.y
       value: -7.49100018
+=======
+      value: -8.35999966
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
+>>>>>>> origin/In-Game-Development
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -386,15 +394,19 @@ Prefab:
       propertyPath: m_Name
       value: Level08
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 21200000, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300002, guid: d70c4e1c4211d48289a6cb9165364e82,
         type: 3}
+=======
+>>>>>>> origin/In-Game-Development
     - target: {fileID: 118556, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 474580, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_LocalPosition.x
       value: -.050999999
@@ -412,6 +424,13 @@ Prefab:
       propertyPath: SceneName
       value: InGame Scene (3x3)
       objectReference: {fileID: 0}
+=======
+    - target: {fileID: 21200000, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300002, guid: d70c4e1c4211d48289a6cb9165364e82,
+        type: 3}
+>>>>>>> origin/In-Game-Development
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
   m_IsPrefabParent: 0
@@ -432,11 +451,19 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: 5.28599977
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_LocalPosition.y
       value: -5.29799986
+=======
+      value: -6.61000013
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.6400001
+>>>>>>> origin/In-Game-Development
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -499,6 +526,7 @@ Prefab:
       value: 
       objectReference: {fileID: 21300002, guid: d70c4e1c4211d48289a6cb9165364e82,
         type: 3}
+<<<<<<< HEAD
     - target: {fileID: 11400000, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: LevelScene
       value: 
@@ -508,6 +536,8 @@ Prefab:
       propertyPath: SceneName
       value: InGame Scene Level 4
       objectReference: {fileID: 0}
+=======
+>>>>>>> origin/In-Game-Development
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
   m_IsPrefabParent: 0
@@ -528,11 +558,19 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: -.379999995
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_LocalPosition.y
       value: -6.85900021
+=======
+      value: .74000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.29999995
+>>>>>>> origin/In-Game-Development
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -591,6 +629,7 @@ Prefab:
       value: 
       objectReference: {fileID: 21300002, guid: d70c4e1c4211d48289a6cb9165364e82,
         type: 3}
+<<<<<<< HEAD
     - target: {fileID: 11400000, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: LevelScene
       value: 
@@ -600,6 +639,8 @@ Prefab:
       propertyPath: SceneName
       value: InGame Scene (2x3)
       objectReference: {fileID: 0}
+=======
+>>>>>>> origin/In-Game-Development
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
   m_IsPrefabParent: 0
@@ -674,11 +715,19 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: 3.33100009
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_LocalPosition.y
       value: -5.20900011
+=======
+      value: -5.92000008
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.50999999
+>>>>>>> origin/In-Game-Development
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -712,15 +761,19 @@ Prefab:
       propertyPath: m_Name
       value: Level05
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 118556, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+=======
+>>>>>>> origin/In-Game-Development
     - target: {fileID: 21200000, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300002, guid: d70c4e1c4211d48289a6cb9165364e82,
         type: 3}
+<<<<<<< HEAD
     - target: {fileID: 11400000, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: LevelScene
       value: 
@@ -729,6 +782,11 @@ Prefab:
     - target: {fileID: 11400000, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: SceneName
       value: InGame Scene Level 5
+=======
+    - target: {fileID: 118556, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+>>>>>>> origin/In-Game-Development
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
@@ -750,11 +808,19 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: 6.03000021
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_LocalPosition.y
       value: -7.78599977
+=======
+      value: 5.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -5.57000017
+>>>>>>> origin/In-Game-Development
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -804,15 +870,19 @@ Prefab:
       propertyPath: m_Name
       value: Level03
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 21200000, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300002, guid: d70c4e1c4211d48289a6cb9165364e82,
         type: 3}
+=======
+>>>>>>> origin/In-Game-Development
     - target: {fileID: 118556, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 11400000, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: LevelScene
       value: 
@@ -822,6 +892,13 @@ Prefab:
       propertyPath: SceneName
       value: InGame Scene Level 3
       objectReference: {fileID: 0}
+=======
+    - target: {fileID: 21200000, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300002, guid: d70c4e1c4211d48289a6cb9165364e82,
+        type: 3}
+>>>>>>> origin/In-Game-Development
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
   m_IsPrefabParent: 0
@@ -1297,11 +1374,19 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: 1.48000002
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_LocalPosition.y
       value: -5.94000006
+=======
+      value: 3.61999989
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .829999983
+>>>>>>> origin/In-Game-Development
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1356,6 +1441,7 @@ Prefab:
       value: 
       objectReference: {fileID: 21300002, guid: d70c4e1c4211d48289a6cb9165364e82,
         type: 3}
+<<<<<<< HEAD
     - target: {fileID: 11400000, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
       propertyPath: LevelScene
       value: 
@@ -1365,6 +1451,8 @@ Prefab:
       propertyPath: SceneName
       value: InGame Scene (2x2)
       objectReference: {fileID: 0}
+=======
+>>>>>>> origin/In-Game-Development
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 105903d664c39294e926aed54de8b6c8, type: 2}
   m_IsPrefabParent: 0
