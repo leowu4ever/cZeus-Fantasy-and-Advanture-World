@@ -54,3 +54,6 @@ TagManager:
   - name: Node Things
     uniqueID: 2439145179
     locked: 0
+  - name: Node Character
+    uniqueID: 685218955
+    locked: 0

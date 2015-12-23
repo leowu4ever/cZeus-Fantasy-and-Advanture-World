@@ -673,7 +673,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hidden Advertisement
+  m_Text: Remove Ad
 --- !u!222 &896351872
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1676,7 +1676,7 @@ GameObject:
   - 114: {fileID: 1736332812}
   - 114: {fileID: 1736332811}
   m_Layer: 5
-  m_Name: Hidden Ad Button
+  m_Name: Hide Ad Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2231,7 +2231,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2.54999995
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
