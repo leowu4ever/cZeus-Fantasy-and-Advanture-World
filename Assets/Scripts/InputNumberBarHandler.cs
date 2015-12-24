@@ -95,7 +95,7 @@ public class InputNumberBarHandler : MonoBehaviour
 	void UpdateACorrectAnswerTo (GameObject correctContent, string answer)
 	{
 		ContentScript correctContentScript = correctContent.GetComponent<ContentScript> ();
-		GameManager.IncreAnsweredCountByOne ();
+		GameManager.IncrenumOfAnsweredByOne ();
 		correctContentScript.isAnswered = true;
 		correctContentScript.content = answer;
 	}
