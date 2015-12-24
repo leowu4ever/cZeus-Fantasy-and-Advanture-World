@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
 	public static int errorCount, numOfAnswered;
     	
 	public const int MAX_ERROR_NUMBER = 5;
-	public const int GAME_DURATION = 200;
+	public const int GAME_DURATION = 10;
 
 	void Start ()
 	{
@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
             if (numOfAnswered == numOfAnswers) {    // game win
                 StopCurGame();
 				scoreWindow.SetActive (true);  
-            } else  {   // game over 1. reach max error 2. time up
+            } else if (errorCount > MAX_ERROR_NUMBER || InGameTimer.isTimerFinish) {   // game over 1. reach max error 2. time up
                 StopCurGame();
                 gameoverWindow.SetActive (true);
             }

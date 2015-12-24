@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7cf65297b243048fea499b380d7afba5
-timeCreated: 1450916256
+timeCreated: 1450991325
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -27,6 +27,7 @@ TextureImporter:
     21300040: newgameuiatlas_20
     21300042: newgameuiatlas_21
     21300044: newgameuiatlas_27
+    21300046: newgameuiatlas_22
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -266,9 +267,9 @@ TextureImporter:
     - name: newgameuiatlas_19
       rect:
         serializedVersion: 2
-        x: 11
+        x: 12
         y: 1097
-        width: 1083
+        width: 1080
         height: 163
       alignment: 0
       pivot: {x: .5, y: .5}
@@ -276,9 +277,9 @@ TextureImporter:
     - name: newgameuiatlas_20
       rect:
         serializedVersion: 2
-        x: 11
+        x: 12
         y: 995
-        width: 1083
+        width: 1080
         height: 88
       alignment: 0
       pivot: {x: .5, y: .5}
@@ -300,6 +301,16 @@ TextureImporter:
         y: 0
         width: 514
         height: 257
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas_22
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 0
+        width: 1125
+        height: 259
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
