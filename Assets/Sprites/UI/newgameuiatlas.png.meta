@@ -1,21 +1,32 @@
 fileFormatVersion: 2
-guid: a5c49a39e77e84762aefb049115bae4c
-timeCreated: 1450573017
+guid: 7cf65297b243048fea499b380d7afba5
+timeCreated: 1450916256
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Mystery_Number_Board
-    21300002: Pair_Clue_Board_Horizontal
-    21300004: Back_Button
+    21300000: newgameuiatlas_0
+    21300002: newgameuiatlas_1
+    21300004: newgameuiatlas_2
     21300006: newgameuiatlas_3
-    21300008: Setting_Button
-    21300010: Time_Icon
+    21300008: newgameuiatlas_4
+    21300010: newgameuiatlas_5
     21300012: newgameuiatlas_6
     21300014: newgameuiatlas_7
-    21300016: Square_Clue_Board
-    21300018: Pair_Clue_Board_Vertical
-    21300020: Tool_Bar_Bg
+    21300016: newgameuiatlas_8
+    21300018: newgameuiatlas_9
+    21300020: newgameuiatlas_10
     21300022: newgameuiatlas_11
+    21300024: newgameuiatlas_12
+    21300026: newgameuiatlas_13
+    21300028: newgameuiatlas_14
+    21300030: newgameuiatlas_15
+    21300032: newgameuiatlas_16
+    21300034: newgameuiatlas_17
+    21300036: newgameuiatlas_18
+    21300038: newgameuiatlas_19
+    21300040: newgameuiatlas_20
+    21300042: newgameuiatlas_21
+    21300044: newgameuiatlas_27
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -62,7 +73,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Mystery_Number_Board
+    - name: newgameuiatlas_0
       rect:
         serializedVersion: 2
         x: 5
@@ -72,17 +83,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Pair_Clue_Board_Horizontal
+    - name: newgameuiatlas_1
       rect:
         serializedVersion: 2
-        x: 193
+        x: 192
         y: 1867
-        width: 352
+        width: 353
         height: 177
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Back_Button
+    - name: newgameuiatlas_2
       rect:
         serializedVersion: 2
         x: 553
@@ -97,22 +108,22 @@ TextureImporter:
         serializedVersion: 2
         x: 621
         y: 1926
-        width: 63
+        width: 64
         height: 116
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Setting_Button
+    - name: newgameuiatlas_4
       rect:
         serializedVersion: 2
         x: 699
-        y: 1939
+        y: 2005
         width: 119
-        height: 99
+        height: 30
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Time_Icon
+    - name: newgameuiatlas_5
       rect:
         serializedVersion: 2
         x: 843
@@ -122,17 +133,77 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Square_Clue_Board
+    - name: newgameuiatlas_6
       rect:
         serializedVersion: 2
-        x: 5
-        y: 1506
-        width: 352
-        height: 352
+        x: 949
+        y: 1938
+        width: 99
+        height: 110
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Pair_Clue_Board_Vertical
+    - name: newgameuiatlas_7
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 1939
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas_8
+      rect:
+        serializedVersion: 2
+        x: 1813
+        y: 1915
+        width: 113
+        height: 111
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas_9
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 948
+        width: 95
+        height: 1089
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas_10
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1975
+        width: 118
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas_11
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1940
+        width: 119
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1506
+        width: 353
+        height: 353
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas_13
       rect:
         serializedVersion: 2
         x: 369
@@ -142,17 +213,87 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Tool_Bar_Bg
+    - name: newgameuiatlas_14
       rect:
         serializedVersion: 2
         x: 558
         y: 1699
-        width: 1241
-        height: 209
+        width: 1242
+        height: 210
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newgameuiatlas_11
+    - name: newgameuiatlas_15
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 1622
+        width: 1194
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas_16
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 1535
+        width: 1194
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1293
+        width: 334
+        height: 195
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas_18
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 1055
+        width: 713
+        height: 463
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas_19
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1097
+        width: 1083
+        height: 163
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas_20
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 995
+        width: 1083
+        height: 88
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas_21
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 264
+        width: 703
+        height: 350
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas_27
       rect:
         serializedVersion: 2
         x: 0
