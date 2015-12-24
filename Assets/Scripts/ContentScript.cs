@@ -12,7 +12,6 @@ public class ContentScript : MonoBehaviour
 	void Start ()
 	{	
 		InitContent ();
-		InitAnswer ();
 	}
 
 	void InitContent ()
@@ -25,13 +24,6 @@ public class ContentScript : MonoBehaviour
 				CreateNumberSprite (contentCharArray);
 			}
 		}
-	}
-
-	void InitAnswer ()
-	{
-//		if (answer == "0") {
-//			answer = content;		// the answer is set to 0 in the csv files if it is revealed at the start
-//		}
 	}
 
 	void CreateNumberSprite (char[] contentCharArray)
