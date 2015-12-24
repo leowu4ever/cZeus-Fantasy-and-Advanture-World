@@ -11,6 +11,7 @@ TagManager:
   - Square Clue Content
   - Board Content
   - sound
+  - Selection
   layers:
   - Default
   - TransparentFX

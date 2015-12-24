@@ -3,91 +3,73 @@ using System.Collections;
 
 public class BoardPressedHandler : MonoBehaviour
 {
-	private GameObject currentPressedBoard;
-	public static GameObject currentPressedContent;
+	private GameObject curPressedBoard;
+	public static GameObject curPressedContent;
 
 	void Update ()
 	{
 		if (!GameManager.isGameover) {
 			if (Input.GetMouseButtonDown (0)) {
-	
-				RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (Input.mousePosition), Vector2.zero);
-				//RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (Input.GetTouch (0).position), Vector2.zero);
-			
+				RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (Input.mousePosition), Vector2.zero);			
 				if (hit.collider != null) {
 					// -------------------- Test board press --------------------
 					GameObject pressedBoard = hit.transform.parent.gameObject;
 					GameObject pressedContent = hit.transform.gameObject;
-
+                    BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript> (); 
 					ContentScript pressedContentScript = pressedContent.GetComponent<ContentScript> ();
-					//Debug.Log (hit.transform.name + " : " + pressedContentScript.content + " Answer : " + pressedContentScript.answer);
-					//Debug.Log (hit.transform.parent.name);
-					if (!pressedContent.GetComponent<ContentScript> ().isAnswered) {
-						if (currentPressedBoard == null) {
-							Debug.Log ("Init Cur");
-							currentPressedBoard = pressedBoard;
-							currentPressedContent = pressedContent;
+                    
+					if (!pressedContentScript.isAnswered) {
+						
+                        if (curPressedBoard == null && curPressedContent == null) {    // for first press
+							//Debug.Log ("Init Cur");    
 							SwitchToPressedBoardBg (pressedBoard);
-						} else if (currentPressedBoard == pressedBoard) {
-							if (pressedBoard.GetComponent<BoardScript> ().isPressed) {
-								if (currentPressedContent.name != pressedContent.name) {
-									Debug.Log ("Same Board, diff content");
-									currentPressedContent = pressedContent;
+                            UpdatePressedStates (pressedBoard, pressedContent);
+                            
+						} else if (curPressedBoard == pressedBoard) {
+							if (pressedBoardScript.isPressed) {
+								if (curPressedContent.name != pressedContent.name) {    // same board diff content = no action
+									//Debug.Log ("Same Board, diff content");
+                                    UpdatePressedStates (pressedBoard, pressedContent);
 								} else {
-									// pressed bg
-									Debug.Log ("Same Board, same content");
-									ToggleBoardBg (pressedBoard);
+									//Debug.Log ("Same Board, same content");    // same board same content = switch off
+                                    SwitchToNormalBoardBg (pressedBoard);
+                                    curPressedBoard = null;
+						          	curPressedContent = null;
 								}
 							} else {
-								ToggleBoardBg (pressedBoard);
+			                    SwitchToPressedBoardBg (pressedBoard);                                
+                                UpdatePressedStates (pressedBoard, pressedContent);
 							}
-						} else if (currentPressedBoard != pressedBoard) {
-							Debug.Log ("Diff board");
-							BoardScript currentPressedBoardScript = currentPressedBoard.GetComponent<BoardScript> ();
-							currentPressedBoardScript.SwitchToNormalBoardBg ();
-							ToggleBoardBg (pressedBoard);
-							currentPressedBoard = pressedBoard;
-							currentPressedContent = pressedContent;
+                            
+						} else if (curPressedBoard != pressedBoard) {
+							//Debug.Log ("Diff board");
+                            SwitchToNormalBoardBg (curPressedBoard);
+                            SwitchToPressedBoardBg (pressedBoard);
+                            UpdatePressedStates (pressedBoard, pressedContent);
 						}
 					}
 				}
 			}
 		}
 	}
-
-	void ToggleBoardBg (GameObject pressedBoard)
-	{
-		BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript> ();
-		if (!pressedBoardScript.isPressed) {
-			TurnOnInputMode ();
-			pressedBoardScript.SwitchToPressedBoardBg ();
-		} else {
-			TurnOffInputMode ();
-			pressedBoardScript.SwitchToNormalBoardBg ();
-		}
-	}
-
+    
+    void UpdatePressedStates (GameObject pressedBoard,  GameObject pressedContent) 
+    {
+         curPressedBoard = pressedBoard;
+		 curPressedContent = pressedContent;
+    }
+    
 	void SwitchToPressedBoardBg (GameObject pressedBoard)
 	{
-		TurnOnInputMode ();
+		GameManager.isInputing = true;
 		BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript> ();
 		pressedBoardScript.SwitchToPressedBoardBg ();
 	}
 
 	void SwitchToNormalBoardBg (GameObject pressedBoard)
 	{
-		TurnOffInputMode ();
+		GameManager.isInputing = false;
 		BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript> ();
 		pressedBoardScript.SwitchToNormalBoardBg ();
-	}
-
-	void TurnOnInputMode ()
-	{
-		GameManager.isInputing = true;
-	}
-
-	void TurnOffInputMode ()
-	{
-		GameManager.isInputing = false;
 	}
 }

@@ -13,8 +13,8 @@ public class InputNumberBarHandler : MonoBehaviour
 	{
 		if (!GameManager.isGameover) {
 			if (GameManager.isInputing) {
-				GameObject currentPressedContent = BoardPressedHandler.currentPressedContent;
-				ContentScript currentPressedContentScript = currentPressedContent.GetComponent<ContentScript> ();
+				GameObject curPressedContent = BoardPressedHandler.curPressedContent;
+				ContentScript curPressedContentScript = curPressedContent.GetComponent<ContentScript> ();
                 
 				/*
                  * Needs to check which type of content has been selected 
@@ -22,21 +22,21 @@ public class InputNumberBarHandler : MonoBehaviour
                  * Increase error count if it is wrong
                  */ 
 
-				if (currentPressedContent.tag == MYSTERY_NUMBER_CONTENT_TAG && !currentPressedContentScript.isAnswered) {
-					if (buttonLabel == currentPressedContentScript.answer) {
-						UpdateACorrectAnswerTo (currentPressedContent, buttonLabel);
-						CreateContentSpriteOn (currentPressedContent);
+				if (curPressedContent.tag == MYSTERY_NUMBER_CONTENT_TAG && !curPressedContentScript.isAnswered) {
+					if (buttonLabel == curPressedContentScript.answer) {
+						UpdateACorrectAnswerTo (curPressedContent, buttonLabel);
+						CreateContentSpriteOn (curPressedContent);
 					} else {
 						GameManager.IncreaseErrorCount ();
 					}
 				}
 
-				if (currentPressedContent.tag == PAIR_CLUE_CONTENT_TAG) {
-					TryInputNumberIn (currentPressedContent, buttonLabel, 2);
+				if (curPressedContent.tag == PAIR_CLUE_CONTENT_TAG) {
+					TryInputNumberIn (curPressedContent, buttonLabel, 2);
 				}
 
-				if (currentPressedContent.tag == SQUARE_CLUE_CONTENT_TAG) {
-					TryInputNumberIn (currentPressedContent, buttonLabel, 4);
+				if (curPressedContent.tag == SQUARE_CLUE_CONTENT_TAG) {
+					TryInputNumberIn (curPressedContent, buttonLabel, 4);
 				}
 
 			}

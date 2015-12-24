@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class GameManager : MonoBehaviour
 {   
 	public string puzzleLevel;
-    public int numOfAnswers;
+    private int numOfAnswers;
 	public GameObject[] contentSpriteArray;
 	public GameObject scoreWindow, gameoverWindow;
 
@@ -13,12 +13,14 @@ public class GameManager : MonoBehaviour
 	public static int errorCount, numOfAnswered;
     	
 	public const int MAX_ERROR_NUMBER = 5;
-	public const int GAME_DURATION = 10;
+	public const int GAME_DURATION = 1000;
 
 	void Start ()
 	{
 		InitGame ();
 		InitGameboard ();
+        Debug.Log (numOfAnswers + "total");
+        Debug.Log (numOfAnswered + "answered");
 	}
 
 	void Update ()
@@ -59,11 +61,17 @@ public class GameManager : MonoBehaviour
             string answer = answerList [a];
             contentSpriteArray [a].GetComponent<ContentScript> ().content = content;       
             contentSpriteArray [a].GetComponent<ContentScript> ().answer = answer;   
-            // mystery answered
-            if (content != "0" && answer != "0") {
+     
+            // mystery answered 
+            // This does not apply for lv1-5
+            if (content != "0" && answer != "0" && contentSpriteArray [a].transform.tag != "Selection") {
                 contentSpriteArray [a].GetComponent<ContentScript> ().isAnswered = true;
                 IncrenumOfAnsweredByOne ();
             } 
+            // pair/square answered
+            if(content != "0" && answer == "0") {
+                contentSpriteArray [a].GetComponent<ContentScript> ().isAnswered = true;
+            }
             // pair/square not answered
             if (content == "0" && answer == "0") {
                 contentSpriteArray [a].GetComponent<ContentScript> ().content = ""; // special handle in case you next input becomes '0' + 1/n
