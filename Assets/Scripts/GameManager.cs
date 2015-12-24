@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 	public string puzzleLevel;
 	public GameObject[] contentSpriteArray;
 	public GameObject scoreWindow;
-
+    
 	public static bool isInputing;
 	public static bool isGameover;
 	public static int errorCount;	
