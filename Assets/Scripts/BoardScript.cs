@@ -3,32 +3,31 @@ using System.Collections;
 
 public class BoardScript : MonoBehaviour
 {
-
 	public Sprite[] normalAndPressedBoardSprites;
 	public bool isPressed = false;
-
-	public GameObject plusIcon;
-	public GameObject multiplyIcon;
-	public GameObject additionContent;
-	public GameObject productContent;
+	public GameObject plusIcon, multiplyIcon, additionContent, productContent;
 
 	void Update ()
 	{
-		if (plusIcon != null) {
+		UpdateMathIcon();
+       
+	}
+
+    void UpdateMathIcon () {
+        if (plusIcon != null) {
 			if (additionContent.GetComponent<ContentScript> ().content != "") {
 				plusIcon.SetActive (true);
 			} else {
 				plusIcon.SetActive (false);
 			} 
-
 			if (productContent.GetComponent<ContentScript> ().content != "") {
 				multiplyIcon.SetActive (true);
 			} else {
 				multiplyIcon.SetActive (false);
 			} 
 		}
-	}
-
+    }
+    
 	public void SwitchToNormalBoardBg ()
 	{
 		isPressed = false;

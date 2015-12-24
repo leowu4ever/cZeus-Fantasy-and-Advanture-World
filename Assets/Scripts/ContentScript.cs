@@ -4,26 +4,27 @@ using System.Collections;
 
 public class ContentScript : MonoBehaviour
 {
-	public string content = "0";
-	public string answer = "-1";
-	public bool isAnswered = false;
+	public string content, answer;
+	public bool isAnswered;
 	public GameObject numberPrefab;
 
+    void Awake () {
+        content = "0";
+        answer = "-1";
+        isAnswered = false;
+    }
+    
 	void Start ()
 	{	
 		InitContent ();
 	}
 
 	void InitContent ()
-	{
-		char[] contentCharArray = content.ToCharArray ();
-
-		if (contentCharArray.Length > 0) {
-			if (contentCharArray [0] != '0') {       // hide content 
-				isAnswered = true;
-				CreateNumberSprite (contentCharArray);
-			}
-		}
+	{      
+          if (content != "0" && content != "") { // create number sprite at where mystery not answered and pair/square hidden
+            // split content to an array of chars
+            CreateNumberSprite (content.ToCharArray ());
+        }
 	}
 
 	void CreateNumberSprite (char[] contentCharArray)

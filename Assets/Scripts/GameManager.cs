@@ -5,16 +5,13 @@ using System.Collections.Generic;
 public class GameManager : MonoBehaviour
 {   
 	public string puzzleLevel;
+    public int numOfAnswers;
 	public GameObject[] contentSpriteArray;
-	public GameObject scoreWindow;
-    
-	public static bool isInputing;
-	public static bool isGameover;
-	public static int errorCount;	
-	public static int remainingTime;
-	public static int numOfAnswered;
-	public static int numOfAnswers;
+	public GameObject scoreWindow, gameoverWindow;
 
+	public static bool isInputing, isGameover;
+	public static int errorCount, numOfAnswered;
+    	
 	public const int MAX_ERROR_NUMBER = 5;
 	public const int GAME_DURATION = 200;
 
@@ -26,21 +23,22 @@ public class GameManager : MonoBehaviour
 
 	void Update ()
 	{
-		if (!isGameover) {
-			remainingTime = InGameTimer.countTime;
-			if (errorCount > MAX_ERROR_NUMBER || numOfAnswered == numOfAnswers || InGameTimer.isTimerFinish) {
-				InGameTimer.StopTimer ();
-				isGameover = true;
-				scoreWindow.SetActive (true);
-			}
+		if (!isGameover) {  
+            if (numOfAnswered == numOfAnswers) {    // game win
+                StopCurGame();
+				scoreWindow.SetActive (true);  
+            } else  {   // game over 1. reach max error 2. time up
+                StopCurGame();
+                gameoverWindow.SetActive (true);
+            }
 		}
 	}
 
 	void InitGame ()
 	{
-		isGameover = false;
 		errorCount = 0;
 		numOfAnswered = 0;
+   		isGameover = false;
 		isInputing = false;
 		InGameTimer.initTimer (GAME_DURATION);
 		InGameTimer.StartTimer ();
@@ -52,42 +50,26 @@ public class GameManager : MonoBehaviour
 		List<string> contentList = rawData.displayData;
 		List<string> answerList = rawData.answerData;
 		SetnumOfAnswersFor (puzzleLevel, rawData.rowSize, rawData.columnSize);            
-
-		// ---------------------- Assign ------------------------
-		if (contentList.Count == contentSpriteArray.Length) {   // size check
-			for (int a = 0; a < contentSpriteArray.Length; a++) {
-				if (contentList [a] == "0" && answerList [a] != "0") {
-					contentSpriteArray [a].GetComponent<ContentScript> ().content = contentList [a];       
-					contentSpriteArray [a].GetComponent<ContentScript> ().answer = answerList [a];   	   
-				} else if (contentList [a] != "0" && answerList [a] != "0") {
-					contentSpriteArray [a].GetComponent<ContentScript> ().content = contentList [a];     
-					contentSpriteArray [a].GetComponent<ContentScript> ().answer = answerList [a];        
-					contentSpriteArray [a].GetComponent<ContentScript> ().isAnswered = true;
-					IncrenumOfAnsweredByOne ();
-				} else if (contentList [a] == "0" && answerList [a] == "0") {
-					contentSpriteArray [a].GetComponent<ContentScript> ().content = "";
-				} else if (contentList [a] != "0" && answerList [a] == "0") {
-					contentSpriteArray [a].GetComponent<ContentScript> ().content = contentList [a];     
-					contentSpriteArray [a].GetComponent<ContentScript> ().answer = answerList [a];    	
-				}
-			}
-		}
-
-//		// ---------------------- Test ------------------------
-//		string completeDisplayContentTestString = "";
-//		for (int a = 0; a < contentList.Count; a++) {
-//			completeDisplayContentTestString = completeDisplayContentTestString + " " + contentList [a];
-//		}
-//		Debug.Log (rawData.rowSize + "x" + rawData.columnSize + " Puzzle: " + rawData.index + " size of " + contentList.Count);
-//		Debug.Log ("content: " + completeDisplayContentTestString);
-//		
-//		string completeAnswerTestString = "";
-//		for (int a = 0; a < answerList.Count; a++) {
-//			completeAnswerTestString = completeAnswerTestString + " " + answerList [a];
-//		}
-//		Debug.Log ("answer: " + completeAnswerTestString);
-
+        AssignContentAndAnswer (contentList, answerList);
 	}
+    
+    void AssignContentAndAnswer (List<string> contentList, List<string> answerList) {
+         for (int a = 0; a < contentSpriteArray.Length; a++) {
+            string content = contentList [a];
+            string answer = answerList [a];
+            contentSpriteArray [a].GetComponent<ContentScript> ().content = content;       
+            contentSpriteArray [a].GetComponent<ContentScript> ().answer = answer;   
+            // mystery answered
+            if (content != "0" && answer != "0") {
+                contentSpriteArray [a].GetComponent<ContentScript> ().isAnswered = true;
+                IncrenumOfAnsweredByOne ();
+            } 
+            // pair/square not answered
+            if (content == "0" && answer == "0") {
+                contentSpriteArray [a].GetComponent<ContentScript> ().content = ""; // special handle in case you next input becomes '0' + 1/n
+            }  
+		}
+    }
 
 	void SetnumOfAnswersFor (string puzzleLevel, int rowSize, int columnSize)
 	{
@@ -101,7 +83,12 @@ public class GameManager : MonoBehaviour
 			numOfAnswers = columnSize * rowSize;
 		}
 	}
-
+    
+    void StopCurGame () {
+        isGameover = true;
+        InGameTimer.StopTimer ();
+    }
+    
 	public static void IncreaseErrorCount ()
 	{
 		errorCount++;

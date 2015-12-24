@@ -9,6 +9,6 @@ public class ToolbarHandler : MonoBehaviour
 	void Update ()
 	{
 		errorLabel.GetComponent<Text> ().text = GameManager.errorCount.ToString () + "/" + GameManager.MAX_ERROR_NUMBER;
-		timerLabel.GetComponent<Text> ().text = GameManager.remainingTime.ToString ();
+		timerLabel.GetComponent<Text> ().text = InGameTimer.countTime.ToString ();
 	}
 }
