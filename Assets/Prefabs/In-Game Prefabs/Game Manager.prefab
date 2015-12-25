@@ -40,6 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 662ef70f7104c4b4d859eb1adf58b9c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleLevel: 6
   contentSpriteArray:
   - {fileID: 0}
   - {fileID: 0}
@@ -56,7 +57,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   scoreWindow: {fileID: 0}
-  puzzleLevel: 6
+  gameoverWindow: {fileID: 0}
 --- !u!114 &11497116
 MonoBehaviour:
   m_ObjectHideFlags: 1
