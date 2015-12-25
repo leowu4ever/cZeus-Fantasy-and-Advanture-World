@@ -7,6 +7,8 @@ public class ContentScript : MonoBehaviour
 	public string content, answer;
 	public bool isAnswered;
 	public GameObject numberPrefab;
+    public static float xShift = 0.1f;
+    public static float xDisplacement = 0.05f;
 
     void Awake () {
         content = "0";
@@ -23,12 +25,13 @@ public class ContentScript : MonoBehaviour
 	{      
           if (content != "0" && content != "") { // create number sprite at where mystery not answered and pair/square hidden
             // split content to an array of chars
-            CreateNumberSprite (content.ToCharArray ());
+            InitNumberSpriteFor (content);
         }
 	}
 
-	void CreateNumberSprite (char[] contentCharArray)
+	void InitNumberSpriteFor (string content)
 	{
+        char[] contentCharArray = content.ToCharArray ();
 		if (contentCharArray.Length == 1) {
 			GameObject contentSprite = Instantiate (numberPrefab, gameObject.transform.position, Quaternion.identity) as GameObject;
 			contentSprite.transform.parent = gameObject.transform;
@@ -37,7 +40,7 @@ public class ContentScript : MonoBehaviour
 
 		if (contentCharArray.Length > 1) {
 			for (int a = 0; a < contentCharArray.Length; a++) {
-				GameObject contentSprite = Instantiate (numberPrefab, new Vector3 (transform.position.x - 0.05f + a * (0.05f + 0.1f), transform.position.y, transform.position.z), Quaternion.identity) as GameObject;
+				GameObject contentSprite = Instantiate (numberPrefab, new Vector3 (transform.position.x - xShift + a * (xShift + xDisplacement), transform.position.y, transform.position.z), Quaternion.identity) as GameObject;
 				contentSprite.transform.parent = gameObject.transform;
 				contentSprite.GetComponent<NumberSpriteScript> ().SetSpriteTo (int.Parse (contentCharArray [a].ToString ()));
 			}
