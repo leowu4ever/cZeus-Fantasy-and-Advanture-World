@@ -11,7 +11,13 @@ public class LevelMapManager : MonoBehaviour {
 	}
 	
 	void Update () {
-	
+	   if (Input.GetMouseButtonDown (0)) {
+				RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (Input.mousePosition), Vector2.zero);			
+				if (hit.collider != null) {
+                       GameObject levelNode = hit.transform.gameObject;
+                       Debug.Log (levelNode.name);
+                }
+       }
 	}
     
     void InitLevels ()  {
