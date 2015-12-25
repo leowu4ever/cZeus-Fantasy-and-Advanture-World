@@ -68,8 +68,6 @@ public class GameManager : MonoBehaviour
 			completeAnswerTestString = completeAnswerTestString + " " + answerList [a];
 		}
 		Debug.Log ("answer: " + completeAnswerTestString);
-            
-            
 	}
     
     void AssignContentAndAnswer (List<string> contentList, List<string> answerList) {
@@ -83,7 +81,7 @@ public class GameManager : MonoBehaviour
             // This does not apply for lv1-5
             if (content != "0" && answer != "0" && contentSpriteArray [a].transform.tag != "Selection") {
                 contentSpriteArray [a].GetComponent<ContentScript> ().isAnswered = true;
-                IncrenumOfAnsweredByOne ();
+                IncreNumOfAnsweredByOne ();
             } 
             // pair/square answered
             if(content != "0" && answer == "0") {
@@ -119,7 +117,7 @@ public class GameManager : MonoBehaviour
 		errorCount++;
 	}
 
-	public static void IncrenumOfAnsweredByOne ()
+	public static void IncreNumOfAnsweredByOne ()
 	{
 		numOfAnswered++;
 	}

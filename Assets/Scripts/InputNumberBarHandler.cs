@@ -38,7 +38,7 @@ public class InputNumberBarHandler : MonoBehaviour
 
 	void UpdateMysteryAnswerOn (GameObject content)
 	{
-		GameManager.IncrenumOfAnsweredByOne ();
+		GameManager.IncreNumOfAnsweredByOne ();
         ContentScript contentScript = content.GetComponent<ContentScript> ();
 		contentScript.isAnswered = true;
 		contentScript.content = contentScript.answer;
