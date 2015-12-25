@@ -53,6 +53,23 @@ public class GameManager : MonoBehaviour
 		List<string> answerList = rawData.answerData;
 		SetnumOfAnswersFor (puzzleLevel, rawData.rowSize, rawData.columnSize);            
         AssignContentAndAnswer (contentList, answerList);
+        
+                
+        // ---------------------- Test ------------------------
+		string completeDisplayContentTestString = "";
+		for (int a = 0; a < contentList.Count; a++) {
+			completeDisplayContentTestString = completeDisplayContentTestString + " " + contentList [a];
+		}
+		Debug.Log (rawData.rowSize + "x" + rawData.columnSize + " Puzzle: " + rawData.index + " size of " + contentList.Count);
+		Debug.Log ("content: " + completeDisplayContentTestString);
+
+		string completeAnswerTestString = "";
+		for (int a = 0; a < answerList.Count; a++) {
+			completeAnswerTestString = completeAnswerTestString + " " + answerList [a];
+		}
+		Debug.Log ("answer: " + completeAnswerTestString);
+            
+            
 	}
     
     void AssignContentAndAnswer (List<string> contentList, List<string> answerList) {

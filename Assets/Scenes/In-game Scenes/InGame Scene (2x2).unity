@@ -631,6 +631,14 @@ Prefab:
       propertyPath: timerLabel
       value: 
       objectReference: {fileID: 76046769}
+    - target: {fileID: 11424094, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 2063935894}
+    - target: {fileID: 11424094, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
+      propertyPath: c
+      value: 
+      objectReference: {fileID: 2063935894}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
   m_IsPrefabParent: 0
