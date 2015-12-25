@@ -1886,8 +1886,8 @@ GameObject:
   - 92: {fileID: 1407918371}
   - 124: {fileID: 1407918370}
   - 81: {fileID: 1407918369}
-  - 114: {fileID: 1407918374}
   - 114: {fileID: 1407918375}
+  - 114: {fileID: 1407918374}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1970,13 +1970,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1407918368}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80628bbe88a261d45916a83f4edb9346, type: 3}
+  m_Script: {fileID: 11500000, guid: 8acc822228c6843e39be3f8c73c8e181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Camera: {fileID: 1407918372}
-  Bounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 6.9000001, y: 6.5, z: 0}
+  moveSensitivityX: 1
+  moveSensitivityY: 1
+  updateZoomSensitivity: 1
+  orthoZoomSpeed: .0500000007
+  minZoom: 4
+  maxZoom: 6.5
+  invertMoveX: 0
+  invertMoveY: 0
+  mapWidth: 13.8000002
+  mapHeight: 13
+  inertiaDuration: 0
 --- !u!114 &1407918375
 MonoBehaviour:
   m_ObjectHideFlags: 0
