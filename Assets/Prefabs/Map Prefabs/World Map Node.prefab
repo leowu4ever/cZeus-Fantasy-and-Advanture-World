@@ -11,7 +11,7 @@ GameObject:
   - 61: {fileID: 6154230}
   - 114: {fileID: 11492018}
   m_Layer: 0
-  m_Name: Rhodes
+  m_Name: World Map Node
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
