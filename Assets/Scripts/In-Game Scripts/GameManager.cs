@@ -11,8 +11,8 @@ public class GameManager : MonoBehaviour
 
 	public static bool isInputing, isGameover;
 	public static int errorCount, numOfAnswered;
-    	
-	public const int MAX_ERROR_NUMBER = 5;
+
+    public const int MAX_ERROR_NUMBER = 5;
 	public const int GAME_DURATION = 1000;
 
 	void Start ()
@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
 		CSVParser.Packet rawData = CSVParser.ParseCSV.generateData (puzzleLevel);   
 		List<string> contentList = rawData.displayData;
 		List<string> answerList = rawData.answerData;
-		SetnumOfAnswersFor (puzzleLevel, rawData.rowSize, rawData.columnSize);            
+		SetnumOfAnswersFor (puzzleLevel, rawData.rowSize, rawData.columnSize,rawData.isLShape);            
         AssignContentAndAnswer (contentList, answerList);
         
                 
@@ -94,7 +94,7 @@ public class GameManager : MonoBehaviour
 		}
     }
 
-	void SetnumOfAnswersFor (string puzzleLevel, int rowSize, int columnSize)
+	void SetnumOfAnswersFor (string puzzleLevel, int rowSize, int columnSize,bool isLShape)
 	{
 		if (puzzleLevel == "1" || puzzleLevel == "2") {
 			numOfAnswers = 2;
@@ -102,7 +102,9 @@ public class GameManager : MonoBehaviour
 			numOfAnswers = 3;
 		} else if (puzzleLevel == "4" || puzzleLevel == "5") {
 			numOfAnswers = 4;
-		} else {
+		} else if (isLShape) {
+            numOfAnswers = (columnSize * rowSize)-1;
+        } else {
 			numOfAnswers = columnSize * rowSize;
 		}
 	}
