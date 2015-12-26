@@ -24,7 +24,7 @@ public class CSVParser : MonoBehaviour
 			//http://docs.unity3d.com/Manual/LoadingResourcesatRuntime.html
 			//http://answers.unity3d.com/questions/963335/reading-from-csv-work-on-editor-and-no-data-on-dev.html
 			//http://answers.unity3d.com/questions/854658/android-persistent-data-loading-fails.html
-			string filepath = "Assets/CSV/level" + level + ".csv";
+			//string filepath = "Assets/CSV/level" + level + ".csv";
             //System.IO.StreamReader data = new System.IO.StreamReader (filepath);
             System.IO.StreamReader data = new System.IO.StreamReader(new System.IO.MemoryStream((Resources.Load("level" + level) as TextAsset).bytes));
 
@@ -58,7 +58,7 @@ public class CSVParser : MonoBehaviour
 			packet.displayData = new List<string> ();
 			packet.answerData = new List<string> ();
 			packet.index = rawData [0];
-			List<string> tempData = new List<string> ();
+			//List<string> tempData = new List<string> ();
 			packet.displayData.Clear ();
 			packet.answerData.Clear ();
 			packet.isLShape = false;
