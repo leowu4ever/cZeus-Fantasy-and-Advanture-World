@@ -4,6 +4,7 @@ using System.Collections;
 public class WorldMapManager : MonoBehaviour {
     
     public GameObject[] chapters;
+    public GameObject camera;
     
 	void Start () {
 	   InitChapters();
@@ -20,6 +21,7 @@ public class WorldMapManager : MonoBehaviour {
                     // Show conversation window 
                     //conversationWindow.SetActive (true);
                     //Application.LoadLevel (chapterScript.chapterSceneId);
+                        
                 }
             }
         }
@@ -28,11 +30,11 @@ public class WorldMapManager : MonoBehaviour {
     void InitChapters ()  {
         SetChapterStateTo (chapters[0].name, false);  // the fisrt chapter is always open
         for (int a = 0; a < chapters.Length; a++) {
-          chapters[a].GetComponent<ChapterScript> ().isLocked = GetChapterState (chapters[a].name);
+          chapters[a].GetComponent<ChapterScript> ().isLocked = GetLevelStateFor (chapters[a].name);
         }
     }
     
-    bool GetChapterState (string chapterName) {
+    bool GetLevelStateFor (string chapterName) {
         if (PlayerPrefs.GetInt (chapterName) == 0) {
             return true;
         } else {

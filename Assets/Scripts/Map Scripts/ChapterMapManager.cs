@@ -4,9 +4,15 @@ using System.Collections;
 public class ChapterMapManager : MonoBehaviour {
 
     public GameObject[] levels;
-
+    public GameObject camera;
+    public GameObject hero;
+    private int latestLevel;
+    private int curLevel;
+    
 	void Start () {
 	   InitLevels ();
+       InitHero ();
+       
 	}
 	
 	void Update () {
@@ -16,20 +22,37 @@ public class ChapterMapManager : MonoBehaviour {
                 GameObject levelNode = hit.transform.gameObject;
                 LevelScript levelScript = levelNode.GetComponent<LevelScript> ();
                 if (!levelScript.isLocked) {
-                    Application.LoadLevel (levelScript.levelSceneId);
+                    //Application.LoadLevel (levelScript.levelSceneId);
+                   camera.GetComponent<Camera>().orthographicSize = 6;
+                   hero.transform.position = levelNode.transform.position;    
+                   camera.transform.position = new Vector3 (levelNode.transform.position.x, levelNode.transform.position.y, camera.transform.position.z);  
+
                 }
             }
         }
+
 	}
+    
+    void InitHero () {
+        hero.transform.position = levels[curLevel].transform.position;    
+        camera.transform.position = new Vector3 (hero.transform.position.x, hero.transform.position.y, camera.transform.position.z);
+    }
     
     void InitLevels ()  {
         SetLevelStateTo (levels[0].name, false);  // the fisrt level is always open
         for (int a = 0; a < levels.Length; a++) {
-          levels[a].GetComponent<LevelScript> ().isLocked = GetLevelState (levels[a].name);
+          levels[a].GetComponent<LevelScript> ().isLocked = GetLevelStateFor (levels[a].name);
+          levels[a].GetComponent<LevelScript> ().levelId = a + 1;
+          
+            if (!levels[a].GetComponent<LevelScript> ().isLocked) {
+                latestLevel = a;
+                Debug.Log ("latest level is" + latestLevel);
+            }
         }
+        curLevel = latestLevel;
     }
-    
-    bool GetLevelState (string levelName) {
+ 
+    bool GetLevelStateFor (string levelName) {
         if (PlayerPrefs.GetInt (levelName) == 0) {
             return true;
         } else {
