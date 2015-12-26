@@ -61,3 +61,21 @@ TagManager:
   - name: Node Character
     uniqueID: 685218955
     locked: 0
+  - name: Conversation Base
+    uniqueID: 1858908085
+    locked: 0
+  - name: Conversation Border
+    uniqueID: 1060790303
+    locked: 0
+  - name: Dialog Base
+    uniqueID: 3418897693
+    locked: 0
+  - name: Dialog Border
+    uniqueID: 3765139515
+    locked: 0
+  - name: Dialog Bubble
+    uniqueID: 3238530413
+    locked: 0
+  - name: Character
+    uniqueID: 2679469679
+    locked: 0
