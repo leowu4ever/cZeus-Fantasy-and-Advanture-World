@@ -12,7 +12,6 @@ public class ChapterMapManager : MonoBehaviour {
 	void Start () {
 	   InitLevels ();
        InitHero ();
-       
 	}
 	
 	void Update () {
@@ -22,15 +21,11 @@ public class ChapterMapManager : MonoBehaviour {
                 GameObject levelNode = hit.transform.gameObject;
                 LevelScript levelScript = levelNode.GetComponent<LevelScript> ();
                 if (!levelScript.isLocked) {
-                    //Application.LoadLevel (levelScript.levelSceneId);
-                   camera.GetComponent<Camera>().orthographicSize = 6;
                    hero.transform.position = levelNode.transform.position;    
                    camera.transform.position = new Vector3 (levelNode.transform.position.x, levelNode.transform.position.y, camera.transform.position.z);  
-
                 }
             }
         }
-
 	}
     
     void InitHero () {
@@ -43,11 +38,6 @@ public class ChapterMapManager : MonoBehaviour {
         for (int a = 0; a < levels.Length; a++) {
           levels[a].GetComponent<LevelScript> ().isLocked = GetLevelStateFor (levels[a].name);
           levels[a].GetComponent<LevelScript> ().levelId = a + 1;
-          
-            if (!levels[a].GetComponent<LevelScript> ().isLocked) {
-                latestLevel = a;
-                Debug.Log ("latest level is" + latestLevel);
-            }
         }
         curLevel = latestLevel;
     }
@@ -59,7 +49,6 @@ public class ChapterMapManager : MonoBehaviour {
             return false;
         } 
     }
-    
     // true - 0 - locked 
     // false - 1 - unlocked
     void SetLevelStateTo (string levelName, bool lockerState) {

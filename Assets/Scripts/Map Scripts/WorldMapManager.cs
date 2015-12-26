@@ -5,9 +5,13 @@ public class WorldMapManager : MonoBehaviour {
     
     public GameObject[] chapters;
     public GameObject camera;
+    public GameObject hero; 
+    private int latestChapter;
+    private int curChapter;
     
 	void Start () {
 	   InitChapters();
+       InitHero ();
 	}
 	
 	void Update () {
@@ -17,21 +21,25 @@ public class WorldMapManager : MonoBehaviour {
                 GameObject chapterNode = hit.transform.gameObject;
                 ChapterScript chapterScript = chapterNode.GetComponent<ChapterScript> ();
                 if (!chapterScript.isLocked) {
-                    
-                    // Show conversation window 
-                    //conversationWindow.SetActive (true);
-                    //Application.LoadLevel (chapterScript.chapterSceneId);
-                        
+                    hero.transform.position = chapterNode.transform.position;    
+                    camera.transform.position = new Vector3 (chapterNode.transform.position.x, chapterNode.transform.position.y, camera.transform.position.z);  
                 }
             }
         }
 	}
     
+     void InitHero () {
+        hero.transform.position = chapters[curChapter].transform.position;    
+        camera.transform.position = new Vector3 (hero.transform.position.x, hero.transform.position.y, camera.transform.position.z);
+    }
+    
     void InitChapters ()  {
         SetChapterStateTo (chapters[0].name, false);  // the fisrt chapter is always open
         for (int a = 0; a < chapters.Length; a++) {
           chapters[a].GetComponent<ChapterScript> ().isLocked = GetLevelStateFor (chapters[a].name);
+          chapters[a].GetComponent<ChapterScript> ().chapterId = a + 1;
         }
+        curChapter = latestChapter;
     }
     
     bool GetLevelStateFor (string chapterName) {
