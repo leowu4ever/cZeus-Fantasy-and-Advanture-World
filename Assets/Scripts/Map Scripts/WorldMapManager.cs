@@ -6,7 +6,7 @@ public class WorldMapManager : MonoBehaviour {
     public GameObject[] chapters;
     
 	void Start () {
-	   Initchapters();
+	   InitChapters();
 	}
 	
 	void Update () {
@@ -16,13 +16,16 @@ public class WorldMapManager : MonoBehaviour {
                 GameObject chapterNode = hit.transform.gameObject;
                 ChapterScript chapterScript = chapterNode.GetComponent<ChapterScript> ();
                 if (!chapterScript.isLocked) {
-                    Application.LoadLevel (chapterScript.chapterSceneId);
+                    
+                    // Show conversation window 
+                    //conversationWindow.SetActive (true);
+                    //Application.LoadLevel (chapterScript.chapterSceneId);
                 }
             }
         }
 	}
     
-    void Initchapters ()  {
+    void InitChapters ()  {
         SetChapterStateTo (chapters[0].name, false);  // the fisrt chapter is always open
         for (int a = 0; a < chapters.Length; a++) {
           chapters[a].GetComponent<ChapterScript> ().isLocked = GetChapterState (chapters[a].name);

@@ -139,9 +139,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01705c50903ca4df2b69bdc356cf8978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chapterSceneId: 0
-  stars: 0
+  levelSceneId: 4
   isLocked: 0
+  stars: 0
 --- !u!212 &21213922
 SpriteRenderer:
   m_ObjectHideFlags: 1
