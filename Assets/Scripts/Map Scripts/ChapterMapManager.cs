@@ -29,9 +29,10 @@ public class ChapterMapManager : MonoBehaviour {
                     
                    hero.transform.position = levelNode.transform.position;    
                    camera.transform.position = new Vector3 (levelNode.transform.position.x, levelNode.transform.position.y, camera.transform.position.z);  
+                 
                    levelWindow.transform.position = levelNode.transform.position;
                    levelWindow.SetActive (true);
-                   
+                
                    isFocused = true;
                 }
             }
