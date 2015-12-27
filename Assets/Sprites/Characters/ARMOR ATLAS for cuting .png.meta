@@ -1,9 +1,41 @@
 fileFormatVersion: 2
 guid: cdb0834b718c94bc288aaf6856eaceb6
-timeCreated: 1450479244
+timeCreated: 1451159023
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: ARMOR ATLAS for cuting _0
+    21300002: ARMOR ATLAS for cuting _1
+    21300004: ARMOR ATLAS for cuting _2
+    21300006: ARMOR ATLAS for cuting _3
+    21300008: ARMOR ATLAS for cuting _4
+    21300010: ARMOR ATLAS for cuting _5
+    21300012: ARMOR ATLAS for cuting _6
+    21300014: ARMOR ATLAS for cuting _7
+    21300016: ARMOR ATLAS for cuting _8
+    21300018: ARMOR ATLAS for cuting _9
+    21300020: ARMOR ATLAS for cuting _10
+    21300022: ARMOR ATLAS for cuting _11
+    21300024: ARMOR ATLAS for cuting _12
+    21300026: ARMOR ATLAS for cuting _13
+    21300028: ARMOR ATLAS for cuting _14
+    21300030: ARMOR ATLAS for cuting _15
+    21300032: ARMOR ATLAS for cuting _16
+    21300034: ARMOR ATLAS for cuting _17
+    21300036: ARMOR ATLAS for cuting _18
+    21300038: ARMOR ATLAS for cuting _19
+    21300040: ARMOR ATLAS for cuting _20
+    21300042: ARMOR ATLAS for cuting _21
+    21300044: ARMOR ATLAS for cuting _22
+    21300046: ARMOR ATLAS for cuting _23
+    21300048: ARMOR ATLAS for cuting _24
+    21300050: ARMOR ATLAS for cuting _25
+    21300052: ARMOR ATLAS for cuting _27
+    21300054: ARMOR ATLAS for cuting _28
+    21300056: ARMOR ATLAS for cuting _31
+    21300058: ARMOR ATLAS for cuting _35
+    21300060: ARMOR ATLAS for cuting _26
+    21300062: ARMOR ATLAS for cuting _29
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +62,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +70,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +81,277 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: ARMOR ATLAS for cuting _0
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 1893
+        width: 99
+        height: 109
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _1
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 1967
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _2
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 1667
+        width: 117
+        height: 317
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _3
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 1931
+        width: 222
+        height: 88
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _4
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 1967
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _5
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1664
+        width: 203
+        height: 302
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _6
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1618
+        width: 191
+        height: 349
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _7
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 1764
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _8
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1630
+        width: 141
+        height: 295
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _9
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 1651
+        width: 176
+        height: 255
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _10
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 1703
+        width: 115
+        height: 243
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _11
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1219
+        width: 254
+        height: 306
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _12
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 1228
+        width: 169
+        height: 296
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _13
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 1167
+        width: 322
+        height: 301
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _16
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 934
+        width: 37
+        height: 166
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _17
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 920
+        width: 120
+        height: 194
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _18
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 796
+        width: 292
+        height: 238
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _21
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 465
+        width: 276
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _23
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 414
+        width: 66
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _24
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 415
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _25
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 426
+        width: 84
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _27
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 108
+        width: 115
+        height: 197
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _28
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 110
+        width: 104
+        height: 196
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _31
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 39
+        width: 210
+        height: 98
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _35
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 58
+        width: 202
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _26
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 36
+        width: 192
+        height: 143
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARMOR ATLAS for cuting _29
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 45
+        width: 212
+        height: 131
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

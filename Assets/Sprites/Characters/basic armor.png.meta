@@ -1,9 +1,29 @@
 fileFormatVersion: 2
 guid: 931c96c454f554320a440647fff20ed2
-timeCreated: 1450479199
+timeCreated: 1451158750
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: basic armor_0
+    21300002: basic armor_1
+    21300004: basic armor_2
+    21300006: basic armor_3
+    21300008: basic armor_4
+    21300010: basic armor_5
+    21300012: basic armor_6
+    21300014: basic armor_7
+    21300016: basic armor_8
+    21300018: basic armor_9
+    21300020: basic armor_10
+    21300022: basic armor_11
+    21300024: basic armor_12
+    21300026: basic armor_13
+    21300028: basic armor_14
+    21300030: basic armor_15
+    21300032: basic armor_19
+    21300034: basic armor_23
+    21300036: basic armor_16
+    21300038: basic armor_17
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +50,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +58,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +69,127 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: basic armor_0
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 1967
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: basic armor_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1777
+        width: 202
+        height: 130
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: basic armor_2
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 1764
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: basic armor_3
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1219
+        width: 248
+        height: 263
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: basic armor_4
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 1228
+        width: 151
+        height: 246
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: basic armor_5
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 1195
+        width: 319
+        height: 258
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: basic armor_12
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 796
+        width: 271
+        height: 238
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: basic armor_15
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 498
+        width: 261
+        height: 146
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: basic armor_19
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 39
+        width: 210
+        height: 98
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: basic armor_23
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 58
+        width: 202
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: basic armor_16
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 33
+        width: 175
+        height: 148
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: basic armor_17
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 45
+        width: 201
+        height: 126
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
