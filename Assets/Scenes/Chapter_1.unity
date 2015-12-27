@@ -300,10 +300,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 871100136}
     m_Modifications:
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: dialogs.Array.size
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
       value: 9.26000023
@@ -339,22 +335,6 @@ Prefab:
     - target: {fileID: 171606, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_Name
       value: C1_Lv1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: dialogs.Array.data[0]
-      value: Hello
-      objectReference: {fileID: 0}
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: dialogs.Array.data[1]
-      value: Hello back
-      objectReference: {fileID: 0}
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: dialogs.Array.data[2]
-      value: test3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: dialogs.Array.data[3]
-      value: test3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
@@ -708,10 +688,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 871100136}
     m_Modifications:
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: dialogs.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
       value: 7.71000004
@@ -747,26 +723,6 @@ Prefab:
     - target: {fileID: 171606, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_Name
       value: C1_Lv2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: chapterSceneId
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: levelSceneId
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: dialogs.Array.data[0]
-      value: test1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: dialogs.Array.data[1]
-      value: test2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: dialogs.Array.data[2]
-      value: test3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
@@ -1332,7 +1288,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 179138, guid: 760edf8eb43824b94a6777fd5dd45dc1, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 760edf8eb43824b94a6777fd5dd45dc1, type: 2}
