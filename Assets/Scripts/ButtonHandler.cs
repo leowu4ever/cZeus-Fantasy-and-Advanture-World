@@ -9,20 +9,14 @@ public class ButtonHandler : MonoBehaviour
 	}
 	public void LoadSettingScene ()
 	{
-		Application.LoadLevel (3);
+		Application.LoadLevel (1);
 	}
-	public void LoadTutorialScene ()
-	{
-		Application.LoadLevel (2);
-	}
-	public void LoadShopScene ()
-	{
-		Application.LoadLevel (3);
-	}
+
 	public void LoadWorldMapScene ()
 	{
 		Application.LoadLevel (2);
 	}
+    
 	public void LoadChapterOneScene ()
 	{
 		Application.LoadLevel (3);

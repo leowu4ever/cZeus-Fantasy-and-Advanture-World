@@ -11,6 +11,7 @@ public class WorldMapManager : MonoBehaviour {
     private int curChapter;
    
 	void Start () {
+
 	   InitChapters();
        InitHero ();
 	}
@@ -22,8 +23,12 @@ public class WorldMapManager : MonoBehaviour {
                 GameObject chapterNode = hit.transform.gameObject;
                 ChapterScript chapterScript = chapterNode.GetComponent<ChapterScript> ();
                 if (!chapterScript.isLocked) {
+                    
                     hero.transform.position = chapterNode.transform.position;    
                     camera.transform.position = new Vector3 (chapterNode.transform.position.x, chapterNode.transform.position.y, camera.transform.position.z);  
+                    
+                    Application.LoadLevel (chapterScript.chapterSceneId);    
+            
                 }
             }
         }

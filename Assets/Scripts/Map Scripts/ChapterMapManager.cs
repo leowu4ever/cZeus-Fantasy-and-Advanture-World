@@ -23,17 +23,24 @@ public class ChapterMapManager : MonoBehaviour {
 	   if (Input.GetMouseButtonDown (0)) {
             RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (Input.mousePosition), Vector2.zero);			
             if (hit.collider != null) {
-                GameObject levelNode = hit.transform.gameObject;
-                LevelScript levelScript = levelNode.GetComponent<LevelScript> ();
-                if (!levelScript.isLocked) {
+                if (hit.transform.tag == "Node") {
+                    GameObject levelNode = hit.transform.gameObject;
+                    LevelScript levelScript = levelNode.GetComponent<LevelScript> ();
+                    if (!levelScript.isLocked) {
+                        
+                    hero.transform.position = levelNode.transform.position;    
+                    camera.transform.position = new Vector3 (levelNode.transform.position.x, levelNode.transform.position.y, camera.transform.position.z);  
                     
-                   hero.transform.position = levelNode.transform.position;    
-                   camera.transform.position = new Vector3 (levelNode.transform.position.x, levelNode.transform.position.y, camera.transform.position.z);  
-                 
-                   levelWindow.transform.position = levelNode.transform.position;
-                   levelWindow.SetActive (true);
+                    levelWindow.transform.position = levelNode.transform.position;
+                    levelWindow.SetActive (true);
+                    
+                    isFocused = true;
+                    }
+                }
                 
-                   isFocused = true;
+                if (hit.transform.tag == "Level Window Cancel Button") {
+                    isFocused = false;
+                    levelWindow.SetActive (false); 
                 }
             }
         }
