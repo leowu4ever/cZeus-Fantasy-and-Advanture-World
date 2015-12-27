@@ -6,16 +6,16 @@ public class LevelScript : MonoBehaviour {
     public int levelSceneId;
     public bool isLocked;
     public int stars;
-    public GameObject unlockedNode;
-    public GameObject lockedNode;
+    public GameObject unlockedLevelNode;
+    public GameObject lockedLevelNode;
     public string[] dialogs;
     
     void Start () {
         if (isLocked) {
-            lockedNode.SetActive (true);
+            lockedLevelNode.SetActive (true);
         }
          else {
-            unlockedNode.SetActive (true);
+            unlockedLevelNode.SetActive (true);
          }
     }
 }
