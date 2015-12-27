@@ -177,6 +177,7 @@ RectTransform:
   m_Children:
   - {fileID: 1074921963}
   - {fileID: 457405563}
+  - {fileID: 979618378}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 0}
@@ -299,6 +300,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 871100136}
     m_Modifications:
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
       value: 9.26000023
@@ -334,6 +339,18 @@ Prefab:
     - target: {fileID: 171606, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_Name
       value: C1_Lv1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[0]
+      value: test1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[1]
+      value: test2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[2]
+      value: test3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
@@ -427,7 +444,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &476706718
 Transform:
   m_ObjectHideFlags: 0
@@ -687,6 +704,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 871100136}
     m_Modifications:
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
       value: 7.71000004
@@ -731,6 +752,18 @@ Prefab:
       propertyPath: levelSceneId
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[0]
+      value: test1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[1]
+      value: test2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[2]
+      value: test3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
   m_IsPrefabParent: 0
@@ -772,6 +805,7 @@ MonoBehaviour:
   - {fileID: 1080755082}
   camera: {fileID: 1407918368}
   hero: {fileID: 476706717}
+  levelWindow: {fileID: 2043699233}
 --- !u!4 &871100136
 Transform:
   m_ObjectHideFlags: 0
@@ -792,7 +826,7 @@ Transform:
   - {fileID: 1080755083}
   - {fileID: 476706718}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!1 &932264345
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,11 +905,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 979618377}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -186.5, y: -331.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 242445817}
+  m_RootOrder: 2
 --- !u!114 &979618379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -934,10 +968,10 @@ RectTransform:
   - {fileID: 733206601}
   m_Father: {fileID: 242445817}
   m_RootOrder: 0
-  m_AnchorMin: {x: .0325470231, y: .906000018}
-  m_AnchorMax: {x: .0857852995, y: .952000022}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 8.58310013e-05}
+  m_AnchorMin: {x: .0137802698, y: .985000074}
+  m_AnchorMax: {x: .0137802698, y: .985000074}
+  m_AnchoredPosition: {x: 10, y: -15.500061}
+  m_SizeDelta: {x: 20, y: 31.0000858}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1074921964
 MonoBehaviour:
@@ -1288,6 +1322,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 179138, guid: 760edf8eb43824b94a6777fd5dd45dc1, type: 2}
+      propertyPath: m_Name
+      value: Level Window
+      objectReference: {fileID: 0}
+    - target: {fileID: 179138, guid: 760edf8eb43824b94a6777fd5dd45dc1, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 760edf8eb43824b94a6777fd5dd45dc1, type: 2}
   m_IsPrefabParent: 0
@@ -1345,3 +1387,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2043699233 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 179138, guid: 760edf8eb43824b94a6777fd5dd45dc1, type: 2}
+  m_PrefabInternal: {fileID: 1905604125}

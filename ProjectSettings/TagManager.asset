@@ -79,3 +79,15 @@ TagManager:
   - name: Character
     uniqueID: 2679469679
     locked: 0
+  - name: Wheel Base
+    uniqueID: 538161443
+    locked: 0
+  - name: Wheel Center
+    uniqueID: 2770327047
+    locked: 0
+  - name: Wheel Handler
+    uniqueID: 1897177565
+    locked: 0
+  - name: Wheel Input
+    uniqueID: 1431227719
+    locked: 0

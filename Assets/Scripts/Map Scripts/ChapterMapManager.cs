@@ -6,8 +6,13 @@ public class ChapterMapManager : MonoBehaviour {
     public GameObject[] levels;
     public GameObject camera;
     public GameObject hero;
+    public GameObject levelWindow;
+    
+    public static bool isFocused;
+    
     private int latestLevel;
     private int curLevel;
+    
     
 	void Start () {
 	   InitLevels ();
@@ -21,8 +26,13 @@ public class ChapterMapManager : MonoBehaviour {
                 GameObject levelNode = hit.transform.gameObject;
                 LevelScript levelScript = levelNode.GetComponent<LevelScript> ();
                 if (!levelScript.isLocked) {
+                    
                    hero.transform.position = levelNode.transform.position;    
                    camera.transform.position = new Vector3 (levelNode.transform.position.x, levelNode.transform.position.y, camera.transform.position.z);  
+                   levelWindow.transform.position = levelNode.transform.position;
+                   levelWindow.SetActive (true);
+                   
+                   isFocused = true;
                 }
             }
         }

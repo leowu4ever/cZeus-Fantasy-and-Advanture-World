@@ -6,9 +6,10 @@ public class WorldMapManager : MonoBehaviour {
     public GameObject[] chapters;
     public GameObject camera;
     public GameObject hero; 
+
     private int latestChapter;
     private int curChapter;
-    
+   
 	void Start () {
 	   InitChapters();
        InitHero ();

@@ -42,91 +42,93 @@ public class CameraController : MonoBehaviour
 	
 	void Update () 
 	{
-		if (updateZoomSensitivity)
-		{
-			moveSensitivityX = _camera.orthographicSize / 5.0f;
-			moveSensitivityY = _camera.orthographicSize / 5.0f;
-		}
+        if (!ChapterMapManager.isFocused) {
+            if (updateZoomSensitivity)
+            {
+                moveSensitivityX = _camera.orthographicSize / 5.0f;
+                moveSensitivityY = _camera.orthographicSize / 5.0f;
+            }
 
-		Touch[] touches = Input.touches;
+            Touch[] touches = Input.touches;
 
-		if (touches.Length < 1)
-		{
-			//if the camera is currently scrolling
-			if (scrollVelocity != 0.0f)
-			{
-				//slow down over time
-				float t = (Time.time - timeTouchPhaseEnded) / inertiaDuration;
-				float frameVelocity = Mathf.Lerp (scrollVelocity, 0.0f, t);
-				_camera.transform.position += -(Vector3)scrollDirection.normalized * (frameVelocity * 0.05f) * Time.deltaTime;
-				
-				if (t >= 1.0f)
-					scrollVelocity = 0.0f;
-			}
-		}
+            if (touches.Length < 1)
+            {
+                //if the camera is currently scrolling
+                if (scrollVelocity != 0.0f)
+                {
+                    //slow down over time
+                    float t = (Time.time - timeTouchPhaseEnded) / inertiaDuration;
+                    float frameVelocity = Mathf.Lerp (scrollVelocity, 0.0f, t);
+                    _camera.transform.position += -(Vector3)scrollDirection.normalized * (frameVelocity * 0.05f) * Time.deltaTime;
+                    
+                    if (t >= 1.0f)
+                        scrollVelocity = 0.0f;
+                }
+            }
 
-		if (touches.Length > 0)
-		{
-			//Single touch (move)
-			if (touches.Length == 1)
-			{
-				if (touches[0].phase == TouchPhase.Began)
-				{
-					scrollVelocity = 0.0f;
-				}
-				else if (touches[0].phase == TouchPhase.Moved)
-				{
-					Vector2 delta = touches[0].deltaPosition;
+            if (touches.Length > 0)
+            {
+                //Single touch (move)
+                if (touches.Length == 1)
+                {
+                    if (touches[0].phase == TouchPhase.Began)
+                    {
+                        scrollVelocity = 0.0f;
+                    }
+                    else if (touches[0].phase == TouchPhase.Moved)
+                    {
+                        Vector2 delta = touches[0].deltaPosition;
 
-					float positionX = delta.x * moveSensitivityX * Time.deltaTime;
-					positionX = invertMoveX ? positionX : positionX * -1;
+                        float positionX = delta.x * moveSensitivityX * Time.deltaTime;
+                        positionX = invertMoveX ? positionX : positionX * -1;
 
-					float positionY = delta.y * moveSensitivityY * Time.deltaTime;
-					positionY = invertMoveY ? positionY : positionY * -1;
+                        float positionY = delta.y * moveSensitivityY * Time.deltaTime;
+                        positionY = invertMoveY ? positionY : positionY * -1;
 
-					_camera.transform.position += new Vector3 (positionX, positionY, 0);
+                        _camera.transform.position += new Vector3 (positionX, positionY, 0);
 
-					scrollDirection = touches[0].deltaPosition.normalized;
-					scrollVelocity = touches[0].deltaPosition.magnitude / touches[0].deltaTime;
-
-
-					if (scrollVelocity <= 100)
-						scrollVelocity = 0;
-				}
-				else if (touches[0].phase == TouchPhase.Ended)
-				{
-					timeTouchPhaseEnded = Time.time;
-				}
-			}
+                        scrollDirection = touches[0].deltaPosition.normalized;
+                        scrollVelocity = touches[0].deltaPosition.magnitude / touches[0].deltaTime;
 
 
-			//Double touch (zoom)
-			if (touches.Length == 2)
-			{
-				Vector2 cameraViewsize = new Vector2 (_camera.pixelWidth, _camera.pixelHeight);
+                        if (scrollVelocity <= 100)
+                            scrollVelocity = 0;
+                    }
+                    else if (touches[0].phase == TouchPhase.Ended)
+                    {
+                        timeTouchPhaseEnded = Time.time;
+                    }
+                }
 
-				Touch touchOne = touches[0];
-				Touch touchTwo = touches[1];
 
-				Vector2 touchOnePrevPos = touchOne.position - touchOne.deltaPosition;
-				Vector2 touchTwoPrevPos = touchTwo.position - touchTwo.deltaPosition;
+                //Double touch (zoom)
+                if (touches.Length == 2)
+                {
+                    Vector2 cameraViewsize = new Vector2 (_camera.pixelWidth, _camera.pixelHeight);
 
-				float prevTouchDeltaMag = (touchOnePrevPos - touchTwoPrevPos).magnitude;
-				float touchDeltaMag = (touchOne.position - touchTwo.position).magnitude;
+                    Touch touchOne = touches[0];
+                    Touch touchTwo = touches[1];
 
-				float deltaMagDiff = prevTouchDeltaMag - touchDeltaMag;
+                    Vector2 touchOnePrevPos = touchOne.position - touchOne.deltaPosition;
+                    Vector2 touchTwoPrevPos = touchTwo.position - touchTwo.deltaPosition;
 
-				_camera.transform.position += _camera.transform.TransformDirection ((touchOnePrevPos + touchTwoPrevPos - cameraViewsize) * _camera.orthographicSize / cameraViewsize.y);
+                    float prevTouchDeltaMag = (touchOnePrevPos - touchTwoPrevPos).magnitude;
+                    float touchDeltaMag = (touchOne.position - touchTwo.position).magnitude;
 
-				_camera.orthographicSize += deltaMagDiff * orthoZoomSpeed;
-				_camera.orthographicSize = Mathf.Clamp (_camera.orthographicSize, minZoom, maxZoom) - 0.001f;
+                    float deltaMagDiff = prevTouchDeltaMag - touchDeltaMag;
 
-				_camera.transform.position -= _camera.transform.TransformDirection ((touchOne.position + touchTwo.position - cameraViewsize) * _camera.orthographicSize / cameraViewsize.y);
+                    _camera.transform.position += _camera.transform.TransformDirection ((touchOnePrevPos + touchTwoPrevPos - cameraViewsize) * _camera.orthographicSize / cameraViewsize.y);
 
-				CalculateLevelBounds ();
-			}
-		}
-	}
+                    _camera.orthographicSize += deltaMagDiff * orthoZoomSpeed;
+                    _camera.orthographicSize = Mathf.Clamp (_camera.orthographicSize, minZoom, maxZoom) - 0.001f;
+
+                    _camera.transform.position -= _camera.transform.TransformDirection ((touchOne.position + touchTwo.position - cameraViewsize) * _camera.orthographicSize / cameraViewsize.y);
+
+                    CalculateLevelBounds ();
+                }
+            }
+        }
+    }
 
 	void CalculateLevelBounds ()
 	{
