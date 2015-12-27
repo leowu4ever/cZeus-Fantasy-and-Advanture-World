@@ -5,4 +5,6 @@ public class ChapterScript : MonoBehaviour {
     public int chapterId;
     public int chapterSceneId;
     public bool isLocked;
+    
+
 }
