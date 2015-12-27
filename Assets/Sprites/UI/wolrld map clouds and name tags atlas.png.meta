@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8592a8105cdc24ca6816deed9e7a3d5e
-timeCreated: 1450829018
+timeCreated: 1451256857
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -10,7 +10,7 @@ TextureImporter:
     21300006: Node_Base_Short
     21300008: Node_Base_Long
     21300010: Olimpus
-    21300012: Olimapia
+    21300012: Olimpia
     21300014: Halkarnassus
     21300016: Sparta
     21300018: Ephesus
@@ -130,7 +130,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Olimapia
+    - name: Olimpia
       rect:
         serializedVersion: 2
         x: 356
