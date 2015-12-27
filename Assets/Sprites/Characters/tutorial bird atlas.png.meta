@@ -1,9 +1,29 @@
 fileFormatVersion: 2
 guid: 06ed9c2226d30439ca23275a41162a43
-timeCreated: 1451033398
+timeCreated: 1451238923
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: tutorial bird atlas_0
+    21300002: tutorial bird atlas_1
+    21300004: tutorial bird atlas_2
+    21300006: tutorial bird atlas_3
+    21300008: tutorial bird atlas_4
+    21300010: tutorial bird atlas_5
+    21300012: tutorial bird atlas_6
+    21300014: tutorial bird atlas_7
+    21300016: tutorial bird atlas_8
+    21300018: tutorial bird atlas_9
+    21300020: tutorial bird atlas_10
+    21300022: tutorial bird atlas_11
+    21300024: tutorial bird atlas_12
+    21300026: tutorial bird atlas_13
+    21300028: tutorial bird atlas_14
+    21300030: tutorial bird atlas_15
+    21300032: tutorial bird atlas_16
+    21300034: tutorial bird atlas_17
+    21300036: tutorial bird atlas_18
+    21300038: tutorial bird atlas_19
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +50,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +58,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +69,207 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: tutorial bird atlas_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1229
+        width: 691
+        height: 812
+      alignment: 9
+      pivot: {x: .954900861, y: .179005593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tutorial bird atlas_1
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 1861
+        width: 407
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tutorial bird atlas_2
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 1884
+        width: 135
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tutorial bird atlas_3
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 1599
+        width: 235
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tutorial bird atlas_4
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 1685
+        width: 69
+        height: 133
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tutorial bird atlas_5
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 1811
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tutorial bird atlas_6
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 1762
+        width: 46
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tutorial bird atlas_7
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 1657
+        width: 48
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tutorial bird atlas_8
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 1395
+        width: 128
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tutorial bird atlas_9
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 1505
+        width: 49
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tutorial bird atlas_10
+      rect:
+        serializedVersion: 2
+        x: 1937
+        y: 1507
+        width: 91
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tutorial bird atlas_11
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 1405
+        width: 44
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tutorial bird atlas_12
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 1409
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tutorial bird atlas_13
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 1408
+        width: 43
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tutorial bird atlas_14
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 146
+        width: 475
+        height: 746
+      alignment: 9
+      pivot: {x: .173810869, y: .526627421}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tutorial bird atlas_15
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 841
+        width: 242
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tutorial bird atlas_16
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 152
+        width: 179
+        height: 658
+      alignment: 9
+      pivot: {x: .348314345, y: .971563339}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tutorial bird atlas_17
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 641
+        width: 89
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tutorial bird atlas_18
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 639
+        width: 109
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tutorial bird atlas_19
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 1
+        width: 894
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
