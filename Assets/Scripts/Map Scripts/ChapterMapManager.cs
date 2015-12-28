@@ -30,6 +30,7 @@ public class ChapterMapManager : MonoBehaviour {
                     GameObject selectedLevelNode = hit.transform.gameObject;
                     LevelScript selectedlevelScript = selectedLevelNode.GetComponent<LevelScript> ();
                     if (!selectedlevelScript.isLocked) {
+                       curLevel = selectedlevelScript.levelId - 1;
                         // focus on the selected node
                         camera.transform.position = new Vector3 (selectedLevelNode.transform.position.x, selectedLevelNode.transform.position.y, camera.transform.position.z);  
                         isFocused = true;
@@ -41,6 +42,11 @@ public class ChapterMapManager : MonoBehaviour {
                 if (hit.transform.tag == "Level Window Cancel Button") {
                     isFocused = false;
                     levelWindow.SetActive (false); 
+                }
+                
+                if (hit.transform.tag == "Level Window Play Button") {
+                    isFocused = false;
+                    Application.LoadLevel (levels[curLevel].GetComponent<LevelScript>().levelSceneId);
                 }
             }
         }
