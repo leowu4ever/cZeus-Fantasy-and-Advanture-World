@@ -16,7 +16,6 @@ public class ChapterMapManager : MonoBehaviour {
 	void Start () {
 	   InitLevels ();
        InitHero ();
-
         ///set state of hero animation
         hero.GetComponent<Animator>().CrossFade("Walk", 0f);
     }
@@ -33,26 +32,10 @@ public class ChapterMapManager : MonoBehaviour {
                         camera.transform.position = new Vector3 (selectedLevelNode.transform.position.x, selectedLevelNode.transform.position.y, camera.transform.position.z);  
                         isFocused = true;
                         // bring the levelwindow in front of the camera
-                        //levelWindow.transform.position = selectedLevelNode.transform.position;
-                        //levelWindow.SetActive (true); 
-                        
-                        // go to next node
-                        
-                        if (selectedlevelScript.levelId - levels[curLevel].GetComponent<LevelScript> ().levelId == 1) {
-                            Debug.Log ("????");
-                            Transform[] ptsToNxtLv = levels[curLevel].GetComponent<LevelScript> ().ptsToNxtLv;
-                                
-                            for (int a = 0; a < ptsToNxtLv.Length; a++) {
-                                LeanTween.move (hero, ptsToNxtLv[a].position, 1/heroSpeed);
-                            }
-                            LeanTween.move (hero, selectedLevelNode.transform.position, 1/heroSpeed);
-                            
-                            // get the animator component and parameter and set it to true
-                            
-                        }
+                        levelWindow.transform.position = selectedLevelNode.transform.position;
+                        levelWindow.SetActive (true); 
                     }
                 }
-                
                 if (hit.transform.tag == "Level Window Cancel Button") {
                     isFocused = false;
                     levelWindow.SetActive (false); 
@@ -91,5 +74,15 @@ public class ChapterMapManager : MonoBehaviour {
         } else {
             PlayerPrefs.SetInt (levelName, 1);
         }
+    }
+    
+    void MoveHeroToNextLevelNode () {
+        // go to next node
+        Transform[] ptsToNxtLv = levels[curLevel].GetComponent<LevelScript> ().ptsToNxtLv;
+        for (int a = 0; a < ptsToNxtLv.Length; a++) {
+            LeanTween.move (hero, ptsToNxtLv[a].position, 1/heroSpeed);
+        }
+        LeanTween.move (hero, levels[latestLevel].transform.position, 1/heroSpeed);
+        // get the animator component and parameter and set it to true
     }
 }
