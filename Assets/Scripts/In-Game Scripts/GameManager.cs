@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {   
 	public string puzzleLevel;
-
+    public static string puzzleLv;
 	public GameObject[] contentSpriteArray;
 	public GameObject scoreWindow, gameoverWindow;
 
@@ -19,7 +19,8 @@ public class GameManager : MonoBehaviour
     private int numOfAnswers;
     
 	void Start ()
-	{
+	{  
+        puzzleLv = puzzleLevel; // BAD
 		InitGame ();
 		InitGameboard ();
 	}
@@ -29,7 +30,8 @@ public class GameManager : MonoBehaviour
 		if (!isGameover) {  
             if (numOfAnswered == numOfAnswers) {    // game win
                StopCurGame();
-               scoreWindow.transform.Find ("Score Label").GetComponent<Text> ().text = ScoreCalculator.GetScoreFor (errorCount, int.Parse(puzzleLevel)).ToString();
+
+               ShowStars ();
 			   scoreWindow.SetActive (true);  
                
             } else if (errorCount > MAX_ERROR_NUMBER || InGameTimer.isTimerFinish) {   // game over 1. reach max error 2. time over
@@ -114,6 +116,10 @@ public class GameManager : MonoBehaviour
     void StopCurGame () {
         isGameover = true;
         InGameTimer.StopTimer ();
+    }
+ 
+    void ShowStars () {
+        
     }
     
 	public static void IncreaseErrorCount ()
