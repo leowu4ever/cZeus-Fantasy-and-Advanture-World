@@ -90,7 +90,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106930}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .519999981, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 473366}
@@ -199,9 +199,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b555415d8392f4ec9823a8cb823144e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalAndPressedBoardSprites:
-  - {fileID: 21300002, guid: 7cf65297b243048fea499b380d7afba5, type: 3}
-  - {fileID: 0}
   isPressed: 0
   plusIcon: {fileID: 132226}
   multiplyIcon: {fileID: 123608}

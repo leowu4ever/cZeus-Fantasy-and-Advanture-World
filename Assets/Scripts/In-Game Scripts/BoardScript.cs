@@ -3,14 +3,13 @@ using System.Collections;
 
 public class BoardScript : MonoBehaviour
 {
-	public Sprite[] normalAndPressedBoardSprites;
+	//public Sprite[] normalAndPressedBoardSprites;
 	public bool isPressed = false;
 	public GameObject plusIcon, multiplyIcon, additionContent, productContent;
 
 	void Update ()
 	{
 		UpdateMathIcon();
-       
 	}
 
     void UpdateMathIcon () {
@@ -31,12 +30,13 @@ public class BoardScript : MonoBehaviour
 	public void SwitchToNormalBoardBg ()
 	{
 		isPressed = false;
-		GetComponent<SpriteRenderer> ().sprite = normalAndPressedBoardSprites [0];
+		GetComponent<SpriteRenderer> ().color =  new Color (1f, 1f, 1f, 1f);
 	}
 
 	public void SwitchToPressedBoardBg ()
 	{
 		isPressed = true;
-		GetComponent<SpriteRenderer> ().sprite = normalAndPressedBoardSprites [1];
+		GetComponent<SpriteRenderer> ().color = new Color (199/255f, 167/255f, 1f, 1f);
+
 	}
 }
