@@ -8,7 +8,7 @@ public class ChapterMapManager : MonoBehaviour {
     public GameObject hero;
     public GameObject levelWindow;
     public static bool isFocused;
-   
+
     private float heroSpeed = 1f;
     private int latestLevel;
     private int curLevel;
@@ -16,7 +16,10 @@ public class ChapterMapManager : MonoBehaviour {
 	void Start () {
 	   InitLevels ();
        InitHero ();
-	}
+
+        ///set state of hero animation
+        hero.GetComponent<Animator>().CrossFade("Walk", 0f);
+    }
 	
 	void Update () {
 	   if (Input.GetMouseButtonDown (0)) {
