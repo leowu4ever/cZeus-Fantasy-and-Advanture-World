@@ -20,7 +20,10 @@ public class ScoreCalculator : MonoBehaviour {
                         {120,110,100,90,80,0}};	//14
                         
         int score=0;
-    	score = table[level-1,numError];
+        int error = numError - 1;
+        if (error < 0)
+            error = 0;
+        score = table[level-1,numError];
 	return score;        
     }
 }
