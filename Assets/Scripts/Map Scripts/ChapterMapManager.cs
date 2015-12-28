@@ -8,10 +8,11 @@ public class ChapterMapManager : MonoBehaviour {
     public GameObject hero;
     public GameObject levelWindow;
     public static bool isFocused;
-
+    public static int latestLevel;
+    public static int curLevel;
+   
     private float heroSpeed = 1f;
-    private int latestLevel;
-    private int curLevel;
+ 
    
 	void Start () {
 	   InitLevels ();

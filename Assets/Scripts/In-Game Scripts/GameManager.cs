@@ -30,9 +30,13 @@ public class GameManager : MonoBehaviour
 		if (!isGameover) {  
             if (numOfAnswered == numOfAnswers) {    // game win
                StopCurGame();
-
-               ShowStars ();
 			   scoreWindow.SetActive (true);  
+               
+              
+               ChapterMapManager.latestLevel++;
+               
+               
+               // for level map 
                
             } else if (errorCount > MAX_ERROR_NUMBER || InGameTimer.isTimerFinish) {   // game over 1. reach max error 2. time over
                StopCurGame();
@@ -58,8 +62,6 @@ public class GameManager : MonoBehaviour
 		List<string> answerList = rawData.answerData;
 		SetnumOfAnswersFor (puzzleLevel, rawData.rowSize, rawData.columnSize,rawData.isLShape);            
         AssignContentAndAnswer (contentList, answerList);
-        
-                
         // ---------------------- Test ------------------------
 		string completeDisplayContentTestString = "";
 		for (int a = 0; a < contentList.Count; a++) {
@@ -118,10 +120,6 @@ public class GameManager : MonoBehaviour
         InGameTimer.StopTimer ();
     }
  
-    void ShowStars () {
-        
-    }
-    
 	public static void IncreaseErrorCount ()
 	{
 		errorCount++;
