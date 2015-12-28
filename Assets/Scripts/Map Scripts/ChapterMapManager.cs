@@ -21,6 +21,7 @@ public class ChapterMapManager : MonoBehaviour {
     }
 	
 	void Update () {
+        
 	   if (Input.GetMouseButtonDown (0)) {
             RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (Input.mousePosition), Vector2.zero);			
             if (hit.collider != null) {
@@ -43,29 +44,36 @@ public class ChapterMapManager : MonoBehaviour {
             }
         }
 	}
-    
-    // Always put the hero on the latest level and only move it when the player process to next level 
-    void InitHero () {
-        hero.transform.position = levels[curLevel].transform.position;    
-        camera.transform.position = new Vector3 (hero.transform.position.x, hero.transform.position.y, camera.transform.position.z);
-    }
-    
-    void InitLevels ()  {
-        SetLevelStateTo (levels[0].name, false);  // the fisrt level is always open
+
+    void InitLevels ()  { // 1. unlock lv1 2. init the rest levels 3. 
+        if (!GetLevelStateOf (levels[0].name)) {
+          SetLevelStateTo (levels[0].name, false);  // the fisrt level is always open
+        }
         for (int a = 0; a < levels.Length; a++) {
-          levels[a].GetComponent<LevelScript> ().isLocked = GetLevelStateFor (levels[a].name);
-          levels[a].GetComponent<LevelScript> ().levelId = a + 1;
+          LevelScript ls = levels[a].GetComponent<LevelScript> ();
+          ls.isLocked = GetLevelStateOf (levels[a].name);
+          ls.levelId = a + 1;   // assign the level Id 
+          if (!ls.isLocked) {
+              latestLevel = a;
+          }
         }
         curLevel = latestLevel;
     }
+    
+    // Always put the hero on the latest level and only move it when the player process to next level 
+    void InitHero () {
+        hero.transform.position = levels[latestLevel].transform.position;    
+        camera.transform.position = new Vector3 (hero.transform.position.x, hero.transform.position.y, camera.transform.position.z);
+    }
  
-    bool GetLevelStateFor (string levelName) {
+    bool GetLevelStateOf (string levelName) {
         if (PlayerPrefs.GetInt (levelName) == 0) {
             return true;
         } else {
             return false;
         } 
     }
+    
     // true - 0 - locked 
     // false - 1 - unlocked
     void SetLevelStateTo (string levelName, bool lockerState) {

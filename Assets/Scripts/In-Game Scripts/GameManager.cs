@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {   
 	public string puzzleLevel;
-    private int numOfAnswers;
+
 	public GameObject[] contentSpriteArray;
 	public GameObject scoreWindow, gameoverWindow;
 
@@ -15,23 +16,25 @@ public class GameManager : MonoBehaviour
     public const int MAX_ERROR_NUMBER = 5;
 	public const int GAME_DURATION = 1000;
 
+    private int numOfAnswers;
+    
 	void Start ()
 	{
 		InitGame ();
 		InitGameboard ();
-        Debug.Log (numOfAnswers + "total");
-        Debug.Log (numOfAnswered + "answered");
 	}
 
 	void Update ()
 	{
 		if (!isGameover) {  
             if (numOfAnswered == numOfAnswers) {    // game win
-                StopCurGame();
-				scoreWindow.SetActive (true);  
-            } else if (errorCount > MAX_ERROR_NUMBER || InGameTimer.isTimerFinish) {   // game over 1. reach max error 2. time up
-                StopCurGame();
-                gameoverWindow.SetActive (true);
+               StopCurGame();
+               scoreWindow.transform.Find ("Score Label").GetComponent<Text> ().text = ScoreCalculator.GetScoreFor (errorCount, int.Parse(puzzleLevel)).ToString();
+			   scoreWindow.SetActive (true);  
+               
+            } else if (errorCount > MAX_ERROR_NUMBER || InGameTimer.isTimerFinish) {   // game over 1. reach max error 2. time over
+               StopCurGame();
+               gameoverWindow.SetActive (true);
             }
 		}
 	}
@@ -76,7 +79,6 @@ public class GameManager : MonoBehaviour
             string answer = answerList [a];
             contentSpriteArray [a].GetComponent<ContentScript> ().content = content;       
             contentSpriteArray [a].GetComponent<ContentScript> ().answer = answer;   
-     
             // mystery answered 
             // This does not apply for lv1-5
             if (content != "0" && answer != "0" && contentSpriteArray [a].transform.tag != "Selection") {
