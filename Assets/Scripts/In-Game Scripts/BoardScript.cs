@@ -3,7 +3,6 @@ using System.Collections;
 
 public class BoardScript : MonoBehaviour
 {
-	//public Sprite[] normalAndPressedBoardSprites;
 	public bool isPressed = false;
 	public GameObject plusIcon, multiplyIcon, additionContent, productContent;
 

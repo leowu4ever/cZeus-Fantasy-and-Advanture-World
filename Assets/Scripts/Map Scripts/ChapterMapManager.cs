@@ -7,13 +7,12 @@ public class ChapterMapManager : MonoBehaviour {
     public GameObject camera;
     public GameObject hero;
     public GameObject levelWindow;
-    
     public static bool isFocused;
-    
+   
+    private float heroSpeed = 1f;
     private int latestLevel;
     private int curLevel;
-    
-    
+   
 	void Start () {
 	   InitLevels ();
        InitHero ();
@@ -24,17 +23,30 @@ public class ChapterMapManager : MonoBehaviour {
             RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (Input.mousePosition), Vector2.zero);			
             if (hit.collider != null) {
                 if (hit.transform.tag == "Node") {
-                    GameObject levelNode = hit.transform.gameObject;
-                    LevelScript levelScript = levelNode.GetComponent<LevelScript> ();
-                    if (!levelScript.isLocked) {
+                    GameObject selectedLevelNode = hit.transform.gameObject;
+                    LevelScript selectedlevelScript = selectedLevelNode.GetComponent<LevelScript> ();
+                    if (!selectedlevelScript.isLocked) {
+                        // focus on the selected node
+                        camera.transform.position = new Vector3 (selectedLevelNode.transform.position.x, selectedLevelNode.transform.position.y, camera.transform.position.z);  
+                        isFocused = true;
+                        // bring the levelwindow in front of the camera
+                        //levelWindow.transform.position = selectedLevelNode.transform.position;
+                        //levelWindow.SetActive (true); 
                         
-                    hero.transform.position = levelNode.transform.position;    
-                    camera.transform.position = new Vector3 (levelNode.transform.position.x, levelNode.transform.position.y, camera.transform.position.z);  
-                    
-                    levelWindow.transform.position = levelNode.transform.position;
-                    levelWindow.SetActive (true);
-                    
-                    isFocused = true;
+                        // go to next node
+                        
+                        if (selectedlevelScript.levelId - levels[curLevel].GetComponent<LevelScript> ().levelId == 1) {
+                            Debug.Log ("????");
+                            Transform[] ptsToNxtLv = levels[curLevel].GetComponent<LevelScript> ().ptsToNxtLv;
+                                
+                            for (int a = 0; a < ptsToNxtLv.Length; a++) {
+                                LeanTween.move (hero, ptsToNxtLv[a].position, 1/heroSpeed);
+                            }
+                            LeanTween.move (hero, selectedLevelNode.transform.position, 1/heroSpeed);
+                            
+                            // get the animator component and parameter and set it to true
+                            
+                        }
                     }
                 }
                 
@@ -46,6 +58,7 @@ public class ChapterMapManager : MonoBehaviour {
         }
 	}
     
+    // Always put the hero on the latest level and only move it when the player process to next level 
     void InitHero () {
         hero.transform.position = levels[curLevel].transform.position;    
         camera.transform.position = new Vector3 (hero.transform.position.x, hero.transform.position.y, camera.transform.position.z);

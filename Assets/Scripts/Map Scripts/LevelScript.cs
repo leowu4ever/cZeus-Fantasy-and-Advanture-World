@@ -10,6 +10,8 @@ public class LevelScript : MonoBehaviour {
     public GameObject lockedLevelNode;
     public string[] dialogs;
     
+    public Transform[] ptsToNxtLv;
+    
     void Start () {
         if (isLocked) {
             lockedLevelNode.SetActive (true);
