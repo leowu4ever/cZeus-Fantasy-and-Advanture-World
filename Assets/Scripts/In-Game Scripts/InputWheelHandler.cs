@@ -100,7 +100,7 @@ public class InputWheelHandler : MonoBehaviour {
     }
     void setActiveInput()
     {
-        float wheelAngle = angle - 90.0f - (angleSegment/2.0f);
+        float wheelAngle = angle - (angleSegment/2.0f);
         if (wheelAngle < 0.0f)
             wheelAngle = wheelAngle + 360;
         wheelAngle = 360 - wheelAngle;

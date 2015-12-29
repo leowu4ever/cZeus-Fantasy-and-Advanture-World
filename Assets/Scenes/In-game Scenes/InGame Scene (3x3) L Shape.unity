@@ -1855,52 +1855,6 @@ GameObject:
 GameObject:
   m_PrefabParentObject: {fileID: 142948, guid: 23f54ae6d1b394159bb9f3286a8b6d57, type: 2}
   m_PrefabInternal: {fileID: 1412482059}
---- !u!1001 &1426373157
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 459428, guid: 7525ed984cc2a4b4cbdbd7e2932d6e21, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -.00999999978
-      objectReference: {fileID: 0}
-    - target: {fileID: 459428, guid: 7525ed984cc2a4b4cbdbd7e2932d6e21, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: .239999995
-      objectReference: {fileID: 0}
-    - target: {fileID: 459428, guid: 7525ed984cc2a4b4cbdbd7e2932d6e21, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 459428, guid: 7525ed984cc2a4b4cbdbd7e2932d6e21, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 459428, guid: 7525ed984cc2a4b4cbdbd7e2932d6e21, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 459428, guid: 7525ed984cc2a4b4cbdbd7e2932d6e21, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 459428, guid: 7525ed984cc2a4b4cbdbd7e2932d6e21, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 459428, guid: 7525ed984cc2a4b4cbdbd7e2932d6e21, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 179702, guid: 7525ed984cc2a4b4cbdbd7e2932d6e21, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 7525ed984cc2a4b4cbdbd7e2932d6e21, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1428359648 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 174924, guid: 5508c06fcc1094ae3ba8ac4470f99f7e, type: 2}
