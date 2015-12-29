@@ -25,10 +25,16 @@ public class WorldMapManager : MonoBehaviour {
                 if (!chapterScript.isLocked) {
                     
                     hero.transform.position = chapterNode.transform.position;    
-                    camera.transform.position = new Vector3 (chapterNode.transform.position.x, chapterNode.transform.position.y, camera.transform.position.z);  
+                  //  camera.transform.position = new Vector3 (chapterNode.transform.position.x, chapterNode.transform.position.y, camera.transform.position.z);  
+                    LeanTween.move (camera, new Vector3 (chapterNode.transform.position.x, chapterNode.transform.position.y, camera.transform.position.z), 0.5f );
                     
-                    Application.LoadLevel (chapterScript.chapterSceneId);    
-            
+                    LeanTween.scale (chapterNode, new Vector3 (1.1f, 1.1f, 1.1f), 0.25f);
+                    LeanTween.scale (chapterNode, new Vector3 (1f, 1f, 1f), 0.25f).setDelay (0.25f);  
+                    StartCoroutine(ExecuteAfterTime(0.5f,chapterScript.chapterSceneId));
+
+                } else {
+                    LeanTween.scale (chapterNode, new Vector3 (1.1f, 1.1f, 1.1f), 0.25f);
+                    LeanTween.scale (chapterNode, new Vector3 (1f, 1f, 1f), 0.25f).setDelay (0.25f);                    
                 }
             }
         }
@@ -65,4 +71,11 @@ public class WorldMapManager : MonoBehaviour {
             PlayerPrefs.SetInt (chapterName, 1);
         }
     }
+    
+     IEnumerator ExecuteAfterTime(float time, int sceneId)
+     {
+       yield return new WaitForSeconds(time);
+       Application.LoadLevel (sceneId);    
+     // Code to execute after the delay
+     }
 }

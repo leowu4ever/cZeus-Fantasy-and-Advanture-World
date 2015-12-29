@@ -17,7 +17,7 @@ public class ChapterMapManager : MonoBehaviour {
 	   InitLevels ();
        InitHero ();
         ///set state of hero animation
-        hero.GetComponent<Animator>().CrossFade("Walk", 0f);
+       hero.GetComponent<Animator>().CrossFade("Walk", 0f);
     }
 	
 	void Update () {
@@ -28,26 +28,25 @@ public class ChapterMapManager : MonoBehaviour {
                     GameObject selectedLevelNode = hit.transform.gameObject;
                     LevelScript selectedlevelScript = selectedLevelNode.GetComponent<LevelScript> ();
                     if (!selectedlevelScript.isLocked) {
-                       curLevel = selectedlevelScript.levelId - 1;
+                        curLevel = selectedlevelScript.levelId - 1;
                         // focus on the selected node
-                        camera.transform.position = new Vector3 (selectedLevelNode.transform.position.x, selectedLevelNode.transform.position.y, camera.transform.position.z);  
+                        camera.transform.position = new Vector3 (selectedLevelNode.transform.position.x, selectedLevelNode.transform.position.y, camera.transform.position.z);
                         isFocused = true;
                         // bring the levelwindow in front of the camera
                         levelWindow.transform.position = selectedLevelNode.transform.position;
-                        levelWindow.SetActive (true); 
+                        LeanTween.scale (levelWindow, new Vector3 (1f, 1f, 1f), 0.5f).setEase (LeanTweenType.easeInOutBack);
                     }
                 }
-                
+                 
                 if (hit.transform.tag == "Level Window Cancel Button") {
                     isFocused = false;
-                    levelWindow.SetActive (false); 
+                    LeanTween.scale (levelWindow, new Vector3 (0f, 0f, 0f), 0.5f).setEase (LeanTweenType.easeInOutBack);
                 }
                 
                 if (hit.transform.tag == "Level Window Play Button") {
                     isFocused = false;
                     Application.LoadLevel (levels[curLevel].GetComponent<LevelScript>().levelSceneId);
                     PlayerPrefs.SetString ("NEXTLEVELNAME", levels[curLevel+1].name);
-
                 }
             }
         }
@@ -70,7 +69,7 @@ public class ChapterMapManager : MonoBehaviour {
     
     // Always put the hero on the latest level and only move it when the player process to next level 
     void InitHero () {
-        hero.transform.position = levels[latestLevel].transform.position;    
+        hero.transform.position = new Vector3 (levels[latestLevel].transform.position.x + 0.5f, levels[latestLevel].transform.position.y + 0.5f, levels[latestLevel].transform.position.z);  
         camera.transform.position = new Vector3 (hero.transform.position.x, hero.transform.position.y, camera.transform.position.z);
     }
  

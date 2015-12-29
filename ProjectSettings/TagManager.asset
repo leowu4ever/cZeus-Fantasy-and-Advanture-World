@@ -16,6 +16,7 @@ TagManager:
   - Level Window Play Button
   - Left Wheel
   - Right Wheel
+  - sound
   layers:
   - Default
   - TransparentFX
@@ -83,7 +84,7 @@ TagManager:
   - name: Dialog Bubble
     uniqueID: 3238530413
     locked: 0
-  - name: Character
+  - name: Dialog Character
     uniqueID: 2679469679
     locked: 0
   - name: Wheel Base
