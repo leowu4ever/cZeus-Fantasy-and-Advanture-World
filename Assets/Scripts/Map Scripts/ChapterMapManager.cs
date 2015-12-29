@@ -12,7 +12,6 @@ public class ChapterMapManager : MonoBehaviour {
     public static int curLevel;
    
     private float heroSpeed = 1f;
- 
    
 	void Start () {
 	   InitLevels ();
@@ -22,7 +21,6 @@ public class ChapterMapManager : MonoBehaviour {
     }
 	
 	void Update () {
-        
 	   if (Input.GetMouseButtonDown (0)) {
             RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (Input.mousePosition), Vector2.zero);			
             if (hit.collider != null) {
@@ -39,6 +37,7 @@ public class ChapterMapManager : MonoBehaviour {
                         levelWindow.SetActive (true); 
                     }
                 }
+                
                 if (hit.transform.tag == "Level Window Cancel Button") {
                     isFocused = false;
                     levelWindow.SetActive (false); 
@@ -47,6 +46,8 @@ public class ChapterMapManager : MonoBehaviour {
                 if (hit.transform.tag == "Level Window Play Button") {
                     isFocused = false;
                     Application.LoadLevel (levels[curLevel].GetComponent<LevelScript>().levelSceneId);
+                    PlayerPrefs.SetString ("NEXTLEVELNAME", levels[curLevel+1].name);
+
                 }
             }
         }
@@ -73,7 +74,7 @@ public class ChapterMapManager : MonoBehaviour {
         camera.transform.position = new Vector3 (hero.transform.position.x, hero.transform.position.y, camera.transform.position.z);
     }
  
-    bool GetLevelStateOf (string levelName) {
+    public static bool GetLevelStateOf (string levelName) {
         if (PlayerPrefs.GetInt (levelName) == 0) {
             return true;
         } else {
@@ -83,7 +84,7 @@ public class ChapterMapManager : MonoBehaviour {
     
     // true - 0 - locked 
     // false - 1 - unlocked
-    void SetLevelStateTo (string levelName, bool lockerState) {
+    public static void SetLevelStateTo (string levelName, bool lockerState) {
         if (lockerState) {
             PlayerPrefs.SetInt (levelName, 0);
         } else {

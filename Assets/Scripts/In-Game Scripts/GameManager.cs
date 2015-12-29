@@ -31,11 +31,7 @@ public class GameManager : MonoBehaviour
             if (numOfAnswered == numOfAnswers) {    // game win
                StopCurGame();
 			   scoreWindow.SetActive (true);  
-               
-              
-               ChapterMapManager.latestLevel++;
-               
-               
+               ChapterMapManager.SetLevelStateTo (PlayerPrefs.GetString("NEXTLEVELNAME"), false);
                // for level map 
                
             } else if (errorCount > MAX_ERROR_NUMBER || InGameTimer.isTimerFinish) {   // game over 1. reach max error 2. time over

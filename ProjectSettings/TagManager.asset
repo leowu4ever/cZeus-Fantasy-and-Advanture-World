@@ -13,6 +13,7 @@ TagManager:
   - Selection
   - Node
   - Level Window Cancel Button
+  - Level Window Play Button
   layers:
   - Default
   - TransparentFX
