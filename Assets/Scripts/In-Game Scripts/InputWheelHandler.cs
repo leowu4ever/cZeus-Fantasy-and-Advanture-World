@@ -109,7 +109,7 @@ public class InputWheelHandler : MonoBehaviour {
 
         if(lastindex!=index&&!isFirstRotation)
             inputWheel[lastindex].GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
-        lastindex = index;
+           lastindex = index;
         isFirstRotation = false;
         Debug.Log(wheelAngle);
         Debug.Log(index);
