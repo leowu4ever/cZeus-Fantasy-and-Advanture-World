@@ -177,15 +177,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 478956, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481602, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.000250421115
+      value: -.000250466517
       objectReference: {fileID: 0}
     - target: {fileID: 446260, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .000250421115
+      value: .000250466517
       objectReference: {fileID: 0}
     - target: {fileID: 427228, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
@@ -457,7 +457,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 141664, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_Name
-      value: Hero
+      value: Level Window Hero
       objectReference: {fileID: 0}
     - target: {fileID: 478956, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalScale.x
@@ -710,8 +710,8 @@ Transform:
   m_LocalPosition: {x: -.717810094, y: -3.89499092, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1167359487}
   - {fileID: 335147311}
+  - {fileID: 1167359487}
   m_Father: {fileID: 2043699234}
   m_RootOrder: 4
 --- !u!1 &259756165
@@ -774,6 +774,10 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1793081083}
   m_RootOrder: 6
+--- !u!1 &335147310 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 141664, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
+  m_PrefabInternal: {fileID: 78543280}
 --- !u!4 &335147311 stripped
 Transform:
   m_PrefabParentObject: {fileID: 478956, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
@@ -1059,7 +1063,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 448588, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 488402, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.z
@@ -1212,6 +1216,10 @@ Prefab:
     - target: {fileID: 448588, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalScale.y
       value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 178396, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
+      propertyPath: m_Name
+      value: Level Window Bird
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
@@ -2983,6 +2991,10 @@ Prefab:
       propertyPath: m_SortingLayerID
       value: 685218955
       objectReference: {fileID: 0}
+    - target: {fileID: 141664, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
+      propertyPath: m_Name
+      value: Map Hero
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
   m_IsPrefabParent: 0
@@ -3013,6 +3025,10 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1793081083}
   m_RootOrder: 0
+--- !u!1 &1968406073 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 178396, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
+  m_PrefabInternal: {fileID: 663067431}
 --- !u!1 &1983308260
 GameObject:
   m_ObjectHideFlags: 0
@@ -3102,6 +3118,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2043699234}
+  - 114: {fileID: 2043699235}
   m_Layer: 0
   m_Name: Level Window
   m_TagString: Untagged
@@ -3126,6 +3143,19 @@ Transform:
   - {fileID: 258707036}
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &2043699235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2043699233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dbddf992fbcb4752bdab78a418c47ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hero: {fileID: 335147310}
+  bird: {fileID: 1968406073}
 --- !u!1 &2051685609
 GameObject:
   m_ObjectHideFlags: 0
