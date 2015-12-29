@@ -14,6 +14,8 @@ TagManager:
   - Node
   - Level Window Cancel Button
   - Level Window Play Button
+  - Left Wheel
+  - Right Wheel
   layers:
   - Default
   - TransparentFX
