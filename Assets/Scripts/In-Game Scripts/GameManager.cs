@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
             if (numOfAnswered == numOfAnswers) {    // game win
                StopCurGame();
 			   scoreWindow.SetActive (true);  
+               
                ChapterMapManager.SetLevelStateTo (PlayerPrefs.GetString("NEXTLEVELNAME"), false);
                // for level map 
                
