@@ -1034,7 +1034,7 @@ Transform:
   - {fileID: 6976222}
   - {fileID: 640334828}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &832343080 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 174924, guid: 5508c06fcc1094ae3ba8ac4470f99f7e, type: 2}
@@ -1291,7 +1291,7 @@ RectTransform:
   - {fileID: 297786493}
   - {fileID: 777237121}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1628,6 +1628,14 @@ Prefab:
     - target: {fileID: 199992, guid: 7ae35d206682d4b17a15a1a6b1457301, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11419514, guid: 7ae35d206682d4b17a15a1a6b1457301, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 707254980}
+    - target: {fileID: 11419514, guid: 7ae35d206682d4b17a15a1a6b1457301, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadChapterOneScene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7ae35d206682d4b17a15a1a6b1457301, type: 2}
