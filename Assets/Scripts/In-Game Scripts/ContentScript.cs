@@ -8,7 +8,7 @@ public class ContentScript : MonoBehaviour
 	public bool isAnswered;
 	public GameObject numberPrefab;
     public static float xShift = 0.1f;
-    public static float xDisplacement = 0.05f;
+    public static float xDisplacement = 0.07f;
 
     void Awake () {
         content = "0";

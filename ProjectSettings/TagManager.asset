@@ -99,3 +99,12 @@ TagManager:
   - name: Wheel Input
     uniqueID: 1431227719
     locked: 0
+  - name: Board
+    uniqueID: 891527067
+    locked: 0
+  - name: Plus/Multiply Sign
+    uniqueID: 4116641105
+    locked: 0
+  - name: Content
+    uniqueID: 2826990251
+    locked: 0

@@ -76,7 +76,7 @@ public class InputNumberBarHandler : MonoBehaviour
         {
             if(!BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().isAnswered)
             {
-                content.GetComponent<SpriteRenderer>().color = new Color(199 / 255f, 167 / 255f, 1f, 1f);
+                content.GetComponent<SpriteRenderer>().color = new Color(77 / 255f, 184/ 255f, 1f, 1f);
             }
            
         }

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7cf65297b243048fea499b380d7afba5
-timeCreated: 1451140370
+timeCreated: 1451510020
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -88,9 +88,9 @@ TextureImporter:
     - name: newgameuiatlas_1
       rect:
         serializedVersion: 2
-        x: 192
+        x: 193
         y: 1867
-        width: 353
+        width: 352
         height: 177
       alignment: 0
       pivot: {x: .5, y: .5}
@@ -198,9 +198,9 @@ TextureImporter:
     - name: newgameuiatlas_12
       rect:
         serializedVersion: 2
-        x: 7
+        x: 5
         y: 1506
-        width: 353
+        width: 352
         height: 353
       alignment: 0
       pivot: {x: .5, y: .5}

@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {   
 	public string puzzleLevel;
     public static string puzzleLv;
+    public GameObject gameBoard;
 	public GameObject[] contentSpriteArray;
 	public GameObject scoreWindow, gameoverWindow;
 
@@ -17,16 +18,25 @@ public class GameManager : MonoBehaviour
 	public const int GAME_DURATION = 1000;
 
     private int numOfAnswers;
+    private bool initFinished;
     
 	void Start ()
 	{  
+        gameBoard.transform.position = new Vector3 (5,1,0);
         puzzleLv = puzzleLevel; // BAD
 		InitGame ();
 		InitGameboard ();
+        initFinished = true;
+
 	}
 
 	void Update ()
 	{
+        
+        if (initFinished) {
+            initFinished = false;
+            LeanTween.moveX (gameBoard, 0, 2f).setEase (LeanTweenType.easeOutBounce);
+        }
 		if (!isGameover) {  
             if (numOfAnswered == numOfAnswers) {    // game win
                StopCurGame();
@@ -126,4 +136,5 @@ public class GameManager : MonoBehaviour
 	{
 		numOfAnswered++;
 	}
+
 }

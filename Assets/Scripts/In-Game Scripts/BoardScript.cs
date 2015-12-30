@@ -32,6 +32,7 @@ public class BoardScript : MonoBehaviour
         if(!BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().isAnswered)
         {
             GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+            LeanTween.scale (gameObject, new Vector3 (1f, 1f, 1f), 0.15f).setEase (LeanTweenType.linear);
             InputNumberBarHandler.wrongAnswerCountFrame = -1;
         }    
 	}
@@ -39,6 +40,7 @@ public class BoardScript : MonoBehaviour
 	public void SwitchToPressedBoardBg ()
 	{
 		isPressed = true;
-        GetComponent<SpriteRenderer>().color = new Color(199 / 255f, 167 / 255f, 1f, 1f);
+        LeanTween.scale (gameObject, new Vector3 (0.9f, 0.9f, 0.9f), 0.15f).setEase (LeanTweenType.linear);
+        GetComponent<SpriteRenderer>().color = new Color(77 / 255f, 184 / 255f, 1f, 1f);
 	}
 }

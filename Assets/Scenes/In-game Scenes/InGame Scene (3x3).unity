@@ -1504,6 +1504,10 @@ Prefab:
       propertyPath: gameoverWindow
       value: 
       objectReference: {fileID: 931022965}
+    - target: {fileID: 11456374, guid: 93efc0033822447bb87d650beaf3660a, type: 2}
+      propertyPath: gameBoard
+      value: 
+      objectReference: {fileID: 792394505}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 93efc0033822447bb87d650beaf3660a, type: 2}
   m_IsPrefabParent: 0

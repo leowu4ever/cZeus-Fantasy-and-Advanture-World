@@ -892,6 +892,10 @@ Prefab:
       propertyPath: gameoverWindow
       value: 
       objectReference: {fileID: 1277303126}
+    - target: {fileID: 11456374, guid: 93efc0033822447bb87d650beaf3660a, type: 2}
+      propertyPath: gameBoard
+      value: 
+      objectReference: {fileID: 792394505}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 93efc0033822447bb87d650beaf3660a, type: 2}
   m_IsPrefabParent: 0
@@ -1250,6 +1254,18 @@ Prefab:
     - target: {fileID: 159504, guid: 23f54ae6d1b394159bb9f3286a8b6d57, type: 2}
       propertyPath: m_Name
       value: Board (1,1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 21262718, guid: 23f54ae6d1b394159bb9f3286a8b6d57, type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21262718, guid: 23f54ae6d1b394159bb9f3286a8b6d57, type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21262718, guid: 23f54ae6d1b394159bb9f3286a8b6d57, type: 2}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23f54ae6d1b394159bb9f3286a8b6d57, type: 2}
