@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BoardPressedHandler : MonoBehaviour
 {
-	private GameObject curPressedBoard;
+	public static GameObject curPressedBoard;
 	public static GameObject curPressedContent;
 
 	void Update ()

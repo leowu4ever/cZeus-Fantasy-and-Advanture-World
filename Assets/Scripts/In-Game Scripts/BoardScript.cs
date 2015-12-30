@@ -29,13 +29,16 @@ public class BoardScript : MonoBehaviour
 	public void SwitchToNormalBoardBg ()
 	{
 		isPressed = false;
-		GetComponent<SpriteRenderer> ().color =  new Color (1f, 1f, 1f, 1f);
+        if(!BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().isAnswered)
+        {
+            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+            InputNumberBarHandler.wrongAnswerCountFrame = 0;
+        }    
 	}
 
 	public void SwitchToPressedBoardBg ()
 	{
 		isPressed = true;
-		GetComponent<SpriteRenderer> ().color = new Color (199/255f, 167/255f, 1f, 1f);
-
+        GetComponent<SpriteRenderer>().color = new Color(199 / 255f, 167 / 255f, 1f, 1f);
 	}
 }

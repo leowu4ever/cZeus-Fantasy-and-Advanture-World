@@ -9,21 +9,28 @@ public class InputNumberBarHandler : MonoBehaviour
 	public const string MYSTERY_NUMBER_CONTENT_TAG = "Mystery Number Content";
 	public const string PAIR_CLUE_CONTENT_TAG = "Pair Clue Content";
 	public const string SQUARE_CLUE_CONTENT_TAG = "Square Clue Content";
+    public const int WRONG_ANSWER_NUM_FRAME = 60;
+    public static int wrongAnswerCountFrame = 0;
+    
 
-	public void SendInputNumberWith (string buttonLabel)
+    public void SendInputNumberWith (string buttonLabel)
 	{
-		if (!GameManager.isGameover && GameManager.isInputing) {  
-				GameObject curPressedContent = BoardPressedHandler.curPressedContent;
-				ContentScript curPressedContentScript = curPressedContent.GetComponent<ContentScript> ();
+		if (!GameManager.isGameover && GameManager.isInputing) {
+                GameObject curPressedBoard = BoardPressedHandler.curPressedBoard;
+                GameObject curPressedContent = BoardPressedHandler.curPressedContent;
+			    ContentScript curPressedContentScript = curPressedContent.GetComponent<ContentScript> ();
 
 				if (curPressedContent.tag == MYSTERY_NUMBER_CONTENT_TAG && !curPressedContentScript.isAnswered) {
 					if (buttonLabel == curPressedContentScript.answer) {   // CORRECT INPUT !!!
 						UpdateMysteryAnswerOn (curPressedContent);
 						CreateContentSpriteOn (curPressedContent);
-                        
-					} else {    // WRONG INPUT !!!
-						GameManager.IncreaseErrorCount ();   
-					}
+                        UpdateMysteryColorToCorrectAnswer(curPressedBoard);
+
+
+                } else {    // WRONG INPUT !!!
+						GameManager.IncreaseErrorCount ();
+                        UpdateMysteryColorToWrongAnswer(curPressedBoard);
+                    }
 				}
 
 				if (curPressedContent.tag == PAIR_CLUE_CONTENT_TAG) {
@@ -43,8 +50,17 @@ public class InputNumberBarHandler : MonoBehaviour
 		contentScript.isAnswered = true;
 		contentScript.content = contentScript.answer;
 	}
-    
-	void TryInputNumberOn (GameObject content, string newInput, int maxInputLength)
+    void UpdateMysteryColorToCorrectAnswer(GameObject content)
+    {
+        content.GetComponent<SpriteRenderer>().color = new Color(0f, 1f, 0f, 1f);
+    }
+    void UpdateMysteryColorToWrongAnswer(GameObject content)
+    {
+        content.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f, 1f);
+        wrongAnswerCountFrame = WRONG_ANSWER_NUM_FRAME;
+    }
+
+    void TryInputNumberOn (GameObject content, string newInput, int maxInputLength)
 	{
 		// Always remove the sprite for previous input, and ready for new input
 		RemoveContentSpriteOn (content);
