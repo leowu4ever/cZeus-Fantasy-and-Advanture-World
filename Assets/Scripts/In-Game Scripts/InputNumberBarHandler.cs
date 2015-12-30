@@ -11,8 +11,15 @@ public class InputNumberBarHandler : MonoBehaviour
 	public const string SQUARE_CLUE_CONTENT_TAG = "Square Clue Content";
     public const int WRONG_ANSWER_NUM_FRAME = 60;
     public static int wrongAnswerCountFrame = 0;
-    
 
+    void Update()
+    {
+        GameObject curPressedBoard = BoardPressedHandler.curPressedBoard;
+        if(curPressedBoard != null)
+        {
+            CheckMysteryForWrongAnswerBackToNormal(curPressedBoard);
+        }
+    }
     public void SendInputNumberWith (string buttonLabel)
 	{
 		if (!GameManager.isGameover && GameManager.isInputing) {
@@ -58,6 +65,21 @@ public class InputNumberBarHandler : MonoBehaviour
     {
         content.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f, 1f);
         wrongAnswerCountFrame = WRONG_ANSWER_NUM_FRAME;
+    }
+    void CheckMysteryForWrongAnswerBackToNormal(GameObject content)
+    {
+        if (wrongAnswerCountFrame > 0)
+        {
+            wrongAnswerCountFrame--;
+        }
+        else if (wrongAnswerCountFrame == 0)
+        {
+            if(!BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().isAnswered)
+            {
+                content.GetComponent<SpriteRenderer>().color = new Color(199 / 255f, 167 / 255f, 1f, 1f);
+            }
+           
+        }
     }
 
     void TryInputNumberOn (GameObject content, string newInput, int maxInputLength)

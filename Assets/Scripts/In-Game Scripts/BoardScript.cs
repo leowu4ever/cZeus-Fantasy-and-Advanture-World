@@ -32,7 +32,7 @@ public class BoardScript : MonoBehaviour
         if(!BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().isAnswered)
         {
             GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
-            InputNumberBarHandler.wrongAnswerCountFrame = 0;
+            InputNumberBarHandler.wrongAnswerCountFrame = -1;
         }    
 	}
 
