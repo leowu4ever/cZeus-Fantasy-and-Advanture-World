@@ -59,11 +59,11 @@ public class InputNumberBarHandler : MonoBehaviour
 	}
     void UpdateMysteryColorToCorrectAnswer(GameObject content)
     {
-        content.GetComponent<SpriteRenderer>().color = new Color(0f, 1f, 0f, 1f);
+        content.GetComponent<SpriteRenderer>().color = new Color(144/255f, 1f, 148/255f, 1f);
     }
     void UpdateMysteryColorToWrongAnswer(GameObject content)
     {
-        content.GetComponent<SpriteRenderer>().color = new Color(1f, 0f, 0f, 1f);
+        content.GetComponent<SpriteRenderer>().color = new Color(1f, 111/255f, 111/255f, 1f);
         wrongAnswerCountFrame = WRONG_ANSWER_NUM_FRAME;
     }
     void CheckMysteryForWrongAnswerBackToNormal(GameObject content)

@@ -32,16 +32,17 @@ public class GameManager : MonoBehaviour
 
 	void Update ()
 	{
-        
         if (initFinished) {
             initFinished = false;
             LeanTween.moveX (gameBoard, 0, 2f).setEase (LeanTweenType.easeOutBounce);
         }
 		if (!isGameover) {  
+            //StartCoroutine(ExecuteAfterTime(1f,chapterScript.chapterSceneId));
+
             if (numOfAnswered == numOfAnswers) {    // game win
+
                StopCurGame();
 			   scoreWindow.SetActive (true);  
-               
                ChapterMapManager.SetLevelStateTo (PlayerPrefs.GetString("NEXTLEVELNAME"), false);
                // for level map 
                
@@ -136,5 +137,4 @@ public class GameManager : MonoBehaviour
 	{
 		numOfAnswered++;
 	}
-
 }

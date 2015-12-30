@@ -28,6 +28,7 @@ public class StarHandler : MonoBehaviour {
         }
 	   for (int a = 0; a < numOfHighlightedStar; a++) {
            stars[a].GetComponent<Image>().sprite = starOn;
+           LeanTween.scale (stars[a], new Vector3 (1,1,1),0.5f).setEase (LeanTweenType.easeOutBounce);
        }
 	}
 }
