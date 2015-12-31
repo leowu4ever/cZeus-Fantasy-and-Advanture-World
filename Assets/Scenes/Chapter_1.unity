@@ -184,7 +184,6 @@ Prefab:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
       value: -.000250484271
       objectReference: {fileID: 0}
     - target: {fileID: 446260, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
@@ -197,13 +196,6 @@ Prefab:
       propertyPath: m_LocalRotation.z
       value: .000250488054
 >>>>>>> origin/In-Game-Development
-=======
-      value: -.000250484125
-      objectReference: {fileID: 0}
-    - target: {fileID: 446260, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: .000250484125
->>>>>>> parent of 48f57e2... Update chapter 1 scene
 =======
       value: -.000250484125
       objectReference: {fileID: 0}
