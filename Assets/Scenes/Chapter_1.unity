@@ -186,6 +186,7 @@ Prefab:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of c2c78bb... idk
       value: -.000250484271
@@ -224,22 +225,29 @@ Prefab:
 >>>>>>> parent of 48f57e2... Update chapter 1 scene
 =======
 >>>>>>> parent of c2c78bb... idk
+=======
+      value: -.000250484125
+      objectReference: {fileID: 0}
+    - target: {fileID: 446260, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: .000250484125
+>>>>>>> parent of 48f57e2... Update chapter 1 scene
       objectReference: {fileID: 0}
     - target: {fileID: 427228, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.0722732544
+      value: -.0722732842
       objectReference: {fileID: 0}
     - target: {fileID: 427228, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .997384906
+      value: .997384846
       objectReference: {fileID: 0}
     - target: {fileID: 431308, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .0722732544
+      value: .0722732842
       objectReference: {fileID: 0}
     - target: {fileID: 431308, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .997384906
+      value: .997384846
       objectReference: {fileID: 0}
     - target: {fileID: 21286630, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_SortingLayerID
@@ -1244,11 +1252,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 490582, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.0472911894
+      value: -.0475352965
       objectReference: {fileID: 0}
     - target: {fileID: 490582, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -.998881161
+      value: -.998869598
       objectReference: {fileID: 0}
     - target: {fileID: 488402, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.w
@@ -1260,11 +1268,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 411102, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .0472911894
+      value: .0475352965
       objectReference: {fileID: 0}
     - target: {fileID: 411102, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -.998881161
+      value: -.998869598
       objectReference: {fileID: 0}
     - target: {fileID: 448588, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalScale.y
@@ -2769,27 +2777,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 481602, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.000178186106
+      value: -5.55261931e-06
       objectReference: {fileID: 0}
     - target: {fileID: 446260, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .000178186106
+      value: 5.55261931e-06
       objectReference: {fileID: 0}
     - target: {fileID: 427228, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.0723739713
+      value: -.0722017884
       objectReference: {fileID: 0}
     - target: {fileID: 427228, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .997377574
+      value: .997390091
       objectReference: {fileID: 0}
     - target: {fileID: 431308, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .0723739713
+      value: .0722017884
       objectReference: {fileID: 0}
     - target: {fileID: 431308, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .997377574
+      value: .997390091
       objectReference: {fileID: 0}
     - target: {fileID: 21286630, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_SortingLayerID
