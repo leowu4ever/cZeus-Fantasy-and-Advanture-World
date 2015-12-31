@@ -181,11 +181,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 481602, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.000250484125
+      value: -.000250488054
       objectReference: {fileID: 0}
     - target: {fileID: 446260, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .000250484125
+      value: .000250488054
       objectReference: {fileID: 0}
     - target: {fileID: 427228, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
@@ -1206,11 +1206,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 490582, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.0475352965
+      value: -.0472911894
       objectReference: {fileID: 0}
     - target: {fileID: 490582, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -.998869598
+      value: -.998881161
       objectReference: {fileID: 0}
     - target: {fileID: 488402, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.w
@@ -1222,11 +1222,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 411102, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .0475352965
+      value: .0472911894
       objectReference: {fileID: 0}
     - target: {fileID: 411102, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -.998869598
+      value: -.998881161
       objectReference: {fileID: 0}
     - target: {fileID: 448588, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalScale.y
@@ -2267,10 +2267,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8acc822228c6843e39be3f8c73c8e181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSensitivityX: .5
-  moveSensitivityY: .5
-  updateZoomSensitivity: 1
-  orthoZoomSpeed: .0199999996
+  moveSensitivityX: .0199999996
+  moveSensitivityY: .0199999996
+  updateZoomSensitivity: 0
+  orthoZoomSpeed: .00999999978
   minZoom: 6
   maxZoom: 15
   invertMoveX: 0
@@ -2731,27 +2731,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 481602, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -5.55261931e-06
+      value: -.000178186106
       objectReference: {fileID: 0}
     - target: {fileID: 446260, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 5.55261931e-06
+      value: .000178186106
       objectReference: {fileID: 0}
     - target: {fileID: 427228, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.0722017884
+      value: -.0723739713
       objectReference: {fileID: 0}
     - target: {fileID: 427228, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .997390091
+      value: .997377574
       objectReference: {fileID: 0}
     - target: {fileID: 431308, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .0722017884
+      value: .0723739713
       objectReference: {fileID: 0}
     - target: {fileID: 431308, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .997390091
+      value: .997377574
       objectReference: {fileID: 0}
     - target: {fileID: 21286630, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_SortingLayerID
