@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: c04291432f57241ae82bb97793174076
+timeCreated: 1451572197
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: newgameuiatlas 1_0
+    21300002: newgameuiatlas 1_1
+    21300004: newgameuiatlas 1_2
+    21300006: newgameuiatlas 1_3
+    21300008: newgameuiatlas 1_4
+    21300010: newgameuiatlas 1_5
+    21300012: newgameuiatlas 1_6
+    21300014: newgameuiatlas 1_7
+    21300016: newgameuiatlas 1_8
+    21300018: newgameuiatlas 1_9
+    21300020: newgameuiatlas 1_10
+    21300022: newgameuiatlas 1_11
+    21300024: newgameuiatlas 1_12
+    21300026: newgameuiatlas 1_13
+    21300028: newgameuiatlas 1_14
+    21300030: newgameuiatlas 1_15
+    21300032: newgameuiatlas 1_16
+    21300034: newgameuiatlas 1_17
+    21300036: newgameuiatlas 1_18
+    21300038: newgameuiatlas 1_19
+    21300040: newgameuiatlas 1_20
+    21300042: newgameuiatlas 1_21
+    21300044: newgameuiatlas 1_22
+    21300046: newgameuiatlas 1_23
+    21300048: newgameuiatlas 1_24
+    21300050: newgameuiatlas 1_25
+    21300052: newgameuiatlas 1_26
+    21300054: newgameuiatlas 1_27
+    21300056: newgameuiatlas 1_28
+    21300058: newgameuiatlas 1_29
+    21300060: newgameuiatlas 1_30
+    21300062: newgameuiatlas 1_31
+    21300064: newgameuiatlas 1_32
+    21300066: newgameuiatlas 1_33
+    21300068: newgameuiatlas 1_34
+    21300070: newgameuiatlas 1_35
+    21300072: newgameuiatlas 1_36
+    21300074: newgameuiatlas 1_37
+    21300076: newgameuiatlas 1_38
+    21300078: newgameuiatlas 1_39
+    21300080: newgameuiatlas 1_40
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 520
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: newgameuiatlas 1_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1867
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1867
+        width: 353
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_2
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 1926
+        width: 63
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_3
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 1926
+        width: 64
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_4
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 2005
+        width: 119
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_5
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 1924
+        width: 83
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_6
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 1938
+        width: 99
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_7
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 1939
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_8
+      rect:
+        serializedVersion: 2
+        x: 1813
+        y: 1915
+        width: 113
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_9
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 948
+        width: 95
+        height: 1089
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_10
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1975
+        width: 118
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_11
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1940
+        width: 119
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1506
+        width: 353
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_13
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 1506
+        width: 177
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_14
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1695
+        width: 1244
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_15
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 1622
+        width: 1194
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_16
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 1535
+        width: 1194
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1291
+        width: 334
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_18
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 1055
+        width: 713
+        height: 463
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_19
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1097
+        width: 1083
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_20
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 995
+        width: 1083
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_21
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 771
+        width: 210
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_22
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 747
+        width: 171
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_23
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 757
+        width: 216
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_24
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 536
+        width: 52
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 536
+        width: 64
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_26
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 538
+        width: 56
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_27
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 521
+        width: 125
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_28
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 520
+        width: 199
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_29
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 289
+        width: 161
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_30
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 296
+        width: 140
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_31
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 285
+        width: 174
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_32
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 288
+        width: 124
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_33
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 296
+        width: 140
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 514
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_35
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 9
+        width: 142
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_36
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 4
+        width: 428
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_37
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 11
+        width: 139
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_38
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 15
+        width: 135
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_39
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 21
+        width: 117
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_40
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 7
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
