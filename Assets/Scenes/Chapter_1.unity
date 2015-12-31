@@ -181,11 +181,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 481602, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.000250484125
+      value: -.000250484998
       objectReference: {fileID: 0}
     - target: {fileID: 446260, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .000250484125
+      value: .000250484998
       objectReference: {fileID: 0}
     - target: {fileID: 427228, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
@@ -2270,7 +2270,7 @@ MonoBehaviour:
   moveSensitivityX: .5
   moveSensitivityY: .5
   updateZoomSensitivity: 1
-  orthoZoomSpeed: .0199999996
+  orthoZoomSpeed: .00999999978
   minZoom: 6
   maxZoom: 15
   invertMoveX: 0

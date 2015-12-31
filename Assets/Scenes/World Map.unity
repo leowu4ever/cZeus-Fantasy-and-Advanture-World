@@ -1873,7 +1873,7 @@ MonoBehaviour:
   moveSensitivityX: 1
   moveSensitivityY: 1
   updateZoomSensitivity: 1
-  orthoZoomSpeed: .0500000007
+  orthoZoomSpeed: .00999999978
   minZoom: 4
   maxZoom: 6.5
   invertMoveX: 0

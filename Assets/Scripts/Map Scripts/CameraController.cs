@@ -45,10 +45,9 @@ public class CameraController : MonoBehaviour
         if (!ChapterMapManager.isFocused) {
             if (updateZoomSensitivity)
             {
-                moveSensitivityX = _camera.orthographicSize / 5.0f;
-                moveSensitivityY = _camera.orthographicSize / 5.0f;
+                moveSensitivityX = _camera.orthographicSize / 50f;
+                moveSensitivityY = _camera.orthographicSize / 50f;
             }
-
             Touch[] touches = Input.touches;
 
             if (touches.Length < 1)
