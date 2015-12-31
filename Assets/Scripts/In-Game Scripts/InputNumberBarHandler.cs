@@ -31,9 +31,9 @@ public class InputNumberBarHandler : MonoBehaviour
 						UpdateMysteryAnswerOn (curPressedContent);
 						CreateContentSpriteOn (curPressedContent);
                         UpdateMysteryColorToCorrectAnswer(curPressedBoard);
-                } else {    // WRONG INPUT !!!
-						GameManager.IncreaseErrorCount ();
-                        UpdateMysteryColorToWrongAnswer(curPressedBoard);
+                    } else {    // WRONG INPUT !!!
+                            GameManager.IncreaseErrorCount ();
+                            UpdateMysteryColorToWrongAnswer(curPressedBoard);
                     }
 				}
 
@@ -56,6 +56,7 @@ public class InputNumberBarHandler : MonoBehaviour
 	}
     void UpdateMysteryColorToCorrectAnswer(GameObject content)
     {
+        LeanTween.scale (content, new Vector3 (1f, 1f, 1f), 0.15f).setEase (LeanTweenType.linear);
         content.GetComponent<SpriteRenderer>().color = new Color(144/255f, 1f, 148/255f, 1f);
     }
     void UpdateMysteryColorToWrongAnswer(GameObject content)
@@ -109,16 +110,14 @@ public class InputNumberBarHandler : MonoBehaviour
 			contentSprite.GetComponent<NumberSpriteScript> ().SetSpriteTo (int.Parse (contentScript.content));
 			contentSprite.transform.parent = content.transform;
             DoInputAnimation (contentSprite);
-            
-            
 		}
+        
 		if (contentScript.content.Length > 1) {
 			for (int a = 0; a < contentScript.content.Length; a++) {
 				GameObject contentSprite = Instantiate (numberPrefab, new Vector3 (content.transform.position.x - ContentScript.xShift + a * (ContentScript.xShift + ContentScript.xDisplacement), content.transform.position.y, content.transform.position.z), Quaternion.identity) as GameObject;
 				contentSprite.GetComponent<NumberSpriteScript> ().SetSpriteTo (int.Parse (contentScript.content.Substring (a, +1)));
 				contentSprite.transform.parent = content.transform;
                 DoInputAnimation (contentSprite);
-            
 			}
 		}
 	}
