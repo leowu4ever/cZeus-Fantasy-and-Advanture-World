@@ -181,11 +181,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 481602, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.000250483543
+      value: -.000250484125
       objectReference: {fileID: 0}
     - target: {fileID: 446260, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .000250483543
+      value: .000250484125
       objectReference: {fileID: 0}
     - target: {fileID: 427228, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
@@ -1935,10 +1935,10 @@ RectTransform:
   - {fileID: 733206601}
   m_Father: {fileID: 242445817}
   m_RootOrder: 0
-  m_AnchorMin: {x: .0137802698, y: .985000074}
-  m_AnchorMax: {x: .0137802698, y: .985000074}
-  m_AnchoredPosition: {x: 10, y: -15.500061}
-  m_SizeDelta: {x: 20, y: 31.0000858}
+  m_AnchorMin: {x: .0157452002, y: .0110000009}
+  m_AnchorMax: {x: .120254807, y: .0997425765}
+  m_AnchoredPosition: {x: -1.52587891e-05, y: 0}
+  m_SizeDelta: {x: 0, y: -3.81470018e-05}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1074921964
 MonoBehaviour:
@@ -2011,7 +2011,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300004, guid: 7cf65297b243048fea499b380d7afba5, type: 3}
+  m_Sprite: {fileID: 21300068, guid: c04291432f57241ae82bb97793174076, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c04291432f57241ae82bb97793174076
-timeCreated: 1451572197
+timeCreated: 1451574265
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -48,7 +48,7 @@ TextureImporter:
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -99,7 +99,7 @@ TextureImporter:
         width: 176
         height: 177
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_1
       rect:
@@ -109,7 +109,7 @@ TextureImporter:
         width: 353
         height: 177
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_2
       rect:
@@ -119,7 +119,7 @@ TextureImporter:
         width: 63
         height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_3
       rect:
@@ -129,7 +129,7 @@ TextureImporter:
         width: 64
         height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_4
       rect:
@@ -139,7 +139,7 @@ TextureImporter:
         width: 119
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_5
       rect:
@@ -149,7 +149,7 @@ TextureImporter:
         width: 83
         height: 114
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_6
       rect:
@@ -159,7 +159,7 @@ TextureImporter:
         width: 99
         height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_7
       rect:
@@ -169,7 +169,7 @@ TextureImporter:
         width: 81
         height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_8
       rect:
@@ -179,7 +179,7 @@ TextureImporter:
         width: 113
         height: 111
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_9
       rect:
@@ -189,7 +189,7 @@ TextureImporter:
         width: 95
         height: 1089
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_10
       rect:
@@ -199,7 +199,7 @@ TextureImporter:
         width: 118
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_11
       rect:
@@ -209,7 +209,7 @@ TextureImporter:
         width: 119
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_12
       rect:
@@ -219,7 +219,7 @@ TextureImporter:
         width: 353
         height: 353
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_13
       rect:
@@ -229,7 +229,7 @@ TextureImporter:
         width: 177
         height: 353
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_14
       rect:
@@ -239,7 +239,7 @@ TextureImporter:
         width: 1244
         height: 214
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_15
       rect:
@@ -249,7 +249,7 @@ TextureImporter:
         width: 1194
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_16
       rect:
@@ -259,7 +259,7 @@ TextureImporter:
         width: 1194
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_17
       rect:
@@ -269,7 +269,7 @@ TextureImporter:
         width: 334
         height: 197
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_18
       rect:
@@ -279,7 +279,7 @@ TextureImporter:
         width: 713
         height: 463
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_19
       rect:
@@ -289,7 +289,7 @@ TextureImporter:
         width: 1083
         height: 165
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_20
       rect:
@@ -299,7 +299,7 @@ TextureImporter:
         width: 1083
         height: 88
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_21
       rect:
@@ -309,7 +309,7 @@ TextureImporter:
         width: 210
         height: 199
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_22
       rect:
@@ -319,7 +319,7 @@ TextureImporter:
         width: 171
         height: 247
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_23
       rect:
@@ -329,7 +329,7 @@ TextureImporter:
         width: 216
         height: 212
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_24
       rect:
@@ -339,7 +339,7 @@ TextureImporter:
         width: 52
         height: 65
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_25
       rect:
@@ -349,7 +349,7 @@ TextureImporter:
         width: 64
         height: 177
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_26
       rect:
@@ -359,7 +359,7 @@ TextureImporter:
         width: 56
         height: 133
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_27
       rect:
@@ -369,7 +369,7 @@ TextureImporter:
         width: 125
         height: 209
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_28
       rect:
@@ -379,7 +379,7 @@ TextureImporter:
         width: 199
         height: 195
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_29
       rect:
@@ -389,7 +389,7 @@ TextureImporter:
         width: 161
         height: 273
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_30
       rect:
@@ -399,7 +399,7 @@ TextureImporter:
         width: 140
         height: 211
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_31
       rect:
@@ -409,7 +409,7 @@ TextureImporter:
         width: 174
         height: 226
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_32
       rect:
@@ -419,7 +419,7 @@ TextureImporter:
         width: 124
         height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_33
       rect:
@@ -429,17 +429,17 @@ TextureImporter:
         width: 140
         height: 211
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_34
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 514
-        height: 257
+        x: 22
+        y: 12
+        width: 213
+        height: 232
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_35
       rect:
@@ -449,7 +449,7 @@ TextureImporter:
         width: 142
         height: 249
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_36
       rect:
@@ -459,7 +459,7 @@ TextureImporter:
         width: 428
         height: 218
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_37
       rect:
@@ -469,7 +469,7 @@ TextureImporter:
         width: 139
         height: 202
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_38
       rect:
@@ -479,7 +479,7 @@ TextureImporter:
         width: 135
         height: 184
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_39
       rect:
@@ -489,7 +489,7 @@ TextureImporter:
         width: 117
         height: 183
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_40
       rect:
@@ -499,7 +499,7 @@ TextureImporter:
         width: 112
         height: 201
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

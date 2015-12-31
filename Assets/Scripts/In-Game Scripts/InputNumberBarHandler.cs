@@ -5,7 +5,6 @@ using System.Collections.Generic;
 public class InputNumberBarHandler : MonoBehaviour
 {
 	public GameObject numberPrefab;
-
 	public const string MYSTERY_NUMBER_CONTENT_TAG = "Mystery Number Content";
 	public const string PAIR_CLUE_CONTENT_TAG = "Pair Clue Content";
 	public const string SQUARE_CLUE_CONTENT_TAG = "Square Clue Content";
@@ -32,8 +31,6 @@ public class InputNumberBarHandler : MonoBehaviour
 						UpdateMysteryAnswerOn (curPressedContent);
 						CreateContentSpriteOn (curPressedContent);
                         UpdateMysteryColorToCorrectAnswer(curPressedBoard);
-
-
                 } else {    // WRONG INPUT !!!
 						GameManager.IncreaseErrorCount ();
                         UpdateMysteryColorToWrongAnswer(curPressedBoard);

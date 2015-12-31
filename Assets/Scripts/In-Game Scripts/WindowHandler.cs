@@ -3,13 +3,11 @@ using System.Collections;
 
 public class WindowHandler : MonoBehaviour
 {
-
 	public GameObject inputNumberBar;
     //for level 1-5
     public GameObject[] MysterList;
     public GameObject[] mysterAnswerChoice;
     
-
     void Update ()
 	{
 		if (GameManager.isInputing) {
@@ -17,7 +15,7 @@ public class WindowHandler : MonoBehaviour
 			Debug.Log ("isInputing");
 		} else {
 			DeactivateInputNumberBar ();
-			Debug.Log (" not isInputing");
+			Debug.Log ("not isInputing");
 		}
 	}
 
@@ -29,10 +27,12 @@ public class WindowHandler : MonoBehaviour
             SelectedInputNumberToDisplay();
         }
     }
+    
 	void DeactivateInputNumberBar ()
 	{
 		inputNumberBar.SetActive (false);
 	}
+    
     void SelectedInputNumberToDisplay()
     {
         if (BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().tag == "Mystery Number Content")
