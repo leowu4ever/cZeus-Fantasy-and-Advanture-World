@@ -187,6 +187,7 @@ Prefab:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of c2c78bb... idk
       value: -.000250484271
@@ -225,6 +226,13 @@ Prefab:
 >>>>>>> parent of 48f57e2... Update chapter 1 scene
 =======
 >>>>>>> parent of c2c78bb... idk
+=======
+      value: -.000250484125
+      objectReference: {fileID: 0}
+    - target: {fileID: 446260, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: .000250484125
+>>>>>>> parent of 48f57e2... Update chapter 1 scene
 =======
       value: -.000250484125
       objectReference: {fileID: 0}
