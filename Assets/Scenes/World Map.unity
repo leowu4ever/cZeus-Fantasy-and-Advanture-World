@@ -1870,10 +1870,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8acc822228c6843e39be3f8c73c8e181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSensitivityX: .200000003
-  moveSensitivityY: .200000003
-  updateZoomSensitivity: 0
-  orthoZoomSpeed: .00999999978
+  moveSensitivityX: 1
+  moveSensitivityY: 1
+  updateZoomSensitivity: 1
+  orthoZoomSpeed: .0500000007
   minZoom: 4
   maxZoom: 6.5
   invertMoveX: 0
