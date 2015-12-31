@@ -181,11 +181,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 481602, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
+<<<<<<< HEAD
       value: -.000250484271
       objectReference: {fileID: 0}
     - target: {fileID: 446260, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
       value: .000250484271
+=======
+      value: -.000250488054
+      objectReference: {fileID: 0}
+    - target: {fileID: 446260, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: .000250488054
+>>>>>>> origin/In-Game-Development
       objectReference: {fileID: 0}
     - target: {fileID: 427228, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
@@ -2267,10 +2275,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8acc822228c6843e39be3f8c73c8e181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSensitivityX: .5
-  moveSensitivityY: .5
-  updateZoomSensitivity: 1
-  orthoZoomSpeed: .0199999996
+  moveSensitivityX: .0199999996
+  moveSensitivityY: .0199999996
+  updateZoomSensitivity: 0
+  orthoZoomSpeed: .00999999978
   minZoom: 6
   maxZoom: 15
   invertMoveX: 0
