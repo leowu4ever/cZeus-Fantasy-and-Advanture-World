@@ -7,10 +7,20 @@ public class WindowHandler : MonoBehaviour
     //for level 1-5
     public GameObject[] mysteryList;
     public GameObject[] mysteryAnswerChoice;
-    
+    public GameObject hintButton;
+
     void Update ()
 	{
 		if (GameManager.isInputing) {
+
+            if (!GameManager.IsTutorial()) {
+                if (GameManager.IsAnyHintLeft() && BoardPressedHandler.curPressedContent.tag == "Mystery Number Content") {
+                    hintButton.SetActive (true);
+                } else {
+                    hintButton.SetActive (false);
+                }
+            }
+            
 			ActivateInputNumberBar ();
 			Debug.Log ("isInputing");
 		} else {
@@ -18,14 +28,14 @@ public class WindowHandler : MonoBehaviour
 			Debug.Log ("not isInputing");
 		}
 	}
-
+    
 	void ActivateInputNumberBar ()
 	{
 		inputNumberBar.SetActive (true);
         ActiveInputNumberForAll();
-        if (GameManager.puzzleLv=="1"|| GameManager.puzzleLv == "2"|| GameManager.puzzleLv == "3"|| GameManager.puzzleLv == "4"|| GameManager.puzzleLv == "5")
+        if (GameManager.IsTutorial ())
         {
-            SelectedInputNumberToDisplay();
+             DisplaySelectionsOnInputNumBar();
         }
         DisableInputNumberForWrongAnswer();
         
@@ -36,10 +46,11 @@ public class WindowHandler : MonoBehaviour
 		inputNumberBar.SetActive (false);
 	}
     
-    void SelectedInputNumberToDisplay()
+    void  DisplaySelectionsOnInputNumBar()
     {
         if (BoardPressedHandler.curPressedContent.tag == "Mystery Number Content")
         {
+            
             for (int i = 1; i < inputNumberBar.transform.childCount; i++)
             {
                 inputNumberBar.transform.GetChild(i).gameObject.SetActive(false);
@@ -59,7 +70,7 @@ public class WindowHandler : MonoBehaviour
             }
         }
         else
-        {
+        {    
             for (int i = 1; i < inputNumberBar.transform.childCount; i++)
             {
                 inputNumberBar.transform.GetChild(i).gameObject.SetActive(true);

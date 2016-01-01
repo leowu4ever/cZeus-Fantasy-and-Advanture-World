@@ -141,4 +141,11 @@ public class InputNumberBarHandler : MonoBehaviour
          contentSprite.transform.localScale = new Vector3 (0,0,0);
          LeanTween.scale (contentSprite, new Vector3 (scale, scale, scale), 1f).setEase(LeanTweenType.easeOutBounce);
     }
+    
+    public void SendHint () {
+        GameObject curPressedContent = BoardPressedHandler.curPressedContent;
+	    ContentScript curPressedContentScript = curPressedContent.GetComponent<ContentScript> ();
+        SendInputNumberWith(curPressedContentScript.answer);
+        GameManager.DecreHintCount ();
+    }
 }   

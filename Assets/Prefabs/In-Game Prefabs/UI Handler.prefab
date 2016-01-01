@@ -54,8 +54,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53229dbea49b55749a9a3ddfbbe79ad6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorLabel: {fileID: 0}
-  timerLabel: {fileID: 0}
+  errorLabel: {fileID: 116840, guid: 5508c06fcc1094ae3ba8ac4470f99f7e, type: 2}
+  timerLabel: {fileID: 178828, guid: 5508c06fcc1094ae3ba8ac4470f99f7e, type: 2}
+  hintLabel: {fileID: 174924, guid: 5508c06fcc1094ae3ba8ac4470f99f7e, type: 2}
 --- !u!114 &11434844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -81,6 +82,7 @@ MonoBehaviour:
   inputNumberBar: {fileID: 0}
   mysteryList: []
   mysteryAnswerChoice: []
+  hintButton: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -95,7 +97,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: errorLabel
       value: 
-      objectReference: {fileID: 174924, guid: 5508c06fcc1094ae3ba8ac4470f99f7e, type: 2}
+      objectReference: {fileID: 116840, guid: 5508c06fcc1094ae3ba8ac4470f99f7e, type: 2}
     - target: {fileID: 0}
       propertyPath: timerLabel
       value: 
@@ -104,6 +106,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hintLabel
+      value: 
+      objectReference: {fileID: 174924, guid: 5508c06fcc1094ae3ba8ac4470f99f7e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 102798}

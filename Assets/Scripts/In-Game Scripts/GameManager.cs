@@ -12,8 +12,9 @@ public class GameManager : MonoBehaviour
 	public GameObject scoreWindow, gameoverWindow;
 
 	public static bool isInputing, isGameover;
-	public static int errorCount, numOfAnswered;
+	public static int errorCount, numOfAnswered, hintCount;
 
+	public const int MAX_HINT_NUMBER = 2;
     public const int MAX_ERROR_NUMBER = 5;
 	public const int GAME_DURATION = 1000;
 
@@ -57,10 +58,10 @@ public class GameManager : MonoBehaviour
 	{
 		errorCount = 0;
 		numOfAnswered = 0;
+        hintCount = MAX_HINT_NUMBER;
    		isGameover = false;
 		isInputing = false;
 		InGameTimer.initTimer (GAME_DURATION);
-
 	}
 
 	void InitGameboard ()
@@ -137,4 +138,26 @@ public class GameManager : MonoBehaviour
 	{
 		numOfAnswered++;
 	}
+    
+    public static void DecreHintCount () {
+        if (hintCount > 0) {
+            hintCount--;
+        }
+    }
+    
+    public static bool IsAnyHintLeft () {
+        if (hintCount > 0) {
+            return true;
+        } else  {
+           return false;
+        }
+    }
+    
+    public static bool IsTutorial () {
+         if (puzzleLv== "1"|| puzzleLv == "2"|| puzzleLv == "3"|| puzzleLv == "4"|| puzzleLv == "5") {
+             return true;
+         } else {
+             return false;
+         }
+    }
 }

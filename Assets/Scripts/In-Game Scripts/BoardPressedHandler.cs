@@ -5,7 +5,7 @@ public class BoardPressedHandler : MonoBehaviour
 {
 	public static GameObject curPressedBoard;
 	public static GameObject curPressedContent;
-
+    
 	void Update ()
 	{
 		if (!GameManager.isGameover) {
@@ -17,6 +17,7 @@ public class BoardPressedHandler : MonoBehaviour
 					GameObject pressedContent = hit.transform.gameObject;
                     BoardScript pressedBoardScript = pressedBoard.GetComponent<BoardScript> (); 
 					ContentScript pressedContentScript = pressedContent.GetComponent<ContentScript> ();
+                    
                     
 					if (!pressedContentScript.isAnswered) {
 						
