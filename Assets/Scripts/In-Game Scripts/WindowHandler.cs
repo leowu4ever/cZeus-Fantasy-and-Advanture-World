@@ -28,6 +28,7 @@ public class WindowHandler : MonoBehaviour
             SelectedInputNumberToDisplay();
         }
         DisableInputNumberForWrongAnswer();
+        
     }
     
 	void DeactivateInputNumberBar ()
@@ -37,7 +38,7 @@ public class WindowHandler : MonoBehaviour
     
     void SelectedInputNumberToDisplay()
     {
-        if (BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().tag == "Mystery Number Content")
+        if (BoardPressedHandler.curPressedContent.tag == "Mystery Number Content")
         {
             for (int i = 1; i < inputNumberBar.transform.childCount; i++)
             {
@@ -65,10 +66,12 @@ public class WindowHandler : MonoBehaviour
             }
         }
     }
+    
     void DisableInputNumberForWrongAnswer()
     {
-        if (BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().tag == "Mystery Number Content")
+        if (BoardPressedHandler.curPressedContent.tag == "Mystery Number Content")
         {
+            DisableZeroForMysteryBoard ();
             for (int i = 1; i < inputNumberBar.transform.childCount; i++)
             {
                 for(int j=0; j< BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().wrongAnswer.Count;j++)
@@ -81,6 +84,11 @@ public class WindowHandler : MonoBehaviour
             }
         }
     }
+    
+    void DisableZeroForMysteryBoard () {
+        inputNumberBar.transform.GetChild(inputNumberBar.transform.childCount-1).gameObject.SetActive(false);
+    }
+    
     void ActiveInputNumberForAll()
     {
         for (int i = 1; i < inputNumberBar.transform.childCount; i++)
