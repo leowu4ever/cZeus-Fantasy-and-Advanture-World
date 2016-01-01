@@ -5,14 +5,14 @@ public class WindowHandler : MonoBehaviour
 {
 	public GameObject inputNumberBar;
     //for level 1-5
-    public GameObject[] mysteryList;
-    public GameObject[] mysteryAnswerChoice;
+    public GameObject[] mysteryList, mysteryAnswerChoice;
     public GameObject hintButton;
-    public GameObject startNote, gameoverNote, winNote;
     
     void Start () {
-        LeanTween.moveX (startNote, 0, 1f).setEase (LeanTweenType.easeInBounce);
-        LeanTween.moveX (startNote, -6f, 1f ).setEase (LeanTweenType.easeOutExpo).setDelay (2f);    
+        if (!GameManager.IsTutorial()) {
+            LeanTween.moveX (GameObject.Find("Start Note"), 0, 1f).setEase (LeanTweenType.easeInBounce);
+            LeanTween.moveX (GameObject.Find("Start Note"), -6f, 1f ).setEase (LeanTweenType.easeOutExpo).setDelay (2f);
+        }    
     }
 
     void Update ()
@@ -33,8 +33,6 @@ public class WindowHandler : MonoBehaviour
                 hintButton.SetActive (false);
             }
 		}
-        
-         
 	}
     
 	void ActivateInputNumberBar ()

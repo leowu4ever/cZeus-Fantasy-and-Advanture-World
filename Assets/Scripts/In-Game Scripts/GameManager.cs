@@ -7,9 +7,8 @@ public class GameManager : MonoBehaviour
 {   
 	public string puzzleLevel;
     public static string puzzleLv;
-    public GameObject gameBoard;
+    public GameObject gameBoard, scoreWindow, gameoverWindow;
 	public GameObject[] contentSpriteArray;
-	public GameObject scoreWindow, gameoverWindow;
 
 	public static bool isInputing, isGameover;
 	public static int errorCount, numOfAnswered, hintCount;
@@ -86,7 +85,7 @@ public class GameManager : MonoBehaviour
 			completeAnswerTestString = completeAnswerTestString + " " + answerList [a];
 		}
 		Debug.Log ("answer: " + completeAnswerTestString);
-        LeanTween.moveX (gameBoard, 5, 0.5f);
+        LeanTween.moveX (gameBoard, 7, 0.5f);
         LeanTween.moveX (gameBoard, 0, 2f).setEase (LeanTweenType.easeInBounce).setDelay(1f);
 	}
     
@@ -131,7 +130,7 @@ public class GameManager : MonoBehaviour
     void StopCurGame () {
         isGameover = true;
         InGameTimer.StopTimer ();
-        LeanTween.moveX (gameBoard, 5, 2f).setEase (LeanTweenType.easeOutExpo).setDelay (1f);
+        LeanTween.moveX (gameBoard, 7, 2f).setEase (LeanTweenType.easeOutExpo).setDelay (1f);
     }
  
 	public static void IncreaseErrorCount ()
