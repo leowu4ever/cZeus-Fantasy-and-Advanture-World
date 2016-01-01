@@ -8,7 +8,7 @@ public class InputNumberBarHandler : MonoBehaviour
 	public const string MYSTERY_NUMBER_CONTENT_TAG = "Mystery Number Content";
 	public const string PAIR_CLUE_CONTENT_TAG = "Pair Clue Content";
 	public const string SQUARE_CLUE_CONTENT_TAG = "Square Clue Content";
-    public const int WRONG_ANSWER_NUM_FRAME = 60;
+    public const int WRONG_ANSWER_NUM_FRAME = 30;
     public static int wrongAnswerCountFrame = 0;
 
     void Update()
@@ -57,20 +57,19 @@ public class InputNumberBarHandler : MonoBehaviour
 		contentScript.content = contentScript.answer;
 	}
     
-    void SetBgToGreenOn(GameObject content)
+    void SetBgToGreenOn(GameObject board)
     {
-        LeanTween.scale (content, new Vector3 (1f, 1f, 1f), 0.15f).setEase (LeanTweenType.linear);
-        content.GetComponent<SpriteRenderer>().color = new Color(144/255f, 1f, 148/255f, 1f);
-        //SetColorTo (content, );
+        LeanTween.scale (board, new Vector3 (1f, 1f, 1f), 0.15f).setEase (LeanTweenType.linear);
+        SetColorTo (board, 144/255f, 1f, 148/255f, 1f);
     }
     
-    void FlashBgToRedOn(GameObject content)
+    void FlashBgToRedOn(GameObject board)
     {
-        content.GetComponent<SpriteRenderer>().color = new Color(1f, 111/255f, 111/255f, 1f);
+        SetColorTo (board, 1f, 111/255f, 111/255f, 1f);
         wrongAnswerCountFrame = WRONG_ANSWER_NUM_FRAME;
     }
     
-    void CheckMysteryForWrongAnswerBackToNormal(GameObject content)
+    void CheckMysteryForWrongAnswerBackToNormal(GameObject board)
     {
         if (wrongAnswerCountFrame > 0)
         {
@@ -78,9 +77,13 @@ public class InputNumberBarHandler : MonoBehaviour
         } else if (wrongAnswerCountFrame == 0) {
             if(!BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().isAnswered)
             {
-                content.GetComponent<SpriteRenderer>().color = new Color(77 / 255f, 184/ 255f, 1f, 1f);
+                SetColorTo (board, 77 / 255f, 184/ 255f, 1f, 1f);
             }
         }
+    }
+        
+    void SetColorTo (GameObject content, float r, float g, float b, float t) {
+        content.GetComponent<SpriteRenderer>().color = new Color (r, g, b, t);
     }
 
     void TryInputNumberOn (GameObject content, string newInput, int maxInputLength)
@@ -104,10 +107,6 @@ public class InputNumberBarHandler : MonoBehaviour
 			}
 		}
 	}
-    
-    void SetColorTo (GameObject content, int r, int g, int b, int t) {
-        content.GetComponent<SpriteRenderer>().color = new Color (r, g, b, t);
-    }
 
 	void CreateContentSpriteOn (GameObject content)
 	{
