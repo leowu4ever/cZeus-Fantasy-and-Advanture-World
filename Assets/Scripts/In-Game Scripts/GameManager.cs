@@ -24,44 +24,46 @@ public class GameManager : MonoBehaviour
 	void Start ()
 	{  
         gameBoard.transform.position = new Vector3 (5,1,0);
-        puzzleLv = puzzleLevel; // BAD
 		InitGame ();
 		InitGameboard ();
-        initFinished = true; 
-	}
+     }
 
 	void Update ()
 	{
-        if (initFinished) {
-            initFinished = false;
-            LeanTween.moveX (gameBoard, 0, 2f).setEase (LeanTweenType.easeOutBounce);
-            InGameTimer.StartTimer ();
+        if (!LeanTween.isTweening(gameBoard) && !initFinished) {
+             InGameTimer.StartTimer ();
+             initFinished = true;
         }
+        
 		if (!isGameover) {  
-            //StartCoroutine(ExecuteAfterTime(1f,chapterScript.chapterSceneId));
-
             if (numOfAnswered == numOfAnswers) {    // game win
-
                StopCurGame();
+               LeanTween.moveX (GameObject.Find("Win Note"), 0, 1f).setEase (LeanTweenType.easeInBounce).setDelay (1f);
+               LeanTween.moveX (GameObject.Find("Win Note"), -6f, 1f ).setEase (LeanTweenType.easeOutExpo).setDelay (3f);  
 			   scoreWindow.SetActive (true);  
+               LeanTween.scale (scoreWindow, new Vector3 (1,1,1),1f).setEase (LeanTweenType.easeOutExpo).setDelay (3.5f);
                ChapterMapManager.SetLevelStateTo (PlayerPrefs.GetString("NEXTLEVELNAME"), false);
-               // for level map 
                
             } else if (errorCount > MAX_ERROR_NUMBER || InGameTimer.isTimerFinish) {   // game over 1. reach max error 2. time over
                StopCurGame();
+               LeanTween.moveX (GameObject.Find("Gameover Note"), 0, 1f).setEase (LeanTweenType.easeInBounce).setDelay (1f);
+               LeanTween.moveX (GameObject.Find("Gameover Note"), -6f, 1f ).setEase (LeanTweenType.easeOutExpo).setDelay (3f);  
                gameoverWindow.SetActive (true);
+               LeanTween.scale (gameoverWindow, new Vector3 (1,1,1),1f).setEase (LeanTweenType.easeOutExpo).setDelay (3.5f);
             }
 		}
 	}
 
 	void InitGame ()
 	{
+        puzzleLv = puzzleLevel; // BAD
 		errorCount = 0;
 		numOfAnswered = 0;
         hintCount = MAX_HINT_NUMBER;
    		isGameover = false;
 		isInputing = false;
 		InGameTimer.initTimer (GAME_DURATION);
+
 	}
 
 	void InitGameboard ()
@@ -84,6 +86,8 @@ public class GameManager : MonoBehaviour
 			completeAnswerTestString = completeAnswerTestString + " " + answerList [a];
 		}
 		Debug.Log ("answer: " + completeAnswerTestString);
+        LeanTween.moveX (gameBoard, 5, 0.5f);
+        LeanTween.moveX (gameBoard, 0, 2f).setEase (LeanTweenType.easeInBounce).setDelay(1f);
 	}
     
     void AssignContentAndAnswer (List<string> contentList, List<string> answerList) {
@@ -127,6 +131,7 @@ public class GameManager : MonoBehaviour
     void StopCurGame () {
         isGameover = true;
         InGameTimer.StopTimer ();
+        LeanTween.moveX (gameBoard, 5, 2f).setEase (LeanTweenType.easeOutExpo).setDelay (1f);
     }
  
 	public static void IncreaseErrorCount ()

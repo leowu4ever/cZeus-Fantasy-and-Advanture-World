@@ -8,6 +8,12 @@ public class WindowHandler : MonoBehaviour
     public GameObject[] mysteryList;
     public GameObject[] mysteryAnswerChoice;
     public GameObject hintButton;
+    public GameObject startNote, gameoverNote, winNote;
+    
+    void Start () {
+        LeanTween.moveX (startNote, 0, 1f).setEase (LeanTweenType.easeInBounce);
+        LeanTween.moveX (startNote, -6f, 1f ).setEase (LeanTweenType.easeOutExpo).setDelay (2f);    
+    }
 
     void Update ()
 	{
@@ -27,6 +33,8 @@ public class WindowHandler : MonoBehaviour
                 hintButton.SetActive (false);
             }
 		}
+        
+         
 	}
     
 	void ActivateInputNumberBar ()

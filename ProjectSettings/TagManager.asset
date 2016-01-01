@@ -108,3 +108,6 @@ TagManager:
   - name: Content
     uniqueID: 2826990251
     locked: 0
+  - name: Game Notes
+    uniqueID: 1139429967
+    locked: 0
