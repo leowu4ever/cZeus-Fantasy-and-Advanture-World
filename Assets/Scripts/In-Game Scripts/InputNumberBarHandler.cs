@@ -19,6 +19,7 @@ public class InputNumberBarHandler : MonoBehaviour
             CheckMysteryForWrongAnswerBackToNormal(curPressedBoard);
         }
     }
+    
     public void SendInputNumberWith (string buttonLabel)
 	{
 		if (!GameManager.isGameover && GameManager.isInputing) {
@@ -30,10 +31,10 @@ public class InputNumberBarHandler : MonoBehaviour
 					if (buttonLabel == curPressedContentScript.answer) {   // CORRECT INPUT !!!
 						UpdateMysteryAnswerOn (curPressedContent);
 						CreateContentSpriteOn (curPressedContent);
-                        UpdateMysteryColorToCorrectAnswer(curPressedBoard);
+                        SetBgToGreenOn(curPressedBoard);
                     } else {    // WRONG INPUT !!!
-                            GameManager.IncreaseErrorCount ();
-                            UpdateMysteryColorToWrongAnswer(curPressedBoard);
+                        GameManager.IncreaseErrorCount ();
+                        FlashBgToRedOn(curPressedBoard);
                     }
 				}
 
@@ -54,29 +55,30 @@ public class InputNumberBarHandler : MonoBehaviour
 		contentScript.isAnswered = true;
 		contentScript.content = contentScript.answer;
 	}
-    void UpdateMysteryColorToCorrectAnswer(GameObject content)
+    
+    void SetBgToGreenOn(GameObject content)
     {
         LeanTween.scale (content, new Vector3 (1f, 1f, 1f), 0.15f).setEase (LeanTweenType.linear);
         content.GetComponent<SpriteRenderer>().color = new Color(144/255f, 1f, 148/255f, 1f);
+        SetColorTo (content, );
     }
-    void UpdateMysteryColorToWrongAnswer(GameObject content)
+    
+    void FlashBgToRedOn(GameObject content)
     {
         content.GetComponent<SpriteRenderer>().color = new Color(1f, 111/255f, 111/255f, 1f);
         wrongAnswerCountFrame = WRONG_ANSWER_NUM_FRAME;
     }
+    
     void CheckMysteryForWrongAnswerBackToNormal(GameObject content)
     {
         if (wrongAnswerCountFrame > 0)
         {
             wrongAnswerCountFrame--;
-        }
-        else if (wrongAnswerCountFrame == 0)
-        {
+        } else if (wrongAnswerCountFrame == 0) {
             if(!BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().isAnswered)
             {
                 content.GetComponent<SpriteRenderer>().color = new Color(77 / 255f, 184/ 255f, 1f, 1f);
             }
-           
         }
     }
 
@@ -101,6 +103,10 @@ public class InputNumberBarHandler : MonoBehaviour
 			}
 		}
 	}
+    
+    void SetColorTo (GameObject content, int r, int g, int b, int t) {
+        content.GetComponent<SpriteRenderer>().color = new Color (r, g, b, t);
+    }
 
 	void CreateContentSpriteOn (GameObject content)
 	{
@@ -132,7 +138,7 @@ public class InputNumberBarHandler : MonoBehaviour
     
     void DoInputAnimation (GameObject contentSprite) {
          float scale = 1/1.8f;
-            contentSprite.transform.localScale = new Vector3 (0,0,0);
-            LeanTween.scale (contentSprite, new Vector3 (scale, scale, scale), 1f).setEase(LeanTweenType.easeOutBounce);
+         contentSprite.transform.localScale = new Vector3 (0,0,0);
+         LeanTween.scale (contentSprite, new Vector3 (scale, scale, scale), 1f).setEase(LeanTweenType.easeOutBounce);
     }
 }   

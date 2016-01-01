@@ -26,8 +26,7 @@ public class GameManager : MonoBehaviour
         puzzleLv = puzzleLevel; // BAD
 		InitGame ();
 		InitGameboard ();
-        initFinished = true;
-
+        initFinished = true; 
 	}
 
 	void Update ()
@@ -35,6 +34,7 @@ public class GameManager : MonoBehaviour
         if (initFinished) {
             initFinished = false;
             LeanTween.moveX (gameBoard, 0, 2f).setEase (LeanTweenType.easeOutBounce);
+            InGameTimer.StartTimer ();
         }
 		if (!isGameover) {  
             //StartCoroutine(ExecuteAfterTime(1f,chapterScript.chapterSceneId));
@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
    		isGameover = false;
 		isInputing = false;
 		InGameTimer.initTimer (GAME_DURATION);
-		InGameTimer.StartTimer ();
+
 	}
 
 	void InitGameboard ()
