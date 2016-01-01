@@ -79,10 +79,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b984f32c8cd1324d814c94a2de8873e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputNumberBar: {fileID: 0}
+  inputNumberBar: {fileID: 160482, guid: 4fad8174b967a48f4bdbdcfa0b72d6bb, type: 2}
   mysteryList: []
   mysteryAnswerChoice: []
-  hintButton: {fileID: 0}
+  hintButton: {fileID: 196884, guid: b70e033cf771e4452bccd80f9f4426a8, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -110,6 +110,10 @@ Prefab:
       propertyPath: hintLabel
       value: 
       objectReference: {fileID: 174924, guid: 5508c06fcc1094ae3ba8ac4470f99f7e, type: 2}
+    - target: {fileID: 0}
+      propertyPath: hintButton
+      value: 
+      objectReference: {fileID: 196884, guid: b70e033cf771e4452bccd80f9f4426a8, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 102798}

@@ -25,8 +25,7 @@ public class WorldMapManager : MonoBehaviour {
                 if (!chapterScript.isLocked) {
                     
                     hero.transform.position = chapterNode.transform.position;    
-                  //  camera.transform.position = new Vector3 (chapterNode.transform.position.x, chapterNode.transform.position.y, camera.transform.position.z);  
-                    LeanTween.move (camera, new Vector3 (chapterNode.transform.position.x, chapterNode.transform.position.y, camera.transform.position.z), 0.5f );
+                    LeanTween.move (camera, new Vector3 (chapterNode.transform.position.x, chapterNode.transform.position.y, camera.transform.position.z), 1f);
                     
                     LeanTween.scale (chapterNode, new Vector3 (1.1f, 1.1f, 1.1f), 0.25f);
                     LeanTween.scale (chapterNode, new Vector3 (1f, 1f, 1f), 0.25f).setDelay (0.25f);  

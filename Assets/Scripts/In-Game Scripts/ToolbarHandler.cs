@@ -9,8 +9,8 @@ public class ToolbarHandler : MonoBehaviour
     public GameObject hintLabel;
 	void Update ()
 	{
-		errorLabel.GetComponent<Text> ().text = GameManager.errorCount.ToString () + "/" + GameManager.MAX_ERROR_NUMBER;
-        hintLabel.GetComponent<Text> ().text = GameManager.hintCount.ToString () + "/" + GameManager.MAX_HINT_NUMBER;
+		errorLabel.GetComponent<Text> ().text = "Error: " + GameManager.errorCount.ToString () + "/" + GameManager.MAX_ERROR_NUMBER;
+        hintLabel.GetComponent<Text> ().text = "Hint: " + GameManager.hintCount.ToString () + "/" + GameManager.MAX_HINT_NUMBER;
 		timerLabel.GetComponent<Text> ().text = InGameTimer.countTime.ToString ();
         
 	}

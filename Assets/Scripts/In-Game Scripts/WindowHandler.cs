@@ -12,20 +12,20 @@ public class WindowHandler : MonoBehaviour
     void Update ()
 	{
 		if (GameManager.isInputing) {
-
             if (!GameManager.IsTutorial()) {
-                if (GameManager.IsAnyHintLeft() && BoardPressedHandler.curPressedContent.tag == "Mystery Number Content") {
+                if (GameManager.IsAnyHintLeft() && BoardPressedHandler.curPressedContent.tag == "Mystery Number Content" && !BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().isAnswered) {
                     hintButton.SetActive (true);
                 } else {
                     hintButton.SetActive (false);
                 }
             }
-            
 			ActivateInputNumberBar ();
-			Debug.Log ("isInputing");
-		} else {
-			DeactivateInputNumberBar ();
-			Debug.Log ("not isInputing");
+
+		} else { 
+            DeactivateInputNumberBar ();
+            if (!GameManager.IsTutorial()) {
+                hintButton.SetActive (false);
+            }
 		}
 	}
     
