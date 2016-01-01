@@ -35,6 +35,7 @@ public class InputNumberBarHandler : MonoBehaviour
                     } else {    // WRONG INPUT !!!
                         GameManager.IncreaseErrorCount ();
                         FlashBgToRedOn(curPressedBoard);
+                        BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().wrongAnswer.Add(buttonLabel);
                     }
 				}
 
@@ -60,7 +61,7 @@ public class InputNumberBarHandler : MonoBehaviour
     {
         LeanTween.scale (content, new Vector3 (1f, 1f, 1f), 0.15f).setEase (LeanTweenType.linear);
         content.GetComponent<SpriteRenderer>().color = new Color(144/255f, 1f, 148/255f, 1f);
-        SetColorTo (content, );
+        //SetColorTo (content, );
     }
     
     void FlashBgToRedOn(GameObject content)

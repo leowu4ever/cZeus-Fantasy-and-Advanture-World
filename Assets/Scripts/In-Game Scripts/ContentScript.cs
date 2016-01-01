@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ContentScript : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class ContentScript : MonoBehaviour
 	public GameObject numberPrefab;
     public static float xShift = 0.1f;
     public static float xDisplacement = 0.07f;
+    public List<string> wrongAnswer;
 
     void Awake () {
         content = "0";
