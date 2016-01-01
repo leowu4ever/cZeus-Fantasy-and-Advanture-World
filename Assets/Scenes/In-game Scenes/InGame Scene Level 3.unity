@@ -1442,17 +1442,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputNumberBar: {fileID: 1931160519}
-  MysterList:
+  mysteryList:
   - {fileID: 1517217178}
   - {fileID: 1708377154}
   - {fileID: 556306731}
-  mysterAnswerChoice:
+  mysteryAnswerChoice:
   - {fileID: 806551402}
   - {fileID: 1888723661}
   - {fileID: 240210453}
   - {fileID: 1140505345}
   - {fileID: 2128723653}
   - {fileID: 568440260}
+  hintButton: {fileID: 0}
 --- !u!114 &1728582309
 MonoBehaviour:
   m_ObjectHideFlags: 0

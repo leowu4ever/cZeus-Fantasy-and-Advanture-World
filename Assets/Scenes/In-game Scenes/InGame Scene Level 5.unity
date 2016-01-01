@@ -248,12 +248,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputNumberBar: {fileID: 216061936}
-  MysterList:
+  mysteryList:
   - {fileID: 1517217178}
   - {fileID: 1708377154}
   - {fileID: 402576497}
   - {fileID: 556306731}
-  mysterAnswerChoice:
+  mysteryAnswerChoice:
   - {fileID: 1417210054}
   - {fileID: 1045632346}
   - {fileID: 1317158235}
@@ -262,6 +262,7 @@ MonoBehaviour:
   - {fileID: 2095201969}
   - {fileID: 499560092}
   - {fileID: 600257779}
+  hintButton: {fileID: 0}
 --- !u!114 &388517150
 MonoBehaviour:
   m_ObjectHideFlags: 0

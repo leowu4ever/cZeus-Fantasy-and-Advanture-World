@@ -35,7 +35,7 @@ public class InputNumberBarHandler : MonoBehaviour
                     } else {    // WRONG INPUT !!!
                         GameManager.IncreaseErrorCount ();
                         FlashBgToRedOn(curPressedBoard);
-                        BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().wrongAnswer.Add(buttonLabel);
+                        BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().wrongSelects.Add(buttonLabel);
                     }
 				}
 

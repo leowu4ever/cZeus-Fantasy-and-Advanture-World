@@ -661,10 +661,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputNumberBar: {fileID: 443113358}
-  MysterList:
+  mysteryList:
   - {fileID: 1517217178}
   - {fileID: 1708377154}
-  mysterAnswerChoice:
+  mysteryAnswerChoice:
   - {fileID: 161393314}
   - {fileID: 274271350}
   - {fileID: 322697448}
@@ -673,6 +673,7 @@ MonoBehaviour:
   - {fileID: 2002687988}
   - {fileID: 1744275832}
   - {fileID: 1963673338}
+  hintButton: {fileID: 0}
 --- !u!114 &615896912
 MonoBehaviour:
   m_ObjectHideFlags: 0
