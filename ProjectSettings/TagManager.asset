@@ -17,6 +17,7 @@ TagManager:
   - Left Wheel
   - Right Wheel
   - sound
+  - Level Window Skip Button
   layers:
   - Default
   - TransparentFX
