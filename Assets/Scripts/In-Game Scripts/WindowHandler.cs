@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+
 
 public class WindowHandler : MonoBehaviour
 {
 	public GameObject inputNumberBar;
     //for level 1-5
     public GameObject[] mysteryList, mysteryAnswerChoice;
-    public GameObject hintButton, cross;
+    public GameObject hintButton;
+    public Sprite cross;
     
     void Start () {
         if (!GameManager.IsTutorial()) {
@@ -43,7 +46,7 @@ public class WindowHandler : MonoBehaviour
         {
              DisplaySelectionsOnInputNumBar();
         }
-        DisableInputNumberForWrongAnswer();
+        DisableInputNumberForWrongSelects();
         
     }
     
@@ -84,7 +87,7 @@ public class WindowHandler : MonoBehaviour
         }
     }
     
-    void DisableInputNumberForWrongAnswer()
+    void DisableInputNumberForWrongSelects()
     {
         if (BoardPressedHandler.curPressedContent.tag == "Mystery Number Content")
         {
@@ -95,7 +98,8 @@ public class WindowHandler : MonoBehaviour
                 {
                     if (i == int.Parse(BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().wrongSelects[j]))
                     {
-                        inputNumberBar.transform.GetChild(i).gameObject.SetActive(false);
+                        inputNumberBar.transform.GetChild(i).gameObject.GetComponent<Button>().interactable = false; 
+                        inputNumberBar.transform.GetChild(i).gameObject.GetComponent<Image>().sprite = cross;
                     }
                 }
             }

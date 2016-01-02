@@ -658,7 +658,8 @@ Prefab:
     - target: {fileID: 11493742, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
       propertyPath: cross
       value: 
-      objectReference: {fileID: 123608, guid: 3a3eb5615d30147c6a53d09ea565d337, type: 2}
+      objectReference: {fileID: 21300084, guid: 407c56fd657594f0089219123bd66dfa,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
   m_IsPrefabParent: 0
