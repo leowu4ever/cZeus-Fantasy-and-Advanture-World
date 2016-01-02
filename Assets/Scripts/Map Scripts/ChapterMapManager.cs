@@ -161,7 +161,7 @@ public class ChapterMapManager : MonoBehaviour {
         int charCount = 0;
         foreach (char letter in message.ToCharArray())
         {
-            if(charCount ==10)
+            if(charCount ==14)
             {
                 dialogLabel.GetComponent<TextMesh>().text += "\n";
                 charCount = 0;
