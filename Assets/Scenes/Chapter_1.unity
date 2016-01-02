@@ -181,11 +181,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 481602, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.000250693673
+      value: -.000250920973
       objectReference: {fileID: 0}
     - target: {fileID: 446260, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .000250693673
+      value: .000250920973
       objectReference: {fileID: 0}
     - target: {fileID: 427228, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
@@ -845,6 +845,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 871100136}
     m_Modifications:
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
       value: 5.26599979
@@ -894,6 +898,14 @@ Prefab:
       value: 
       objectReference: {fileID: 21300046, guid: 6c338574e1ac149d8a85a881a00c6189,
         type: 3}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[0]
+      value: 'You are unstoppable!!! Do this one '
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[1]
+      value: Cool.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
   m_IsPrefabParent: 0
@@ -972,6 +984,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 871100136}
     m_Modifications:
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
       value: 1.46700001
@@ -1021,6 +1037,14 @@ Prefab:
       value: 
       objectReference: {fileID: 21300050, guid: 6c338574e1ac149d8a85a881a00c6189,
         type: 3}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[0]
+      value: Well done. You finish the tutorials and let do your first game.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[1]
+      value: OKOK.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
   m_IsPrefabParent: 0
@@ -1113,6 +1137,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 871100136}
     m_Modifications:
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
       value: -2.6099999
@@ -1162,6 +1190,14 @@ Prefab:
       value: 
       objectReference: {fileID: 21300054, guid: 6c338574e1ac149d8a85a881a00c6189,
         type: 3}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[0]
+      value: This is the hardest level.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[1]
+      value: 'Really?!!! '
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
   m_IsPrefabParent: 0
@@ -1624,6 +1660,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 871100136}
     m_Modifications:
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
       value: 5.88999987
@@ -1673,6 +1713,23 @@ Prefab:
       value: 
       objectReference: {fileID: 21300044, guid: 6c338574e1ac149d8a85a881a00c6189,
         type: 3}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[0]
+      value: Congratulations. It seems you really understand how to handle a single
+        pair clue.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[1]
+      value: I know I am doing very well. I want to try something harder.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[2]
+      value: This level we will challenge you with two pair clues.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[3]
+      value: Good Good. I will kill it.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
   m_IsPrefabParent: 0
@@ -1683,6 +1740,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 871100136}
     m_Modifications:
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
       value: 7.71000004
@@ -1724,6 +1785,14 @@ Prefab:
       value: 
       objectReference: {fileID: 21300042, guid: 6c338574e1ac149d8a85a881a00c6189,
         type: 3}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[0]
+      value: You are doing very well. Let's try a harder one.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[1]
+      value: I am not afraid.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
   m_IsPrefabParent: 0
@@ -2663,7 +2732,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2731,19 +2800,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: test1 test1 test1 test1 test1 test1
+      value: Hello. Welcome to cZeus Fantasy and Advanture world. I am Earl. I will
+        be introducing you the rules of cZeus puzzle.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
-      value: test3 test3 test3 test3 test3 test3
+      value: In this level I will show you the rule of pair clue.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: test2 test2 test2 test2 test2 test2
+      value: Thank you. Please go ahead.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[3]
-      value: test2 test2 test2 test2 test2 test2
+      value: Cool. Let's do it.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
@@ -2810,11 +2880,11 @@ Prefab:
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: 'Hello. In this tutorial we will introduce you the rule of '
+      value: You are amazing!!! In this level, you will be working out a 2x3 puzzle.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: It is very useful. I cant wait to try!!!
+      value: Let's do it
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
@@ -3315,6 +3385,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 871100136}
     m_Modifications:
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
       value: 3.25699997
@@ -3364,6 +3438,22 @@ Prefab:
       value: 
       objectReference: {fileID: 21300048, guid: 6c338574e1ac149d8a85a881a00c6189,
         type: 3}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[0]
+      value: Ok.Hero. This is your last tutorial. You will see a square clue.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[1]
+      value: What is that ? OMG
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[2]
+      value: LOL. Good Luck.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[3]
+      value: OK
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
   m_IsPrefabParent: 0

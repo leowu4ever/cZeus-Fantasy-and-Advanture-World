@@ -42,7 +42,6 @@ public class GameManager : MonoBehaviour
                LeanTween.moveX (GameObject.Find("Win Note"), -6f, 1f ).setEase (LeanTweenType.easeOutExpo).setDelay (3f);  
 			   scoreWindow.SetActive (true);  
                LeanTween.scale (scoreWindow, new Vector3 (1,1,1),1f).setEase (LeanTweenType.easeOutExpo).setDelay (3.5f);
-               ChapterMapManager.SetLevelStateTo (PlayerPrefs.GetString("NEXTLEVELNAME"), false);
                
             } else if (errorCount > MAX_ERROR_NUMBER || InGameTimer.isTimerFinish) {   // game over 1. reach max error 2. time over
                StopCurGame();
