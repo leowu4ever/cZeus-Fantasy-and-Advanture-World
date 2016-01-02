@@ -1200,6 +1200,48 @@ GameObject:
 GameObject:
   m_PrefabParentObject: {fileID: 160482, guid: 4fad8174b967a48f4bdbdcfa0b72d6bb, type: 2}
   m_PrefabInternal: {fileID: 284262109}
+--- !u!1001 &985825980
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 498866, guid: f205b1221f91b49d1ada1e63d47987d8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 498866, guid: f205b1221f91b49d1ada1e63d47987d8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 498866, guid: f205b1221f91b49d1ada1e63d47987d8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 498866, guid: f205b1221f91b49d1ada1e63d47987d8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 498866, guid: f205b1221f91b49d1ada1e63d47987d8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 498866, guid: f205b1221f91b49d1ada1e63d47987d8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 498866, guid: f205b1221f91b49d1ada1e63d47987d8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 498866, guid: f205b1221f91b49d1ada1e63d47987d8, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f205b1221f91b49d1ada1e63d47987d8, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &991729663
 Prefab:
   m_ObjectHideFlags: 0
@@ -1374,7 +1416,7 @@ GameObject:
   m_Component:
   - 224: {fileID: 386795900}
   m_Layer: 5
-  m_Name: Tool bar
+  m_Name: Tool Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

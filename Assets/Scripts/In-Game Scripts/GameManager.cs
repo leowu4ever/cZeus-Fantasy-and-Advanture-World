@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
 
 	void Update ()
 	{
+       // Debug.Log (GameObject.Find ("Tool Bar").transform.position.x)
         if (!LeanTween.isTweening(gameBoard) && !initFinished) {
              InGameTimer.StartTimer ();
              initFinished = true;
@@ -131,6 +132,7 @@ public class GameManager : MonoBehaviour
         isGameover = true;
         InGameTimer.StopTimer ();
         LeanTween.moveX (gameBoard, 7, 2f).setEase (LeanTweenType.easeOutExpo).setDelay (1f);
+       // LeanTween.moveY (GameObject.Find ("Tool Bar").GetComponent<RectTransform>(), 7, 2f).setEase (LeanTweenType.easeOutExpo).setDelay (1f);
     }
  
 	public static void IncreaseErrorCount ()

@@ -22,6 +22,11 @@ public class WindowHandler : MonoBehaviour
 
     void Update ()
 	{
+        Debug.Log (GameObject.Find ("Tool Bar").transform.position.y);
+        if (GameManager.isGameover) {
+          LeanTween.moveY (GameObject.Find ("Tool Bar"), 800, 0.5f); 
+        }
+        
 		if (GameManager.isInputing) {
             if (!GameManager.IsTutorial()) {
                 if (GameManager.IsAnyHintLeft() && BoardPressedHandler.curPressedContent.tag == "Mystery Number Content" && !BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().isAnswered) {
