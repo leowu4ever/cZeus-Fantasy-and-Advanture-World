@@ -161,7 +161,6 @@ public class GameManager : MonoBehaviour
     public static bool IsTutorial () {
          if (puzzleLv== "1"|| puzzleLv == "2"|| puzzleLv == "3"|| puzzleLv == "4"|| puzzleLv == "5") {
              return true;
-             Debug.Log (puzzleLv);
          } else {
              return false;
          }
