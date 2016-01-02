@@ -10,12 +10,14 @@ public class WindowHandler : MonoBehaviour
     public GameObject[] mysteryList, mysteryAnswerChoice;
     public GameObject hintButton;
     public Sprite cross;
+    private Sprite[] spriteNum = new Sprite[9]; 
     
     void Start () {
         if (!GameManager.IsTutorial()) {
             LeanTween.moveX (GameObject.Find("Start Note"), 0, 1f).setEase (LeanTweenType.easeInBounce);
             LeanTween.moveX (GameObject.Find("Start Note"), -6f, 1f ).setEase (LeanTweenType.easeOutExpo).setDelay (2f);
-        }    
+        }
+        InitSpriteNum();
     }
 
     void Update ()
@@ -94,7 +96,9 @@ public class WindowHandler : MonoBehaviour
             DisableZeroForMysteryBoard ();
             for (int i = 1; i < inputNumberBar.transform.childCount; i++)
             {
-                for(int j=0; j< BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().wrongSelects.Count;j++)
+                inputNumberBar.transform.GetChild(i).gameObject.GetComponent<Button>().interactable = true;
+                inputNumberBar.transform.GetChild(i).gameObject.GetComponent<Image>().sprite = spriteNum[i-1];
+                for (int j=0; j< BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().wrongSelects.Count;j++)
                 {
                     if (i == int.Parse(BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().wrongSelects[j]))
                     {
@@ -115,6 +119,13 @@ public class WindowHandler : MonoBehaviour
         for (int i = 1; i < inputNumberBar.transform.childCount; i++)
         {
             inputNumberBar.transform.GetChild(i).gameObject.SetActive(true);
+        }
+    }
+    void InitSpriteNum()
+    {
+        for(int i=0;i<spriteNum.Length;i++)
+        {
+            spriteNum[i] = inputNumberBar.transform.GetChild(i + 1).gameObject.GetComponent<Image>().sprite;
         }
     }
 }
