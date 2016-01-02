@@ -716,7 +716,7 @@ MonoBehaviour:
   - {fileID: 1744275832}
   - {fileID: 1963673338}
   hintButton: {fileID: 0}
-  cross: {fileID: 0}
+  cross: {fileID: 21300084, guid: 407c56fd657594f0089219123bd66dfa, type: 3}
 --- !u!114 &615896912
 MonoBehaviour:
   m_ObjectHideFlags: 0
