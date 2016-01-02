@@ -11,26 +11,22 @@ public class WindowHandler : MonoBehaviour
     public GameObject hintButton;
     public Sprite cross;
     private Sprite[] spriteNum = new Sprite[9]; 
-    private float inputNumberBarY;
     private bool inputNumberBarShowing;
     
     void Start () {
-        if (!GameManager.IsTutorial()) {
-            LeanTween.moveX (GameObject.Find("Start Note"), 0, 1f).setEase (LeanTweenType.easeInBounce);
-            LeanTween.moveX (GameObject.Find("Start Note"), -6f, 1f ).setEase (LeanTweenType.easeOutExpo).setDelay (2f);
-        }
+        LeanTween.moveX (GameObject.Find("Start Note"), 0, 1f).setEase (LeanTweenType.easeInBounce);
+        LeanTween.moveX (GameObject.Find("Start Note"), -6f, 1f ).setEase (LeanTweenType.easeOutExpo).setDelay (2f);
         InitSpriteNum();
-        inputNumberBarY = inputNumberBar.transform.position.y;
     }
 
     void Update ()
 	{
-        Debug.Log (GameObject.Find ("Tool Bar").transform.position.y);
+
         if (GameManager.isGameover) {
           LeanTween.moveY (GameObject.Find ("Tool Bar"), 1000, 0.5f).setEase (LeanTweenType.easeOutExpo); 
         }
         
-		if (GameManager.isInputing && !inputNumberBarShowing) {
+		if (GameManager.isInputing) {
             if (!GameManager.IsTutorial()) {
                 if (GameManager.IsAnyHintLeft() && BoardPressedHandler.curPressedContent.tag == "Mystery Number Content" && !BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().isAnswered) {
                     hintButton.SetActive (true);
@@ -40,24 +36,17 @@ public class WindowHandler : MonoBehaviour
             }
 			ActivateInputNumberBar ();
 
-		} else if (!GameManager.isInputing && inputNumberBarShowing) { 
+		} else  { 
             DeactivateInputNumberBar ();
             if (!GameManager.IsTutorial()) {
                 hintButton.SetActive (false);
             }
-		} else if (!GameManager.isInputing) {
-            DeactivateInputNumberBar ();
-            if (!GameManager.IsTutorial()) {
-                hintButton.SetActive (false);
-            }
-        }
+		} 
 	}
     
 	void ActivateInputNumberBar ()
 	{
-		//inputNumberBar.SetActive (true);
-        inputNumberBarShowing = true;
-        LeanTween.moveY (inputNumberBar, inputNumberBarY, 0.5f).setEase (LeanTweenType.easeOutExpo);
+		inputNumberBar.SetActive (true);
         ActiveInputNumberForAll();
         if (GameManager.IsTutorial ())
         {
@@ -69,9 +58,7 @@ public class WindowHandler : MonoBehaviour
     
 	void DeactivateInputNumberBar ()
 	{
-        inputNumberBarShowing = false;
-        LeanTween.moveY (inputNumberBar, -100, 0.5f).setEase (LeanTweenType.easeOutExpo);
-		//inputNumberBar.SetActive (false);
+		inputNumberBar.SetActive (false);
 	}
     
     void  DisplaySelectionsOnInputNumBar()
