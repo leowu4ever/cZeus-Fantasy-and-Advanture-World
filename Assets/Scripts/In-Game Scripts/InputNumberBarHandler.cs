@@ -32,6 +32,7 @@ public class InputNumberBarHandler : MonoBehaviour
 						UpdateMysteryAnswerOn (curPressedContent);
 						CreateContentSpriteOn (curPressedContent);
                         SetBgToGreenOn(curPressedBoard);
+                        GameManager.isInputing = false;
                     } else {    // WRONG INPUT !!!
                         GameManager.IncreaseErrorCount ();
                         FlashBgToRedOn(curPressedBoard);
@@ -120,10 +121,19 @@ public class InputNumberBarHandler : MonoBehaviour
         
 		if (contentScript.content.Length > 1) {
 			for (int a = 0; a < contentScript.content.Length; a++) {
-				GameObject contentSprite = Instantiate (numberPrefab, new Vector3 (content.transform.position.x - ContentScript.xShift + a * (ContentScript.xShift + ContentScript.xDisplacement), content.transform.position.y, content.transform.position.z), Quaternion.identity) as GameObject;
-				contentSprite.GetComponent<NumberSpriteScript> ().SetSpriteTo (int.Parse (contentScript.content.Substring (a, +1)));
-				contentSprite.transform.parent = content.transform;
-                DoInputAnimation (contentSprite);
+                if (content.name == "Addition Content") {
+				    GameObject contentSprite = Instantiate (numberPrefab, new Vector3 (content.transform.position.x - ContentScript.xShift + a * (ContentScript.xShift + ContentScript.xDisplacement), content.transform.position.y, content.transform.position.z), Quaternion.identity) as GameObject;
+                    contentSprite.GetComponent<NumberSpriteScript> ().SetSpriteTo (int.Parse (contentScript.content.Substring (a, +1)));
+				    contentSprite.transform.parent = content.transform;
+                    DoInputAnimation (contentSprite);
+                } 
+                
+                    if (content.name == "Product Content") {
+				    GameObject contentSprite = Instantiate (numberPrefab, new Vector3 (content.transform.position.x - 2 * ContentScript.xShift + a * (ContentScript.xShift + ContentScript.xDisplacement), content.transform.position.y, content.transform.position.z), Quaternion.identity) as GameObject;
+                    contentSprite.GetComponent<NumberSpriteScript> ().SetSpriteTo (int.Parse (contentScript.content.Substring (a, +1)));
+				    contentSprite.transform.parent = content.transform;
+                    DoInputAnimation (contentSprite);
+                }
 			}
 		}
 	}

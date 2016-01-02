@@ -6,7 +6,7 @@ public class WindowHandler : MonoBehaviour
 	public GameObject inputNumberBar;
     //for level 1-5
     public GameObject[] mysteryList, mysteryAnswerChoice;
-    public GameObject hintButton;
+    public GameObject hintButton, cross;
     
     void Start () {
         if (!GameManager.IsTutorial()) {
