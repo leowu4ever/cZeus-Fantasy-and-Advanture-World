@@ -7,7 +7,9 @@ public class ChapterMapManager : MonoBehaviour {
     public GameObject camera;
     public GameObject hero;
     public GameObject levelWindow;
-    public GameObject dialogLabe;
+    public GameObject dialogLabel;
+    public GameObject skipButton;
+    public GameObject playButton;
     public static bool isFocused;
     public static int latestLevel;
     public static int curLevel;
@@ -15,7 +17,7 @@ public class ChapterMapManager : MonoBehaviour {
     private LevelScript selectedlevelScript;
     private bool isTyping = false;
     private bool isTypingBusy=false;
-    public float letterPause = 0.2f;
+    private float letterPause = 0.2f;
     private int dialogIndex = 0;
     private float heroSpeed = 1f;
     
@@ -44,6 +46,8 @@ public class ChapterMapManager : MonoBehaviour {
                         levelWindow.transform.position = selectedLevelNode.transform.position;
                         LeanTween.scale (levelWindow, new Vector3 (1f, 1f, 1f), 0.5f).setEase (LeanTweenType.easeInOutBack);
                         isTyping = true;
+                        playButton.SetActive(true);
+                        skipButton.SetActive(false);
                     }
                 }
                  
@@ -61,6 +65,10 @@ public class ChapterMapManager : MonoBehaviour {
                         PlayerPrefs.SetString("NEXTLEVELNAME", levels[curLevel + 1].name);
                     }
                     clearDialog();
+                }
+                if (hit.transform.tag == "Level Window Skip Button")
+                {
+                    letterPause = 0.0f;
                 }
             }
         }
@@ -122,20 +130,30 @@ public class ChapterMapManager : MonoBehaviour {
         {
             if(!isTypingBusy)
             {
+                playButton.SetActive(false);
+                skipButton.SetActive(true);
                 clearDialog();
+                CharactersHandler();
                 StartCoroutine(TypeText(selectedlevelScript.dialogs[dialogIndex]));
                 isTypingBusy = true;
-                if (dialogIndex==selectedlevelScript.dialogs.GetUpperBound(0))
+                dialogIndex++;
+                if (dialogIndex==selectedlevelScript.dialogs.Length)
                 {
                     isTyping = false;
                     dialogIndex = 0;
-                }
-                dialogIndex++;
+                } 
             }
         } 
         else
         {
             isTyping = false;
+            if (!isTypingBusy)
+            {
+                LevelWindowScript.BirdTalkingOff();
+                LevelWindowScript.HeroTalkingOff();
+                playButton.SetActive(true);
+                skipButton.SetActive(false);
+            }
         }
     }
     IEnumerator TypeText(string message)
@@ -145,10 +163,10 @@ public class ChapterMapManager : MonoBehaviour {
         {
             if(charCount ==10)
             {
-                dialogLabe.GetComponent<TextMesh>().text += "\n";
+                dialogLabel.GetComponent<TextMesh>().text += "\n";
                 charCount = 0;
             }
-            dialogLabe.GetComponent<TextMesh>().text += letter;
+            dialogLabel.GetComponent<TextMesh>().text += letter;
             charCount++;
             yield return new WaitForSeconds(letterPause);
         }
@@ -157,9 +175,27 @@ public class ChapterMapManager : MonoBehaviour {
     void DoLastTyping()
     {
         isTypingBusy = false;
+        letterPause = 0.2f;
     }
     void clearDialog()
     {
-        dialogLabe.GetComponent<TextMesh>().text = "";
+        dialogLabel.GetComponent<TextMesh>().text = "";
     }
+    void CharactersHandler()
+    {
+        if(dialogIndex%2==0)
+        {
+            LevelWindowScript.BirdTalkingOn();
+            LevelWindowScript.HeroTalkingOff();
+            LevelWindowScript.BubbleRightOn();
+            LevelWindowScript.BubbleLeftOff();
+        }
+        else
+        {
+            LevelWindowScript.BirdTalkingOff();
+            LevelWindowScript.HeroTalkingOn();
+            LevelWindowScript.BubbleLeftOn();
+            LevelWindowScript.BubbleRightOff();
+        }
+    } 
 }
