@@ -7,11 +7,18 @@ public class ChapterMapManager : MonoBehaviour {
     public GameObject camera;
     public GameObject hero;
     public GameObject levelWindow;
+    public GameObject dialogLabe;
     public static bool isFocused;
     public static int latestLevel;
     public static int curLevel;
-   
+
+    private LevelScript selectedlevelScript;
+    private bool isTyping = false;
+    private bool isTypingBusy=false;
+    public float letterPause = 0.2f;
+    private int dialogIndex = 0;
     private float heroSpeed = 1f;
+    
    
 	void Start () {
 	   InitLevels ();
@@ -21,12 +28,13 @@ public class ChapterMapManager : MonoBehaviour {
     }
 	
 	void Update () {
-	   if (Input.GetMouseButtonDown (0)) {
+       
+       if (Input.GetMouseButtonDown (0)) {
             RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (Input.mousePosition), Vector2.zero);			
             if (hit.collider != null) {
                 if (hit.transform.tag == "Node") {
                     GameObject selectedLevelNode = hit.transform.gameObject;
-                    LevelScript selectedlevelScript = selectedLevelNode.GetComponent<LevelScript> ();
+                    selectedlevelScript = selectedLevelNode.GetComponent<LevelScript> ();
                     if (!selectedlevelScript.isLocked) {
                         curLevel = selectedlevelScript.levelId - 1;
                         // focus on the selected node
@@ -35,22 +43,29 @@ public class ChapterMapManager : MonoBehaviour {
                         // bring the levelwindow in front of the camera
                         levelWindow.transform.position = selectedLevelNode.transform.position;
                         LeanTween.scale (levelWindow, new Vector3 (1f, 1f, 1f), 0.5f).setEase (LeanTweenType.easeInOutBack);
+                        isTyping = true;
                     }
                 }
                  
                 if (hit.transform.tag == "Level Window Cancel Button") {
                     isFocused = false;
                     LeanTween.scale (levelWindow, new Vector3 (0f, 0f, 0f), 0.5f).setEase (LeanTweenType.easeInOutBack);
+                    clearDialog();
                 }
                 
                 if (hit.transform.tag == "Level Window Play Button") {
                     isFocused = false;
                     Application.LoadLevel (levels[curLevel].GetComponent<LevelScript>().levelSceneId);
-                    PlayerPrefs.SetString ("NEXTLEVELNAME", levels[curLevel+1].name);
+                    if (levels.GetUpperBound(0)> curLevel)
+                    {
+                        PlayerPrefs.SetString("NEXTLEVELNAME", levels[curLevel + 1].name);
+                    }
+                    clearDialog();
                 }
             }
         }
-	}
+        DialogType();
+    }
 
     void InitLevels ()  { // 1. unlock lv1 2. init the rest levels 3. 
         if (!GetLevelStateOf (levels[0].name)) {
@@ -99,5 +114,52 @@ public class ChapterMapManager : MonoBehaviour {
         }
         LeanTween.move (hero, levels[latestLevel].transform.position, 1/heroSpeed);
         // get the animator component and parameter and set it to true
+    }
+
+    void DialogType()
+    {
+        if (isTyping  && selectedlevelScript.dialogs.Length !=0)
+        {
+            if(!isTypingBusy)
+            {
+                clearDialog();
+                StartCoroutine(TypeText(selectedlevelScript.dialogs[dialogIndex]));
+                isTypingBusy = true;
+                if (dialogIndex==selectedlevelScript.dialogs.GetUpperBound(0))
+                {
+                    isTyping = false;
+                    dialogIndex = 0;
+                }
+                dialogIndex++;
+            }
+        } 
+        else
+        {
+            isTyping = false;
+        }
+    }
+    IEnumerator TypeText(string message)
+    {
+        int charCount = 0;
+        foreach (char letter in message.ToCharArray())
+        {
+            if(charCount ==10)
+            {
+                dialogLabe.GetComponent<TextMesh>().text += "\n";
+                charCount = 0;
+            }
+            dialogLabe.GetComponent<TextMesh>().text += letter;
+            charCount++;
+            yield return new WaitForSeconds(letterPause);
+        }
+        DoLastTyping();
+    }
+    void DoLastTyping()
+    {
+        isTypingBusy = false;
+    }
+    void clearDialog()
+    {
+        dialogLabe.GetComponent<TextMesh>().text = "";
     }
 }
