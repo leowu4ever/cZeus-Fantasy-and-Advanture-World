@@ -96,8 +96,6 @@ public class WindowHandler : MonoBehaviour
             DisableZeroForMysteryBoard ();
             for (int i = 1; i < inputNumberBar.transform.childCount; i++)
             {
-                inputNumberBar.transform.GetChild(i).gameObject.GetComponent<Button>().interactable = true;
-                inputNumberBar.transform.GetChild(i).gameObject.GetComponent<Image>().sprite = spriteNum[i-1];
                 for (int j=0; j< BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().wrongSelects.Count;j++)
                 {
                     if (i == int.Parse(BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().wrongSelects[j]))
@@ -119,6 +117,11 @@ public class WindowHandler : MonoBehaviour
         for (int i = 1; i < inputNumberBar.transform.childCount; i++)
         {
             inputNumberBar.transform.GetChild(i).gameObject.SetActive(true);
+            if(i<10)
+            {
+                inputNumberBar.transform.GetChild(i).gameObject.GetComponent<Button>().interactable = true;
+                inputNumberBar.transform.GetChild(i).gameObject.GetComponent<Image>().sprite = spriteNum[i - 1];
+            }
         }
     }
     void InitSpriteNum()
