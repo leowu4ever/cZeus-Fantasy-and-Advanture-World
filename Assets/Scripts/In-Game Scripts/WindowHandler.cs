@@ -23,12 +23,13 @@ public class WindowHandler : MonoBehaviour
 	{
 		if (GameManager.isInputing) {
             if (!GameManager.IsTutorial()) {
-                if (GameManager.IsAnyHintLeft() && BoardPressedHandler.curPressedContent.tag == "Mystery Number Content" && !BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().isAnswered) {
+                // in actual level 
+                if (GameManager.IsAnyHintLeft() && BoardPressedHandler.curPressedContent.tag == "Mystery Number Content") {
                     hintButton.SetActive (true);
                 } else {
                     hintButton.SetActive (false);
                 }
-            }
+            } 
 			ActivateInputNumberBar ();
 
 		} else  { 

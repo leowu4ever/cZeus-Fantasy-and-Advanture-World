@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
 
 	public const int MAX_HINT_NUMBER = 2;
     public const int MAX_ERROR_NUMBER = 5;
-	public const int GAME_DURATION = 1000;
+	public const int GAME_DURATION = 100;
 
     private int numOfAnswers;
     private bool initFinished;
@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
 
 	void Update ()
 	{
+        Debug.Log (numOfAnswered + " " + numOfAnswers);
        // Debug.Log (GameObject.Find ("Tool Bar").transform.position.x)
         if (!LeanTween.isTweening(gameBoard) && !initFinished) {
              InGameTimer.StartTimer ();
@@ -37,11 +38,14 @@ public class GameManager : MonoBehaviour
         
 		if (!isGameover) {  
             if (numOfAnswered == numOfAnswers) {    // game win
+
                StopCurGame();
                LeanTween.moveX (GameObject.Find("Win Note"), 0, 1f).setEase (LeanTweenType.easeInBounce).setDelay (1f);
                LeanTween.moveX (GameObject.Find("Win Note"), -6f, 1f ).setEase (LeanTweenType.easeOutExpo).setDelay (3f);  
 			   scoreWindow.SetActive (true);  
                LeanTween.scale (scoreWindow, new Vector3 (1,1,1),1f).setEase (LeanTweenType.easeOutExpo).setDelay (3.5f);
+               ChapterMapManager.SetLevelStateTo (PlayerPrefs.GetString("NEXTLEVELNAME"), false);
+               
                
             } else if (errorCount > MAX_ERROR_NUMBER || InGameTimer.isTimerFinish) {   // game over 1. reach max error 2. time over
                StopCurGame();
@@ -129,14 +133,15 @@ public class GameManager : MonoBehaviour
     
     void StopCurGame () {
         isGameover = true;
+        isInputing = false;
         InGameTimer.StopTimer ();
         StoreRecord ();
         LeanTween.moveX (gameBoard, 7, 2f).setEase (LeanTweenType.easeOutExpo).setDelay (1f);
-       // LeanTween.moveY (GameObject.Find ("Tool Bar").GetComponent<RectTransform>(), 7, 2f).setEase (LeanTweenType.easeOutExpo).setDelay (1f);
+        LeanTween.scale (GameObject.Find ("Tool Bar"), new Vector3 (0,0,0), 2f).setEase (LeanTweenType.easeOutExpo).setDelay (1f);
     }
     
     void StoreRecord () {
-        string record = "Level: " + puzzleLevel + " Score: " + ScoreCalculator.GetScoreFor (GameManager.errorCount, int.Parse(GameManager.puzzleLv)).ToString() + " Errors: " + errorCount + " Hints used: " + (2-hintCount).ToString(); 
+        string record = "Level: " + puzzleLevel + " Errors: " + errorCount + " Hints used: " + (2-hintCount).ToString(); 
         PlayerPrefs.SetString ("Record", PlayerPrefs.GetString("Record") + "\n" + record);        
     }
  

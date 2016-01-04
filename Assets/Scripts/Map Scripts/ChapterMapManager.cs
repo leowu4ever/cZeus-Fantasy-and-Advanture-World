@@ -10,6 +10,7 @@ public class ChapterMapManager : MonoBehaviour {
     public GameObject dialogLabel;
     public GameObject skipButton;
     public GameObject playButton;
+    public GameObject canvas;
     public static bool isFocused;
     public static int latestLevel;
     public static int curLevel;
@@ -26,12 +27,13 @@ public class ChapterMapManager : MonoBehaviour {
 	void Start () {
 	   InitLevels ();
        InitHero ();
-        ///set state of hero animation
+        Debug.Log(latestLevel);
+       
+       //set state of hero animation
        hero.GetComponent<Animator>().CrossFade("Walk", 0f);
     }
 	
 	void Update () {
-       
        if (Input.GetMouseButtonDown (0)) {
             RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (Input.mousePosition), Vector2.zero);			
             if (hit.collider != null) {
@@ -41,7 +43,8 @@ public class ChapterMapManager : MonoBehaviour {
                     if (!selectedlevelScript.isLocked) {
                         curLevel = selectedlevelScript.levelId - 1;
                         // focus on the selected node
-                        camera.transform.position = new Vector3 (selectedLevelNode.transform.position.x, selectedLevelNode.transform.position.y, camera.transform.position.z);
+                        //   camera.transform.position = new Vector3 (selectedLevelNode.transform.position.x, selectedLevelNode.transform.position.y, camera.transform.position.z);
+                        LeanTween.move (camera,  new Vector3 (selectedLevelNode.transform.position.x, selectedLevelNode.transform.position.y, camera.transform.position.z), 0.2f).setEase (LeanTweenType.easeInOutBack);
                         isFocused = true;
                         // bring the levelwindow in front of the camera
                         levelWindow.transform.position = selectedLevelNode.transform.position;
@@ -50,6 +53,10 @@ public class ChapterMapManager : MonoBehaviour {
                         isTermianateTypTextRoutine = false;
                         playButton.SetActive(true);
                         skipButton.SetActive(false);
+                        canvas.SetActive (false);
+                    } else {
+                        LeanTween.scale (selectedLevelNode, new Vector3 (1.1f, 1.1f, 1.1f), 0.25f);
+                        LeanTween.scale (selectedLevelNode, new Vector3 (1f, 1f, 1f), 0.25f).setDelay (0.25f);    
                     }
                 }
                  
@@ -61,6 +68,7 @@ public class ChapterMapManager : MonoBehaviour {
                     isTermianateTypTextRoutine = true;
                     dialogIndex = 0;
                     clearDialog();
+                    canvas.SetActive (true);
                 }
                 
                 if (hit.transform.tag == "Level Window Play Button") {

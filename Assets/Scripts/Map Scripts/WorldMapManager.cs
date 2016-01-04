@@ -20,20 +20,20 @@ public class WorldMapManager : MonoBehaviour {
 	   if (Input.GetMouseButtonDown (0)) {
             RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (Input.mousePosition), Vector2.zero);			
             if (hit.collider != null) {
-                GameObject chapterNode = hit.transform.gameObject;
-                ChapterScript chapterScript = chapterNode.GetComponent<ChapterScript> ();
+                GameObject selectedChapterNode = hit.transform.gameObject;
+                ChapterScript chapterScript = selectedChapterNode.GetComponent<ChapterScript> ();
                 if (!chapterScript.isLocked) {
                     
-                    hero.transform.position = chapterNode.transform.position;    
-                    LeanTween.move (camera, new Vector3 (chapterNode.transform.position.x, chapterNode.transform.position.y, camera.transform.position.z), 1f);
+                    hero.transform.position = selectedChapterNode.transform.position;    
+                    LeanTween.move (camera, new Vector3 (selectedChapterNode.transform.position.x, selectedChapterNode.transform.position.y, camera.transform.position.z), 1f);
                     
-                    LeanTween.scale (chapterNode, new Vector3 (1.1f, 1.1f, 1.1f), 0.25f);
-                    LeanTween.scale (chapterNode, new Vector3 (1f, 1f, 1f), 0.25f).setDelay (0.25f);  
+                    LeanTween.scale (selectedChapterNode, new Vector3 (1.1f, 1.1f, 1.1f), 0.25f);
+                    LeanTween.scale (selectedChapterNode, new Vector3 (1f, 1f, 1f), 0.25f).setDelay (0.25f);  
                     StartCoroutine(ExecuteAfterTime(0.5f,chapterScript.chapterSceneId));
 
                 } else {
-                    LeanTween.scale (chapterNode, new Vector3 (1.1f, 1.1f, 1.1f), 0.25f);
-                    LeanTween.scale (chapterNode, new Vector3 (1f, 1f, 1f), 0.25f).setDelay (0.25f);                    
+                    LeanTween.scale (selectedChapterNode, new Vector3 (1.1f, 1.1f, 1.1f), 0.25f);
+                    LeanTween.scale (selectedChapterNode, new Vector3 (1f, 1f, 1f), 0.25f).setDelay (0.25f);                    
                 }
             }
         }

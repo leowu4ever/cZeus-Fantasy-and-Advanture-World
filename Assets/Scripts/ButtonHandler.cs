@@ -24,7 +24,7 @@ public class ButtonHandler : MonoBehaviour
     
     public void LoadRecordScene ()
 	{
-		Application.LoadLevel (10);
+		Application.LoadLevel (13);
 	}
     
     public void RestartScene () {

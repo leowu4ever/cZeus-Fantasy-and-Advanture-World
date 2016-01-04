@@ -42,11 +42,16 @@ public class CameraController : MonoBehaviour
 	
 	void Update () 
 	{
+        if (ChapterMapManager.isFocused) {
+             _camera.orthographicSize = minZoom;
+             CalculateLevelBounds ();
+        }
+                
         if (!ChapterMapManager.isFocused) {
             if (updateZoomSensitivity)
             {
-                moveSensitivityX = _camera.orthographicSize / 50f;
-                moveSensitivityY = _camera.orthographicSize / 50f;
+                moveSensitivityX = _camera.orthographicSize / 20f;
+                moveSensitivityY = _camera.orthographicSize / 20f;
             }
             Touch[] touches = Input.touches;
 
