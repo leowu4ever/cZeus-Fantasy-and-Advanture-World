@@ -2045,6 +2045,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300012, guid: 8592a8105cdc24ca6816deed9e7a3d5e,
         type: 3}
+    - target: {fileID: 11492018, guid: c851c504a16584632bd2309e4aa28f72, type: 2}
+      propertyPath: chapterSceneId
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c851c504a16584632bd2309e4aa28f72, type: 2}
   m_IsPrefabParent: 0

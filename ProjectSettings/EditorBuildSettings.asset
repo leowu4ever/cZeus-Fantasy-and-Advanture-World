@@ -10,6 +10,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Setting.unity
   - enabled: 1
+    path: Assets/Scenes/Record.unity
+  - enabled: 1
     path: Assets/Scenes/World Map.unity
   - enabled: 1
     path: Assets/Scenes/Chapter_1.unity
@@ -24,12 +26,20 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/In-game Scenes/InGame Scene Level 5.unity
   - enabled: 1
-    path: Assets/Scenes/In-game Scenes/InGame Scene (2x2).unity
+    path: Assets/Scenes/In-game Scenes/InGame Scene Level 6 (2x2).unity
   - enabled: 1
-    path: Assets/Scenes/In-game Scenes/InGame Scene (2x3).unity
+    path: Assets/Scenes/In-game Scenes/InGame Scene Level 7 (2x2).unity
   - enabled: 1
-    path: Assets/Scenes/In-game Scenes/InGame Scene (3x3).unity
+    path: Assets/Scenes/In-game Scenes/InGame Scene Level 8 (2x3).unity
   - enabled: 1
-    path: Assets/Scenes/In-game Scenes/InGame Scene (3x3) L Shape.unity
+    path: Assets/Scenes/In-game Scenes/InGame Scene Level 9 (2x3).unity
   - enabled: 1
-    path: Assets/Scenes/Record.unity
+    path: Assets/Scenes/In-game Scenes/InGame Scene Level 10 (2x3).unity
+  - enabled: 1
+    path: Assets/Scenes/In-game Scenes/InGame Scene Level 11 (2x3).unity
+  - enabled: 1
+    path: Assets/Scenes/In-game Scenes/InGame Scene Level 12 (3x3) L Shape.unity
+  - enabled: 1
+    path: Assets/Scenes/In-game Scenes/InGame Scene Level 13 (2x3).unity
+  - enabled: 1
+    path: Assets/Scenes/In-game Scenes/InGame Scene Level 14(3x3).unity
