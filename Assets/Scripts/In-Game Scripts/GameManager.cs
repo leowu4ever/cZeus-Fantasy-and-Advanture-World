@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
 
 	public const int MAX_HINT_NUMBER = 2;
     public const int MAX_ERROR_NUMBER = 5;
-	public const int GAME_DURATION = 100;
+	public const int GAME_DURATION = 120;
 
     private int numOfAnswers;
     private bool initFinished;
@@ -29,10 +29,11 @@ public class GameManager : MonoBehaviour
 
 	void Update ()
 	{
-        Debug.Log (numOfAnswered + " " + numOfAnswers);
-       // Debug.Log (GameObject.Find ("Tool Bar").transform.position.x)
         if (!LeanTween.isTweening(gameBoard) && !initFinished) {
-             InGameTimer.StartTimer ();
+            if(!IsTutorial())
+            {
+                InGameTimer.StartTimer();
+            }
              initFinished = true;
         }
         
