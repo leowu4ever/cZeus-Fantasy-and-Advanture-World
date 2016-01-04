@@ -130,8 +130,14 @@ public class GameManager : MonoBehaviour
     void StopCurGame () {
         isGameover = true;
         InGameTimer.StopTimer ();
+        StoreRecord ();
         LeanTween.moveX (gameBoard, 7, 2f).setEase (LeanTweenType.easeOutExpo).setDelay (1f);
        // LeanTween.moveY (GameObject.Find ("Tool Bar").GetComponent<RectTransform>(), 7, 2f).setEase (LeanTweenType.easeOutExpo).setDelay (1f);
+    }
+    
+    void StoreRecord () {
+        string record = "Level: " + puzzleLevel + " Score: " + ScoreCalculator.GetScoreFor (GameManager.errorCount, int.Parse(GameManager.puzzleLv)).ToString() + " Errors: " + errorCount + " Hints used: " + (2-hintCount).ToString(); 
+        PlayerPrefs.SetString ("Record", PlayerPrefs.GetString("Record") + "\n" + record);        
     }
  
 	public static void IncreaseErrorCount ()

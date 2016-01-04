@@ -20,6 +20,11 @@ public class ButtonHandler : MonoBehaviour
 	public void LoadChapterOneScene ()
 	{
 		Application.LoadLevel (3);
+	}	
+    
+    public void LoadRecordScene ()
+	{
+		Application.LoadLevel (10);
 	}
     
     public void RestartScene () {

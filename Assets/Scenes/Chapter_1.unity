@@ -1793,6 +1793,10 @@ Prefab:
       propertyPath: dialogs.Array.data[1]
       value: I am not afraid.
       objectReference: {fileID: 0}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: levelSceneId
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
   m_IsPrefabParent: 0

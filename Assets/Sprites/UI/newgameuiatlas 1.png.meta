@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c04291432f57241ae82bb97793174076
-timeCreated: 1451860752
+timeCreated: 1451906391
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -331,36 +331,6 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newgameuiatlas 1_24
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 536
-        width: 52
-        height: 65
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newgameuiatlas 1_25
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 536
-        width: 64
-        height: 177
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newgameuiatlas 1_26
-      rect:
-        serializedVersion: 2
-        x: 149
-        y: 538
-        width: 56
-        height: 133
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_27
       rect:
         serializedVersion: 2
@@ -408,6 +378,16 @@ TextureImporter:
         y: 0
         width: 1137
         height: 258
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlas 1_24
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 534
+        width: 194
+        height: 180
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
