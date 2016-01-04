@@ -20,6 +20,7 @@ public class ChapterMapManager : MonoBehaviour {
     private float letterPause = 0.2f;
     private int dialogIndex = 0;
     private float heroSpeed = 1f;
+    private bool isTermianateTypTextRoutine = false;
     
    
 	void Start () {
@@ -46,6 +47,7 @@ public class ChapterMapManager : MonoBehaviour {
                         levelWindow.transform.position = selectedLevelNode.transform.position;
                         LeanTween.scale (levelWindow, new Vector3 (1f, 1f, 1f), 0.5f).setEase (LeanTweenType.easeInOutBack);
                         isTyping = true;
+                        isTermianateTypTextRoutine = false;
                         playButton.SetActive(true);
                         skipButton.SetActive(false);
                     }
@@ -54,6 +56,10 @@ public class ChapterMapManager : MonoBehaviour {
                 if (hit.transform.tag == "Level Window Cancel Button") {
                     isFocused = false;
                     LeanTween.scale (levelWindow, new Vector3 (0f, 0f, 0f), 0.5f).setEase (LeanTweenType.easeInOutBack);
+                    isTyping = false;
+                    isTypingBusy = false;
+                    isTermianateTypTextRoutine = true;
+                    dialogIndex = 0;
                     clearDialog();
                 }
                 
@@ -199,6 +205,8 @@ public class ChapterMapManager : MonoBehaviour {
             }
             dialogLabel.GetComponent<TextMesh>().text += message[i];
             charCountInOnline++;
+            if (isTermianateTypTextRoutine)
+                yield break;
             yield return new WaitForSeconds(letterPause);
         }
         DoLastTyping();
