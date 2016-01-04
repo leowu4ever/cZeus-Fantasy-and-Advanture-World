@@ -21,11 +21,6 @@ public class WindowHandler : MonoBehaviour
 
     void Update ()
 	{
-
-        if (GameManager.isGameover) {
-          LeanTween.moveY (GameObject.Find ("Tool Bar"), 1000, 0.5f).setEase (LeanTweenType.easeOutExpo); 
-        }
-        
 		if (GameManager.isInputing) {
             if (!GameManager.IsTutorial()) {
                 if (GameManager.IsAnyHintLeft() && BoardPressedHandler.curPressedContent.tag == "Mystery Number Content" && !BoardPressedHandler.curPressedContent.GetComponent<ContentScript>().isAnswered) {

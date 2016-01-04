@@ -645,6 +645,48 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 429268, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
   m_PrefabInternal: {fileID: 2024067765}
+--- !u!1001 &596214238
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 415240, guid: 837e601e9f68a4a3e8820877ef5cd71a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.699
+      objectReference: {fileID: 0}
+    - target: {fileID: 415240, guid: 837e601e9f68a4a3e8820877ef5cd71a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.77999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 415240, guid: 837e601e9f68a4a3e8820877ef5cd71a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 415240, guid: 837e601e9f68a4a3e8820877ef5cd71a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 415240, guid: 837e601e9f68a4a3e8820877ef5cd71a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 415240, guid: 837e601e9f68a4a3e8820877ef5cd71a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 415240, guid: 837e601e9f68a4a3e8820877ef5cd71a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 415240, guid: 837e601e9f68a4a3e8820877ef5cd71a, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 837e601e9f68a4a3e8820877ef5cd71a, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &600116306
 Prefab:
   m_ObjectHideFlags: 0
@@ -1494,7 +1536,7 @@ RectTransform:
   - {fileID: 284262110}
   - {fileID: 252539921}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}

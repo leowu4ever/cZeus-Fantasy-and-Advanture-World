@@ -4,32 +4,4 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Main.unity
-  - enabled: 1
-    path: Assets/Scenes/Setting.unity
-  - enabled: 1
-    path: Assets/Scenes/World Map.unity
-  - enabled: 1
-    path: Assets/Scenes/Chapter_1.unity
-  - enabled: 1
-    path: Assets/Scenes/In-game Scenes/InGame Scene Level 1.unity
-  - enabled: 1
-    path: Assets/Scenes/In-game Scenes/InGame Scene Level 2.unity
-  - enabled: 1
-    path: Assets/Scenes/In-game Scenes/InGame Scene Level 3.unity
-  - enabled: 1
-    path: Assets/Scenes/In-game Scenes/InGame Scene Level 4.unity
-  - enabled: 1
-    path: Assets/Scenes/In-game Scenes/InGame Scene Level 5.unity
-  - enabled: 1
-    path: Assets/Scenes/In-game Scenes/InGame Scene (2x2).unity
-  - enabled: 1
-    path: Assets/Scenes/In-game Scenes/InGame Scene (2x3).unity
-  - enabled: 1
-    path: Assets/Scenes/In-game Scenes/InGame Scene (3x3).unity
-  - enabled: 1
-    path: Assets/Scenes/In-game Scenes/InGame Scene (3x3) L Shape.unity
-  - enabled: 1
-    path: Assets/Scenes/Hero_test.unity
+  m_Scenes: []

@@ -67,6 +67,9 @@ TagManager:
   - name: Node Character
     uniqueID: 685218955
     locked: 0
+  - name: Node Id
+    uniqueID: 2372725055
+    locked: 0
   - name: Level Base
     uniqueID: 1858908085
     locked: 0

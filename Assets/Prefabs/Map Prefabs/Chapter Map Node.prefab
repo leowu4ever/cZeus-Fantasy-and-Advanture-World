@@ -230,7 +230,12 @@ MonoBehaviour:
   stars: 0
   unlockedLevelNode: {fileID: 111902}
   lockedLevelNode: {fileID: 180368}
-  dialogs: []
+  dialogs:
+  - Hello. Welcome to cZeus Fantasy and Advanture world. I am Earl. I will be introducing
+    you the rules of cZeus puzzle.
+  - Thank you. Please go ahead.
+  - In this level I will show you the rule of pair clue.
+  - Cool. Let's do it.
   ptsToNxtLv:
   - {fileID: 0}
   - {fileID: 0}
@@ -313,7 +318,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1922242241
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300040, guid: 6c338574e1ac149d8a85a881a00c6189, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

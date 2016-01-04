@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c04291432f57241ae82bb97793174076
-timeCreated: 1451574265
+timeCreated: 1451860752
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -381,56 +381,6 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newgameuiatlas 1_29
-      rect:
-        serializedVersion: 2
-        x: 1339
-        y: 289
-        width: 161
-        height: 273
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newgameuiatlas 1_30
-      rect:
-        serializedVersion: 2
-        x: 1482
-        y: 296
-        width: 140
-        height: 211
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newgameuiatlas 1_31
-      rect:
-        serializedVersion: 2
-        x: 1607
-        y: 285
-        width: 174
-        height: 226
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newgameuiatlas 1_32
-      rect:
-        serializedVersion: 2
-        x: 1782
-        y: 288
-        width: 124
-        height: 220
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newgameuiatlas 1_33
-      rect:
-        serializedVersion: 2
-        x: 1895
-        y: 296
-        width: 140
-        height: 211
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: newgameuiatlas 1_34
       rect:
         serializedVersion: 2
@@ -441,63 +391,23 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newgameuiatlas 1_35
+    - name: newgameuiatlas 1_29
       rect:
         serializedVersion: 2
-        x: 918
-        y: 9
-        width: 142
-        height: 249
+        x: 1323
+        y: 283
+        width: 725
+        height: 284
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newgameuiatlas 1_36
+    - name: newgameuiatlas 1_30
       rect:
         serializedVersion: 2
-        x: 1050
-        y: 4
-        width: 428
-        height: 218
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newgameuiatlas 1_37
-      rect:
-        serializedVersion: 2
-        x: 1565
-        y: 11
-        width: 139
-        height: 202
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newgameuiatlas 1_38
-      rect:
-        serializedVersion: 2
-        x: 1683
-        y: 15
-        width: 135
-        height: 184
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newgameuiatlas 1_39
-      rect:
-        serializedVersion: 2
-        x: 1801
-        y: 21
-        width: 117
-        height: 183
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: newgameuiatlas 1_40
-      rect:
-        serializedVersion: 2
-        x: 1925
-        y: 7
-        width: 112
-        height: 201
+        x: 911
+        y: 0
+        width: 1137
+        height: 258
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
