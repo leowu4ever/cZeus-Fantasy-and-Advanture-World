@@ -24,6 +24,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/In-game Scenes/InGame Scene Level 5.unity
   - enabled: 1
+    path: Assets/Scenes/In-game Scenes/InGame Scene (2x2).unity
+  - enabled: 1
+    path: Assets/Scenes/In-game Scenes/InGame Scene (2x3).unity
+  - enabled: 1
+    path: Assets/Scenes/In-game Scenes/InGame Scene (3x3).unity
+  - enabled: 1
     path: Assets/Scenes/In-game Scenes/InGame Scene (3x3) L Shape.unity
   - enabled: 1
     path: Assets/Scenes/Record.unity
