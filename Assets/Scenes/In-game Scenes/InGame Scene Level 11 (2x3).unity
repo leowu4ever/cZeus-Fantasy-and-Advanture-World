@@ -371,7 +371,7 @@ Prefab:
       objectReference: {fileID: 478527157}
     - target: {fileID: 11456374, guid: 93efc0033822447bb87d650beaf3660a, type: 2}
       propertyPath: puzzleLevel
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 11456374, guid: 93efc0033822447bb87d650beaf3660a, type: 2}
       propertyPath: gameoverWindow
@@ -498,14 +498,6 @@ Prefab:
     - target: {fileID: 160982, guid: 5508c06fcc1094ae3ba8ac4470f99f7e, type: 2}
       propertyPath: m_Name
       value: Tool Bar
-      objectReference: {fileID: 0}
-    - target: {fileID: 11422028, guid: 5508c06fcc1094ae3ba8ac4470f99f7e, type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 11418636, guid: 5508c06fcc1094ae3ba8ac4470f99f7e, type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5508c06fcc1094ae3ba8ac4470f99f7e, type: 2}
@@ -900,7 +892,7 @@ Prefab:
     - target: {fileID: 11433384, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
       propertyPath: errorLabel
       value: 
-      objectReference: {fileID: 1701653812}
+      objectReference: {fileID: 832343080}
     - target: {fileID: 11433384, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
       propertyPath: timerLabel
       value: 
@@ -2109,10 +2101,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 477068, guid: 86ebc90c4599c43069c36da020715122, type: 2}
   m_PrefabInternal: {fileID: 1691721895}
---- !u!1 &1701653812 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 116840, guid: 5508c06fcc1094ae3ba8ac4470f99f7e, type: 2}
-  m_PrefabInternal: {fileID: 324641430}
 --- !u!1001 &1708377152
 Prefab:
   m_ObjectHideFlags: 0
