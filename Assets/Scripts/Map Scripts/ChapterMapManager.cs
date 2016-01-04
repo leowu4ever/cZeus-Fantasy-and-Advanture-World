@@ -162,11 +162,6 @@ public class ChapterMapManager : MonoBehaviour {
         int lineCount = 0;
         for(int i=0;i<message.Length;i++)
         {
-            if(lineCount==6)
-            {
-                clearDialog();
-                lineCount = 0;
-            }
             if (message.Substring(i,1) == " ")
             {
                 if (charCountInOnline == 0)
@@ -175,7 +170,14 @@ public class ChapterMapManager : MonoBehaviour {
                 }
                 else if (isWordStartNewLine(message, i, charCountInOnline, 15))
                 {
-                    dialogLabel.GetComponent<TextMesh>().text += "\n";
+                    if (lineCount == 6)
+                    {
+                        clearDialog();
+                    }
+                    else
+                    {
+                        dialogLabel.GetComponent<TextMesh>().text += "\n";
+                    }
                     charCountInOnline = 0;
                     lineCount++;
                     i++;
@@ -184,7 +186,14 @@ public class ChapterMapManager : MonoBehaviour {
             }
             if (charCountInOnline == 15)
             {
-                dialogLabel.GetComponent<TextMesh>().text += "\n";
+                if (lineCount == 6)
+                {
+                    clearDialog();
+                }
+                else
+                {
+                    dialogLabel.GetComponent<TextMesh>().text += "\n";
+                }
                 charCountInOnline = 0;
                 lineCount++;
             }
@@ -203,33 +212,41 @@ public class ChapterMapManager : MonoBehaviour {
     {
         int countWordChar = 0;
         int offSetToAvoidBeginSpace = 0;
-        if (message.Substring(messageIndex + 1, 1) == " ")
+        if(messageIndex + 1< message.Length)
         {
-            for (int i = messageIndex + 1; i < message.Length; i++)
+            if (message.Substring(messageIndex + 1, 1) == " ")
             {
-                if (message.Substring(i, 1) != " ")
+                for (int i = messageIndex + 1; i < message.Length; i++)
+                {
+                    if (message.Substring(i, 1) != " ")
+                    {
+                        break;
+                    }
+                    offSetToAvoidBeginSpace++;
+                }
+            }
+            for (int i = messageIndex + 1 + offSetToAvoidBeginSpace; i < message.Length; i++)
+            {
+                countWordChar++;
+                if (message.Substring(i, 1) == " ")
                 {
                     break;
                 }
-                offSetToAvoidBeginSpace++;
             }
-        }
-        for (int i= messageIndex+1+ offSetToAvoidBeginSpace; i<message.Length;i++)
-        {
-            countWordChar++;
-            if (message.Substring(i, 1) == " ")
+            if (countWordChar > maxCharInOneLine - lineIndex)
             {
-                break;
+                return true;
             }
-        }
-        if (countWordChar > maxCharInOneLine - lineIndex)
-        {
-            return true;
+            else
+            {
+                return false;
+            }
         }
         else
         {
             return false;
         }
+       
     }
     void clearDialog()
     {
