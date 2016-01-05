@@ -27,7 +27,6 @@ public class ChapterMapManager : MonoBehaviour {
 	void Start () {
 	   InitLevels ();
        InitHero ();
-        Debug.Log(latestLevel);
        
        //set state of hero animation
        hero.GetComponent<Animator>().CrossFade("Walk", 0f);
@@ -90,9 +89,7 @@ public class ChapterMapManager : MonoBehaviour {
     }
 
     void InitLevels ()  { // 1. unlock lv1 2. init the rest levels 3. 
-        if (!GetLevelStateOf (levels[0].name)) {
-          SetLevelStateTo (levels[0].name, false);  // the fisrt level is always open
-        }
+        SetLevelStateTo (levels[0].name, false);  // the fisrt level is always open
         for (int a = 0; a < levels.Length; a++) {
           LevelScript ls = levels[a].GetComponent<LevelScript> ();
           ls.isLocked = GetLevelStateOf (levels[a].name);
