@@ -507,6 +507,10 @@ RectTransform:
   m_PrefabParentObject: {fileID: 22413538, guid: 5508c06fcc1094ae3ba8ac4470f99f7e,
     type: 2}
   m_PrefabInternal: {fileID: 324641430}
+--- !u!1 &324641432 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 116840, guid: 5508c06fcc1094ae3ba8ac4470f99f7e, type: 2}
+  m_PrefabInternal: {fileID: 324641430}
 --- !u!1001 &373648897
 Prefab:
   m_ObjectHideFlags: 0
@@ -892,7 +896,7 @@ Prefab:
     - target: {fileID: 11433384, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
       propertyPath: errorLabel
       value: 
-      objectReference: {fileID: 832343080}
+      objectReference: {fileID: 324641432}
     - target: {fileID: 11433384, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
       propertyPath: timerLabel
       value: 

@@ -94,7 +94,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -147,11 +147,11 @@ Prefab:
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: Ok.Hero. This is your last tutorial. You will see a square clue.
+      value: 2x3
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: What is that ? OMG
+      value: ok
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
@@ -264,11 +264,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 481602, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.000250966958
+      value: -.000251010177
       objectReference: {fileID: 0}
     - target: {fileID: 446260, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .000250966958
+      value: .000251010177
       objectReference: {fileID: 0}
     - target: {fileID: 427228, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
@@ -768,7 +768,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -821,7 +821,7 @@ Prefab:
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: Ok.Hero. This is your last tutorial. You will see a square clue.
+      value: Well try L shape puzzle
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
@@ -1069,7 +1069,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1122,11 +1122,11 @@ Prefab:
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: Ok.Hero. This is your last tutorial. You will see a square clue.
+      value: You are doing good. 2X2 again
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: What is that ? OMG
+      value: OK
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
@@ -1658,11 +1658,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 490582, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.0475352965
+      value: -.0472911894
       objectReference: {fileID: 0}
     - target: {fileID: 490582, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -.998869598
+      value: -.998881161
       objectReference: {fileID: 0}
     - target: {fileID: 488402, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.w
@@ -1674,11 +1674,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 411102, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .0475352965
+      value: .0472911894
       objectReference: {fileID: 0}
     - target: {fileID: 411102, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -.998869598
+      value: -.998881161
       objectReference: {fileID: 0}
     - target: {fileID: 448588, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalScale.y
@@ -1700,7 +1700,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1753,11 +1753,11 @@ Prefab:
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: Ok.Hero. This is your last tutorial. You will see a square clue.
+      value: This is 3X3
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: What is that ? OMG
+      value: Really ???
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
@@ -1971,7 +1971,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2024,11 +2024,11 @@ Prefab:
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: Ok.Hero. This is your last tutorial. You will see a square clue.
+      value: 'This is your first game. Lets''s play the 2x2 puzzle '
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: What is that ? OMG
+      value: I feel excited!!!
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
@@ -2050,7 +2050,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2103,7 +2103,7 @@ Prefab:
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: Ok.Hero. This is your last tutorial. You will see a square clue.
+      value: TRY 2X3
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
@@ -3789,27 +3789,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 481602, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.000178186106
+      value: -5.55261931e-06
       objectReference: {fileID: 0}
     - target: {fileID: 446260, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .000178186106
+      value: 5.55261931e-06
       objectReference: {fileID: 0}
     - target: {fileID: 427228, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.0723739713
+      value: -.0722017884
       objectReference: {fileID: 0}
     - target: {fileID: 427228, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .997377574
+      value: .997390091
       objectReference: {fileID: 0}
     - target: {fileID: 431308, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .0723739713
+      value: .0722017884
       objectReference: {fileID: 0}
     - target: {fileID: 431308, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .997377574
+      value: .997390091
       objectReference: {fileID: 0}
     - target: {fileID: 21286630, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_SortingLayerID
@@ -4106,7 +4106,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -4159,11 +4159,11 @@ Prefab:
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: Ok.Hero. This is your last tutorial. You will see a square clue.
+      value: Test
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: What is that ? OMG
+      value: test
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
