@@ -11,6 +11,7 @@ public class ChapterMapManager : MonoBehaviour {
     public GameObject skipButton;
     public GameObject playButton;
     public GameObject canvas;
+    public GameObject levelTitleLabel;
     public static bool isFocused;
     public static int latestLevel;
     public static int curLevel;
@@ -27,9 +28,11 @@ public class ChapterMapManager : MonoBehaviour {
 	void Start () {
 	   InitLevels ();
        InitHero ();
-       
-       //set state of hero animation
-       hero.GetComponent<Animator>().CrossFade("Walk", 0f);
+       levelTitleLabel.GetComponent<MeshRenderer>().sortingLayerName = "Dialog Character";
+       levelTitleLabel.GetComponent<TextMesh>().fontSize = 1024;
+
+        //set state of hero animation
+        hero.GetComponent<Animator>().CrossFade("Walk", 0f);
     }
 	
 	void Update () {
@@ -40,6 +43,7 @@ public class ChapterMapManager : MonoBehaviour {
                     GameObject selectedLevelNode = hit.transform.gameObject;
                     selectedlevelScript = selectedLevelNode.GetComponent<LevelScript> ();
                     if (!selectedlevelScript.isLocked) {
+                        levelTitleLabel.GetComponent<TextMesh>().text = "LEVLE " + selectedlevelScript.levelId.ToString();
                         curLevel = selectedlevelScript.levelId - 1;
                         // focus on the selected node
                         //   camera.transform.position = new Vector3 (selectedLevelNode.transform.position.x, selectedLevelNode.transform.position.y, camera.transform.position.z);
@@ -81,8 +85,11 @@ public class ChapterMapManager : MonoBehaviour {
                 }
                 if (hit.transform.tag == "Level Window Skip Button")
                 {
+                    LeanTween.scale(skipButton, new Vector3(0.25f, 0.25f, 0.25f), 0.2f);
+                    LeanTween.scale(skipButton, new Vector3(0.2f, 0.2f, 0.2f), 0.2f).setDelay(0.3f);
+
                     letterPause = 0.0f;
-                }
+                } 
             }
         }
         DialogType();
