@@ -94,7 +94,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -147,19 +147,20 @@ Prefab:
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: 2x3
+      value: If you have no idea how to go on,  you can try to use hint at the end
+        of number board.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: ok
+      value: What!? You should tell me earlier!
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
-      value: LOL. Good Luck.
+      value: Remember, you only have two opportunities.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[3]
-      value: OK
+      value: That's enough for me.
       objectReference: {fileID: 0}
     - target: {fileID: 494640, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -264,11 +265,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 481602, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.000251164573
+      value: -.000251354038
       objectReference: {fileID: 0}
     - target: {fileID: 446260, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .000251164573
+      value: .000251354038
       objectReference: {fileID: 0}
     - target: {fileID: 427228, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
@@ -675,19 +676,19 @@ Prefab:
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: Ok.Hero. This is your last tutorial. You will see a square clue.
+      value: A easy game, isn't it?
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: What is that ? OMG
+      value: Yeah...maybe.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
-      value: LOL. Good Luck.
+      value: Take it easy and enjoy this game.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[3]
-      value: OK
+      value: Interesting.
       objectReference: {fileID: 0}
     - target: {fileID: 494640, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -821,11 +822,11 @@ Prefab:
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: Well try L shape puzzle
+      value: Well, I will make this game harder. Now try this L-shape puzzle.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: What is that ? OMG
+      value: It sounds difficult. But I will try.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
@@ -1122,11 +1123,11 @@ Prefab:
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: You are doing good. 2X2 again
+      value: You are doing well. Now try another 2x2 puzzle.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: OK
+      value: Easy for me.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
@@ -1244,7 +1245,7 @@ Prefab:
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: 'You are unstoppable!!! Do this one '
+      value: You are unstoppable!!! Do this one now.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
@@ -1700,7 +1701,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1753,19 +1754,19 @@ Prefab:
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: This is 3X3
+      value: It is the last level of this chapter. I can't believe you make it!
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: Really ???
+      value: It is not that hard.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
-      value: LOL. Good Luck.
+      value: Don't get too excited. Now try a 3x3 puzzle and it might be more difficult.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[3]
-      value: OK
+      value: Really!?
       objectReference: {fileID: 0}
     - target: {fileID: 494640, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2024,11 +2025,12 @@ Prefab:
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: 'This is your first game. Lets''s play the 2x2 puzzle '
+      value: This is your first real game without my guidance. Let's play the 2x2
+        puzzle.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: I feel excited!!!
+      value: I feel so excited!!!
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
@@ -2103,11 +2105,12 @@ Prefab:
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: TRY 2X3
+      value: Let's make some difference, my hero. Here is the 2x3 puzzle game and
+        try to solve it!
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: What is that ? OMG
+      value: Oh my god, What is that ?
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
@@ -2973,19 +2976,19 @@ Prefab:
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: Ok.Hero. This is your last tutorial. You will see a square clue.
+      value: Try your best, mortal.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: What is that ? OMG
+      value: Of course I will.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
-      value: LOL. Good Luck.
+      value: Try to use less time and make less mistakes, and you will win more scores.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[3]
-      value: OK
+      value: Ok, thanks.
       objectReference: {fileID: 0}
     - target: {fileID: 494640, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -4181,7 +4184,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -4234,19 +4237,20 @@ Prefab:
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: Test
+      value: Find it difficult? I believe this level can not stop you from moving
+        on.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: test
+      value: Sure.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
-      value: LOL. Good Luck.
+      value: Keep practising, my hero.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[3]
-      value: OK
+      value: I will.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
@@ -4352,7 +4356,7 @@ Prefab:
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: Ok.Hero. This is your last tutorial. You will see a square clue.
+      value: Ok, my Hero. This is your last tutorial. You will see a square clue.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
@@ -4364,7 +4368,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[3]
-      value: OK
+      value: Ok.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
