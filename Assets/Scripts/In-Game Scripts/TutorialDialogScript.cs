@@ -4,7 +4,7 @@ using System.Collections;
 public class TutorialDialogScript : MonoBehaviour {
 
     private int MAX_NUM_LINE = 100;
-    private int MAX_NUM_CHAR_IN_ONE_LINE = 30;
+    private int MAX_NUM_CHAR_IN_ONE_LINE = 55;
 	// Use this for initialization
 
 	void Start () {
@@ -12,11 +12,12 @@ public class TutorialDialogScript : MonoBehaviour {
         GetComponent<MeshRenderer>().sortingOrder = 1;
         GetComponent<TextMesh>().fontSize = 1024;
         TypeText("The left mystery number + the right mystery number = " + GameObject.Find("Game Manager").GetComponent<GameManager>().contentSpriteArray[1].GetComponent<ContentScript>().content + " The left mystery number x the right mystery number = " + GameObject.Find("Game Manager").GetComponent<GameManager>().contentSpriteArray[2].GetComponent<ContentScript>().content);
+        GameObject.Find ("Earl").GetComponent<Animator>().CrossFade("BirdMoving", 0f);
     }
 	
 	// Update is called once per frame
 	void Update () {
-	
+	   
 	}
     void TypeText(string message)
     {

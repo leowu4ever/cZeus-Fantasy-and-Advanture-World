@@ -627,6 +627,7 @@ MonoBehaviour:
   BackButtonMusic: {fileID: 0}
   BgMusic: {fileID: 0}
   PlayButton: {fileID: 0}
+  SoundOff: {fileID: 0}
 --- !u!1001 &432619947
 Prefab:
   m_ObjectHideFlags: 0
@@ -1548,6 +1549,22 @@ Prefab:
     - target: {fileID: 11493758, guid: 4fad8174b967a48f4bdbdcfa0b72d6bb, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400688, guid: 4fad8174b967a48f4bdbdcfa0b72d6bb, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 432771254}
+    - target: {fileID: 11400688, guid: 4fad8174b967a48f4bdbdcfa0b72d6bb, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SendInputNumberWith
+      objectReference: {fileID: 0}
+    - target: {fileID: 11474276, guid: 4fad8174b967a48f4bdbdcfa0b72d6bb, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 432771254}
+    - target: {fileID: 11474276, guid: 4fad8174b967a48f4bdbdcfa0b72d6bb, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SendInputNumberWith
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4fad8174b967a48f4bdbdcfa0b72d6bb, type: 2}
