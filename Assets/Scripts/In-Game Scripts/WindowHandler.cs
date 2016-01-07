@@ -10,7 +10,6 @@ public class WindowHandler : MonoBehaviour
     public GameObject[] mysteryList, mysteryAnswerChoice;
     public GameObject hintButton;
     public Sprite cross;
-    public GameObject earl;
     private Sprite[] spriteNum = new Sprite[9]; 
     private bool inputNumberBarShowing;
     
@@ -33,16 +32,11 @@ public class WindowHandler : MonoBehaviour
             } 
 			ActivateInputNumberBar ();
             
-            if (earl != null) {
-                earl.SetActive (true);
-            }
- 
+         
 		} else  { 
             DeactivateInputNumberBar ();
             
-            if (earl != null) {
-                earl.SetActive (false);
-            }
+          
             if (!GameManager.IsTutorial()) {
                 hintButton.SetActive (false);
             }
