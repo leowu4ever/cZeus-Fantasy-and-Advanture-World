@@ -4,7 +4,7 @@ using System.Collections;
 public class TutorialDialogScript : MonoBehaviour {
 
     private int MAX_NUM_LINE = 100;
-    private int MAX_NUM_CHAR_IN_ONE_LINE = 55;
+    private int MAX_NUM_CHAR_IN_ONE_LINE = 50;
 	// Use this for initialization
 
 	void Start () {
@@ -29,7 +29,7 @@ public class TutorialDialogScript : MonoBehaviour {
         }
         
            if (GameManager.puzzleLv == "5") {
-            TypeText("Four pair clues make a square clue. Numbers you find should satisfy both pair clues and square clue and square clue might be empty. Remember, each combination of numbers can only appear once in a game regardless of their order. For example, you can't use 2 and 6 twice in any order. But four cornering identical numbers is an exception!");
+            TypeText("Numbers you find should satisfy both pair clues and square clue and square clue might be empty. Each combination of numbers can only appear once in a game regardless of their order. Four cornering identical numbers is an exception!");
         } 
 
     }
