@@ -12,7 +12,7 @@ public class TutorialDialogScript : MonoBehaviour {
         GetComponent<MeshRenderer>().sortingLayerName = "Dialog Border";
         GetComponent<MeshRenderer>().sortingOrder = 1;
         GetComponent<TextMesh>().fontSize = 1024;
-        GameObject.Find ("Earl").GetComponent<Animator>().CrossFade("BirdMoving", 0f);
+
        if (GameManager.puzzleLv == "1") {
               TypeText("Input two numbers respectively into the empty squares. Their sum should equal to " + GameObject.Find("Game Manager").GetComponent<GameManager>().contentSpriteArray[1].GetComponent<ContentScript>().content + " and product equal to " + GameObject.Find("Game Manager").GetComponent<GameManager>().contentSpriteArray[2].GetComponent<ContentScript>().content + ". The sum and product together are called a pair clue");
        }
@@ -33,6 +33,11 @@ public class TutorialDialogScript : MonoBehaviour {
         } 
 
     }
+    
+    void Update () {
+        GameObject.Find ("Earl").GetComponent<Animator>().CrossFade("BirdMoving", 0f);
+    }
+    
     void TypeText(string message)
     {
         int charCountInOnline = 0;
