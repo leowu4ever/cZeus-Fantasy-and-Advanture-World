@@ -314,7 +314,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11424094, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
+      - m_Target: {fileID: 0}
         m_MethodName: SendInputNumberWith
         m_Mode: 5
         m_Arguments:
@@ -323,6 +323,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 5
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SoundEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -404,6 +415,17 @@ MonoBehaviour:
           m_StringArgument: 4
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SoundEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &11415066
@@ -483,6 +505,17 @@ MonoBehaviour:
           m_StringArgument: 3
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SoundEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &11425736
@@ -504,7 +537,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300006, guid: d70c4e1c4211d48289a6cb9165364e82, type: 3}
+  m_Sprite: {fileID: 21300056, guid: 407c56fd657594f0089219123bd66dfa, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -553,6 +586,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11424094, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
         m_MethodName: SendHint
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SoundEffect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -729,6 +773,17 @@ MonoBehaviour:
           m_StringArgument: 1
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SoundEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &11462668
@@ -824,7 +879,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11424094, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
+      - m_Target: {fileID: 0}
         m_MethodName: SendInputNumberWith
         m_Mode: 5
         m_Arguments:
@@ -833,6 +888,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 6
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SoundEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -885,6 +951,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 8
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SoundEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1020,6 +1097,17 @@ MonoBehaviour:
           m_StringArgument: 2
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SoundEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &11493758
@@ -1070,6 +1158,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 9
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SoundEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1176,6 +1275,17 @@ MonoBehaviour:
           m_StringArgument: 7
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SoundEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!222 &22215706
@@ -1274,10 +1384,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22476306}
   m_RootOrder: 6
-  m_AnchorMin: {x: .5, y: .5}
-  m_AnchorMax: {x: .596638858, y: .868368447}
-  m_AnchoredPosition: {x: 0, y: .5}
-  m_SizeDelta: {x: -18.0750122, y: 1}
+  m_AnchorMin: {x: .5, y: .384798795}
+  m_AnchorMax: {x: .596638858, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -5.34059982e-05}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22415542
 RectTransform:
@@ -1291,10 +1401,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22476306}
   m_RootOrder: 1
-  m_AnchorMin: {x: 0, y: .5}
-  m_AnchorMax: {x: .0963194072, y: .868368447}
-  m_AnchoredPosition: {x: 0, y: .500061035}
-  m_SizeDelta: {x: -17.9999924, y: 1}
+  m_AnchorMin: {x: 0, y: .384798795}
+  m_AnchorMax: {x: .0963194072, y: 1}
+  m_AnchoredPosition: {x: 0, y: 9.53674316e-06}
+  m_SizeDelta: {x: -3.81469999e-06, y: 6.10349998e-05}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22421054
 RectTransform:
@@ -1308,10 +1418,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22476306}
   m_RootOrder: 2
-  m_AnchorMin: {x: .0963194072, y: .5}
-  m_AnchorMax: {x: .200638816, y: .868368447}
-  m_AnchoredPosition: {x: 0, y: .499969482}
-  m_SizeDelta: {x: -21.0750084, y: 1}
+  m_AnchorMin: {x: .0963194072, y: .384798795}
+  m_AnchorMax: {x: .200638816, y: 1}
+  m_AnchoredPosition: {x: -.000122070312, y: 0}
+  m_SizeDelta: {x: .000247960008, y: -7.62939999e-06}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22425040
 RectTransform:
@@ -1325,10 +1435,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22476306}
   m_RootOrder: 9
-  m_AnchorMin: {x: .797319412, y: .5}
-  m_AnchorMax: {x: .900680661, y: .868368447}
-  m_AnchoredPosition: {x: -1.52587891e-05, y: -.500030518}
-  m_SizeDelta: {x: -20.0750122, y: 1}
+  m_AnchorMin: {x: .797319412, y: .384798795}
+  m_AnchorMax: {x: .900680661, y: 1}
+  m_AnchoredPosition: {x: .000106811523, y: -1.52587891e-05}
+  m_SizeDelta: {x: -.00025176999, y: -3.81470018e-05}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22425726
 RectTransform:
@@ -1342,10 +1452,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22476306}
   m_RootOrder: 8
-  m_AnchorMin: {x: .701000035, y: .5}
-  m_AnchorMax: {x: .797319412, y: .868368447}
-  m_AnchoredPosition: {x: 0, y: .499969482}
-  m_SizeDelta: {x: -18.0750122, y: 1}
+  m_AnchorMin: {x: .701000035, y: .384798795}
+  m_AnchorMax: {x: .797319412, y: 1}
+  m_AnchoredPosition: {x: 0, y: -4.57763672e-05}
+  m_SizeDelta: {x: 0, y: 3.05180001e-05}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22435114
 RectTransform:
@@ -1360,10 +1470,10 @@ RectTransform:
   - {fileID: 22466336}
   m_Father: {fileID: 22479562}
   m_RootOrder: 0
-  m_AnchorMin: {x: .921561003, y: .467000008}
-  m_AnchorMax: {x: .981584787, y: .902568221}
-  m_AnchoredPosition: {x: 0, y: .00625228882}
-  m_SizeDelta: {x: 0, y: .0124629997}
+  m_AnchorMin: {x: .898207903, y: .380600631}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 1.33514404e-05}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22462350
 RectTransform:
@@ -1377,10 +1487,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22476306}
   m_RootOrder: 5
-  m_AnchorMin: {x: .393555224, y: .5}
-  m_AnchorMax: {x: .492000014, y: .868368447}
-  m_AnchoredPosition: {x: 1.90734863e-06, y: .5}
-  m_SizeDelta: {x: -19.0750122, y: 1}
+  m_AnchorMin: {x: .393555224, y: .384798795}
+  m_AnchorMax: {x: .492000014, y: 1}
+  m_AnchoredPosition: {x: 0, y: -1.52587891e-05}
+  m_SizeDelta: {x: 7.62939999e-06, y: 3.81470018e-05}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22466336
 RectTransform:
@@ -1411,10 +1521,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22476306}
   m_RootOrder: 7
-  m_AnchorMin: {x: .596638858, y: .5}
-  m_AnchorMax: {x: .701000035, y: .868368447}
-  m_AnchoredPosition: {x: 7.62939453e-06, y: -.500030518}
-  m_SizeDelta: {x: -21.0750122, y: 1}
+  m_AnchorMin: {x: .596638858, y: .384798795}
+  m_AnchorMax: {x: .701000035, y: 1}
+  m_AnchoredPosition: {x: .000129699707, y: -4.38690186e-05}
+  m_SizeDelta: {x: -.000282290013, y: 2.28879999e-05}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22476306
 RectTransform:
@@ -1474,10 +1584,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22476306}
   m_RootOrder: 4
-  m_AnchorMin: {x: .297000021, y: .5}
-  m_AnchorMax: {x: .393555224, y: .868368447}
-  m_AnchoredPosition: {x: -3.81469727e-06, y: .499969482}
-  m_SizeDelta: {x: -18.0750122, y: 1}
+  m_AnchorMin: {x: .297000021, y: .384798795}
+  m_AnchorMax: {x: .393555224, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 7.62939999e-06, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22488648
 RectTransform:
@@ -1491,10 +1601,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22476306}
   m_RootOrder: 3
-  m_AnchorMin: {x: .200638816, y: .5}
-  m_AnchorMax: {x: .297000021, y: .868368447}
-  m_AnchoredPosition: {x: -7.62939453e-06, y: .499969482}
-  m_SizeDelta: {x: -18.0750122, y: 1}
+  m_AnchorMin: {x: .200638816, y: .384798795}
+  m_AnchorMax: {x: .297000021, y: 1}
+  m_AnchoredPosition: {x: 0, y: -1.71661377e-05}
+  m_SizeDelta: {x: 7.62939999e-06, y: 3.05180001e-05}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22492282
 RectTransform:
@@ -1508,10 +1618,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22476306}
   m_RootOrder: 10
-  m_AnchorMin: {x: .900680661, y: .5}
-  m_AnchorMax: {x: 1, y: .868368447}
-  m_AnchoredPosition: {x: -1.52587891e-05, y: .499969482}
-  m_SizeDelta: {x: -19.0750122, y: 1}
+  m_AnchorMin: {x: .900680661, y: .384798795}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 4.57763672e-05, y: -6.10351562e-05}
+  m_SizeDelta: {x: 4.57759998e-05, y: 6.10349998e-05}
   m_Pivot: {x: .5, y: .5}
 --- !u!1001 &100100000
 Prefab:

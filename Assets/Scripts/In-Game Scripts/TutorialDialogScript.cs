@@ -8,8 +8,7 @@ public class TutorialDialogScript : MonoBehaviour {
         GetComponent<MeshRenderer>().sortingLayerName = "Dialog Border";
         GetComponent<MeshRenderer>().sortingOrder = 1;
         GetComponent<TextMesh>().fontSize = 1024;
-        TypeText(GameObject.Find ("Game Manager").GetComponent<GameManager>().contentSpriteArray[1].GetComponent<ContentScript>().content+
-            GameObject.Find("Game Manager").GetComponent<GameManager>().contentSpriteArray[2].GetComponent<ContentScript>().content);
+        TypeText("The left mystery number + the right mystery number = " + GameObject.Find("Game Manager").GetComponent<GameManager>().contentSpriteArray[1].GetComponent<ContentScript>().content + "\n" + "The left mystery number x the right mystery number = " + GameObject.Find("Game Manager").GetComponent<GameManager>().contentSpriteArray[2].GetComponent<ContentScript>().content);
     }
 	
 	// Update is called once per frame
