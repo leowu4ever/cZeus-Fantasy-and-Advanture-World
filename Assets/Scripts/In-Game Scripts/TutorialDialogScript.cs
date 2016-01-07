@@ -3,12 +3,15 @@ using System.Collections;
 
 public class TutorialDialogScript : MonoBehaviour {
 
+    private int MAX_NUM_LINE = 100;
+    private int MAX_NUM_CHAR_IN_ONE_LINE = 30;
 	// Use this for initialization
+
 	void Start () {
         GetComponent<MeshRenderer>().sortingLayerName = "Dialog Border";
         GetComponent<MeshRenderer>().sortingOrder = 1;
         GetComponent<TextMesh>().fontSize = 1024;
-        TypeText("The left mystery number + the right mystery number = " + GameObject.Find("Game Manager").GetComponent<GameManager>().contentSpriteArray[1].GetComponent<ContentScript>().content + "\n" + "The left mystery number x the right mystery number = " + GameObject.Find("Game Manager").GetComponent<GameManager>().contentSpriteArray[2].GetComponent<ContentScript>().content);
+        TypeText("The left mystery number + the right mystery number = " + GameObject.Find("Game Manager").GetComponent<GameManager>().contentSpriteArray[1].GetComponent<ContentScript>().content + " The left mystery number x the right mystery number = " + GameObject.Find("Game Manager").GetComponent<GameManager>().contentSpriteArray[2].GetComponent<ContentScript>().content);
     }
 	
 	// Update is called once per frame
@@ -27,9 +30,9 @@ public class TutorialDialogScript : MonoBehaviour {
                 {
                     i++;
                 }
-                else if (isWordStartNewLine(message, i, charCountInOnline, 15))
+                else if (isWordStartNewLine(message, i, charCountInOnline, MAX_NUM_CHAR_IN_ONE_LINE))
                 {
-                    if (lineCount == 6)
+                    if (lineCount == MAX_NUM_LINE)
                     {
                         clearDialog();
                     }
@@ -43,9 +46,9 @@ public class TutorialDialogScript : MonoBehaviour {
                 }
 
             }
-            if (charCountInOnline == 15)
+            if (charCountInOnline == MAX_NUM_CHAR_IN_ONE_LINE)
             {
-                if (lineCount == 6)
+                if (lineCount == MAX_NUM_LINE)
                 {
                     clearDialog();
                 }
