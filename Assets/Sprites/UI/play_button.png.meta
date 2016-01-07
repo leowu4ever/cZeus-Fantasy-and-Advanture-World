@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 84b0a895a8865954a899691155dc332e
-timeCreated: 1452094839
+timeCreated: 1452162687
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -10,7 +10,7 @@ TextureImporter:
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -29,7 +29,7 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
@@ -47,7 +47,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 1
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -68,7 +68,7 @@ TextureImporter:
         serializedVersion: 2
         x: 43
         y: 34
-        width: 47
+        width: 48
         height: 60
       alignment: 0
       pivot: {x: .5, y: .5}
@@ -76,10 +76,10 @@ TextureImporter:
     - name: play_button_center
       rect:
         serializedVersion: 2
-        x: 104
+        x: 103
         y: 8
-        width: 77
-        height: 77
+        width: 79
+        height: 79
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
