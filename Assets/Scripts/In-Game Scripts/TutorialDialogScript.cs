@@ -8,17 +8,31 @@ public class TutorialDialogScript : MonoBehaviour {
 	// Use this for initialization
 
 	void Start () {
+
         GetComponent<MeshRenderer>().sortingLayerName = "Dialog Border";
         GetComponent<MeshRenderer>().sortingOrder = 1;
         GetComponent<TextMesh>().fontSize = 1024;
-        TypeText("The left mystery number + the right mystery number = " + GameObject.Find("Game Manager").GetComponent<GameManager>().contentSpriteArray[1].GetComponent<ContentScript>().content + " The left mystery number x the right mystery number = " + GameObject.Find("Game Manager").GetComponent<GameManager>().contentSpriteArray[2].GetComponent<ContentScript>().content);
         GameObject.Find ("Earl").GetComponent<Animator>().CrossFade("BirdMoving", 0f);
+       if (GameManager.puzzleLv == "1") {
+              TypeText("Input two numbers respectively into the empty squares. Their sum should equal to " + GameObject.Find("Game Manager").GetComponent<GameManager>().contentSpriteArray[1].GetComponent<ContentScript>().content + " and product equal to " + GameObject.Find("Game Manager").GetComponent<GameManager>().contentSpriteArray[2].GetComponent<ContentScript>().content + ". The sum and product together are called a pair clue");
+       }
+        if (GameManager.puzzleLv == "2") {
+              TypeText("Now numbers get more complicated. Practise what you have learned from Level 1.");
+       }
+       
+        if (GameManager.puzzleLv == "3") {
+            TypeText("In this case we have two pair clues. Input three numbers and make them satisfy each pair clue. Sometimes a pair clue might be empty!");
+        }
+        
+          if (GameManager.puzzleLv == "4") {
+            TypeText("Things are getting harder now. Don't worry. Start from an easier pair clue and solve others! Remember, each game only has one solution!");
+        }
+        
+           if (GameManager.puzzleLv == "5") {
+            TypeText("Four pair clues make a square clue. Numbers you find should satisfy both pair clues and square clue and square clue might be empty. Remember, each combination of numbers can only appear once in a game regardless of their order. For example, you can't use 2 and 6 twice in any order. But four cornering identical numbers is an exception!");
+        } 
+
     }
-	
-	// Update is called once per frame
-	void Update () {
-	   
-	}
     void TypeText(string message)
     {
         int charCountInOnline = 0;
