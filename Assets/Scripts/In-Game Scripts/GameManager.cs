@@ -148,7 +148,11 @@ public class GameManager : MonoBehaviour
  
 	public static void IncreaseErrorCount ()
 	{
-		errorCount++;
+        errorCount++;
+        if (IsTutorial()&& errorCount>MAX_ERROR_NUMBER)
+        {
+            errorCount = MAX_ERROR_NUMBER;
+        }
 	}
 
 	public static void IncreNumOfAnsweredByOne ()
