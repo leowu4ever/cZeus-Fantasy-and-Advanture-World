@@ -23,9 +23,11 @@ public class ChapterMapManager : MonoBehaviour {
     private int dialogIndex = 0;
     private float heroSpeed = 1f;
     private bool isTermianateTypTextRoutine = false;
-    
-   
-	void Start () {
+    private int MAX_CHAR_IN_ONE_LINE = 14;
+    private int MAX_LINE_IN_ONE_PAGE = 6;
+
+
+    void Start () {
 	   InitLevels ();
        InitHero ();
        levelTitleLabel.GetComponent<MeshRenderer>().sortingLayerName = "Dialog Character";
@@ -176,19 +178,19 @@ public class ChapterMapManager : MonoBehaviour {
     }
     IEnumerator TypeText(string message)
     {
-        int charCountInOnline = 0;
+        int charCountInOneLine = 0;
         int lineCount = 0;
         for(int i=0;i<message.Length;i++)
         {
             if (message.Substring(i,1) == " ")
             {
-                if (charCountInOnline == 0)
+                if (charCountInOneLine == 0)
                 {
                     i++;
                 }
-                else if (isWordStartNewLine(message, i, charCountInOnline, 15))
+                else if (isWordStartNewLine(message, i, charCountInOneLine, MAX_CHAR_IN_ONE_LINE))
                 {
-                    if (lineCount == 6)
+                    if (lineCount == MAX_LINE_IN_ONE_PAGE)
                     {
                         clearDialog();
                     }
@@ -196,15 +198,15 @@ public class ChapterMapManager : MonoBehaviour {
                     {
                         dialogLabel.GetComponent<TextMesh>().text += "\n";
                     }
-                    charCountInOnline = 0;
+                    charCountInOneLine = 0;
                     lineCount++;
                     i++;
                 }
                 
             }
-            if (charCountInOnline == 15)
+            if (charCountInOneLine == MAX_CHAR_IN_ONE_LINE)
             {
-                if (lineCount == 6)
+                if (lineCount == MAX_LINE_IN_ONE_PAGE)
                 {
                     clearDialog();
                 }
@@ -212,11 +214,11 @@ public class ChapterMapManager : MonoBehaviour {
                 {
                     dialogLabel.GetComponent<TextMesh>().text += "\n";
                 }
-                charCountInOnline = 0;
+                charCountInOneLine = 0;
                 lineCount++;
             }
             dialogLabel.GetComponent<TextMesh>().text += message[i];
-            charCountInOnline++;
+            charCountInOneLine++;
             if (isTermianateTypTextRoutine)
                 yield break;
             yield return new WaitForSeconds(letterPause);

@@ -928,7 +928,7 @@ Prefab:
     - target: {fileID: 11493742, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
       propertyPath: hintButton
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1394042260}
     - target: {fileID: 11493742, guid: 60dc81a1fb31c4f56aaef126043fbc44, type: 2}
       propertyPath: cross
       value: 
@@ -1618,6 +1618,10 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!1 &1394042260 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 177376, guid: 4fad8174b967a48f4bdbdcfa0b72d6bb, type: 2}
+  m_PrefabInternal: {fileID: 842385007}
 --- !u!1001 &1412482059
 Prefab:
   m_ObjectHideFlags: 0
