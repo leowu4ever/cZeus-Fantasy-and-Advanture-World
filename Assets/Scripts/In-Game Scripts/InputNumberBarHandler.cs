@@ -105,6 +105,10 @@ public class InputNumberBarHandler : MonoBehaviour
 					contentScript.content = newInput;      
 					CreateContentSpriteOn (content);
 				}
+                else
+                {
+                    contentScript.content = "";
+                }
 			}
 		}
 	}
