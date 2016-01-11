@@ -12,6 +12,7 @@ public class ChapterMapManager : MonoBehaviour {
     public GameObject playButton;
     public GameObject canvas;
     public GameObject levelTitleLabel;
+    public GameObject dialogWindow;
     public static bool isFocused;
     public static int latestLevel;
     public static int curLevel;
@@ -54,11 +55,20 @@ public class ChapterMapManager : MonoBehaviour {
                         // bring the levelwindow in front of the camera
                         levelWindow.transform.position = selectedLevelNode.transform.position;
                         LeanTween.scale (levelWindow, new Vector3 (1f, 1f, 1f), 0.5f).setEase (LeanTweenType.easeInOutBack);
+                        dialogWindow.SetActive(true);
                         isTyping = true;
                         isTermianateTypTextRoutine = false;
                         playButton.SetActive(true);
                         skipButton.SetActive(false);
                         canvas.SetActive (false);
+                        if (selectedlevelScript.levelId < 6)
+                        {
+                            if (!levels[selectedlevelScript.levelId].GetComponent<LevelScript>().isLocked)
+                            {
+                                isTyping = false;
+                                dialogWindow.SetActive(false);
+                            }
+                        }
                     } else {
                         LeanTween.scale (selectedLevelNode, new Vector3 (1.1f, 1.1f, 1.1f), 0.25f);
                         LeanTween.scale (selectedLevelNode, new Vector3 (1f, 1f, 1f), 0.25f).setDelay (0.25f);    
