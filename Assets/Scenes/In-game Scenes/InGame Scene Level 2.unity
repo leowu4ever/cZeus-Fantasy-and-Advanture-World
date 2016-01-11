@@ -947,6 +947,7 @@ MonoBehaviour:
   - {fileID: 1963673338}
   hintButton: {fileID: 0}
   cross: {fileID: 21300084, guid: 407c56fd657594f0089219123bd66dfa, type: 3}
+  earl: {fileID: 677533428}
 --- !u!114 &615896912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1109,6 +1110,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 837e601e9f68a4a3e8820877ef5cd71a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &677533428 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 118882, guid: 837e601e9f68a4a3e8820877ef5cd71a, type: 2}
+  m_PrefabInternal: {fileID: 677533427}
 --- !u!1 &777237117
 GameObject:
   m_ObjectHideFlags: 0

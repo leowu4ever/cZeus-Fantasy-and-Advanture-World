@@ -4,7 +4,7 @@ using System.Collections;
 public class TutorialDialogScript : MonoBehaviour {
 
     private int MAX_NUM_LINE = 100;
-    private int MAX_NUM_CHAR_IN_ONE_LINE = 50;
+    private int MAX_NUM_CHAR_IN_ONE_LINE = 35;
 	// Use this for initialization
 
 	void Start () {

@@ -233,6 +233,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 837e601e9f68a4a3e8820877ef5cd71a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &99265793 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 118882, guid: 837e601e9f68a4a3e8820877ef5cd71a, type: 2}
+  m_PrefabInternal: {fileID: 99265792}
 --- !u!1 &175423353 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 116298, guid: 11c1c31e6137848ef81a4604f8dacb96, type: 2}
@@ -1947,6 +1951,7 @@ MonoBehaviour:
   - {fileID: 1952170718}
   hintButton: {fileID: 0}
   cross: {fileID: 21300084, guid: 407c56fd657594f0089219123bd66dfa, type: 3}
+  earl: {fileID: 99265793}
 --- !u!114 &2077262642
 MonoBehaviour:
   m_ObjectHideFlags: 0

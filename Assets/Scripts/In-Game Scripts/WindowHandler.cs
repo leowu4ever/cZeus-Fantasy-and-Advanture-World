@@ -10,6 +10,7 @@ public class WindowHandler : MonoBehaviour
     public GameObject[] mysteryList, mysteryAnswerChoice;
     public GameObject hintButton;
     public Sprite cross;
+    public GameObject earl;
     private Sprite[] spriteNum = new Sprite[9]; 
     private bool inputNumberBarShowing;
     
@@ -18,32 +19,46 @@ public class WindowHandler : MonoBehaviour
         LeanTween.moveX (GameObject.Find("Start Note"), -6f, 1f ).setEase (LeanTweenType.easeOutExpo).setDelay (2f);
         InitSpriteNum();
     }
-
-    void Update ()
-	{
-		if (GameManager.isInputing) {
-            if (!GameManager.IsTutorial()) {
+    void Update()
+    {
+        if (GameManager.isInputing)
+        {
+            if (!GameManager.IsTutorial())
+            {
                 // in actual level 
-                if (GameManager.IsAnyHintLeft() && BoardPressedHandler.curPressedContent.tag == "Mystery Number Content") {
-                    hintButton.SetActive (true);
-                } else {
-                    hintButton.SetActive (false);
+                if (GameManager.IsAnyHintLeft() && BoardPressedHandler.curPressedContent.tag == "Mystery Number Content")
+                {
+                    hintButton.SetActive(true);
                 }
-            } 
-			ActivateInputNumberBar ();
-            
-         
-		} else  { 
-            DeactivateInputNumberBar ();
-            
-          
-            if (!GameManager.IsTutorial()) {
-                hintButton.SetActive (false);
+                else
+                {
+                    hintButton.SetActive(false);
+                }
             }
-		} 
-	}
-    
-	void ActivateInputNumberBar ()
+            ActivateInputNumberBar();
+
+            if (earl != null)
+            {
+                earl.SetActive(true);
+            }
+
+        }
+        else
+        {
+            DeactivateInputNumberBar();
+
+            if (earl != null)
+            {
+                earl.SetActive(false);
+            }
+            if (!GameManager.IsTutorial())
+            {
+                hintButton.SetActive(false);
+            }
+        }
+    }
+
+    void ActivateInputNumberBar ()
 	{
 		inputNumberBar.SetActive (true);
         ActiveInputNumberForAll();
