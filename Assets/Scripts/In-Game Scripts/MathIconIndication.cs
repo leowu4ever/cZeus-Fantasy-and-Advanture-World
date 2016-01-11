@@ -8,7 +8,10 @@ public class MathIconIndication : MonoBehaviour {
 
     void Update ()
     {
-
+        if (GameManager.isGameover) {
+            gameObject.GetComponent<Image>().enabled = false;
+        }
+        
         if (BoardPressedHandler.curPressedContent == null)
         {
             gameObject.GetComponent<Image>().enabled = false;
