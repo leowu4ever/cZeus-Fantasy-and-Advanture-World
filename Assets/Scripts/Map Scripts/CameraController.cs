@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// This script was found on 
+// https://www.youtube.com/watch?v=PJVy5rOpdDY
 public class CameraController : MonoBehaviour 
 {
 	public float moveSensitivityX = 1.0f;
