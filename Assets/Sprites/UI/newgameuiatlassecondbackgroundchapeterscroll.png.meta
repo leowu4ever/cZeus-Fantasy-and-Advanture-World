@@ -1,0 +1,595 @@
+fileFormatVersion: 2
+guid: 2dab61ad41d4a45b0b65b89fcca4ec6a
+timeCreated: 1453158724
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: newgameuiatlassecondbackgroundchapeterscroll_0
+    21300002: newgameuiatlassecondbackgroundchapeterscroll_1
+    21300004: newgameuiatlassecondbackgroundchapeterscroll_2
+    21300006: newgameuiatlassecondbackgroundchapeterscroll_3
+    21300008: newgameuiatlassecondbackgroundchapeterscroll_4
+    21300010: newgameuiatlassecondbackgroundchapeterscroll_5
+    21300012: newgameuiatlassecondbackgroundchapeterscroll_6
+    21300014: newgameuiatlassecondbackgroundchapeterscroll_7
+    21300016: newgameuiatlassecondbackgroundchapeterscroll_8
+    21300018: newgameuiatlassecondbackgroundchapeterscroll_9
+    21300020: newgameuiatlassecondbackgroundchapeterscroll_10
+    21300022: newgameuiatlassecondbackgroundchapeterscroll_11
+    21300024: newgameuiatlassecondbackgroundchapeterscroll_12
+    21300026: newgameuiatlassecondbackgroundchapeterscroll_13
+    21300028: newgameuiatlassecondbackgroundchapeterscroll_14
+    21300030: newgameuiatlassecondbackgroundchapeterscroll_15
+    21300032: newgameuiatlassecondbackgroundchapeterscroll_16
+    21300034: newgameuiatlassecondbackgroundchapeterscroll_17
+    21300036: newgameuiatlassecondbackgroundchapeterscroll_18
+    21300038: newgameuiatlassecondbackgroundchapeterscroll_19
+    21300040: newgameuiatlassecondbackgroundchapeterscroll_20
+    21300042: newgameuiatlassecondbackgroundchapeterscroll_21
+    21300044: newgameuiatlassecondbackgroundchapeterscroll_22
+    21300046: newgameuiatlassecondbackgroundchapeterscroll_23
+    21300048: newgameuiatlassecondbackgroundchapeterscroll_24
+    21300050: newgameuiatlassecondbackgroundchapeterscroll_25
+    21300052: newgameuiatlassecondbackgroundchapeterscroll_26
+    21300054: newgameuiatlassecondbackgroundchapeterscroll_27
+    21300056: newgameuiatlassecondbackgroundchapeterscroll_28
+    21300058: newgameuiatlassecondbackgroundchapeterscroll_29
+    21300060: newgameuiatlassecondbackgroundchapeterscroll_30
+    21300062: newgameuiatlassecondbackgroundchapeterscroll_31
+    21300064: newgameuiatlassecondbackgroundchapeterscroll_32
+    21300066: newgameuiatlassecondbackgroundchapeterscroll_33
+    21300068: newgameuiatlassecondbackgroundchapeterscroll_34
+    21300070: newgameuiatlassecondbackgroundchapeterscroll_35
+    21300072: newgameuiatlassecondbackgroundchapeterscroll_36
+    21300074: newgameuiatlassecondbackgroundchapeterscroll_37
+    21300076: newgameuiatlassecondbackgroundchapeterscroll_38
+    21300078: newgameuiatlassecondbackgroundchapeterscroll_39
+    21300080: newgameuiatlassecondbackgroundchapeterscroll_40
+    21300082: newgameuiatlassecondbackgroundchapeterscroll_41
+    21300084: newgameuiatlassecondbackgroundchapeterscroll_42
+    21300086: newgameuiatlassecondbackgroundchapeterscroll_43
+    21300088: newgameuiatlassecondbackgroundchapeterscroll_44
+    21300090: newgameuiatlassecondbackgroundchapeterscroll_45
+    21300092: newgameuiatlassecondbackgroundchapeterscroll_46
+    21300094: newgameuiatlassecondbackgroundchapeterscroll_47
+    21300096: newgameuiatlassecondbackgroundchapeterscroll_48
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: newgameuiatlassecondbackgroundchapeterscroll_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1867
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_1
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1867
+        width: 352
+        height: 177
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_2
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1943
+        width: 47
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_3
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 2003
+        width: 74
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_4
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1938
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_5
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 1939
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_6
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 1935
+        width: 440
+        height: 110
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_7
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 1963
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_8
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 1966
+        width: 16
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_9
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 1952
+        width: 74
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_10
+      rect:
+        serializedVersion: 2
+        x: 1813
+        y: 1915
+        width: 111
+        height: 111
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_11
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 948
+        width: 96
+        height: 1089
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_12
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1981
+        width: 74
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_13
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1957
+        width: 74
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_14
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1506
+        width: 352
+        height: 353
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_15
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 1506
+        width: 177
+        height: 353
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_16
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 1677
+        width: 592
+        height: 252
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_17
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 1622
+        width: 1196
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_18
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 1535
+        width: 1196
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_19
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1292
+        width: 335
+        height: 196
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_20
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1286
+        width: 117
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_21
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1291
+        width: 103
+        height: 154
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_22
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1283
+        width: 218
+        height: 165
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_23
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 1291
+        width: 102
+        height: 156
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_24
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 1054
+        width: 713
+        height: 465
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_25
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1118
+        width: 1085
+        height: 134
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_26
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 771
+        width: 214
+        height: 199
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_27
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 994
+        width: 950
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_28
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 717
+        width: 211
+        height: 209
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_29
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 717
+        width: 737
+        height: 209
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_30
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 536
+        width: 53
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_31
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 536
+        width: 63
+        height: 178
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_32
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 537
+        width: 56
+        height: 135
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_33
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 522
+        width: 125
+        height: 208
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_34
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 520
+        width: 199
+        height: 195
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_35
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 283
+        width: 1232
+        height: 338
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 269
+        width: 226
+        height: 217
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_37
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 341
+        width: 118
+        height: 148
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 514
+        height: 257
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_39
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 3
+        width: 490
+        height: 258
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_40
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 6
+        width: 125
+        height: 219
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_41
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 3
+        width: 375
+        height: 198
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_42
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 8
+        width: 123
+        height: 178
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_43
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 12
+        width: 120
+        height: 162
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_44
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 17
+        width: 104
+        height: 162
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_45
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 5
+        width: 102
+        height: 179
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_46
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 750
+        width: 160
+        height: 241
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_47
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1961
+        width: 73
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: newgameuiatlassecondbackgroundchapeterscroll_48
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 1953
+        width: 145
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

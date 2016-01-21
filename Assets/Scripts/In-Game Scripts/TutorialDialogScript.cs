@@ -14,18 +14,18 @@ public class TutorialDialogScript : MonoBehaviour {
         GetComponent<TextMesh>().fontSize = 1024;
 
        if (GameManager.puzzleLv == "1") {
-              TypeText("Input two numbers respectively into the empty squares. Their sum should equal to " + GameObject.Find("Game Manager").GetComponent<GameManager>().contentSpriteArray[1].GetComponent<ContentScript>().content + " and product equal to " + GameObject.Find("Game Manager").GetComponent<GameManager>().contentSpriteArray[2].GetComponent<ContentScript>().content + ". The sum and product together are called a pair clue");
+              TypeText("Input two numbers to the empty squares. Their sum is " + GameObject.Find("Game Manager").GetComponent<GameManager>().contentSpriteArray[1].GetComponent<ContentScript>().content + " and product is " + GameObject.Find("Game Manager").GetComponent<GameManager>().contentSpriteArray[2].GetComponent<ContentScript>().content + ". The sum and product together are called a pair clue");
        }
         if (GameManager.puzzleLv == "2") {
-              TypeText("Now numbers get more complicated. Practise what you have learned from Level 1.");
+              TypeText("Now you have more options. Practise what you have learned from last level.");
        }
        
         if (GameManager.puzzleLv == "3") {
-            TypeText("In this case we have two pair clues. Input three numbers and make them satisfy each pair clue. Sometimes a pair clue might be empty!");
+            TypeText("In this level we have two pair clues. Input three numbers and make them satisfy each pair clue. Sometimes a pair clue could be empty!");
         }
         
           if (GameManager.puzzleLv == "4") {
-            TypeText("Things are getting harder now. Don't worry. Start from an easier pair clue and solve others! Remember, each game only has one solution!");
+            TypeText("Puzzle is getting harder now. Don't worry. You can start from an easier pair clue and solve others! Each game only has one solution!");
         }
         
            if (GameManager.puzzleLv == "5") {

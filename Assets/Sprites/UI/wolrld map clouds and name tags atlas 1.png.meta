@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: e13e156759ead44ba9c63c179438ba07
+timeCreated: 1453248867
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: wolrld map clouds and name tags atlas_0
+    21300002: wolrld map clouds and name tags atlas_1
+    21300004: wolrld map clouds and name tags atlas_2
+    21300006: wolrld map clouds and name tags atlas_3
+    21300008: wolrld map clouds and name tags atlas_4
+    21300010: wolrld map clouds and name tags atlas_5
+    21300012: wolrld map clouds and name tags atlas_6
+    21300014: wolrld map clouds and name tags atlas_7
+    21300016: wolrld map clouds and name tags atlas_8
+    21300018: wolrld map clouds and name tags atlas_9
+    21300020: wolrld map clouds and name tags atlas_10
+    21300022: wolrld map clouds and name tags atlas_11
+    21300024: wolrld map clouds and name tags atlas_12
+    21300026: wolrld map clouds and name tags atlas_13
+    21300028: wolrld map clouds and name tags atlas_14
+    21300030: wolrld map clouds and name tags atlas_15
+    21300032: wolrld map clouds and name tags atlas_16
+    21300034: wolrld map clouds and name tags atlas_17
+    21300036: wolrld map clouds and name tags atlas_18
+    21300038: wolrld map clouds and name tags atlas_19
+    21300040: wolrld map clouds and name tags atlas_20
+    21300042: wolrld map clouds and name tags atlas_21
+    21300044: wolrld map clouds and name tags atlas_22
+    21300046: wolrld map clouds and name tags atlas_23
+    21300048: wolrld map clouds and name tags atlas_24
+    21300050: wolrld map clouds and name tags atlas_25
+    21300052: wolrld map clouds and name tags atlas_26
+    21300054: wolrld map clouds and name tags atlas_27
+    21300056: wolrld map clouds and name tags atlas_28
+    21300058: wolrld map clouds and name tags atlas_29
+    21300060: wolrld map clouds and name tags atlas_30
+    21300062: wolrld map clouds and name tags atlas_31
+    21300064: wolrld map clouds and name tags atlas_32
+    21300066: wolrld map clouds and name tags atlas_33
+    21300068: wolrld map clouds and name tags atlas_34
+    21300070: wolrld map clouds and name tags atlas_35
+    21300072: wolrld map clouds and name tags atlas_36
+    21300074: wolrld map clouds and name tags atlas_37
+    21300076: wolrld map clouds and name tags atlas_38
+    21300078: wolrld map clouds and name tags atlas_39
+    21300080: wolrld map clouds and name tags atlas_40
+    21300082: wolrld map clouds and name tags atlas_41
+    21300084: wolrld map clouds and name tags atlas_42
+    21300086: wolrld map clouds and name tags atlas_43
+    21300088: wolrld map clouds and name tags atlas_44
+    21300090: wolrld map clouds and name tags atlas_45
+    21300092: wolrld map clouds and name tags atlas_46
+    21300094: wolrld map clouds and name tags atlas_47
+    21300096: wolrld map clouds and name tags atlas_48
+    21300098: wolrld map clouds and name tags atlas_49
+    21300100: wolrld map clouds and name tags atlas_50
+    21300102: wolrld map clouds and name tags atlas_51
+    21300104: wolrld map clouds and name tags atlas_52
+    21300106: wolrld map clouds and name tags atlas_53
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: wolrld map clouds and name tags atlas_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1750
+        width: 59
+        height: 292
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1749
+        width: 59
+        height: 292
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_2
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 407
+        width: 701
+        height: 1610
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_3
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1591
+        width: 466
+        height: 148
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_4
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 1602
+        width: 376
+        height: 146
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_5
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 1638
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_6
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1423
+        width: 816
+        height: 152
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_7
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1316
+        width: 310
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_8
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 1316
+        width: 296
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_9
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1217
+        width: 610
+        height: 82
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_10
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1128
+        width: 269
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_11
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1121
+        width: 152
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_12
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1121
+        width: 66
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_13
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1119
+        width: 324
+        height: 82
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_14
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1019
+        width: 285
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_15
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1014
+        width: 331
+        height: 93
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_16
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 919
+        width: 196
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_17
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 922
+        width: 251
+        height: 82
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_18
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 928
+        width: 58
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_19
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 923
+        width: 204
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_20
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 679
+        width: 706
+        height: 246
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_21
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 430
+        width: 282
+        height: 239
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_22
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 368
+        width: 141
+        height: 261
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_23
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 600
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_24
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 574
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_25
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 561
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_26
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 582
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_27
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 575
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_28
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 581
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_29
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 585
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_30
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 564
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_31
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 372
+        width: 212
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_32
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 364
+        width: 91
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_33
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 407
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_34
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 393
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_35
+      rect:
+        serializedVersion: 2
+        x: 1808
+        y: 393
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_36
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 2
+        width: 744
+        height: 388
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_37
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 375
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_38
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 380
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_39
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 384
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_40
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 372
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_41
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 369
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_42
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 368
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_43
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 372
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_44
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 368
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_45
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 369
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_46
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 370
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_47
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 370
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_48
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 16
+        width: 1152
+        height: 332
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_49
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 323
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_50
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 307
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_51
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 816
+        width: 46
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_52
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1127
+        width: 271
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wolrld map clouds and name tags atlas_53
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1126
+        width: 270
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

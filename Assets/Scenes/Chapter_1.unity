@@ -98,11 +98,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.69000006
+      value: -6.96999979
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.75
+      value: -3.08999991
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -143,7 +143,7 @@ Prefab:
     - target: {fileID: 21273386, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300040, guid: 6c338574e1ac149d8a85a881a00c6189,
+      objectReference: {fileID: 21300000, guid: e8d5ac2c51e1344af8f976d44bf00536,
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
@@ -164,11 +164,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 494640, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.100000001
+      value: .115999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 434484, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -.0820000023
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &5535814 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 494640, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+  m_PrefabInternal: {fileID: 5535813}
 --- !u!1 &40965492
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,11 +273,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 481602, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.000251415448
+      value: -.000251522986
       objectReference: {fileID: 0}
     - target: {fileID: 446260, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .000251415448
+      value: .000251522986
       objectReference: {fileID: 0}
     - target: {fileID: 427228, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
@@ -623,15 +631,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.46000004
+      value: -11.3900003
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .0299999993
+      value: -3.26999998
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -672,19 +680,19 @@ Prefab:
     - target: {fileID: 21273386, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300040, guid: 6c338574e1ac149d8a85a881a00c6189,
+      objectReference: {fileID: 21300000, guid: e8d5ac2c51e1344af8f976d44bf00536,
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: A easy game, isn't it?
+      value: I can't believe you just finished L shape puzzle. Let's continue.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: Yeah...maybe.
+      value: I enjoy doing math.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
-      value: Take it easy and enjoy this game.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[3]
@@ -692,11 +700,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 494640, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.189999998
+      value: .115000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 434484, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -.0820000023
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &81227171 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 494640, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+  m_PrefabInternal: {fileID: 81227170}
 --- !u!1 &110123317
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,11 +771,11 @@ SpriteRenderer:
 --- !u!1 &177516955 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 171606, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-  m_PrefabInternal: {fileID: 1673224150}
+  m_PrefabInternal: {fileID: 1323967917}
 --- !u!4 &177516956 stripped
 Transform:
   m_PrefabParentObject: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-  m_PrefabInternal: {fileID: 1673224150}
+  m_PrefabInternal: {fileID: 1323967917}
 --- !u!1 &208922081
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,11 +843,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5.88999987
+      value: -8.65999985
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.600000024
+      value: -3.82999992
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -872,7 +888,7 @@ Prefab:
     - target: {fileID: 21273386, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300040, guid: 6c338574e1ac149d8a85a881a00c6189,
+      objectReference: {fileID: 21300000, guid: e8d5ac2c51e1344af8f976d44bf00536,
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
@@ -892,11 +908,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 494640, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.170000002
+      value: .114
+      objectReference: {fileID: 0}
+    - target: {fileID: 434484, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -.105999999
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &210349171 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 494640, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+  m_PrefabInternal: {fileID: 210349170}
 --- !u!1 &242445813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,7 +1197,7 @@ Prefab:
     - target: {fileID: 21273386, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300052, guid: 6c338574e1ac149d8a85a881a00c6189,
+      objectReference: {fileID: 21300000, guid: e8d5ac2c51e1344af8f976d44bf00536,
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
@@ -1181,7 +1205,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: Easy for me.
+      value: It is interesting.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
@@ -1190,6 +1214,15 @@ Prefab:
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[3]
       value: OK
+      objectReference: {fileID: 0}
+    - target: {fileID: 21261650, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300012, guid: 52a4cd95c3cce421db10fc5b65dfa7c5,
+        type: 3}
+    - target: {fileID: 434484, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: .00700000022
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
@@ -1295,16 +1328,21 @@ Prefab:
     - target: {fileID: 21273386, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300046, guid: 6c338574e1ac149d8a85a881a00c6189,
+      objectReference: {fileID: 21300000, guid: e8d5ac2c51e1344af8f976d44bf00536,
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: You are unstoppable!!! Do this one now.
+      value: You are unstoppable!!! Let's try this one.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
       value: Cool.
       objectReference: {fileID: 0}
+    - target: {fileID: 21261650, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300006, guid: 52a4cd95c3cce421db10fc5b65dfa7c5,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
   m_IsPrefabParent: 0
@@ -1713,11 +1751,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 490582, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.0475352965
+      value: -.0472911894
       objectReference: {fileID: 0}
     - target: {fileID: 490582, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -.998869598
+      value: -.998881161
       objectReference: {fileID: 0}
     - target: {fileID: 488402, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.w
@@ -1729,11 +1767,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 411102, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .0475352965
+      value: .0472911894
       objectReference: {fileID: 0}
     - target: {fileID: 411102, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -.998869598
+      value: -.998881161
       objectReference: {fileID: 0}
     - target: {fileID: 448588, guid: 6fa763f81a8867d478e5abcc07e42fb1, type: 2}
       propertyPath: m_LocalScale.y
@@ -1755,15 +1793,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.54999995
+      value: -13.3299999
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.419999987
+      value: -2.25
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1804,15 +1842,15 @@ Prefab:
     - target: {fileID: 21273386, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300040, guid: 6c338574e1ac149d8a85a881a00c6189,
+      objectReference: {fileID: 21300000, guid: e8d5ac2c51e1344af8f976d44bf00536,
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: It is the last level of this chapter. I can't believe you make it!
+      value: 'It is the last level of this chapter. '
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: It is not that hard.
+      value: Let's finish it!
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
@@ -1824,11 +1862,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 494640, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.100000001
+      value: .0879999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 434484, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -.112999998
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &677152096 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 494640, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+  m_PrefabInternal: {fileID: 677152095}
 --- !u!1 &684169663 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 171606, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
@@ -1977,12 +2023,11 @@ Prefab:
     - target: {fileID: 21273386, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300050, guid: 6c338574e1ac149d8a85a881a00c6189,
+      objectReference: {fileID: 21300000, guid: e8d5ac2c51e1344af8f976d44bf00536,
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: This is your first real game without my guidance. Let's play the 2x2
-        puzzle.
+      value: This is your first game. Let's play a 2x2 puzzle.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
@@ -1996,6 +2041,11 @@ Prefab:
       propertyPath: dialogs.Array.data[3]
       value: OK
       objectReference: {fileID: 0}
+    - target: {fileID: 21261650, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300010, guid: 52a4cd95c3cce421db10fc5b65dfa7c5,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
   m_IsPrefabParent: 0
@@ -2057,16 +2107,15 @@ Prefab:
     - target: {fileID: 21273386, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300054, guid: 6c338574e1ac149d8a85a881a00c6189,
+      objectReference: {fileID: 21300000, guid: e8d5ac2c51e1344af8f976d44bf00536,
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: Let's make some difference, my hero. Here is the 2x3 puzzle game and
-        try to solve it!
+      value: Here is the 2x3 puzzle game and try to solve it!
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: Oh my god, What is that ?
+      value: Great!
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
@@ -2075,6 +2124,15 @@ Prefab:
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[3]
       value: OK
+      objectReference: {fileID: 0}
+    - target: {fileID: 21261650, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300014, guid: 52a4cd95c3cce421db10fc5b65dfa7c5,
+        type: 3}
+    - target: {fileID: 434484, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -.00200000009
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
@@ -2137,7 +2195,7 @@ Prefab:
     - target: {fileID: 21273386, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300044, guid: 6c338574e1ac149d8a85a881a00c6189,
+      objectReference: {fileID: 21300000, guid: e8d5ac2c51e1344af8f976d44bf00536,
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
@@ -2146,7 +2204,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: I know I am doing very well. I want to try something harder.
+      value: Yes. I like to play with a single clue.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
@@ -2154,74 +2212,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[3]
-      value: Good Good. I will kill it.
+      value: Good.
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &861791399
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 871100136}
-    m_Modifications:
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: dialogs.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 7.71000004
-      objectReference: {fileID: 0}
-    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -8.88000011
-      objectReference: {fileID: 0}
-    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 171606, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: m_Name
-      value: C1_Lv2
-      objectReference: {fileID: 0}
-    - target: {fileID: 21273386, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+    - target: {fileID: 21261650, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300042, guid: 6c338574e1ac149d8a85a881a00c6189,
+      objectReference: {fileID: 21300004, guid: 52a4cd95c3cce421db10fc5b65dfa7c5,
         type: 3}
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: dialogs.Array.data[0]
-      value: You are doing very well. Let's try a harder one.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: dialogs.Array.data[1]
-      value: I am not afraid.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: levelSceneId
-      value: 6
+    - target: {fileID: 434484, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: .0170000009
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
@@ -2490,7 +2490,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fa1f306b04aa1464f98dc75f7794c08f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 256112dac4bc04e38a209bc2690fa770, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &932264347
 Transform:
@@ -2572,6 +2572,73 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300014, guid: 7cf65297b243048fea499b380d7afba5, type: 3}
   m_Color: {r: .397058845, g: 1, b: .414792418, a: 1}
+--- !u!1001 &971702430
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 871100136}
+    m_Modifications:
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 7.71000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -8.88000011
+      objectReference: {fileID: 0}
+    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 171606, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_Name
+      value: C1_Lv2
+      objectReference: {fileID: 0}
+    - target: {fileID: 21261650, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300002, guid: 52a4cd95c3cce421db10fc5b65dfa7c5,
+        type: 3}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[2]
+      value: In this level I will show you the rule of pair clue.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[3]
+      value: Cool. Let's do it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: dialogs.Array.data[0]
+      value: You are doing very well. Let's try a harder one.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &979618377
 GameObject:
   m_ObjectHideFlags: 0
@@ -2724,11 +2791,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1004250296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .119999997, y: -.746000051, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: .0970000029, y: -.00300002098, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
-  m_Father: {fileID: 684169664}
-  m_RootOrder: 4
+  m_Father: {fileID: 81227171}
+  m_RootOrder: 1
 --- !u!212 &1004250298
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2753,8 +2820,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1922242241
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300044, guid: 6c338574e1ac149d8a85a881a00c6189, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300004, guid: 52a4cd95c3cce421db10fc5b65dfa7c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1074921962
 GameObject:
@@ -2963,7 +3030,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -3012,19 +3079,20 @@ Prefab:
     - target: {fileID: 21273386, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300040, guid: 6c338574e1ac149d8a85a881a00c6189,
+      objectReference: {fileID: 21300000, guid: e8d5ac2c51e1344af8f976d44bf00536,
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: Try your best, mortal.
+      value: Try to solve the puzzle quickly and make less mistake. It will make you
+        get a higher score.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
-      value: Of course I will.
+      value: I will try.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
-      value: Try to use less time and make less mistakes, and you will win more scores.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[3]
@@ -3032,11 +3100,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 494640, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.109999999
+      value: .119999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 434484, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -.119000003
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1282302830 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 494640, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+  m_PrefabInternal: {fileID: 1282302829}
 --- !u!1 &1287832211
 GameObject:
   m_ObjectHideFlags: 0
@@ -3111,6 +3187,52 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!1001 &1323967917
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 871100136}
+    m_Modifications:
+    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 9.26000023
+      objectReference: {fileID: 0}
+    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -10.6700001
+      objectReference: {fileID: 0}
+    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 171606, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_Name
+      value: C1_Lv1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1341049197
 GameObject:
   m_ObjectHideFlags: 0
@@ -3326,11 +3448,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1411925161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .150000006, y: -.745999932, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: .0549999997, y: .00499999989, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
-  m_Father: {fileID: 887024198}
-  m_RootOrder: 4
+  m_Father: {fileID: 5535814}
+  m_RootOrder: 1
 --- !u!212 &1411925163
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3355,8 +3477,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1922242241
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300040, guid: 6c338574e1ac149d8a85a881a00c6189, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 52a4cd95c3cce421db10fc5b65dfa7c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1422407921 stripped
 GameObject:
@@ -3460,11 +3582,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1549020059}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .25, y: -.746000051, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: .0759999976, y: .00499999989, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
-  m_Father: {fileID: 481627235}
-  m_RootOrder: 4
+  m_Father: {fileID: 1282302830}
+  m_RootOrder: 1
 --- !u!212 &1549020061
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3489,8 +3611,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1922242241
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300058, guid: 6c338574e1ac149d8a85a881a00c6189, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300018, guid: 52a4cd95c3cce421db10fc5b65dfa7c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1570174284
 GameObject:
@@ -3605,11 +3727,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1641695079}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .219999999, y: -.746000051, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: .0590000004, y: .00200000009, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
-  m_Father: {fileID: 284138330}
-  m_RootOrder: 4
+  m_Father: {fileID: 677152096}
+  m_RootOrder: 1
 --- !u!212 &1641695081
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3634,95 +3756,17 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1922242241
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300046, guid: 6c338574e1ac149d8a85a881a00c6189, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300006, guid: 52a4cd95c3cce421db10fc5b65dfa7c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1001 &1673224150
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 871100136}
-    m_Modifications:
-    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 9.26000023
-      objectReference: {fileID: 0}
-    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -10.6700001
-      objectReference: {fileID: 0}
-    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: ptsToNxtLv.Array.data[0]
-      value: 
-      objectReference: {fileID: 1914324809}
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: ptsToNxtLv.Array.data[1]
-      value: 
-      objectReference: {fileID: 774595288}
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: ptsToNxtLv.Array.data[2]
-      value: 
-      objectReference: {fileID: 1983308261}
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: ptsToNxtLv.Array.data[3]
-      value: 
-      objectReference: {fileID: 878515739}
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: ptsToNxtLv.Array.data[4]
-      value: 
-      objectReference: {fileID: 1596057990}
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: ptsToNxtLv.Array.data[5]
-      value: 
-      objectReference: {fileID: 870492434}
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: ptsToNxtLv.Array.data[6]
-      value: 
-      objectReference: {fileID: 303023125}
-    - target: {fileID: 171606, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: m_Name
-      value: C1_Lv1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-      propertyPath: levelSceneId
-      value: 5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1770913270 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 171606, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-  m_PrefabInternal: {fileID: 861791399}
+  m_PrefabInternal: {fileID: 971702430}
 --- !u!4 &1770913271 stripped
 Transform:
   m_PrefabParentObject: {fileID: 469840, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
-  m_PrefabInternal: {fileID: 861791399}
+  m_PrefabInternal: {fileID: 971702430}
 --- !u!1 &1777013755
 GameObject:
   m_ObjectHideFlags: 0
@@ -3835,11 +3879,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1862712841}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .150000006, y: -.746000051, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: .0579999983, y: .00499999989, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
-  m_Father: {fileID: 495891532}
-  m_RootOrder: 4
+  m_Father: {fileID: 210349171}
+  m_RootOrder: 1
 --- !u!212 &1862712843
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3864,8 +3908,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1922242241
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300042, guid: 6c338574e1ac149d8a85a881a00c6189, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300002, guid: 52a4cd95c3cce421db10fc5b65dfa7c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1877230128
 Prefab:
@@ -3908,27 +3952,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 481602, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.000178186106
+      value: -5.55261931e-06
       objectReference: {fileID: 0}
     - target: {fileID: 446260, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .000178186106
+      value: 5.55261931e-06
       objectReference: {fileID: 0}
     - target: {fileID: 427228, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.0723739713
+      value: -.0722017884
       objectReference: {fileID: 0}
     - target: {fileID: 427228, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .997377574
+      value: .997390091
       objectReference: {fileID: 0}
     - target: {fileID: 431308, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .0723739713
+      value: .0722017884
       objectReference: {fileID: 0}
     - target: {fileID: 431308, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .997377574
+      value: .997390091
       objectReference: {fileID: 0}
     - target: {fileID: 21286630, guid: 5353e269f1d26df42a2d42894e55607b, type: 2}
       propertyPath: m_SortingLayerID
@@ -4274,7 +4318,7 @@ Prefab:
     - target: {fileID: 21273386, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300056, guid: 6c338574e1ac149d8a85a881a00c6189,
+      objectReference: {fileID: 21300000, guid: e8d5ac2c51e1344af8f976d44bf00536,
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
@@ -4287,12 +4331,17 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
-      value: Keep practising, my hero.
+      value: Keep practising.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[3]
       value: I will.
       objectReference: {fileID: 0}
+    - target: {fileID: 21261650, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300016, guid: 52a4cd95c3cce421db10fc5b65dfa7c5,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
   m_IsPrefabParent: 0
@@ -4393,11 +4442,11 @@ Prefab:
     - target: {fileID: 21273386, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300048, guid: 6c338574e1ac149d8a85a881a00c6189,
+      objectReference: {fileID: 21300000, guid: e8d5ac2c51e1344af8f976d44bf00536,
         type: 3}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[0]
-      value: Ok, my Hero. This is your last tutorial. You will see a square clue.
+      value: This is your last tutorial. You will see the square clue.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[1]
@@ -4405,11 +4454,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[2]
-      value: LOL. Good Luck.
+      value: Good Luck.
       objectReference: {fileID: 0}
     - target: {fileID: 11473428, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
       propertyPath: dialogs.Array.data[3]
-      value: Ok.
+      value: Thank you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 21261650, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300008, guid: 52a4cd95c3cce421db10fc5b65dfa7c5,
+        type: 3}
+    - target: {fileID: 434484, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: .00200000009
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b481fb730274c6bac2a25a9024008a, type: 2}
